@@ -1,0 +1,12 @@
+{
+  "author" : "Encounter+ Dev Team",
+  "banner" : "images\/banner.jpg",
+  "descr" : "This game system provides support for Dungeongs & Dragons 5E role playing game.",
+  "id" : "dnd5e",
+  "image" : "images\/icon.jpg",
+  "name" : "Dungeons & Dragons 5E",
+  "repository" : "https:\/\/github.com\/encounterplus\/dnd5e",
+  "shortDescr" : "World's Greatest Roleplaying Game",
+  "shortName" : "D&D5E",
+  "version" : "0.9.0"
+}

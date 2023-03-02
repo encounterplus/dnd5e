@@ -1,0 +1,14 @@
+{
+  "views": [{
+      "type": "Label",
+      "text": "{{name}}",
+    }, {
+      "type": "Label",
+      "text": "{% if source %}{{source}}, p{{page}}{% endif %}",
+    }, {
+      "type": "Divider",
+    }, {
+      "type": "Label",
+      "text": "{{json}}",
+    }]
+}

@@ -1,0 +1,84 @@
+{
+  "tintColor": "#58180D",
+  "primaryColor": "#9C2B1B",
+  "textColor": "#000000",
+  "dividerColor": "#cccccc",
+  "bgColor": "#ffffff",
+  "bgImage": "/images/paper.png",
+  "styles": {
+    "body": {
+      "font": "NotoSans",
+      "size": 15,
+    },
+    "label": {
+      "font": "NotoSans",
+      "color": "#58180D",
+      "size": 15
+    },
+    "title": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 30
+    },
+    "subtitle": {
+      "font": "NotoSans-Italic",
+      "size": 15
+    },
+    "section": {
+      "font": "NotoSans",
+      "color": "#58180D",
+      "caps": true,
+      "size": 18,
+    },
+    "heading": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+    },
+    "heading1": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 28
+    },
+    "heading2": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 25,
+      "divider": true
+    },
+    "heading3": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 22
+    },
+    "heading4": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "caps": true,
+      "size": 20
+    },
+    "heading5": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "size": 18
+    },
+    "heading6": {
+      "font": "HoeflerText-Regular",
+      "color": "#58180D",
+      "size": 16
+    },
+    "footer": {
+      "font": "Baramond-Italic",
+      "size": 18,
+      "alignment": "center",
+    },
+    "icons": {
+      "font": "Baramond",
+      "size": 50,
+    },
+  }
+}

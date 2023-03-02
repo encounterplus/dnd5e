@@ -1,0 +1,192 @@
+{
+  "Monster": {
+    "filter": [
+      {
+        "attr": "size",
+        "type": "Size",
+        "name": "Monster.Size"
+      },
+      {
+        "attr": "type",
+        "type": "MonsterType",
+        "name": "Monster.Type"
+      },
+      {
+        "attr": "alignment",
+        "name": "Monster.Alignment",
+        "dynamic": true
+      },
+      {
+        "attr": "environments",
+        "type": "Environment",
+        "name": "Monster.Environment"
+      },
+      {
+        "attr": "source",
+        "name": "Monster.Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attr": "cr",
+        "name": "Monster.CR"
+      },
+      {
+        "attr": "type",
+        "name": "Monster.Type"
+      },
+      {
+        "attr": "name",
+        "name": "Monster.Name"
+      }
+    ],
+    "sort": [
+      {
+        "attr": "name",
+        "name": "Monster.Name"
+      },
+      {
+        "attr": "cr",
+        "name": "Monster.CR"
+      }
+    ]
+  },
+  "Spell": {
+    "filter": [
+      {
+        "attr": "school",
+        "type": "SpellSchool",
+        "name": "Spell.School"
+      },
+      {
+        "attr": "level",
+        "type": "SpellLevel",
+        "name": "Spell.Level"
+      },
+      {
+        "attr": "class",
+        "name": "Spell.Class",
+        "dynamic": true
+      },
+      {
+        "attr": "ritual",
+        "name": "Spell.Ritual"
+      },
+      {
+        "attr": "duration",
+        "type": "SpellDuration",
+        "name": "Spell.Duration"
+      },
+      {
+        "attr": "rangeType",
+        "type": "SpellRange",
+        "name": "Spell.Range"
+      },
+      {
+        "attr": "areaEffectShape",
+        "type": "AreaEffectShape",
+        "name": "Spell.AreaEffect"
+      },
+      {
+        "attr": "source",
+        "name": "Spell.Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attr": "school",
+        "type": "SpellSchool",
+        "name": "Spell.School"
+      },
+      {
+        "attr": "level",
+        "type": "SpellLevel",
+        "name": "Spell.Level"
+      },
+      {
+        "attr": "name",
+        "name": "Spell.Name"
+      }
+    ],
+    "sort": [
+      {
+        "attr": "name",
+        "name": "Spell.Name"
+      },
+      {
+        "attr": "level",
+        "name": "Spell.Level"
+      }
+    ]
+  },
+  "Item": {
+    "filter": [
+      {
+        "attr": "type",
+        "type": "ItemType",
+        "name": "Item.Type"
+      },
+      {
+        "attr": "rarity",
+        "type": "ItemRarity",
+        "name": "Item.Rarity"
+      },
+      {
+        "attr": "attunement",
+        "name": "Item.Ritual"
+      },
+      {
+        "attr": "source",
+        "name": "Item.Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attr": "type",
+        "type": "ItemType",
+        "name": "Item.Type"
+      },
+      {
+        "attr": "name",
+        "name": "Item.Name"
+      }
+    ],
+  },
+  "Feat": {
+    "filter": [
+      {
+        "attr": "source",
+        "name": "Feat.Source",
+        "dynamic": true
+      }
+    ]
+  },
+  "Condition": {
+    "filter": [
+      {
+        "attr": "type",
+        "name": "Condition.Type",
+        "type": "Condition"
+      },
+      {
+        "attr": "source",
+        "name": "Condition.Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attr": "type",
+        "name": "Condition.Type",
+        "type": "Condition"
+      },
+      {
+        "attr": "source",
+        "name": "Condition.Source"
+      }
+    ]
+  }
+}

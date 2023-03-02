@@ -1,0 +1,77 @@
+{
+  "Size": [
+    "T",
+    "S",
+    "M",
+    "L",
+    "H",
+    "G",
+    "C"
+  ],
+  "Ability": [
+    "str",
+    "dex",
+    "con",
+    "int",
+    "wis",
+    "cha"
+  ],
+  "ProficiencyCategory": [
+    "armor",
+    "weapon",
+    "tool"
+  ],
+  "SpellComponent": [
+    "V",
+    "S",
+    "M"
+  ],
+  "ItemRarity": [
+    "common",
+    "uncommon",
+    "rare",
+    "veryrare",
+    "legendary",
+    "artifact",
+    "unknown"
+  ],
+  "ItemCategory": [
+    "armor", "weapon", "item", "equipment"
+  ],
+  "ItemCategoryTypeMapping": {
+    "armor": [
+      "armor",
+      "lightArmor",
+      "mediumArmor",
+      "heavyArmor",
+      "shield"
+    ],
+    "weapon": [
+      "weapon",
+      "meleeWeapon",
+      "rangedWeapon",
+      "ammunition"
+    ],
+    "item": [
+      "staff",
+      "wand",
+      "potion",
+      "ring",
+      "scroll",
+      "wondrousItem"
+    ],
+    "equipment": [
+      "adventuringGear",
+      "wealth",
+      "gemstone",
+      "tool",
+      "poison",
+      "instrument",
+      "arcaneFocus",
+      "holySymbol",
+      "mount",
+      "equipmentPack",
+      "tradeGood"
+    ]
+  }
+}

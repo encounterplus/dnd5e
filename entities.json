@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Monster",
+    "label": "monster",
+    "collection": {
+      "label": "monsters"
+    },
+    "loadable": true
+  },
+  {
+    "name": "NPC",
+    "label": "npc",
+    "type": "Monster",
+    "collection": {
+      "label": "npcs"
+    },
+    "loadable": true,
+    "role": "neutral"
+  },
+  {
+    "name": "Player",
+    "label": "player",
+    "collection": {
+      "label": "players"
+    },
+    "loadable": true,
+    "role": "friendly"
+  },
+  {
+    "name": "Spell",
+    "label": "spell",
+    "collection": {
+      "label": "spells"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Item",
+    "label": "item",
+    "collection": {
+      "label": "items"
+    },
+    "loadable": true,
+    "role": "neutral"
+  },
+  {
+    "name": "Feat",
+    "label": "feat",
+    "collection": {
+      "label": "feats"
+    }
+  },
+  {
+    "name": "Background",
+    "label": "background",
+    "collection": {
+      "label": "backgrounds"
+    }
+  },
+  {
+    "name": "Race",
+    "label": "race",
+    "collection": {
+      "label": "races"
+    }
+  },
+  {
+    "name": "Class",
+    "label": "class",
+    "collection": {
+      "label": "classes"
+    }
+  },
+  {
+    "name": "Character",
+    "label": "character",
+    "collection": {
+      "label": "characters"
+    },
+    "loadable": true,
+    "role": "friendly"
+  },
+  {
+    "name": "Vehicle",
+    "label": "vehicle",
+    "collection": {
+      "label": "vehicles"
+    },
+    "loadable": true,
+    "role": "neutral"
+  },
+  {
+    "name": "Condition",
+    "label": "condition",
+    "collection": {
+      "label": "conditions"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Table",
+    "label": "table",
+    "collection": {
+      "label": "tables"
+    }
+  }
+]

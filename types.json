@@ -1,0 +1,274 @@
+{
+  "Size": {
+    "T": "Size.Tiny",
+    "S": "Size.Small",
+    "M": "Size.Medium",
+    "L": "Size.Large",
+    "H": "Size.Huge",
+    "G": "Size.Gargantuan",
+    "C": "Size.Colossal"
+  },
+  "MonsterType": {
+    "aberration": "MonsterType.Aberration",
+    "beast": "MonsterType.Beast",
+    "celestial": "MonsterType.Celestial",
+    "construct": "MonsterType.Construct",
+    "dragon": "MonsterType.Dragon",
+    "elemental": "MonsterType.Elemental",
+    "fey": "MonsterType.Fey",
+    "fiend": "MonsterType.Fiend",
+    "giant": "MonsterType.Giant",
+    "humanoid": "MonsterType.Humanoid",
+    "monstrosity": "MonsterType.Monstrosity",
+    "ooze": "MonsterType.Ooze",
+    "plant": "MonsterType.Plant",
+    "undead": "MonsterType.Undead"
+  },
+  "Movement": {
+    "burrow": "Movement.Burrow",
+    "climb": "Movment.Climb",
+    "fly": "Movement.Fly",
+    "swim": "Movement.Swim",
+    "walk": "Movement.Walk"
+  },
+  "Environment": {
+    "arctic": "Environment.Arctic",
+    "coastal": "Environment.Coastal",
+    "desert": "Environment.Desert",
+    "forest": "Environment.Forest",
+    "grassland": "Environment.Grassland",
+    "hill": "Environment.Hill",
+    "mountain": "Environment.Mountain",
+    "swamp": "Environment.Swamp",
+    "underdark": "Environment.Underdark",
+    "underwater": "Environment.Underwater",
+    "urban": "Environment.Urban"
+  },
+  "SpellSchool": {
+    "abjuration": "SpellSchool.Abjuration",
+    "conjuration": "SpellSchool.Conjuration",
+    "divination": "SpellSchool.Divination",
+    "enchantment": "SpellSchool.Enchantment",
+    "evocation": "SpellSchool.Evocation",
+    "illusion": "SpellSchool.Illusion",
+    "necromancy": "SpellSchool.Necromancy",
+    "transmutation": "SpellSchool.Transmutation"
+  },
+  "SpellLevel": {
+    "0": "SpellLevel.Cantrip",
+    "1": "SpellLevel.1st-Level",
+    "2": "SpellLevel.2nd-Level",
+    "3": "SpellLevel.3rd-Level",
+    "4": "SpellLevel.4th-Level",
+    "5": "SpellLevel.5th-Level",
+    "6": "SpellLevel.6th-Level",
+    "7": "SpellLevel.7th-Level",
+    "8": "SpellLevel.8th-Level",
+    "9": "SpellLevel.9th-Level"
+  },
+  "SpellRange": {
+    "self": "SpellRange.Self",
+    "touch": "SpellRange.Touch",
+    "range": "SpellRange.Range",
+    "sight": "SpellRange.Sight",
+    "unlimited": "SpellRange.Unlimited"
+  },
+  "SpellComponent": {
+    "V": "SpellComponent.Verbal",
+    "S": "SpellComponent.Somatic",
+    "M": "SpellComponent.Material"
+  },
+  "AreaEffectShape": {
+    "cone": "AreaEffectShape.Cone",
+    "cube": "AreaEffectShape.Cube",
+    "cylinder": "AreaEffectShape.Cylinder",
+    "line": "AreaEffectShape.Line",
+    "square": "AreaEffectShape.Square",
+    "sphere": "AreaEffectShape.Sphere"
+  },
+  "Skill": {
+    "acrobatics": "Skill.Acrobatics",
+    "animalHandling": "Skill.AnimalHandling",
+    "arcana": "Skill.Arcana",
+    "athletics": "Skill.Athletics",
+    "deception": "Skill.Deception",
+    "history": "Skill.History",
+    "insight": "Skill.Insight",
+    "intimidation": "Skill.Intimidation",
+    "investigation": "Skill.Investigation",
+    "medicine": "Skill.Medicine",
+    "nature": "Skill.Nature",
+    "perception": "Skill.Perception",
+    "performance": "Skill.Performance",
+    "persuasion": "Skill.Persuasion",
+    "religion": "Skill.Religion",
+    "sleightOfHand": "Skill.SleightofHand",
+    "stealth": "Skill.Stealth",
+    "survival": "Skill.Survival"
+  },
+  "Sense": {
+    "blindsight": "Sense.Blindsight",
+    "darkvision": "Sense.Darkvision",
+    "tremorsense": "Sense.Tremorsense",
+    "truesight": "Sense.Truesight"
+  },
+  "Ability": {
+    "str": "Ability.Strength",
+    "dex": "Ability.Dexterity",
+    "con": "Ability.Constitution",
+    "int": "Ability.Intelligence",
+    "wis": "Ability.Wisdom",
+    "cha": "Ability.Charisma"
+  },
+  "Language": {
+    "common": "Language.Common",
+    "dwarvish": "Language.Dwarvish",
+    "elvish": "Language.Elvish",
+    "giant": "Language.Giant",
+    "gnomish": "Language.Gnomish",
+    "goblin": "Language.Goblin",
+    "halfling": "Language.Halfling",
+    "orc": "Language.Orc",
+    "abyssal": "Language.Abyssal",
+    "celestial": "Language.Celestial",
+    "deepSpeech": "Language.DeepSpeech",
+    "draconic": "Language.Draconic",
+    "infernal": "Language.Infernal",
+    "primordial": "Language.Primordial",
+    "sylvan": "Language.Sylvan",
+    "undercommon": "Language.Undercommon"
+  },
+  "Damage": {
+    "acid": "Damage.Acid",
+    "bludgeoning": "Damage.Bludgeoning",
+    "cold": "Damage.Cold",
+    "fire": "Damage.Fire",
+    "force": "Damage.Force",
+    "lightning": "Damage.Lightning",
+    "necrotic": "Damage.Necrotic",
+    "piercing": "Damage.Piercing",
+    "poison": "Damage.Poison",
+    "psychic": "Damage.Psychic",
+    "radiant": "Damage.Radiant",
+    "slashing": "Damage.Slashing",
+    "thunder": "Damage.Thunder"
+  },
+  "ItemType": {
+    "armor": "ItemType.Armor",
+    "weapon": "ItemType.Weapon",
+    "lightArmor": "ItemType.LightArmor",
+    "mediumArmor": "ItemType.MediumArmor",
+    "heavyArmor": "ItemType.HeavyArmor",
+    "shield": "ItemType.Shield",
+    "meleeWeapon": "ItemType.MeleeWeapon",
+    "rangedWeapon": "ItemType.RangedWeapon",
+    "ammunition": "ItemType.Ammunition",
+    "rod": "ItemType.Rod",
+    "staff": "ItemType.Staff",
+    "wand": "ItemType.Wand",
+    "potion": "ItemType.Potion",
+    "ring": "ItemType.Ring",
+    "scroll": "ItemType.Scroll",
+    "wondrousItem": "ItemType.WondrousItem",
+    "adventuringGear": "ItemType.AdventuringGear",
+    "wealth": "ItemType.Wealth",
+    "gemstone": "ItemType.Gemstone",
+    "tool": "ItemType.Tool",
+    "poison": "ItemType.Poison",
+    "instrument": "ItemType.Instrument",
+    "arcaneFocus": "ItemType.ArcaneFocus",
+    "holySymbol": "ItemType.HolySymbol",
+    "mount": "ItemType.Mount",
+    "equipmentPack": "ItemType.EquipmentPack",
+    "tradeGood": "ItemType.TradeGood"
+  },
+  "ItemCategory": {
+    "armor": "ItemCategory.Armor",
+    "weapon": "ItemCategory.Weapon",
+    "item": "ItemCategory.Item",
+    "equipment": "ItemCategory.Equipment"
+  },
+  "ItemRarity": {
+    "common": "ItemRarity.Common",
+    "uncommon": "ItemRarity.Uncommon",
+    "rare": "ItemRarity.Rare",
+    "veryrare": "ItemRarity.VeryRare",
+    "legendary": "ItemRarity.Legendary",
+    "artifact": "ItemRarity.Artifact",
+    "unknown": "ItemRarity.Unknown",
+  },
+  "ItemProperty": {
+    "ammunition": "ItemProperty.Ammunition",
+    "finesse": "ItemProperty.Finesse",
+    "heavy": "ItemProperty.Heavy",
+    "light": "ItemProperty.Light",
+    "loading": "ItemProperty.Loading",
+    "range": "ItemProperty.Range",
+    "reach": "ItemProperty.Reach",
+    "special": "ItemProperty.Special",
+    "thrown": "ItemProperty.Thrown",
+    "twoHanded": "ItemProperty.TwoHanded",
+    "versatile": "ItemProperty.Versatile"
+  },
+  "Armor": {
+    "light": "Armor.LightArmor",
+    "medium": "Armor.MediumArmor",
+    "heavy": "Armor.HeavyArmor",
+    "shield": "Armor.Shield"
+  },
+  "Weapon": {
+    "simple": "Weapon.SimpleWeapon",
+    "martial": "Weapon.MartialWeapon",
+    "firearm": "Weapon.Firearm"
+  },
+  "ProficiencyCategory": {
+    "armor": "ProficiencyCategory.Armor",
+    "weapon": "ProficiencyCategory.Weapon",
+    "tool": "ProficiencyCategory.Tool"
+  },
+  "Vehicle": {
+    "ship": "Vehicle.Ship",
+    "spelljammerShip": "Vehicle.SpelljammerShip",
+    "infernalWarMachine": "Vehicle.InfernalWarMachine"
+  },
+  "VehicleComponent": {
+    "gadget": "VehicleComponent.Gadget",
+    "hull": "VehicleComponent.Hull",
+    "movement": "VehicleComponent.Movement",
+    "figurehead": "VehicleComponent.Figurehead",
+    "armor": "VehicleComponent.Armor",
+    "weapon": "VehicleComponent.Weapon",
+    "other": "VehicleComponent.Other"
+  },
+  "ActiveEffect": {
+    "condition": "ActiveEffect.Condition",
+    "exhaustion": "ActiveEffect.Exhaustion",
+    "concentration": "ActiveEffect.Concentration",
+    "other": "ActiveEffect.Other"
+  },
+  "ConditionType": {
+    "condition": "ConditionType.Condition",
+    "disease": "ConditionType.Disease",
+    "other": "ConditionType.Other"
+  },
+  "SkillsToAbilities": {
+    "acrobatics": "dex",
+    "animalHandling": "wis",
+    "arcana": "int",
+    "athletics": "str",
+    "deception": "cha",
+    "history": "int",
+    "insight": "wis",
+    "intimidation": "cha",
+    "investigation": "int",
+    "medicine": "wis",
+    "nature": "int",
+    "perception": "wis",
+    "performance": "cha",
+    "persuasion": "cha",
+    "religion": "int",
+    "sleightOfHand": "dex",
+    "stealth": "dex",
+    "survival": "wis"
+  }
+}
