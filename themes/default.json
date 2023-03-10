@@ -19,7 +19,7 @@
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 26
+      "size": 28
     },
     "subtitle": {
       "font": "NotoSans-Italic",
@@ -29,7 +29,7 @@
       "font": "NotoSans",
       "color": "#58180D",
       "caps": true,
-      "size": 17
+      "size": 18
     },
     "heading": {
       "font": "HoeflerText-Regular",
@@ -40,7 +40,7 @@
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 24
+      "size": 26
     },
     "heading2": {
       "font": "HoeflerText-Regular",
