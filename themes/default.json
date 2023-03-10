@@ -8,77 +8,77 @@
   "styles": {
     "body": {
       "font": "NotoSans",
-      "size": 15,
+      "size": 14
     },
     "label": {
       "font": "NotoSans",
       "color": "#58180D",
-      "size": 15
+      "size": 14
     },
     "title": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 30
+      "size": 26
     },
     "subtitle": {
       "font": "NotoSans-Italic",
-      "size": 15
+      "size": 14
     },
     "section": {
       "font": "NotoSans",
       "color": "#58180D",
       "caps": true,
-      "size": 18,
+      "size": 17
     },
     "heading": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
-      "caps": true,
+      "caps": true
     },
     "heading1": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 28
+      "size": 24
     },
     "heading2": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 25,
+      "size": 22,
       "divider": true
     },
     "heading3": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 22
+      "size": 20
     },
     "heading4": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 20
+      "size": 18
     },
     "heading5": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
-      "size": 18
+      "size": 17
     },
     "heading6": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
-      "size": 16
+      "size": 15
     },
     "footer": {
       "font": "Baramond-Italic",
-      "size": 18,
-      "alignment": "center",
+      "size": 15,
+      "alignment": "center"
     },
     "icons": {
       "font": "Baramond",
-      "size": 50,
+      "size": 50
     },
   }
 }
