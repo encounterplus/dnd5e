@@ -1,0 +1,371 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    16
+  ],
+  "layout": "lazy",
+  "views": [
+    {
+      "type": "hStack",
+      "spacing": 12,
+      "alignment": "center",
+      "views": [
+        {
+          "type": "image",
+          "value": "{{image}}",
+          "width": 60.0,
+          "height": 60.0,
+          "alignment": "top",
+          "imageResizeMode": "aspectFill",
+          "cornerRadius": 8,
+          "link": "{{image}}"
+        },
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "views": [
+            {
+              "style": "title",
+              "value": "{{name}}",
+              "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+            },
+            {
+              "style": "subtitle",
+              "value": "{{detail}}",
+            },
+          ]
+        },
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "alignment": "bottom",
+          "width": -1,
+          "link": "/health/",
+          "views": [
+            {
+              "type": "label",
+              "style": "hp-current",
+              "alignment": "trailing",
+              "value": "{{data.hpCurrent|default: 0}}{{data.hpTemporary|prefix: '+'}}",
+              "width": -1,
+            },
+            {
+              "type": "label",
+              "style": "hp-max",
+              "value": "/{{data.hpMaximum|default: 0}}",
+              "width": -1,
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "hStack",
+      "spacing": 1,
+      "alignment": "center",
+      "views": [
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "alignment": "center",
+          "views": [
+            {
+              "style": "sheet-field-value",
+              "value": "{{data.proficiencyBonus|default: 0|signed}}",
+              "link": "/roll/d20{{data.proficiencyBonus|default: 0|signed}}/proficiency",
+              "alignment": "center",
+              "width": -1
+            },
+            {
+              "style": "sheet-label",
+              "value": "Proficiency",
+              "alignment": "center",
+            },
+          ]
+        },
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "alignment": "center",
+          "views": [
+            {
+              "style": "sheet-field-value",
+              "value": "{{data.ac|default: 0}}",
+              "alignment": "center",
+            },
+            {
+              "style": "sheet-field-title",
+              "value": "Armor Class",
+              "alignment": "center",
+            },
+          ]
+        },
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "alignment": "center",
+          "views": [
+            {
+              "style": "sheet-field-value",
+              "value": "{{data.initiativeBonus|default: 0|signed}}",
+              "link": "/roll/d20{{data.initiativeBonus|default: 0|signed}}/initiative",
+              "alignment": "center",
+            },
+            {
+              "style": "sheet-field-title",
+              "value": "Initiative",
+              "alignment": "center",
+            },
+          ]
+        },
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "alignment": "center",
+          "views": [
+            {
+              "style": "sheet-field-value",
+              "value": "{{data.speed.walk|default: 0}} ft.",
+              "alignment": "center",
+            },
+            {
+              "style": "sheet-field-title",
+              "value": "Speed",
+              "alignment": "center",
+            },
+          ]
+        },
+      ]
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "type": "scroll",
+      "views": [
+        {
+          "type": "hStack",
+          "alignment": "center",
+          "padding": [1],
+          "spacing": 6,
+          "views": [
+            {
+              "type": "buttonGroup",
+              "attribute": "ui.currentTab",
+              "attributeType": "CharacterSection",
+              "custom": {
+                "buttonStyle": {
+                  "selected": "prominent" 
+                }
+              }
+            },
+          ]
+        },
+      ]
+    },
+    {
+      "type": "partial",
+      "value": "character-abilities",
+      "visibleIf": "{% if ui.currentTab == 'abilities' or ui.currentTab == nil %}true{% endif %}"
+    },
+    {
+      "type": "partial",
+      "value": "character-skills",
+      "visibleIf": "{% if ui.currentTab == 'skills' %}true{% endif %}",
+    },
+    {
+      "type": "partial",
+      "value": "character-actions",
+      "visibleIf": "{% if ui.currentTab == 'actions' %}true{% endif %}"
+    },
+    {
+      "type": "partial",
+      "value": "character-spells",
+      "visibleIf": "{% if ui.currentTab == 'spells' %}true{% endif %}",
+    },
+    {
+      "type": "partial",
+      "value": "character-items",
+      "visibleIf": "{% if ui.currentTab == 'items' %}true{% endif %}",
+    },
+    {
+      "type": "partial",
+      "value": "character-features",
+      "visibleIf": "{% if ui.currentTab == 'features' %}true{% endif %}",
+    },
+    {
+      "type": "partial",
+      "value": "character-other",
+      "visibleIf": "{% if ui.currentTab == 'other'%}true{% endif %}",
+    },
+  ],
+  //computed attributes
+  "attributes": [
+    // GENERAL
+    {
+      // for development purposes
+      "ui.currentTab": "abilities",
+      // total level as sum from all classes
+      "data.level": {
+        "attribute": "data.classes.level",
+        "eval": "{{self|math: 'sum'}}"
+      },
+    },
+    {
+      // proficiency bonus formula
+      "data.proficiencyBonus": "#{% if data.proficiencyBonus %}{{data.proficiencyBonus}}{% else %} floor(2 + (({{data.level|default: 1}} - 1) / 4)){% endif %}",
+    },
+    // ABILITIES
+    {
+      // compute ability final value (base + otherBonus)
+      "data.abilities": {
+        "attribute": "data.abilities",
+        "attributeType": "Ability",
+        "map": {
+          "ability": "{{self.key}}",
+          "value": "#{% if self.value.value %}{{self.value.value}}{% else %}{{self.value.base|default: 10}} + {{self.value.otherBonus|default: 0}}{% endif %}",
+        }
+      },
+    },
+    {
+      // compute ability ability modifier, and savig throw bonus
+      "data.abilities": {
+        "attribute": "data.abilities",
+        "map": {
+          "modifier": "#{{self.value.value|modifier}}",
+          "savingThrow.bonus": "#{% if self.value.savingThrow.bonus %}{{self.value.savingThrow.bonus}}{% else %}{{self.value.value|modifier|default: 0}} + {{self.value.savingThrow.otherBonus|default: 0}} {% if self.value.savingThrow.proficiency == 'proficient' %} + {{data.proficiencyBonus}} {% endif %} {% if self.value.savingThrow.proficiency == 'half' %} + floor({{data.proficiencyBonus}} / 2) {% endif %} {% if self.value.savingThrow.proficiency == 'expertise' %} + ({{data.proficiencyBonus}} * 2) {% endif %} {% endif %}",
+        }
+      },
+    },
+    {
+      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.abilities.dex.value|modifier|default: 0}}{% endif %}"
+    },
+    // SKILLS
+    {
+      // choose ability for each skill
+      "data.skills": {
+        "attribute": "data.skills",
+        "attributeType": "Skill",
+        "map": {
+          "skill": "{{self.key}}",
+          "ability": "{% if self.value.ability %}{{self.value.ability}}{% else %}{{self.key|valueMap: 'SkillsToAbilities'}}{% endif %}",
+        }
+      },
+    },
+    {
+      // compute final value for each skill
+      "data.skills": {
+        "attribute": "data.skills",
+        "map": {
+          "value": "#{% if self.value.value %}{{self.value.value}}{% else %}{{self.value.bonus|default: 0}} + {{data.abilities[self.value.ability].value|modifier|default: 0}} {% if self.value.proficiency == 'proficient' %} + {{data.proficiencyBonus}} {% endif %} {% if self.value.proficiency == 'half' %} + floor({{data.proficiencyBonus}} / 2) {% endif %} {% if self.value.proficiency == 'expertise' %} + ({{data.proficiencyBonus}} * 2) {% endif %} {% endif %}",
+        }
+      },
+    },
+    // SENSES
+    {
+      "data.passivePerception": "#{% if data.passivePerception %}{{data.passivePerception}}{% else %} 10 + {{data.skills.perception.value}} {% endif %}",
+      "data.passiveInvestigation": "#{% if data.passiveInvestigation %}{{data.passiveInvestigation}}{% else %} 10 + {{data.skills.investigation.value}} {% endif %}",
+      "data.passiveInsight": "#{% if data.passiveInsight %}{{data.passiveInsight}}{% else %} 10 + {{data.skills.insight.value}} {% endif %}"
+    },
+    // SPELLCASTING & SPELLS
+    {
+      // compute lass spell attack and DC
+      "data.classes": {
+        "attribute": "data.classes",
+        "map": {
+          "definition": null,
+          "spellAttack": "#{{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus}}",
+          "spellDC": "#8 + {{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus}}"
+        }
+      }
+    },
+    {
+      // custom spellbook organization
+      "data.spellbook": {
+        "attribute": "data.spells",
+        "transform": "spellbook"
+      },
+    },
+    // ITEMS
+    {
+      // total gold
+      "data.currency.total": "#({{data.currency.cp|default: 0}} / 100) + ({{data.currency.sp|default: 0}} / 10) + ({{data.currency.ep|default: 0}} / 2) + {{data.currency.gp|default: 0}} + ({{data.currency.pp|default: 0}} * 10)",
+      // base armor modifier
+      "baseArmor": "#10 {{data.abilities.dex.value|modifier|signed}}",
+      // equipped armor
+      "activeArmor": {
+        "attribute": "data.items",
+        "filter": "equipped == true and (definition.data.type == 'armor' or definition.data.type == 'lightArmor' or definition.data.type == 'mediumArmor' or definition.data.type == 'heavyArmor')",
+        "transform": "first"
+      },
+      // equipped shield
+      "activeShield": {
+        "attribute": "data.items",
+        "filter": "equipped == true and definition.data.type == 'shield'",
+        "transform": "first"
+      },
+      // equipped weapons
+      "activeWeapons": {
+        "attribute": "data.items",
+        "filter": "equipped == true and (definition.data.type == 'weapon' or definition.data.type == 'meleeWeapon' or definition.data.type == 'rangedWeapon')",
+      },
+    },
+    {
+      // final AC
+      "data.ac": "#{% if data.ac %}{{data.ac|integer}}{% else %}{% if activeArmor %}{{activeArmor.definition.data.ac|default: 0}}{% else %}{{baseArmor|default: 0}}{% endif %} + {{activeShield.definition.data.ac|default: 0}}{% endif %}"
+    },
+    // ACTIONS
+    {
+      "weaponActions": {
+        "attribute": "activeWeapons",
+        "map": {
+          "attackType": "{% if self.definition.type == 'rangedWeapon' %}ranged{% else %}melee{% endif %}",
+          "name": "{{self.name}}",
+          "ability": "{% if self.definition.type == 'rangedWeapon' %}dex{% else %}str{% endif %}",
+          "attack": "@mod + @proficiency + @weaponAttackBonus",
+          "damage": "{{self.definition.data.dmg1}} + @mod + @weaponDamageBonus",
+          "damageType": "{{self.definition.data.dmgType}}",
+          "activation.time": 1,
+          "activation.unit": "action",
+          "range": "{{self.definition.data.range|default: '5'}}",
+          "descr": null,
+        }
+      },
+    },
+    {
+      "data.actions": {
+        "merge": [
+          "data.actions",
+          "weaponActions"
+        ]
+      }
+    },
+    {
+      "data.actions": {
+        "attribute": "data.actions",
+        "map": {
+          "proficiency": "#{{data.proficiencyBonus}}",
+          "proficiencyHalf": "#floor({{data.proficiencyBonus}} / 2)",
+          "str": "#{{data.abilities.str.modifier}}",
+          "dex": "#{{data.abilities.dex.modifier}}",
+          "mod": "#{{data.abilities[self.ability].modifier}}",
+        }
+      }
+    },
+    // CLEANUP
+    {
+      "activeWeapons": {},
+      "activeArmor": {},
+      "activeShield": {},
+      "weaponActions": {},
+      // "data.spells": {},
+      // "data.items": {},
+      // "data.actions": {},
+      // "data.spellbook": {},
+    }
+  ],
+}

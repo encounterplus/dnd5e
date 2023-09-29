@@ -1,0 +1,79 @@
+{
+  "views": [
+    {
+      "type": "checkbox",
+      "attribute": "equipped",
+      "width": 36,
+      "alignment": "center"
+    },
+    {
+      "type": "hStack",
+      "alignment": "center",
+      "link": "{{reference}}",
+      "views": [
+        {
+          "type": "image",
+          "value": "{{definition.imagePath}}",
+          "imageResizeMode": "aspectFill",
+          "cornerRadius": 6,
+          "width": 34,
+          "height": 34,
+        },
+        {
+          "type": "vStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{name}}**",
+              "style": "sheet-item-title"
+            },
+            {
+              "value": "{{definition.data.type|map: 'ItemType'}}{{definition.data.rarity|map: 'ItemRarity'|prefix: ' • '}}{{definition.data.weight|prefix: ' • '|suffix: ' lbs'}}",
+              "style": "sheet-item-detail"
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "type": "menuButton",
+      "value": "**{{quantity|default: '–'}}**",
+      "style": "plain",
+      "alignment": "center",
+      "padding": [0],
+      "width": 30,
+      "views": [
+        {
+          "type": "button",
+          "title": "Increase",
+          "action": {
+            "set": {
+              "quantity": "quantity++"
+            }
+          }
+        },
+        {
+          "type": "button",
+          "title": "Decrease",
+          "action": {
+            "set": {
+              "quantity": "quantity--"
+            }
+          }
+        },
+        {
+          "type": "divider",
+        },
+        {
+          "type": "button",
+          "title": "Reset",
+          "action": {
+            "set": {
+              "quantity": null
+            }
+          }
+        },
+      ]
+    },
+  ]
+}

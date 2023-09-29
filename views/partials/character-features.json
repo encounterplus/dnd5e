@@ -1,0 +1,57 @@
+{
+    "views": [
+      {
+        "type": "list",
+        "attribute": "data.classes",
+        "views": [
+          {
+            "style": "heading2",
+            "value": "{{name}} Features",
+            "padding": [4, 0]
+          },
+          {
+            "type": "list",
+            "attribute": "features",
+            "divider": true,
+            "views": [
+              {
+                "type": "disclosureGroup",
+                "title": "{{name}}",
+                "value": "Level {{level}}",
+                "style": "heading4",
+                "views": [
+                  {
+                    "type": "text",
+                    "value": "{{text}}"
+                  }
+                ]
+              },
+            ]
+          },
+        ]
+      },
+      {
+        "style": "heading2",
+        "value": "{{data.race.name}} Traits",
+        "padding": [4, 0]
+      },
+      {
+        "type": "list",
+        "attribute": "data.race.traits",
+        "views": [
+          {
+            "value": "**{{name}}**. {{text}}",
+          },
+        ]
+      },
+      {
+        "style": "heading2",
+        "value": "Feats",
+        "padding": [4, 0]
+      },
+      {
+        "type": "text",
+        "value": "{% for name in data.feats%}[{{name}}](feat), {%endfor%}"
+      }
+    ]
+  }

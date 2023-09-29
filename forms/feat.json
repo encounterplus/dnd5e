@@ -1,0 +1,16 @@
+{
+  "title": "Feat",
+  "sections": [
+    {
+      "type": "group",
+      "title": "Prerequisite",
+      "fields": [
+        {
+          "placeholder": "Prerequisite",
+          "type": "text",
+          "attribute": "data.prerequisite"
+        },
+      ]
+    },
+  ]
+}

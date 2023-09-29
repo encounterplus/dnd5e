@@ -1,0 +1,59 @@
+{
+  "title": "Movement",
+  "sections": [
+    {
+      "title": "Movement (ft)",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Walk",
+          "type": "number",
+          "attribute": "walk"
+        }
+      ]
+    },
+    {
+      "title": "Movement (ft)",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Burrow",
+          "type": "number",
+          "attribute": "burrow"
+        },
+        {
+          "title": "Climb",
+          "type": "number",
+          "attribute": "climb"
+        },
+        {
+          "title": "Fly",
+          "type": "number",
+          "attribute": "fly"
+        },
+        {
+          "title": "Hover",
+          "type": "toggle",
+          "visibleIf": "{{fly}}",
+          "attribute": "hover",
+        },
+        {
+          "title": "Swim",
+          "type": "number",
+          "attribute": "swim"
+        }
+      ]
+    },
+    {
+      "title": "Other",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Other",
+          "type": "textArea",
+          "attribute": "other"
+        }
+      ]
+    },
+  ]
+}

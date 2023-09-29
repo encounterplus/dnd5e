@@ -1,0 +1,42 @@
+{
+  "title": "Senses",
+  "sections": [
+    {
+      "title": "Senses (ft)",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Sense.Blindsight",
+          "type": "number",
+          "attribute": "data.senses.blindsight"
+        },
+        {
+          "title": "Sense.Darkvision",
+          "type": "number",
+          "attribute": "data.senses.darkvision"
+        },
+        {
+          "title": "Sense.Tremorsense",
+          "type": "number",
+          "attribute": "data.senses.tremorsense"
+        },
+        {
+          "title": "Sense.Truesight",
+          "type": "number",
+          "attribute": "data.senses.truesight"
+        }
+      ]
+    },
+    {
+      "title": "Sense.Other",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Sense.Other",
+          "type": "textArea",
+          "attribute": "data.senses.other"
+        }
+      ]
+    },
+  ]
+}

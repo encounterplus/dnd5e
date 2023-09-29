@@ -1,0 +1,185 @@
+{
+  "title": "Spell",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Level",
+          "type": "picker",
+          "attribute": "data.level",
+          "attributeType": "SpellLevel"
+        },
+        {
+          "title": "School",
+          "type": "picker",
+          "attribute": "data.school",
+          "attributeType": "SpellSchool"
+        },
+        {
+          "title": "Casting Time",
+          "type": "form",
+          "attribute": "data.activation",
+          "text": "{% include 'activation.md' data %}",
+          "form": {
+            "title":  "Spell Casting Time",
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Time",
+                    "type": "number",
+                    "attribute": "time"
+                  }
+                ]
+              },
+              {
+                "title": "Unit",
+                "type": "picker",
+                "attribute": "unit",
+                "attributeType": "ActivationUnit",
+              },
+              {
+                "type": "group",
+                "visibleIf": "{{unit == 'reaction'}}",
+                "fields": [
+                  {
+                    "placeholder": "Condition",
+                    "type": "textArea",
+                    "attribute": "condition",
+                  }
+                ]
+              },
+            ]
+          }
+        },
+        {
+          "title": "Range",
+          "type": "form",
+          "text": "{% include 'spell-range.md' data %}",
+          "form": {
+            "title":  "Spell Range",
+            "sections": [
+              {
+                "title": "Range Type",
+                "type": "picker",
+                "attribute": "data.rangeType",
+                "attributeType": "SpellRange",
+              },
+              {
+                "type": "group",
+                "visibleIf": "{{ data.rangeType == nil or data.rangeType == 'range'}}",
+                "fields": [
+                  {
+                    "title": "Range (ft)",
+                    "type": "number",
+                    "attribute": "data.range",
+                  }
+                ]
+              },
+            ]
+          }
+        },
+        {
+          "title": "Area Effect",
+          "type": "form",
+          "text": "{{data.areaEffectSize|format|suffix: ' ft'}} {{data.areaEffectShape|map: 'AreaEffectShape'}}",
+          "form": {
+            "title":  "Spell Area Effect",
+            "sections": [
+              {
+                "title": "Shape",
+                "type": "picker",
+                "attribute": "data.areaEffectShape",
+                "attributeType": "AreaEffectShape",
+              },
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Size (ft)",
+                    "type": "decimal",
+                    "attribute": "data.areaEffectSize",
+                  }
+                ]
+              },
+            ]
+          }
+        },
+        {
+          "title": "Components",
+          "type": "form",
+          "text": "{{data.components|join: ', '}} {{data.componentsDetail|brackets}}",
+          "form": {
+            "title":  "Spell Components",
+            "sections": [
+              {
+                "title": "Components",
+                "type": "multiPicker",
+                "attribute": "data.components",
+                "attributeType": "SpellComponent",
+              },
+              {
+                "title": "Detail",
+                "visibleIf": "{%if 'M' in data.components %}true{% endif %}",
+                "fields": [
+                  {
+                    "placeholder": "Detail",
+                    "type": "textArea",
+                    "attribute": "data.componentsDetail"
+                  }
+                ]
+              },
+            ]
+          }
+        },
+        {
+          "title": "Duration",
+          "type": "form",
+          "text": "{% include 'spell-duration.md' data %}",
+          "form": {
+            "title":  "Spell Duration",
+            "sections": [
+              {
+                "title": "Type",
+                "type": "picker",
+                "attribute": "data.durationType",
+                "attributeType": "SpellDuration",
+              },
+              {
+                "type": "group",
+                "visibleIf": "{%if data.durationType == nil or data.durationType == 'concentration' or data.durationType == 'time' %}true{% endif %}",
+                "fields": [
+                  {
+                    "title": "Duration",
+                    "type": "number",
+                    "attribute": "data.duration",
+                  }
+                ]
+              },
+              {
+                "title": "Unit",
+                "type": "picker",
+                "visibleIf": "{%if data.durationType == nil or data.durationType == 'concentration' or data.durationType == 'time' %}true{% endif %}",
+                "attribute": "data.durationUnit",
+                "attributeType": "SpellDurationUnit",
+              },
+            ]
+          }
+        },
+        {
+          "title": "Ritual",
+          "type": "toggle",
+          "attribute": "data.ritual"
+        },
+        {
+          "title": "Classes",
+          "type": "tags",
+          "attribute": "data.classes",
+          "attributeType": "Class",
+        },
+      ]
+    },
+  ]
+}

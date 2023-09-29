@@ -1,0 +1,93 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Tradition or Type",
+          "attribute": "name"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Spell Attack",
+          "attribute": "spellAttack"
+        },
+        {
+          "title": "Spell DC",
+          "attribute": "spellDC"
+        },
+        {
+          "title": "Focus Points",
+          "type": "number",
+          "attribute": "focusPoints"
+        },
+      ]
+    },
+    {
+      "title": "Spells",
+      "type": "group",
+      "fields": [
+        {
+          "title": "10th",
+          "type": "text",
+          "attribute": "spells.10"
+        }, 
+        {
+          "title": "9th",
+          "type": "text",
+          "attribute": "spells.9"
+        },
+        {
+          "title": "8th",
+          "type": "text",
+          "attribute": "spells.8"
+        },
+        {
+          "title": "7th",
+          "type": "text",
+          "attribute": "spells.5"
+        },
+        {
+          "title": "6th",
+          "type": "text",
+          "attribute": "spells.6"
+        },
+        {
+          "title": "5th",
+          "type": "text",
+          "attribute": "spells.5"
+        },
+        {
+          "title": "4th",
+          "type": "text",
+          "attribute": "spells.4"
+        },
+        {
+          "title": "3rd",
+          "type": "text",
+          "attribute": "spells.3"
+        },
+        {
+          "title": "2nd",
+          "type": "text",
+          "attribute": "spells.2"
+        },
+        {
+          "title": "Cantrips",
+          "type": "text",
+          "attribute": "spells.cantrips"
+        },
+        {
+          "title": "Constant",
+          "type": "text",
+          "attribute": "spells.constant"
+        },
+      ]
+    }, 
+    
+  ]
+}

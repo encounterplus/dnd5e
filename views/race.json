@@ -1,0 +1,56 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    16
+  ],
+  "views": [
+    {
+      "style": "title",
+      "value": "{{name}}",
+      "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+    },
+    {
+      "type": "text",
+      "value": "{% include 'race-primary.md' %}"
+    },
+    {
+      "type": "spacer",
+      "height": 1
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "list",
+      "attribute": "data.traits",
+      "title": "{{name}} Traits",
+      "style": "heading2",
+      "views": [
+        {
+          "type": "text",
+          "value": "**{{name}}.** {{text}}"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ]
+}

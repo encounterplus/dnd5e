@@ -1,0 +1,454 @@
+{
+  "title": "Character",
+  // tabbed form
+  "tabs": [
+    // MAIN
+    {
+      "title": "Main",
+      "icon": "person",
+      "sections": [
+        {
+          "title": "Race",
+          "type": "group",
+          "fields": [
+            {
+              "type": "form",
+              "title": "{{data.race.name}}",
+              "attribute": "data.race",
+              "attributeType": "Race",
+              "custom": {
+                "map": {
+                  "size": "data.size",
+                  "speed": "data.speed",
+                  "traits": "data.traits"
+                }
+              },
+              "form": {
+                "title": "Race",
+                "partial": "character-race"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Class",
+          "type": "list",
+          "attribute": "data.classes",
+          "attributeType": "Class",
+          "listItemDetail": "{{level|ordinal|default: '1st'}} level",
+          "form": {
+            "title": "Class",
+            "partial": "character-class"
+          }
+        },
+        {
+          "title": "Feats",
+          "type": "group",
+          "fields": [
+            {
+              "title": "Feats",
+              "type": "multiPicker",
+              "attribute": "data.feats",
+              "attributeType": "Feat"
+            },
+          ]
+        },
+        {
+          "title": "Experience",
+          "type": "group",
+          "fields": [
+            {
+              "title": "Current XP",
+              "type": "number",
+              "attribute": "data.xp"
+            }
+          ]
+        },
+        {
+          "title": "Hit Points",
+          "type": "group",
+          "fields": [
+            {
+              "title": "Current HP",
+              "type": "number",
+              "attribute": "data.hpCurrent"
+            },
+            {
+              "title": "Temporary HP",
+              "type": "number",
+              "attribute": "data.hpTemporary"
+            },
+            {
+              "title": "Maximum HP",
+              "type": "number",
+              "attribute": "data.hpMaximum"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "fields": [
+            {
+              "title": "Armor Class",
+              "placeholder": "Default",
+              "type": "number",
+              "attribute": "data.ac"
+            },
+            {
+              "title": "Initiative Bonus",
+              "placeholder": "Default",
+              "type": "number",
+              "attribute": "data.initiativeBonus"
+            },
+            {
+              "title": "Proficiency Bonus",
+              "placeholder": "Default",
+              "type": "number",
+              "attribute": "data.proficiencyBonus"
+            },
+          ]
+        },
+        {
+          "title": "Actions",
+          "type": "list",
+          "attribute": "data.actions",
+          "form": {
+            "title": "Action",
+            "partial": "character-action"
+          }
+        }
+      ]
+    },
+    // ABILITIES, SKILLS
+    {
+      "title": "Abilities, Skills",
+      "icon": "flag.fill",
+      "sections": [
+        {
+          "title": "Abilities",
+          "type": "group",
+          "fields": [
+            {
+              "title": "STR",
+              "type": "form",
+              "attribute": "data.abilities.str",
+              "form": {
+                "title": "STR",
+                "partial": "character-ability"
+              }
+            },
+            {
+              "title": "DEX",
+              "type": "form",
+              "attribute": "data.abilities.dex",
+              "form": {
+                "title": "DEX",
+                "partial": "character-ability"
+              }
+            },
+            {
+              "title": "CON",
+              "type": "form",
+              "attribute": "data.abilities.con",
+              "form": {
+                "title": "CON",
+                "partial": "character-ability"
+              }
+            },
+            {
+              "title": "INT",
+              "type": "form",
+              "attribute": "data.abilities.int",
+              "form": {
+                "title": "INT",
+                "partial": "character-ability"
+              }
+            },
+            {
+              "title": "WIS",
+              "type": "form",
+              "attribute": "data.abilities.wis",
+              "form": {
+                "title": "WIS",
+                "partial": "character-ability"
+              }
+            },
+            {
+              "title": "CHA",
+              "type": "form",
+              "attribute": "data.abilities.cha",
+              "form": {
+                "title": "CHA",
+                "partial": "character-ability"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Skills",
+          "type": "list",
+          "attribute": "data.skills",
+          "attributeType": "Skill",
+          "listItemTitle": "{{key|map: 'Skill'}}",
+          "form": {
+            "title": "{{key|map: 'Skill'}}",
+            "partial": "character-skill"
+          },
+          "custom": {
+            "editable": false,
+          }
+        },
+        {
+          "type": "group",
+          "fields": [
+            {
+              "title": "Speed",
+              "type": "form",
+              "text": "{% include \"movement.md\" %}",
+              "attribute": "data.speed",
+              "form": {
+                "partial": "movement"
+              }
+            },
+            {
+              "title": "Senses",
+              "type": "form",
+              "text": "{% include \"senses.md\" %}",
+              "form": {
+                "partial": "senses"
+              }
+            },
+          ]
+        },
+        {
+          "type": "group",
+          "fields": [
+            {
+              "title": "Passive Perception",
+              "type": "number",
+              "attribute": "data.passivePerception",
+            },
+            {
+              "title": "Passive Investigation",
+              "type": "number",
+              "attribute": "data.passiveInvestigation",
+            },
+            {
+              "title": "Passive Insight",
+              "type": "number",
+              "attribute": "data.passiveInsight",
+            },
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Proficiencies",
+          "fields": [
+            {
+              "title": "Armor",
+              "type": "multiPicker",
+              "attribute": "data.armorProficiencies",
+              "attributeType": "Armor"
+            },
+            {
+              "title": "Weapons",
+              "type": "multiPicker",
+              "attribute": "data.weaponProficiencies",
+              "attributeType": "Weapon"
+            },
+            {
+              "title": "Tools",
+              "type": "multiPicker",
+              "attribute": "data.toolProficiencies",
+              "attributeType": "Tool"
+            },
+            {
+              "title": "Languages",
+              "type": "multiPicker",
+              "attribute": "data.languages",
+              "attributeType": "Language"
+            },
+          ]
+        },
+      ]
+    },
+    // INVENTORY
+    {
+      "title": "Inventory",
+      "icon": "archivebox",
+      "sections": [
+        {
+          "type": "group",
+          "title": "Currency: {% eval %} ({{data.currency.cp|default: 0}} / 100) + ({{data.currency.sp|default: 0}} / 10) + ({{data.currency.ep|default: 0}} / 2) + {{data.currency.gp|default: 0}} + ({{data.currency.pp|default: 0}} * 10) {% endeval %} gp",
+          "fields": [
+            {
+              "type": "hStack",
+              "fields": [
+                {
+                  "title": "Copper",
+                  "placeholder": "—",
+                  "type": "number",
+                  "alignment": "top",
+                  "attribute": "data.currency.cp",
+                },
+                {
+                  "title": "Silver",
+                  "placeholder": "—",
+                  "type": "number",
+                  "alignment": "top",
+                  "attribute": "data.currency.sp",
+                },
+                {
+                  "title": "Electrum",
+                  "placeholder": "—",
+                  "type": "number",
+                  "alignment": "top",
+                  "attribute": "data.currency.ep",
+                },
+                {
+                  "title": "Gold",
+                  "placeholder": "—",
+                  "type": "number",
+                  "alignment": "top",
+                  "attribute": "data.currency.gp",
+                },
+                {
+                  "title": "Platinum",
+                  "placeholder": "—",
+                  "type": "number",
+                  "alignment": "top",
+                  "attribute": "data.currency.pp",
+                },
+              ]
+            },
+            
+          ]
+        },
+        {
+          "title": "Items",
+          "type": "list",
+          "attribute": "data.items",
+          "attributeType": "Item",
+          "listItemDetail": "{{definition.detail}}",
+          "form": {
+            "title": "Item",
+            "partial": "character-item"
+          }
+        },
+      ]
+    },
+    // SPELLS
+    {
+      "title": "Spells",
+      "icon": "bolt",
+      "sections": [
+        {
+          "type": "group",
+          "title": "Spell Slots",
+          "fields": [
+            {
+              "type": "hStack",
+              "fields": [
+                {
+                  "title": "1st",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.1.available"
+                },
+                {
+                  "title": "2nd",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.2.available"
+                },
+                {
+                  "title": "3rd",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.3.available"
+                },
+                {
+                  "title": "4th",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.4.available"
+                },
+                {
+                  "title": "5th",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.5.available"
+                },
+                {
+                  "title": "6th",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.6.available"
+                },
+                {
+                  "title": "7th",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.7.available"
+                },
+                {
+                  "title": "8th",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "data.spellSlots.8.available"
+                },
+                {
+                  "title": "9th",
+                  "placeholder": "—",
+                  "alignment": "top",
+                  "type": "number",
+                  "attribute": "sdata.spellSlots.9.available"
+                }
+              ]
+            },
+          ]
+        },
+        {
+          "title": "Pact Magic",
+          "type": "group",
+          "fields": [
+            {
+              "title": "Spell Slots",
+              "type": "number",
+              "attribute": "data.pactMagic.available"
+            },
+            {
+              "title": "Spell Level",
+              "type": "number",
+              "attribute": "data.pactMagic.level"
+            }
+          ]
+        },
+        {
+          "title": "Spells",
+          "type": "list",
+          "attribute": "data.spells",
+          "attributeType": "Spell",
+          "custom": {
+            "map": {
+              "level": "data.level"
+            }
+          },
+          "listItemDetail": "{{definition.detail}}",
+          "form": {
+            "title": "Spell",
+            "partial": "character-spell"
+          }
+        },
+      ]
+    }
+  ]
+}

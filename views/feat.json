@@ -1,0 +1,46 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    16
+  ],
+  "views": [
+    {
+      "type": "vStack",
+      "spacing": -1,
+      "views": [
+        {
+          "style": "title",
+          "value": "{{name}}",
+          "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+        },
+        {
+          "style": "subtitle",
+          "value": "{{data.prerequisite|prefix: 'Prerequisite: '}}",
+        },
+      ]
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "title": "Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ]
+}

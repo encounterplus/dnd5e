@@ -1,0 +1,42 @@
+{
+  "title": "Background",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Skill Proficiencies",
+          "type": "multiPicker",
+          "attribute": "data.skills",
+          "attributeType": "Skill"
+        },
+        {
+          "title": "Tool Proficiencies",
+          "type": "multiPicker",
+          "attribute": "data.tools",
+          "attributeType": "Tool"
+        },
+        {
+          "title": "Languages",
+          "type": "multiPicker",
+          "attribute": "data.languages",
+          "attributeType": "Language"
+        },
+        {
+          "title": "Equipment",
+          "type": "textArea",
+          "attribute": "data.value"
+        }
+      ]
+    },
+    {
+      "title": "Entries",
+      "type": "list",
+      "attribute": "data.entries",
+      "form": {
+        "title": "Background Entry",
+        "partial": "monster-feature"
+      }
+    },
+  ]
+}

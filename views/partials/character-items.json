@@ -1,0 +1,56 @@
+{
+  "views": [
+    {
+      "type": "hStack",
+      "views": [
+        {
+          "value": "WEIGHT CARRIED: Unknown",
+          "style": "sheet-item-detail"
+        },
+        {
+          "value": "CURRENCY: {{data.currency.total|default: 0}} GP",
+          "alignment": "trailing",
+          "style": "sheet-item-detail"
+        }
+      ]
+    },
+    {
+      "type": "divider",
+      "padding": [0]
+    },
+    {
+      "style": "heading3",
+      "value": "Equipment",
+    },
+    {
+      "type": "hStack",
+      "alignment": "leading",
+      "spacing": 2,
+      "views": [
+        {
+          "type": "spacer",
+          "width": 35,
+        },
+        {
+          "value": "ITEM",
+          "style": "sheet-label",
+        },
+        {
+          "value": "QTY",
+          "style": "sheet-label",
+          "alignment": "center",
+          "width": 30,
+        },
+      ]
+    },
+    {
+      "type": "divider",
+      "padding": [0],
+    },
+    {
+      "type": "partial",
+      "value": "character-item-group",
+      "attribute": "data"
+    }
+  ]
+}

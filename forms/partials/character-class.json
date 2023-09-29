@@ -1,0 +1,87 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Level",
+          "type": "number",
+          "attribute": "level",
+        },
+        {
+          "title": "Subclass",
+          "type": "picker",
+          "attribute": "subclass",
+          "attributeType": "Subclass",
+          "filter": "data.class == '{{name}}'"
+        }
+      ]
+    },
+    {
+      "title": "Features",
+      "type": "list",
+      "attribute": "features",
+      "listItemDetail": "{{level|ordinal}} level{{subclass|prefix:' • '}}{% if optional %} • Optional{% endif %}",
+      "custom": {
+        "extendedType": "dnd5eClassFeaturePicker"
+      },
+      "form": {
+        "title": "Class Feature",
+        "partial": "class-feature"
+      }
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Cast Spells",
+          "type": "toggle",
+          "attribute": "castSpells",
+        },
+        {
+          "title": "Prepare Spells",
+          "type": "toggle",
+          "attribute": "prepareSpells",
+        },
+        {
+          "title": "Spellcasting Ability",
+          "type": "picker",
+          "attribute": "spellcastingAbility",
+          "attributeType": "Ability"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Reference",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+          "attributeType": "Class"
+        },
+      ]
+    },
+  ]
+}

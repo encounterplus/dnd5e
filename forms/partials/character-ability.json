@@ -1,0 +1,49 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "title": "Ability Score",
+      "fields": [
+        {
+          "title": "Base Value",
+          "type": "number",
+          "placeholder": "8",
+          "attribute": "base"
+        },
+        {
+          "title": "Other Bonus",
+          "type": "number",
+          "attribute": "otherBonus"
+        },
+        {
+          "title": "Override Value",
+          "type": "number",
+          "attribute": "value"
+        },
+      ]
+    },
+    {
+      "title": "Saving Throw",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Other Bonus",
+          "type": "number",
+          "attribute": "savingThrow.otherBonus"
+        },
+        {
+          "title": "Override Bonus",
+          "type": "number",
+          "attribute": "savingThrow.bonus"
+        },
+        {
+          "title": "Proficiency Level",
+          "type": "picker",
+          "placeholder": "None",
+          "attribute": "savingThrow.proficiency",
+          "attributeType": "ProficiencyLevel"
+        },
+      ]
+    },
+  ]
+}

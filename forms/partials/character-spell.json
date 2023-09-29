@@ -1,0 +1,75 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Source",
+          "attribute": "source",
+        },
+        {
+          "title": "Prepared",
+          "type": "toggle",
+          "attribute": "prepared",
+        },
+        {
+          "title": "Always Prepared",
+          "type": "toggle",
+          "attribute": "alwaysPrepared",
+        },
+        {
+          "title": "Spell Slot",
+          "type": "toggle",
+          "attribute": "spellSlot",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Count as Know Spell",
+          "type": "toggle",
+          "attribute": "countsAsKnownSpell",
+        },
+        {
+          "title": "Cast only as Ritual",
+          "type": "toggle",
+          "attribute": "castOnlyAsRitual",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Reference",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+          "attributeType": "Class"
+        },
+      ]
+    },
+  ]
+}

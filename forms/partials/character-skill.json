@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "title": "Skill",
+      "fields": [
+        {
+          "title": "Other Bonus",
+          "type": "number",
+          "attribute": "bonus"
+        },
+        {
+          "title": "Override Value",
+          "type": "number",
+          "attribute": "value"
+        },
+        {
+          "title": "Proficiency Level",
+          "type": "picker",
+          "placeholder": "None",
+          "attribute": "proficiency",
+          "attributeType": "ProficiencyLevel"
+        },
+        {
+          "title": "Custom Ability",
+          "type": "picker",
+          "placeholder": "Default",
+          "attribute": "ability",
+          "attributeType": "Ability"
+        },
+      ]
+    }
+  ]
+}

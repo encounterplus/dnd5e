@@ -1,0 +1,106 @@
+{
+  "views": [
+    {
+      "type": "hStack",
+      "alignment": "center",
+      "spacing": 6,
+      "views": [
+        {
+          "type": "image",
+          "value": "{{definition.imagePath}}",
+          "imageResizeMode": "aspectFill",
+          "cornerRadius": 6,
+          "width": 34,
+          "height": 34,
+        },
+        {
+          "type": "image",
+          "value": "{% if definition.imagePath == nil %}/icons/attack/{{attackType}}.png{% endif %}",
+          "imageResizeMode": "aspectFill",
+          "cornerRadius": 6,
+          "width": 34,
+          "height": 34,
+          "color": "#999",
+          "custom": {
+            "renderingMode": "template"
+          }
+        },
+        {
+          "type": "vStack",
+          "spacing": 1,
+          "link": "{{reference}}",
+          "views": [
+            {
+              "value": "**{{name}}**",
+              "style": "sheet-item-title"
+            },
+            {
+              "value": "{{attackType|map: 'Attack'}} {% if activation.time %}• {{activation.time}}{{activation.unit|first|uppercase}}{% endif %} {{range|format|prefix: '• '|suffix: ' ft'}}",
+              "style": "sheet-item-detail"
+            },
+            {
+              "type": "text",
+              "value": "{{descr}}"
+            }
+          ]
+        },
+        {
+          "style": "sheet-value",
+          "value": "{{attack|formula|eval|signed}}",
+          "alignment": "center",
+          "width": 44,
+          "link": "/roll/d20 + {{attack|formula}}/{{name}}/attack",
+          "borderWidth": 1,
+          "borderColor": "#bbb",
+          "bgColor": "#ffffff99",
+          "cornerRadius": 6,
+          "padding": [4, 0]
+        },
+        {
+          "type": "vStack",
+          "spacing": 0,
+          "width": 44,
+          "alignment": "leading",
+          "hiddenIf": "{{attack}}",
+          "views": [
+            {
+              "style": "sheet-value",
+              "value": "{{savingThrow|trim|default: '0'}}",
+              "alignment": "center",
+              "width": 0,
+              "height": 16,
+            },
+            {
+              "style": "sheet-label-small",
+              "value": "{{ability|uppercase}}",
+              "alignment": "center",
+              "width": 0,
+              "height": 12,
+            },
+          ]
+        },
+        {
+          "type": "vStack",
+          "spacing": 0,
+          "width": 80,
+          "alignment": "leading",
+          "views": [
+            {
+              "style": "sheet-value",
+              "value": "{{damage|diceFormula}}",
+              "alignment": "center",
+              "width": -1,
+              "link": "/roll/{{damage|formula}}/{{name}}/damage",
+              "borderWidth": 1,
+              "borderColor": "#bbb",
+              "bgColor": "#ffffff99",
+              "cornerRadius": 6,
+              "padding": [4, 12]
+            },
+          ]
+        },
+        
+      ]
+    },
+  ]
+}

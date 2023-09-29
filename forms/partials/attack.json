@@ -1,0 +1,60 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Type",
+          "type": "picker",
+          "attribute": "type",
+          "attributeType": "Attack",
+          "defaultValue": "melee"
+        },
+        {
+          "title": "Actions",
+          "type": "picker",
+          "attribute": "actions",
+          "attributeType": "Action",
+          "defaultValue": "one"
+        },
+        {
+          "title": "Traits",
+          "type": "tags",
+          "attribute": "traits",
+          "attributeType": "Trait"
+        },
+      ]
+    },
+    {
+      "title": "Attack",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Attack",
+          "type": "textArea",
+          "attribute": "attack"
+        },
+      ]
+    },
+    {
+      "title": "Damage",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Damage",
+          "type": "textArea",
+          "attribute": "damage"
+        }
+      ]
+    }
+  ]
+}

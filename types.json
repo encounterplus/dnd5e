@@ -24,6 +24,17 @@
     "plant": "MonsterType.Plant",
     "undead": "MonsterType.Undead"
   },
+  "Alignment": {
+    "LG": "Alignment.LawfulGood",
+    "NG": "Alignment.NeutralGood",
+    "CG": "Alignment.ChaoticGood",
+    "LN": "Alignment.LawfulNeutral",
+    "NN": "Alignment.Neutral",
+    "CN": "Alignment.ChaoticNeutral",
+    "LE": "Alignment.LawfulEvil",
+    "NE": "Alignment.NeutralEvil",
+    "CE": "Alignment.ChaoticEvil"
+  },
   "Movement": {
     "burrow": "Movement.Burrow",
     "climb": "Movment.Climb",
@@ -66,12 +77,42 @@
     "8": "SpellLevel.8th-Level",
     "9": "SpellLevel.9th-Level"
   },
+  "SpellSlotLevel": {
+    "level1": "SpellSlotLevel.1st-Level",
+    "level2": "SpellSlotLevel.2nd-Level",
+    "level3": "SpellSlotLevel.3rd-Level",
+    "level4": "SpellSlotLevel.4th-Level",
+    "level5": "SpellSlotLevel.5th-Level",
+    "level6": "SpellSlotLevel.6th-Level",
+    "level7": "SpellSlotLevel.7th-Level",
+    "level8": "SpellSlotLevel.8th-Level",
+    "level9": "SpellSlotLevel.9th-Level"
+  },
+  "ActivationUnit": {
+    "action": "ActivationUnit.Action",
+    "bonusAction": "ActivationUnit.BonusAction",
+    "reaction": "ActivationUnit.Reaction",
+    "hour": "ActivationUnit.Hour",
+    "minute": "ActivationUnit.Minute"
+  },
   "SpellRange": {
     "self": "SpellRange.Self",
     "touch": "SpellRange.Touch",
-    "range": "SpellRange.Range",
     "sight": "SpellRange.Sight",
     "unlimited": "SpellRange.Unlimited"
+  },
+  "SpellDuration": {
+    "concentration": "SpellDuration.Concentration",
+    "instantaneous": "SpellDuration.Instantaneous",
+    "special": "SpellDuration.Special",
+    "dispel": "SpellDuration.Dispel",
+    "dispelOrTrigger": "SpellDuration.DispelOrTrigger"
+  },
+  "SpellDurationUnit": {
+    "round": "SpellDurationUnit.Round",
+    "minute": "SpellDurationUnit.Minute",
+    "hour": "SpellDurationUnit.Hour",
+    "day": "SpellDurationUnit.Day"
   },
   "SpellComponent": {
     "V": "SpellComponent.Verbal",
@@ -138,6 +179,11 @@
     "sylvan": "Language.Sylvan",
     "undercommon": "Language.Undercommon"
   },
+  "Attack": {
+    "melee": "Attack.Melee",
+    "ranged": "Attack.Ranged",
+    "spell": "Attack.Spell",
+  },
   "Damage": {
     "acid": "Damage.Acid",
     "bludgeoning": "Damage.Bludgeoning",
@@ -182,7 +228,7 @@
     "equipmentPack": "ItemType.EquipmentPack",
     "tradeGood": "ItemType.TradeGood"
   },
-  "ItemCategory": {
+  "ItemTypeCategory": {
     "armor": "ItemCategory.Armor",
     "weapon": "ItemCategory.Weapon",
     "item": "ItemCategory.Item",
@@ -226,7 +272,17 @@
     "weapon": "ProficiencyCategory.Weapon",
     "tool": "ProficiencyCategory.Tool"
   },
-  "Vehicle": {
+  "ProficiencyLevel": {
+    "half": "ProficiencyLevel.Half",
+    "proficient": "ProficiencyLevel.Proficient",
+    "expertise": "ProficiencyLevel.Expertise"
+  },
+  "ProficiencyLevelIcon": {
+    "half": "circle.righthalf.filled",
+    "proficient": "circle.fill",
+    "expertise": "circle.tophalf.filled",
+  },
+  "VehicleType": {
     "ship": "Vehicle.Ship",
     "spelljammerShip": "Vehicle.SpelljammerShip",
     "infernalWarMachine": "Vehicle.InfernalWarMachine"
@@ -250,6 +306,62 @@
     "condition": "ConditionType.Condition",
     "disease": "ConditionType.Disease",
     "other": "ConditionType.Other"
+  },
+  "CharacterSection": {
+    "abilities": "Abilities",
+    "skills": "Skills",
+    "actions": "Actions",
+    "spells": "Spells",
+    "items": "Items",
+    "features": "Features",
+    "other": "Other",
+  },
+  "CharacterSectionIcon": {
+    "abilities": "flag.fill",
+    "skills": "person.fill",
+    "actions": "figure.archery",
+    "spells": "bolt.fill",
+    "items": "archivebox.fill",
+    "features": "list.bullet",
+    "other": "note.text",
+  },
+  "HitDie": {
+    "6": "HitDie.D6",
+    "8": "HitDie.D8",
+    "10": "HitDie.D10",
+    "12": "HitDie.D12",
+  },
+  "ChallengeRatingToXP": {
+    "0": 10,
+    "1/8": 25,
+    "1/4": 50,
+    "1/2": 100,
+    "1": 200,
+    "2": 450,
+    "3": 700,
+    "4": 1100,
+    "5": 1800,
+    "6": 2300,
+    "7": 2900,
+    "8": 3900,
+    "9": 5000,
+    "10": 5900
+  },
+  "ProficiencyBonus": {
+    "0": 2,
+    "1/8": 2,
+    "1/4": 2,
+    "1/2": 2,
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 4,
+    "10": 4
   },
   "SkillsToAbilities": {
     "acrobatics": "dex",

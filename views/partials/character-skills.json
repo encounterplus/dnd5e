@@ -1,0 +1,78 @@
+{
+  "views": [
+    {
+      "style": "heading3",
+      "value": "Skills",
+    },
+    {
+      "type": "table",
+      "attribute": "data.skills",
+      "attributeType": "Skill",
+      "alignment": "leading",
+      "views": [
+        {
+          "type": "tableRow",
+          "views": [
+            {
+              "value": "PROF",
+              "style": "sheet-label",
+              "alignment": "center",
+              "width": 34,
+            },
+            {
+              "value": "MOD",
+              "style": "sheet-label",
+              "alignment": "center", 
+              "width": 40,
+            },
+            {
+              "value": "SKILL",
+              "style": "sheet-label"
+            },
+          ]
+        },
+        {
+          "type": "tableRow",
+          "views": [
+            {
+              "type": "checkbox",
+              "attribute": "value.proficiency",
+              "width": -1,
+              "action": {},
+              "custom": {
+                "checkboxStyle": {
+                  "default": {
+                    "icon": "circle",
+                    "tintColor": "#aaa",
+                    "size": 10,
+                  },
+                  "proficient": {
+                    "icon": "circle.fill",
+                    "size": 10,
+                  },
+                  "half": {
+                    "icon": "circle.lefthalf.filled",
+                    "size": 10,
+                  },
+                  "expertise": {
+                    "icon": "diamond.fill",
+                    "size": 9
+                  },
+                }
+              }
+            },
+            {
+              "value": "**{{value.value|default: 0|signed}}**",
+              "style": "body-muted",
+              "width": -1,
+              "link": "/roll/d20{{value.value|default: 0|signed}}/{{key|map: 'Skill'}}/check"
+            },
+            {
+              "value": "**{{key|map: 'Skill'}}** {{value.ability|map: 'SkillsToAbilities'|uppercase|brackets}}",
+            }
+          ]
+        },
+      ]
+    }, 
+  ]
+}

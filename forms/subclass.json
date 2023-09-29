@@ -1,0 +1,26 @@
+{
+  "title": "Subclass",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Class",
+          "type": "picker",
+          "attribute": "data.class",
+          "attributeType": "Class"
+        },
+      ]
+    },
+    {
+      "title": "Features",
+      "type": "list",
+      "attribute": "data.features",
+      "listItemDetail": "{{level|ordinal}} level{% if optional %} • Optional{% endif %}",
+      "form": {
+        "title": "Feature",
+        "partial": "class-feature"
+      }
+    }
+  ]
+}

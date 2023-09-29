@@ -5,10 +5,72 @@
   "dividerColor": "#cccccc",
   "bgColor": "#ffffff",
   "bgImage": "/images/paper.png",
-  "styles": {
+  "statBlockStyles": {
+    "default": {
+      "bgImage": "/images/paper3.png",
+      "topImage": "/images/top.png",
+      "bottomImage": "/images/bottom.png",
+      "barImage": "/images/bar.jpg"
+    }
+  },
+  "blockQuoteStyles": {
+    "default": {
+      "padding": [10],
+      "bgColor": "#58180D1A",
+      "borderColor": "#000000",
+      "borderWidth": 3,
+      "borderStyle": "arrows",
+    },
+  },
+  "buttonStyles": {
+    "default": {
+      "color": "#58180D",
+      "borderWidth": 1,
+      "cornerRadius": 8,
+    },
+    "prominent": {
+      "color": "#fff",
+      "bgColor": "#58180D",
+      "cornerRadius": 8,
+    },
+    "light": {
+      "color": "#555",
+      "bgColor": "#fff",
+      "borderColor": "#bbb",
+      "cornerRadius": 8,
+      "body": {
+        "font": "AvenirNextCondensed-Bold",
+        "size": 14,
+        "alignment": "center"
+      }
+    },
+    "plain": {
+      "color": "#555",
+      "body": {
+        "font": "NotoSans",
+        "size": 15,
+        "alignment": "center"
+      }
+    }
+  },
+  "checkboxStyles": {
+    "default": {
+      "tintColor": "#999",
+      "icon": "square",
+    },
+    "checked": {
+      "primaryColor": "#999",
+      "tintColor": "#58180D",
+      "icon": "square.inset.filled",
+    },
+  },
+  "textStyles": {
     "body": {
       "font": "NotoSans",
       "size": 14
+    },
+    "body-muted": {
+      "color": "#808080",
     },
     "label": {
       "font": "NotoSans",
@@ -31,6 +93,84 @@
       "caps": true,
       "size": 18
     },
+    "stats-body": {
+      "font": "NotoSans",
+      "color": "#58180D",
+      "size": 14
+    },
+    "stats-ability": {
+      "font": "NotoSans",
+      "color": "#58180D",
+      "alignment": "center",
+      "size": 14
+    },
+    "stats-section": {
+      "font": "NotoSans",
+      "color": "#58180D",
+      "caps": true,
+      "divider": true,
+      "size": 18
+    },
+    "hp-current": {
+      "font": "NotoSans",
+      "color": "#000000",
+      "size": 28
+    },
+    "hp-max": {
+      "font": "NotoSans",
+      "color": "#000000",
+      "size": 18
+    },
+    "sheet-field-title": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#808080",
+      "size": 14
+    },
+    "sheet-label": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#808080",
+      "size": 14
+    },
+    "sheet-label-small": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#808080",
+      "size": 10
+    },
+    "sheet-label-xsmall": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#808080",
+      "size": 8
+    },
+    "sheet-field-value": {
+      "font": "NotoSans",
+      "color": "#000000",
+      "size": 24
+    },
+    "sheet-item-title": {
+      "font": "NotoSans",
+      "color": "#000000",
+      "size": 14
+    },
+    "sheet-item-detail": {
+      "font": "NotoSans",
+      "color": "#808080",
+      "size": 13
+    },
+    "sheet-value": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#555",
+      "size": 15
+    },
+    "sheet-value-medium": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#555",
+      "size": 16
+    },
+    "sheet-value-large": {
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#555",
+      "size": 17
+    },
     "heading": {
       "font": "HoeflerText-Regular",
       "color": "#58180D",
@@ -40,7 +180,7 @@
       "font": "HoeflerText-Regular",
       "color": "#58180D",
       "caps": true,
-      "size": 26
+      "size": 25
     },
     "heading2": {
       "font": "HoeflerText-Regular",
@@ -67,9 +207,9 @@
       "size": 17
     },
     "heading6": {
-      "font": "HoeflerText-Regular",
-      "color": "#58180D",
-      "size": 15
+      "font": "AvenirNextCondensed-Bold",
+      "color": "#808080",
+      "size": 14
     },
     "footer": {
       "font": "Baramond-Italic",

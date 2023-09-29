@@ -1,0 +1,41 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Actions",
+          "type": "picker",
+          "attribute": "actions",
+          "attributeType": "Action"
+        },
+        {
+          "title": "Traits",
+          "type": "tags",
+          "attribute": "data.traits",
+          "attributeType": "Trait"
+        }, 
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "text"
+        }
+      ]
+    }
+  ]
+}

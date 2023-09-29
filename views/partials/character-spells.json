@@ -1,0 +1,159 @@
+{
+  "views": [
+    {
+      "style": "heading3",
+      "value": "Spellcasting",
+    },
+    {
+      "type": "list",
+      "attribute": "data.classes",
+      "alignment": "leading",
+      "divider": true,
+      "views": [
+        {
+          "type": "hStack",
+          "alignment": "center",
+          "views": [
+            {
+              "type": "vStack",
+              "spacing": 0,
+              "alignment": "bottom",
+              "views": [
+                {
+                  "value": "{{name|uppercase}}",
+                  "style": "sheet-value-medium",
+                  "width": -1
+                },
+                {
+                  "value": "LEVEL {{level|default: 1}} • {{spellcastingAbility|map: 'Ability'|uppercase}}",
+                  "style": "sheet-item-detail",
+                }
+              ]
+            }, 
+            {
+              "type": "vStack",
+              "spacing": 2,
+              "width": 50,
+              "alignment": "leading",
+              "link": "/roll/d20 + {{spellAttack}}/Spell/attack",
+              "views": [ 
+                {
+                  "style": "sheet-value-large",
+                  "value": "{{spellAttack|default: 0|signed}}",
+                  "alignment": "center",
+                  "width": 0,
+                  "height": 18,
+                },
+                {
+                  "style": "sheet-label-small",
+                  "value": "SPELL ATK",
+                  "alignment": "center",
+                  "width": 0,
+                  "height": 12,
+                },
+              ]
+            },
+            {
+              "type": "vStack",
+              "spacing": 2,
+              "width": 50,
+              "alignment": "leading",
+              "views": [
+                {
+                  "style": "sheet-value-large",
+                  "value": "{{spellDC}}",
+                  "alignment": "center",
+                  "width": 0,
+                  "height": 18,
+                },
+                {
+                  "style": "sheet-label-small",
+                  "value": "SPELL DC",
+                  "alignment": "center",
+                  "width": 0,
+                  "height": 12,
+                },
+              ]
+            },
+          ]
+        },
+      ]
+    },
+    {
+      "type": "divider",
+      "padding": [4, 0],
+    },
+    {
+      "type": "list",
+      "attribute": "data.spellbook",
+      "views": [
+        {
+          "type": "hStack",
+          "alignment": "center",
+          "spacing": 3,
+          "views": [
+            {
+              "value": "{{level|map: 'SpellLevel'}}",
+              "style": "heading4",
+            },
+            {
+              "value": "SLOTS",
+              "style": "sheet-item-detail",
+              "width": -1,
+            },
+            {
+              "type": "checkboxGroup",
+              "attribute": "spellSlots.used",
+              "custom": {
+                "range": {
+                  "max": "spellSlots.available"
+                },
+              },
+              "action": {
+                "attribute": "data.spellSlots.{{level}}.used"
+              }
+            },
+          ]
+        },
+        {
+          "type": "hStack",
+          "alignment": "leading",
+          "spacing": 2,
+          "views": [
+            {
+              "value": "SPELL",
+              "style": "sheet-label",
+            },
+            {
+              "value": "PREP",
+              "style": "sheet-label",
+              "alignment": "center",
+              "width": 50,
+            },
+            {
+              "value": "ACTION",
+              "style": "sheet-label",
+              "alignment": "center",
+              "width": 60,
+            },
+          ]
+        },
+        {
+          "type": "divider",
+          "padding": [0],
+        },
+        {
+          "type": "list",
+          "attribute": "spells",
+          "divider": true,
+          "views": [
+            {
+              "type": "partial",
+              "value": "character-spell",
+            }
+          ]
+        }
+      ]
+    },
+  ]
+}

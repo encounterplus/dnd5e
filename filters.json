@@ -1,45 +1,47 @@
-[
-  {
-    "entity": "Monster",
+{
+  "Monster": {
     "params": [
       {
-        "attribute": "size",
+        "attribute": "data.size",
         "attributeType": "Size",
-        "title": "Monster.Size"
+        "title": "Size"
       },
       {
-        "attribute": "type",
+        "attribute": "data.type",
         "attributeType": "MonsterType",
-        "title": "Monster.Type"
+        "title": "Type"
       },
       {
-        "attribute": "alignment",
-        "title": "Monster.Alignment",
+        "attribute": "data.alignment",
+        "title": "Alignment",
         "dynamic": true
       },
       {
-        "attribute": "environments",
+        "attribute": "data.environments",
         "attributeType": "Environment",
-        "title": "Monster.Environment"
+        "title": "Environment"
       },
       {
         "attribute": "source",
-        "title": "Monster.Source",
+        "title": "Source",
         "dynamic": true
       }
     ],
     "group": [
       {
-        "attribute": "cr",
-        "title": "Monster.CR"
+        "attribute": "data.cr",
+        "attributeType": "ChallengeRating",
+        "text": "CR {{value}} ({{value|map:'ChallengeRatingToXP', '0'}} XP)",
+        "title": "CR"
       },
       {
-        "attribute": "type",
-        "title": "Monster.Type"
+        "attribute": "data.type",
+        "attributeType": "MonsterType",
+        "title": "Type"
       },
       {
         "attribute": "name",
-        "title": "Monster.Name"
+        "title": "Name"
       }
     ],
     "sort": [
@@ -48,150 +50,175 @@
         "title": "Monster.Name"
       },
       {
-        "attribute": "cr",
-        "title": "Monster.CR"
+        "attribute": "data.cr",
+        "title": "CR",
+        "text": "{{value|valueMap:'ChallengeRatingToXP'}}",
       }
     ]
   },
-  {
-    "entity": "Spell",
+  "Spell": {
     "params": [
       {
-        "attribute": "school",
+        "attribute": "data.school",
         "attributeType": "SpellSchool",
-        "title": "Spell.School"
+        "title": "School"
       },
       {
-        "attribute": "level",
+        "attribute": "data.level",
         "attributeType": "SpellLevel",
-        "title": "Spell.Level"
+        "title": "Level"
       },
       {
-        "attribute": "class",
-        "title": "Spell.Class",
+        "attribute": "data.classes",
+        "title": "Class",
         "dynamic": true
       },
       {
-        "attribute": "ritual",
-        "title": "Spell.Ritual"
+        "attribute": "data.ritual",
+        "title": "Ritual"
       },
       {
-        "attribute": "duration",
+        "attribute": "data.durationType",
         "attributeType": "SpellDuration",
-        "title": "Spell.Duration"
+        "title": "Duration"
       },
       {
-        "attribute": "rangeType",
+        "attribute": "data.rangeType",
         "attributeType": "SpellRange",
-        "title": "Spell.Range"
+        "title": "Range"
       },
       {
-        "attribute": "areaEffectShape",
+        "attribute": "data.areaEffectShape",
         "attributeType": "AreaEffectShape",
-        "title": "Spell.AreaEffect"
+        "title": "AreaEffect"
       },
       {
         "attribute": "source",
-        "title": "Spell.Source",
+        "title": "Source",
         "dynamic": true
       }
     ],
     "group": [
       {
-        "attribute": "school",
+        "attribute": "data.school",
         "attributeType": "SpellSchool",
-        "title": "Spell.School"
+        "title": "School"
       },
       {
-        "attribute": "level",
-        "attributeType": "SpellLevel",
-        "title": "Spell.Level"
+        "attribute": "data.level",
+        "text": "{% if value == '0' %}Cantrip{% else %}{{value|ordinal}} Level{% endif %}",
+        "title": "Level"
+      },
+      {
+        "attribute": "source",
+        "title": "Source"
       },
       {
         "attribute": "name",
-        "title": "Spell.Name"
+        "title": "Name"
       }
     ],
     "sort": [
       {
         "attribute": "name",
-        "title": "Spell.Name"
+        "title": "Name"
       },
       {
-        "attribute": "level",
-        "title": "Spell.Level"
+        "attribute": "data.level",
+        "title": "Level"
       }
     ]
   },
-  {
-    "entity": "Item",
+  "Item": {
     "params": [
       {
-        "attribute": "type",
+        "attribute": "data.type",
         "attributeType": "ItemType",
-        "title": "Item.Type"
+        "title": "Type"
       },
       {
-        "attribute": "rarity",
+        "attribute": "data.rarity",
         "attributeType": "ItemRarity",
-        "title": "Item.Rarity"
+        "title": "Rarity"
       },
       {
-        "attribute": "attunement",
-        "title": "Item.Ritual"
+        "attribute": "data.attunement",
+        "title": "Ritual"
       },
       {
         "attribute": "source",
-        "title": "Item.Source",
+        "title": "Source",
         "dynamic": true
       }
     ],
     "group": [
       {
-        "attribute": "type",
+        "attribute": "data.type",
         "attributeType": "ItemType",
-        "title": "Item.Type"
+        "title": "Type"
       },
       {
         "attribute": "name",
-        "title": "Item.Name"
+        "title": "Name"
       }
     ]
   },
-  {
-    "entity": "Feat",
+  "Feat": {
     "params": [
       {
         "attribute": "source",
-        "title": "Feat.Source",
+        "title": "Source",
         "dynamic": true
       }
     ]
   },
-  {
-    "entity": "Condition",
+  "Subclass": {
     "params": [
       {
-        "attribute": "type",
-        "attributeType": "Condition",
-        "title": "Condition.Type"
+        "attribute": "data.class",
+        "title": "Class",
+        "dynamic": true
       },
       {
         "attribute": "source",
-        "title": "Condition.Source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "data.class",
+        "title": "Class",
+      },
+      {
+        "attribute": "name",
+        "title": "Name"
+      }
+    ]
+  },
+  "Condition": {
+    "params": [
+      {
+        "attribute": "type",
+        "attributeType": "ConditionType",
+        "title": "Type"
+      },
+      {
+        "attribute": "source",
+        "title": "Source",
         "dynamic": true
       }
     ],
     "group": [
       {
         "attribute": "type",
-        "attributeType": "Condition",
-        "title": "Condition.Type"
+        "attributeType": "ConditionType",
+        "title": "Type"
       },
       {
         "attribute": "source",
-        "title": "Condition.Source"
+        "title": "Source"
       }
     ]
   }
-]
+}

@@ -1,0 +1,92 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Container",
+          "type": "toggle",
+          "attribute": "container",
+        },
+        {
+          "title": "Ignore Weight",
+          "type": "toggle",
+          "attribute": "ignoreWeight",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Quantity",
+          "placeholder": "1",
+          "type": "number",
+          "attribute": "quantity",
+        },
+        {
+          "title": "Charges",
+          "type": "number",
+          "attribute": "charges",
+        },
+      ]
+    },
+    {
+      "title": "Items",
+      "type": "list",
+      "attribute": "items",
+      "attributeType": "Item",
+      "form": {
+        "title": "Item",
+        "partial": "character-item"
+      }
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Equipped",
+          "type": "toggle",
+          "attribute": "equipped",
+        },
+        {
+          "title": "Attuned",
+          "type": "toggle",
+          "attribute": "attuned",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Reference",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+          "attributeType": "Item"
+        },
+      ]
+    },
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "padding": [
+    16
+  ],
+  "views": [
+    {
+      "type": "vStack",
+      "spacing": -1,
+      "views": [
+        {
+          "style": "title",
+          "value": "{{name}}",
+          "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+        },
+      ]
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "value": "{% include 'class-primary.md' %}",
+    },
+    {
+      "type": "list",
+      "attribute": "data.features",
+      "views": [
+        {
+          "type": "text",
+          "value": "## {{name}}\n\n{{text}}"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "title": "Subclasses {{name}}",
+      "custom": {
+        "query": {
+          "entity": "Subclass"
+        },
+        "filter": "data.class == '{{name}}'"
+      },
+      "views": [
+        {
+          "type": "disclosureGroup",
+          "title": "{{name}}",
+          "value": "{{sourceFormatted}}",
+          "padding": [4, 0],
+          "views": [
+            {
+              "type": "text",
+              "value": "{% for feature in data.features %}### {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
+    }
+  ]
+}

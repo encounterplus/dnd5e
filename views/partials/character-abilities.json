@@ -1,0 +1,287 @@
+{
+    "views": [
+      {
+        "style": "heading3",
+        "value": "Ability Scores",
+        "padding": [2, 0]
+      },
+      {
+        "type": "hStack",
+        "alignment": "center",
+        "spacing": 8,
+        "views": [
+          {
+            "type": "partial",
+            "value": "character-ability",
+            "attribute": "data.abilities.str",
+          },
+          {
+            "type": "partial",
+            "value": "character-ability",
+            "attribute": "data.abilities.dex",
+          },
+          {
+            "type": "partial",
+            "value": "character-ability",
+            "attribute": "data.abilities.con",
+          },
+        ]
+      },
+      {
+        "type": "hStack",
+        "alignment": "center",
+        "spacing": 8,
+        "views": [
+          {
+            "type": "partial",
+            "value": "character-ability",
+            "attribute": "data.abilities.int",
+          },
+          {
+            "type": "partial",
+            "value": "character-ability",
+            "attribute": "data.abilities.wis",
+          },
+          {
+            "type": "partial",
+            "value": "character-ability",
+            "attribute": "data.abilities.cha",
+          },
+        ]
+      },
+      {
+        "style": "heading3",
+        "value": "Saving Throws",
+      },
+      {
+        "type": "table",
+        "attribute": "data.abilities",
+        "attributeType": "Ability",
+        "alignment": "leading",
+        "views": [
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "PROF",
+                "style": "sheet-label",
+                "alignment": "center",
+                "width": 34,
+              },
+              {
+                "value": "MOD",
+                "style": "sheet-label",
+                "alignment": "center", 
+                "width": 40,
+              },
+              {
+                "value": "ABILITY",
+                "style": "sheet-label"
+              },
+            ]
+          },
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "type": "checkbox",
+                "attribute": "value.savingThrow.proficiency",
+                "action": {},
+                "custom": {
+                  "checkboxStyle": {
+                    "default": {
+                      "icon": "circle",
+                      "tintColor": "#aaa",
+                      "size": 10,
+                    },
+                    "proficient": {
+                      "icon": "circle.fill",
+                      "size": 10,
+                    },
+                    "half": {
+                      "icon": "circle.lefthalf.filled",
+                      "size": 10,
+                    },
+                    "expertise": {
+                      "icon": "diamond.fill",
+                      "size": 9
+                    },
+                  }
+                },
+                "width": -1
+              },
+              {
+                "value": "**{{value.savingThrow.bonus|default: 0|signed}}**",
+                "style": "body-muted",
+                "width": -1,
+                "padding": [0, 0, 0, 8],
+                "link": "/roll/d20{{value.savingThrow.bonus|default: 0|signed}}/{{key|map: 'Ability'}}/save"
+              },
+              {
+                "value": "**{{key|map: 'Ability'}}**",
+              }
+            ]
+          },
+        ]
+      },
+      {
+        "style": "heading3",
+        "value": "Senses",
+        "padding": [2, 0]
+      },
+      {
+        "type": "table",
+        "alignment": "leading",
+        "views": [
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "VALUE",
+                "style": "sheet-label",
+                "alignment": "center",
+                "width": 44,
+              },
+              {
+                "value": "SENSE",
+                "style": "sheet-label"
+              },
+            ]
+          },
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "**{{data.passivePerception|default: 0}}**",
+                "style": "body-muted",
+                "width": -1,
+              },
+              {
+                "value": "**Passive Perception**",
+              }
+            ]
+          },
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "**{{data.passiveInvestigation|default: 0}}**",
+                "style": "body-muted",
+                "width": -1,
+              },
+              {
+                "value": "**Passive Investigation**",
+              }
+            ]
+          },
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "**{{data.passiveInsight|default: 0}}**",
+                "style": "body-muted",
+                "width": -1,
+              },
+              {
+                "value": "**Passive Insight**",
+              }
+            ]
+          },
+        ]
+      },
+      {
+        "type": "spacer",
+        "height": 2,
+      },
+      {
+        "type": "table",
+        "attribute": "data.senses",
+        "alignment": "leading",
+        "views": [
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "RANGE",
+                "style": "sheet-label",
+                "alignment": "center",
+                "width": 44,
+              },
+              {
+                "value": "SENSE",
+                "style": "sheet-label"
+              },
+            ]
+          },
+          {
+            "type": "tableRow",
+            "views": [
+              {
+                "value": "**{{value|suffix: ' ft.'}}**",
+                "style": "body-muted",
+                "width": -1,
+              },
+              {
+                "value": "**{{key|map: 'Sense'}}**",
+              }
+            ]
+          },
+        ]
+      },
+      {
+        "style": "heading3",
+        "value": "Proficiencies",
+        "padding": [2, 0]
+      },
+      {
+        "type": "vStack",
+        "spacing": 0,
+        "views": [
+          {
+            "title": "ARMOR",
+            "type": "text",
+            "customStyle": {
+              "titleStyle": "sheet-label"
+            },
+            "value": "{{data.armorProficiencies|map: 'Armor'|default: 'None'}}",
+          },
+          {
+            "type": "divider",
+            "padding": [6, 0]
+          },
+          {
+            "title": "WEAPONS",
+            "type": "text",
+            "customStyle": {
+              "titleStyle": "sheet-label"
+            },
+            "value": "{{data.weaponProficiencies|map: 'Weapon'|default: 'None'}}",
+          },
+          {
+            "type": "divider",
+            "padding": [6, 0]
+          },
+          {
+            "title": "TOOLS",
+            "type": "text",
+            "customStyle": {
+              "titleStyle": "sheet-label"
+            },
+            "value": "{{data.toolProficiencies|map: 'Tool'|default: 'None'}}",
+          },
+          {
+            "type": "divider",
+            "padding": [6, 0]
+          },
+          {
+            "title": "LANGUAGES",
+            "type": "text",
+            "customStyle": {
+              "titleStyle": "sheet-label"
+            },
+            "value": "{{data.languages|map: 'Language'|default: 'None'}}",
+          },
+        ]
+      },
+    ]
+  }

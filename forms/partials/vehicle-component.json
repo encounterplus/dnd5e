@@ -1,0 +1,64 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Count",
+          "type": "number",
+          "attribute": "count",
+        },
+        {
+          "title": "Crew",
+          "type": "number",
+          "attribute": "crew",
+        },
+        {
+          "title": "Armor Class",
+          "attribute": "ac",
+        },
+        {
+          "title": "Hit Points",
+          "attribute": "hp",
+        },
+        {
+          "title": "Speed",
+          "attribute": "speed",
+        },
+        {
+          "title": "Cost",
+          "attribute": "cost",
+        },
+      ]
+    },
+    {
+      "title": "Features",
+      "type": "list",
+      "attribute": "features",
+      "form": {
+        "title": "Component Feature",
+        "partial": "monster-feature"
+      }
+    }
+  ]
+}

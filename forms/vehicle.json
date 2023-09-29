@@ -1,0 +1,207 @@
+{
+  "title": "Vehicle",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Size",
+          "type": "picker",
+          "attribute": "data.size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Dimensions",
+          "attribute": "data.dimensions",
+        },
+        {
+          "title": "Type",
+          "type": "picker",
+          "attribute": "data.type",
+          "attributeType": "VehicleType"
+        },
+        {
+          "title": "Upgrade",
+          "type": "picker",
+          "attribute": "data.upgrade",
+          "attributeType": "VehicleComponent"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Armor Class",
+          "attribute": "data.ac"
+        },
+        {
+          "title": "Hit Points",
+          "attribute": "data.hp"
+        },
+        {
+          "title": "Damage Threshold",
+          "attribute": "data.dt"
+        },
+        {
+          "title": "Mishap Threshold",
+          "attribute": "data.mt"
+        },
+        {
+          "title": "Speed",
+          "attribute": "data.speed"
+        },
+        {
+          "title": "Pace",
+          "attribute": "data.pace"
+        },
+        {
+          "title": "Cargo",
+          "attribute": "data.cargo"
+        },
+        {
+          "title": "Crew",
+          "attribute": "data.crew"
+        },
+        {
+          "title": "Passengers",
+          "attribute": "data.passengers"
+        },
+        {
+          "title": "Cost",
+          "attribute": "data.cost"
+        },
+        {
+          "title": "Weight",
+          "attribute": "data.weight"
+        },
+      ]
+    },
+    {
+      "title": "Abilities",
+      "type": "group",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "fields": [
+        {
+          "title": "STR",
+          "type": "number",
+          "attribute": "data.str"
+        },
+        {
+          "title": "DEX",
+          "type": "number",
+          "attribute": "data.dex"
+        },
+        {
+          "title": "CON",
+          "type": "number",
+          "attribute": "data.con"
+        },
+        {
+          "title": "INT",
+          "type": "number",
+          "attribute": "data.int"
+        },
+        {
+          "title": "WIS",
+          "type": "number",
+          "attribute": "data.wis"
+        },
+        {
+          "title": "CHA",
+          "type": "number",
+          "attribute": "data.cha"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "fields": [
+        {
+          "title": "Condition Immunities",
+          "type": "multiPicker",
+          "attribute": "data.conditionImmunities",
+          "attributeType": "Condition"
+        },
+        {
+          "title":"Damage Immunities",
+          "type": "multiPicker",
+          "attribute": "data.damageImmunities",
+          "attributeType": "Damage"
+        },
+        {
+          "title":"Damage Vulnerabilities",
+          "type": "multiPicker",
+          "attribute": "data.damageVulnerabilities",
+          "attributeType": "Damage"
+        },
+        {
+          "title":"Damage Resistances",
+          "type": "multiPicker",
+          "attribute": "data.damageResistances",
+          "attributeType": "Damage"
+        }
+      ]
+    },
+    {
+      "title": "Traits",
+      "type": "list",
+      "attribute": "data.traits",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "form": {
+        "title": "Vehicle Trait",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Actions",
+      "type": "list",
+      "attribute": "data.actions",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "form": {
+        "title": "Vehicle Action",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Reactions",
+      "type": "list",
+      "attribute": "data.reactions",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "form": {
+        "title": "Vehicle Reaction",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "title": "Controls",
+      "type": "list",
+      "attribute": "data.controls",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "form": {
+        "title": "Vehicle Control",
+        "partial": "vehicle-component"
+      }
+    },
+    {
+      "title": "Movements",
+      "type": "list",
+      "attribute": "data.movements",
+      "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
+      "form": {
+        "title": "Vehicle Movement",
+        "partial": "vehicle-component"
+      }
+    },
+    {
+      "title": "Weapons",
+      "type": "list",
+      "attribute": "data.weapons",
+      "form": {
+        "title": "Vehicle Weapon",
+        "partial": "vehicle-component"
+      }
+    },
+  ]
+}

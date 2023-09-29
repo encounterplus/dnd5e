@@ -1,0 +1,251 @@
+{
+  "debug": false,
+  "spacing": 8,
+  "type": "compactTabs",
+  "padding": [
+    16
+  ],
+  "views": [
+    {
+      "type": "statBlock",
+      "spacing": 8,
+      "padding": [
+        16
+      ],
+      "views": [
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "views": [
+            {
+              "style": "title",
+              "value": "{{name}}",
+              "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+            },
+            {
+              "style": "subtitle",
+              "value": "{{detail}}",
+            },
+          ]
+        },
+        {
+          "type": "divider",
+          "style": "rectangle",
+          "height": 4,
+          "padding": [0]
+        },
+        {
+          "type": "text",
+          "style": "stats-body",
+          "value": "{% include \"vehicle-primary.md\" %}",
+        },
+        {
+          "type": "divider",
+          "style": "rectangle",
+          "height": 4,
+          "padding": [0]
+        },
+        {
+          "type": "hStack",
+          "spacing": 1,
+          "views": [
+            {
+              "value": "**STR**\n{{data.str}} ({{data.str|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.str|modifier|signed}}/strength/check",
+            },
+            {
+              "value": "**DEX**\n{{data.dex}} ({{data.dex|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.dex|modifier|signed}}/dexterity/check",
+            },
+            {
+              "value": "**CON**\n{{data.con}} ({{data.con|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.con|modifier|signed}}/constitution/check",
+            },
+            {
+              "value": "**INT**\n{{data.int}} ({{data.int|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.int|modifier|signed}}/intelligence/check",
+            },
+            {
+              "value": "**WIS**\n{{data.wis}} ({{data.wis|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.wis|modifier|signed}}/wisdom/check",
+            },
+            {
+              "value": "**CHA**\n{{data.cha}} ({{data.cha|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.cha|modifier|signed}}/charisma/check",
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "style": "rectangle",
+          "height": 4,
+          "padding": [0]
+        },
+        {
+          "type": "text",
+          "style": "stats-body",
+          "value": "{% include \"vehicle-secondary.md\" %}",
+        },
+        {
+          "type": "divider",
+          "style": "rectangle",
+          "height": 4,
+          "padding": [0]
+        },
+        {
+          "type": "list",
+          "attribute": "data.traits",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Actions",
+          "style": "stats-section",
+          "attribute": "data.actions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Reactions",
+          "style": "stats-section",
+          "attribute": "data.reactions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.controls",
+          "views": [
+            {
+              "style": "stats-section",
+              "value": "{% if count == nil and crew == nil %}Control: {{name}}{% else %}{{count}} {{name}} {% if count == nil %}{{crew|prefix: 'Crew: '|brackets}}{% else %}{{crew|prefix: 'Crew: '|suffix: ' Each'|brackets}}{% endif %}{% endif %}"
+            },
+            {
+              "type": "text",
+              "value": "{% include \"vehicle-component.md\" %}",
+            },
+            {
+              "type": "list",
+              "attribute": "features",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "{{descr}}"
+            },
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.movements",
+          "views": [
+            {
+              "style": "stats-section",
+              "value": "{% if count == nil and crew == nil %}Movement: {{name}}{% else %}{{count}} {{name}} {% if count == nil %}{{crew|prefix: 'Crew: '|brackets}}{% else %}{{crew|prefix: 'Crew: '|suffix: ' Each'|brackets}}{% endif %}{% endif %}"
+            },
+            {
+              "type": "text",
+              "value": "{% include \"vehicle-component.md\" %}",
+            },
+            {
+              "type": "list",
+              "attribute": "features",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "{{descr}}"
+            },
+          ]
+        },
+        {
+          "type": "list",
+          "attribute": "data.weapons",
+          "views": [
+            {
+              "style": "stats-section",
+              "value": "{% if count == nil and crew == nil %}Weapon: {{name}}{% else %}{{count}} {{name}} {% if count == nil %}{{crew|prefix: 'Crew: '|brackets}}{% else %}{{crew|prefix: 'Crew: '|suffix: ' Each'|brackets}}{% endif %}{% endif %}"
+            },
+            {
+              "type": "text",
+              "value": "{% include \"vehicle-component.md\" %}",
+            },
+            {
+              "type": "list",
+              "attribute": "features",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "{{descr}}"
+            },
+          ]
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "spacing": 8,
+      "views": [
+        {
+          "type": "text",
+          "value": "{{descr}}",
+        }, 
+        {
+          "type": "text",
+          "title": "Notes",
+          "value": "{{notes}}",
+        },
+        {
+          "type": "image",
+          "value": "{{image}}",
+          "link": "{{image}}"
+        },
+        {
+          "type": "text",
+          "value": "{{footer}}"
+        }, 
+        {
+          "type": "tags",
+          "attribute": "tags"
+        }
+      ]
+    }
+    
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "title": "Class",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Hit Dice",
+          "type": "picker",
+          "attribute": "data.hd",
+          "attributeType": "HitDie"
+        },
+        {
+          "title": "Spellcasting Rules",
+          "type": "form",
+          "attribute": "data.spellcasting",
+          "form": {
+            "title":  "Spellcasting Rules",
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Ability",
+                    "type": "picker",
+                    "attribute": "ability",
+                    "attributeType": "Ability",
+                  },
+                  {
+                    "title": "Ritual Spellcaster",
+                    "type": "toggle",
+                    "attribute": "ritualCaster",
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "title": "Levels",
+                "attribute": "levels",
+                "listItemTitle": "{{array.position|ordinal}} level",
+                "form": {
+                  "title": "Spellcasting {{array.position|ordinal}} level",
+                  "sections": [
+                    {
+                      "type": "group",
+                      "title": "{{array.position|ordinal}} level",
+                      "fields": [
+                        {
+                          "title": "Cantrips Known",
+                          "type": "number",
+                          "attribute": "cantrips",
+                        },
+                        {
+                          "title": "Spells Known",
+                          "type": "number",
+                          "attribute": "spells",
+                        },
+                      ]
+                    },
+                    {
+                      "type": "group",
+                      "title": "Spell Slots",
+                      "fields": [
+                        {
+                          "type": "hStack",
+                          "fields": [
+                            {
+                              "title": "1st",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.1"
+                            },
+                            {
+                              "title": "2nd",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.2"
+                            },
+                            {
+                              "title": "3rd",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.3"
+                            },
+                            {
+                              "title": "4th",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.4"
+                            },
+                            {
+                              "title": "5th",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.5"
+                            },
+                            {
+                              "title": "6th",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.6"
+                            },
+                            {
+                              "title": "7th",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.7"
+                            },
+                            {
+                              "title": "8th",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.8"
+                            },
+                            {
+                              "title": "9th",
+                              "placeholder": "—",
+                              "alignment": "top",
+                              "type": "number",
+                              "attribute": "spellSlots.9"
+                            }
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                }
+              }, 
+            ]
+          }
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Proficiencies",
+      "fields": [
+        {
+          "title": "Armor",
+          "type": "multiPicker",
+          "attribute": "data.armor",
+          "attributeType": "Armor"
+        },
+        {
+          "title": "Weapons",
+          "type": "multiPicker",
+          "attribute": "data.weapons",
+          "attributeType": "Weapon"
+        },
+        {
+          "title": "Tools",
+          "type": "multiPicker",
+          "attribute": "data.tools",
+          "attributeType": "Tool"
+        },
+        {
+          "title": "Saving Throws",
+          "type": "multiPicker",
+          "attribute": "data.savingThrows",
+          "attributeType": "Ability"
+        },
+        {
+          "title": "Skills",
+          "type": "multiPicker",
+          "attribute": "data.skills",
+          "attributeType": "Skill"
+        },
+        {
+          "title": "Number of skills",
+          "type": "number",
+          "attribute": "data.skillsNumber",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Starting Equipment",
+      "fields": [
+        {
+          "placeholder": "Starting Equipment",
+          "type": "textArea",
+          "attribute": "data.equipment",
+        }
+      ]
+    },
+    {
+      "title": "Features",
+      "type": "list",
+      "attribute": "data.features",
+      "listItemDetail": "{{level|ordinal}} level{% if optional %} • Optional{% endif %}",
+      "form": {
+        "title": "Feature",
+        "partial": "class-feature"
+      }
+    },
+  ]
+}

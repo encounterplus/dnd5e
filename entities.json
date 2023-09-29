@@ -1,16 +1,31 @@
 [
   {
+    "name": "Character",
+    "label": "character",
+    "collection": {
+      "label": "characters"
+    },
+    "loadable": true,
+    "role": "friendly",
+    "custom": {
+      "detail": "{{data.race.name|default: 'Unknown Race'}} {% for class in data.classes %}{{class.name}} {{class.level}}{% if forloop.last == false  %} | {% endif %}{% endfor %}",
+    }
+  },
+  {
     "name": "Monster",
     "label": "monster",
     "collection": {
       "label": "monsters"
     },
-    "loadable": true
+    "loadable": true,
+    "custom": {
+      "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|prefix: ', '}}",
+    }
   },
   {
     "name": "NPC",
     "label": "npc",
-    "type": "Monster",
+    "extends": "Monster",
     "collection": {
       "label": "npcs"
     },
@@ -18,21 +33,14 @@
     "role": "neutral"
   },
   {
-    "name": "Player",
-    "label": "player",
-    "collection": {
-      "label": "players"
-    },
-    "loadable": true,
-    "role": "friendly"
-  },
-  {
     "name": "Spell",
     "label": "spell",
     "collection": {
       "label": "spells"
     },
-    "loadable": true
+    "custom": {
+      "detail": "{% if data.level == 0 or data.level == nil %}{{data.school|map: 'SpellSchool'}} cantrip{% else %}{{data.level|ordinal}}-level {{data.school|map: 'SpellSchool'|lowercase}}{% endif %}",
+    }
   },
   {
     "name": "Item",
@@ -41,7 +49,10 @@
       "label": "items"
     },
     "loadable": true,
-    "role": "neutral"
+    "role": "neutral",
+    "custom": { 
+      "detail": "{{data.type|map: 'ItemType'}}{{data.rarity|map: 'ItemRarity'|lowercase|prefix: ', '}}",
+    }
   },
   {
     "name": "Feat",
@@ -62,7 +73,7 @@
     "label": "race",
     "collection": {
       "label": "races"
-    }
+    },
   },
   {
     "name": "Class",
@@ -72,13 +83,11 @@
     }
   },
   {
-    "name": "Character",
-    "label": "character",
+    "name": "Subclass",
+    "label": "subclass",
     "collection": {
-      "label": "characters"
+      "label": "subclasses"
     },
-    "loadable": true,
-    "role": "friendly"
   },
   {
     "name": "Vehicle",
@@ -87,7 +96,10 @@
       "label": "vehicles"
     },
     "loadable": true,
-    "role": "neutral"
+    "role": "neutral",
+    "custom": {
+      "detail": "{% if data.upgrade != nil %}{{data.type|map: 'VehicleType'}} Upgrade, {{data.upgrade|map: 'VehicleComponent'}}{% else %}{{data.size|map: 'Size'}} {{data.type|map: 'VehicleType'}} {{data.dimensions|brackets}}{% endif %}"
+    }
   },
   {
     "name": "Condition",
@@ -98,10 +110,17 @@
     "loadable": true
   },
   {
+    "name": "Custom",
+    "label": "custom",
+    "collection": {
+      "label": "custom"
+    }
+  },
+  {
     "name": "Table",
     "label": "table",
     "collection": {
       "label": "tables"
     }
-  }
+  },
 ]

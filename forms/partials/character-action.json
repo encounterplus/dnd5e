@@ -1,0 +1,117 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Attack Type",
+          "type": "picker",
+          "attribute": "attackType",
+          "attributeType": "Attack"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visibleIf": "{{attackType}}",
+      "fields": [
+        {
+          "title": "Attack Bonus",
+          "attribute": "attack",
+          "placeholder": "Default"
+        },
+        {
+          "title": "Saving Throw DC",
+          "visibleIf": "{% if attackType == 'spell' %}true{% endif %}",
+          "attribute": "savingThrow",
+        },
+        {
+          "title": "Damage",
+          "attribute": "damage",
+          "placeholder": "Default"
+        },
+        {
+          "title": "Damage Type",
+          "type": "picker",
+          "attribute": "damageType",
+          "attributeType": "Damage"
+        },
+        {
+          "title": "Ability",
+          "type": "picker",
+          "attribute": "ability",
+          "attributeType": "Ability"
+        },
+        {
+          "title": "Proficiency",
+          "type": "picker",
+          "visibleIf": "{% if attackType == 'melee' or attackType == 'ranged' %}true{% endif %}",
+          "attribute": "proficiency",
+          "attributeType": "ProficiencyLevel"
+        },
+        {
+          "title": "Time",
+          "type": "form",
+          "attribute": "activation",
+          "text": "{% include 'activation.md' %}",
+          "form": {
+            "title":  "Action Time",
+            "sections": [
+              {
+                "type": "group",
+                "fields": [
+                  {
+                    "title": "Time",
+                    "type": "number",
+                    "attribute": "time"
+                  }
+                ]
+              },
+              {
+                "title": "Unit",
+                "type": "picker",
+                "attribute": "unit",
+                "attributeType": "ActivationUnit",
+              }
+            ]
+          }
+        },
+        {
+          "title": "Reach/Range",
+          "attribute": "range",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Reference",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+        },
+      ]
+    },
+  ]
+}

@@ -16,15 +16,62 @@
     "wis",
     "cha"
   ],
+  "Alignment": [
+    "LG",
+    "NG",
+    "CG",
+    "LN",
+    "NN",
+    "CN",
+    "LE",
+    "NE",
+    "CE"
+  ],
+  "ChallengeRating": [
+    "0",
+    "1/8",
+    "1/4",
+    "1/2",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+  ],
   "ProficiencyCategory": [
     "armor",
     "weapon",
     "tool"
   ],
+  "ProficiencyLevel": [
+    "half",
+    "proficient",
+    "expertise"
+  ],
   "SpellComponent": [
     "V",
     "S",
     "M"
+  ],
+  "SpellLevel": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "HitDie": [
+    6, 8, 10, 12 
   ],
   "ItemRarity": [
     "common",
@@ -35,10 +82,13 @@
     "artifact",
     "unknown"
   ],
-  "ItemCategory": [
-    "armor", "weapon", "item", "equipment"
+  "ItemTypeCategory": [
+    "armor",
+    "weapon",
+    "item",
+    "equipment"
   ],
-  "ItemCategoryTypeMapping": {
+  "ItemTypeCategoryMapping": {
     "armor": [
       "armor",
       "lightArmor",
@@ -73,5 +123,14 @@
       "equipmentPack",
       "tradeGood"
     ]
-  }
+  },
+  "CharacterSection": [
+    "abilities",
+    "skills",
+    "actions",
+    "spells",
+    "items",
+    "features",
+    "other"
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "extends": "default",
+  "statBlockStyles": {
+    "default": {
+      "bgImage": "/images/paper4.png",
+      "topImage": "/images/top2.png",
+      "bottomImage": "/images/bottom2.png",
+      "barImage": "/images/bar2.jpg"
+    }
+  }
+}

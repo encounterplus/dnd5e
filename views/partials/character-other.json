@@ -1,0 +1,14 @@
+{
+  "views": [
+    {
+      "type": "text",
+      "title": "Description",
+      "value": "{{descr|default: 'None'}}",
+    }, 
+    {
+      "type": "text",
+      "title": "Notes",
+      "value": "{{notes|default: 'None'}}",
+    }, 
+  ]
+}

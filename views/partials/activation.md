@@ -1,0 +1,1 @@
+{{activation.time}} {{activation.unit|map: 'ActivationUnit'}} {{activation.condition|brackets}}

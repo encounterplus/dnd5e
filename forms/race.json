@@ -1,0 +1,34 @@
+{
+  "title": "Race",
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Size",
+          "type": "picker",
+          "attribute": "data.size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Speed",
+          "type": "form",
+          "text": "{% include \"movement.md\" %}",
+          "form": {
+            "title": "Speed",
+            "partial": "movement"
+          }
+        },
+      ]
+    },
+    {
+      "title": "Traits",
+      "type": "list",
+      "attribute": "data.traits",
+      "form": {
+        "title": "Racial Trait",
+        "partial": "monster-feature"
+      }
+    },
+  ]
+}

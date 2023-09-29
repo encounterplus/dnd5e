@@ -1,0 +1,38 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        },
+        {
+          "title": "Prerequisite",
+          "attribute": "prerequisite"
+        },
+        {
+          "title": "Level",
+          "type": "number",
+          "attribute": "level"
+        },
+        {
+          "title": "Optional",
+          "type": "toggle",
+          "attribute": "optional"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "text"
+        }
+      ]
+    }
+  ]
+}

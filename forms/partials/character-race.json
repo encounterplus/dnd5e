@@ -1,0 +1,65 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Description",
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Size",
+          "type": "picker",
+          "attribute": "size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Speed",
+          "type": "form",
+          "attribute": "speed",
+          "text": "{% include \"movement.md\" %}",
+          "form": {
+            "partial": "movement"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Traits",
+      "type": "list",
+      "attribute": "traits",
+      "form": {
+        "title": "Trait",
+        "partial": "racial-trait"
+      }
+    },
+    {
+      "type": "group",
+      "title": "Reference",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+          "attributeType": "Class"
+        },
+      ]
+    },
+  ]
+}
