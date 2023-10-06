@@ -36,7 +36,6 @@
     },
     {
       "type": "list",
-      "title": "Subclasses {{name}}",
       "custom": {
         "query": {
           "entity": "Subclass"
@@ -60,7 +59,7 @@
     },
     {
       "type": "text",
-      "title": "Notes",
+      "title": "Common.Notes",
       "value": "{{notes}}",
     },
     {

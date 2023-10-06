@@ -50,34 +50,34 @@
           "spacing": 1,
           "views": [
             {
-              "value": "**STR**\n{{data.str}} ({{data.str|modifier|signed}})",
+              "value": "**{{'Ability.STR'|l}}**\n{{data.abilities.str}} ({{data.abilities.str|modifier|signed}})",
               "style": "stats-ability",
-              "link": "/roll/d20{{data.str|modifier|signed}}/strength/check",
+              "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/check",
             },
             {
-              "value": "**DEX**\n{{data.dex}} ({{data.dex|modifier|signed}})",
+              "value": "**{{'Ability.DEX'|l}}**\n{{data.abilities.dex}} ({{data.abilities.dex|modifier|signed}})",
               "style": "stats-ability",
-              "link": "/roll/d20{{data.dex|modifier|signed}}/dexterity/check",
+              "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/check",
             },
             {
-              "value": "**CON**\n{{data.con}} ({{data.con|modifier|signed}})",
+              "value": "**{{'Ability.CON'|l}}**\n{{data.abilities.con}} ({{data.abilities.con|modifier|signed}})",
               "style": "stats-ability",
-              "link": "/roll/d20{{data.con|modifier|signed}}/constitution/check",
+              "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/check",
             },
             {
-              "value": "**INT**\n{{data.int}} ({{data.int|modifier|signed}})",
+              "value": "**{{'Ability.INT'|l}}**\n{{data.abilities.int}} ({{data.abilities.int|modifier|signed}})",
               "style": "stats-ability",
-              "link": "/roll/d20{{data.int|modifier|signed}}/intelligence/check",
+              "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/check",
             },
             {
-              "value": "**WIS**\n{{data.wis}} ({{data.wis|modifier|signed}})",
+              "value": "**{{'Ability.WIS'|l}}**\n{{data.abilities.wis}} ({{data.abilities.wis|modifier|signed}})",
               "style": "stats-ability",
-              "link": "/roll/d20{{data.wis|modifier|signed}}/wisdom/check",
+              "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/check",
             },
             {
-              "value": "**CHA**\n{{data.cha}} ({{data.cha|modifier|signed}})",
+              "value": "**{{'Ability.CHA'|l}}**\n{{data.abilities.cha}} ({{data.abilities.cha|modifier|signed}})",
               "style": "stats-ability",
-              "link": "/roll/d20{{data.cha|modifier|signed}}/charisma/check",
+              "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/check",
             }
           ]
         },
@@ -110,7 +110,7 @@
         },
         {
           "type": "list",
-          "title": "Actions",
+          "title": "Monster.Actions",
           "style": "stats-section",
           "attribute": "data.actions",
           "views": [
@@ -122,7 +122,7 @@
         },
         {
           "type": "list",
-          "title": "Reactions",
+          "title": "Monster.Reactions",
           "style": "stats-section",
           "attribute": "data.reactions",
           "views": [
@@ -228,7 +228,7 @@
         }, 
         {
           "type": "text",
-          "title": "Notes",
+          "title": "Common.Notes",
           "value": "{{notes}}",
         },
         {

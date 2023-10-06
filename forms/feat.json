@@ -3,10 +3,10 @@
   "sections": [
     {
       "type": "group",
-      "title": "Prerequisite",
+      "title": "Feat.Prerequisite",
       "fields": [
         {
-          "placeholder": "Prerequisite",
+          "placeholder": "Feat.Prerequisite",
           "type": "text",
           "attribute": "data.prerequisite"
         },

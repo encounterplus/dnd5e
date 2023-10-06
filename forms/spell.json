@@ -5,37 +5,37 @@
       "type": "group",
       "fields": [
         {
-          "title": "Level",
+          "title": "Common.Level",
           "type": "picker",
           "attribute": "data.level",
           "attributeType": "SpellLevel"
         },
         {
-          "title": "School",
+          "title": "Spell.School",
           "type": "picker",
           "attribute": "data.school",
           "attributeType": "SpellSchool"
         },
         {
-          "title": "Casting Time",
+          "title": "Spell.CastingTime",
           "type": "form",
           "attribute": "data.activation",
           "text": "{% include 'activation.md' data %}",
           "form": {
-            "title":  "Spell Casting Time",
+            "title":  "Spell.CastingTime",
             "sections": [
               {
                 "type": "group",
                 "fields": [
                   {
-                    "title": "Time",
+                    "title": "Common.Time",
                     "type": "number",
                     "attribute": "time"
                   }
                 ]
               },
               {
-                "title": "Unit",
+                "title": "Common.Unit",
                 "type": "picker",
                 "attribute": "unit",
                 "attributeType": "ActivationUnit",
@@ -45,7 +45,7 @@
                 "visibleIf": "{{unit == 'reaction'}}",
                 "fields": [
                   {
-                    "placeholder": "Condition",
+                    "placeholder": "Common.Condition",
                     "type": "textArea",
                     "attribute": "condition",
                   }
@@ -55,14 +55,14 @@
           }
         },
         {
-          "title": "Range",
+          "title": "Common.Range",
           "type": "form",
           "text": "{% include 'spell-range.md' data %}",
           "form": {
-            "title":  "Spell Range",
+            "title":  "Common.Spell",
             "sections": [
               {
-                "title": "Range Type",
+                "title": "Common.Type",
                 "type": "picker",
                 "attribute": "data.rangeType",
                 "attributeType": "SpellRange",
@@ -70,10 +70,11 @@
               {
                 "type": "group",
                 "visibleIf": "{{ data.rangeType == nil or data.rangeType == 'range'}}",
+                "title": "Common.Value",
                 "fields": [
                   {
-                    "title": "Range (ft)",
-                    "type": "number",
+                    "title": "Common.RangeWithUnit",
+                    "type": "decimal",
                     "attribute": "data.range",
                   }
                 ]
@@ -82,14 +83,14 @@
           }
         },
         {
-          "title": "Area Effect",
+          "title": "Spell.AreaEffect",
           "type": "form",
           "text": "{{data.areaEffectSize|format|suffix: ' ft'}} {{data.areaEffectShape|map: 'AreaEffectShape'}}",
           "form": {
-            "title":  "Spell Area Effect",
+            "title":  "Spell.AreaEffect",
             "sections": [
               {
-                "title": "Shape",
+                "title": "AreaEffect.Shape",
                 "type": "picker",
                 "attribute": "data.areaEffectShape",
                 "attributeType": "AreaEffectShape",
@@ -98,7 +99,7 @@
                 "type": "group",
                 "fields": [
                   {
-                    "title": "Size (ft)",
+                    "title": "AreaEffect.SizeWithUnit",
                     "type": "decimal",
                     "attribute": "data.areaEffectSize",
                   }
@@ -108,24 +109,24 @@
           }
         },
         {
-          "title": "Components",
+          "title": "Spell.Components",
           "type": "form",
           "text": "{{data.components|join: ', '}} {{data.componentsDetail|brackets}}",
           "form": {
-            "title":  "Spell Components",
+            "title":  "Spell.Components",
             "sections": [
               {
-                "title": "Components",
+                "title": "Spell.Components",
                 "type": "multiPicker",
                 "attribute": "data.components",
                 "attributeType": "SpellComponent",
               },
               {
-                "title": "Detail",
+                "title": "Common.Detail",
                 "visibleIf": "{%if 'M' in data.components %}true{% endif %}",
                 "fields": [
                   {
-                    "placeholder": "Detail",
+                    "placeholder": "Common.Detail",
                     "type": "textArea",
                     "attribute": "data.componentsDetail"
                   }
@@ -135,14 +136,14 @@
           }
         },
         {
-          "title": "Duration",
+          "title": "Spell.Duration",
           "type": "form",
           "text": "{% include 'spell-duration.md' data %}",
           "form": {
-            "title":  "Spell Duration",
+            "title":  "Spell.Duration",
             "sections": [
               {
-                "title": "Type",
+                "title": "Common.Type",
                 "type": "picker",
                 "attribute": "data.durationType",
                 "attributeType": "SpellDuration",
@@ -152,14 +153,14 @@
                 "visibleIf": "{%if data.durationType == nil or data.durationType == 'concentration' or data.durationType == 'time' %}true{% endif %}",
                 "fields": [
                   {
-                    "title": "Duration",
+                    "title": "Spell.Duration",
                     "type": "number",
                     "attribute": "data.duration",
                   }
                 ]
               },
               {
-                "title": "Unit",
+                "title": "Common.Unit",
                 "type": "picker",
                 "visibleIf": "{%if data.durationType == nil or data.durationType == 'concentration' or data.durationType == 'time' %}true{% endif %}",
                 "attribute": "data.durationUnit",
@@ -169,12 +170,12 @@
           }
         },
         {
-          "title": "Ritual",
+          "title": "Spell.Ritual",
           "type": "toggle",
           "attribute": "data.ritual"
         },
         {
-          "title": "Classes",
+          "title": "Spell.Classes",
           "type": "tags",
           "attribute": "data.classes",
           "attributeType": "Class",

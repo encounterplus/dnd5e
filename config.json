@@ -1,0 +1,38 @@
+{
+  "measurement": {
+    "default": {
+      "units": ["ft", "mi", "lb"],
+      "format": "@value @unit.",
+      "conversion": {
+        "metric": {
+          "ft": {
+            "m": "@value * 0.3"
+          },
+          "mi": {
+            "km": "@value * 1.5"
+          },
+          "lb": {
+            "kg": "@value * 0.5"
+          }
+        }
+      }
+    },
+    "metric": {
+      "units": ["m", "km", "kg"],
+      "format": "@value @unit",
+      "conversion": {
+        "default": {
+          "m": {
+            "ft": "@value / 0.3"
+          },
+          "km": {
+            "mi": "@value / 1.5"
+          },
+          "kg": {
+            "lb": "@value * 2"
+          },
+        },
+      }
+    }
+  }
+}

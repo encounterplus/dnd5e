@@ -5,110 +5,110 @@
       "type": "group",
       "fields": [
         {
-          "title": "Type",
+          "title": "Common.Type",
           "type": "picker",
           "attribute": "data.type",
           "attributeType": "ItemType"
         },
         {
-          "title": "Rarity",
+          "title": "Item.Rarity",
           "type": "picker",
           "attribute": "data.rarity",
           "attributeType": "ItemRarity"
         },
         {
-          "title": "Attunement",
+          "title": "Item.Attunement",
           "type": "toggle",
           "attribute": "data.attunement",
         },
         {
-          "title": "Attunement Detail",
+          "title": "Item.AttunementDetail",
           "type": "text",
           "attribute": "data.attunementDetail",
           "visibleIf": "{{data.attunement}}",
         },
         {
-          "title": "Value (gp)",
-          "type": "number",
+          "title": "Item.ValueWithUnit",
+          "type": "decimal",
           "attribute": "data.value"
         },
         {
-          "title": "Weight (lb)",
-          "type": "number",
+          "title": "Item.WeightWithUnit",
+          "type": "decimal",
           "attribute": "data.weight"
         }
       ]
     },
     {
-      "title": "Armor Properties",
+      "title": "Item.ArmorProperties",
       "type": "group",
       "visibleIf": "{% if data.type == 'lightArmor' or data.type == 'mediumArmor' or data.type == 'heavyArmor' or data.type == 'shield' %}true{% endif %}",
       "fields": [
         {
-          "title": "Armor Class",
+          "title": "Common.ArmorClass",
           "type": "number",
           "attribute": "data.ac"
         },
         {
-          "title": "Stealth Check Disadvantage",
+          "title": "Item.StealthCheckDisadvantage",
           "type": "toggle",
           "attribute": "data.stealth"
         },
         {
-          "title": "STR Requirement",
+          "title": "Item.STRRequirement",
           "type": "number",
           "attribute": "data.str"
         },
       ]
     },
     {
-      "title": "Weapon Properties",
+      "title": "Item.WeaponProperties",
       "visibleIf": "{% if data.type == 'meleeWeapon' or data.type == 'rangedWeapon' or data.type == 'ammunition'%}true{% endif %}",
       "type": "group",
       "fields": [
         {
-          "title": "Properties",
+          "title": "Item.Properties",
           "type": "multiPicker",
           "attribute": "data.properties",
           "attributeType": "ItemProperty"
         },
         {
-          "title": "Damage",
+          "title": "Common.Damage",
           "type": "text",
           "attribute": "data.dmg1"
         },
         {
-          "title": "Damage (Versatile)",
+          "title": "Item.DamageVersatile",
           "type": "text",
           "attribute": "data.dmg2",
           "visibleIf": "{% if 'versatile' in data.properties %}true{% endif %}",
         },
         {
-          "title": "Damage Type",
+          "title": "Item.DamageType",
           "type": "picker",
           "attribute": "data.dmgType",
           "attributeType": "Damage"
         },
         {
-          "title": "Range (Normal/Long)",
+          "title": "Item.RangeWithUnit",
           "type": "text",
           "attribute": "data.range"
         },
       ]
     },
     {
-      "title": "Other Properties",
+      "title": "Item.OtherProperties",
       "type": "group",
       "visibleIf": "{% if data.type == 'adventuringGear' or data.type == 'wondrousItem' or data.type == 'equipmentPack' %}true{% endif %}",
       "fields": [
         {
-          "title": "Container",
+          "title": "Item.Container",
           "type": "toggle",
           "attribute": "data.container",
         },
         {
-          "title": "Container Capacity (lb)",
-          "placeholder": "Unlimited",
+          "title": "Item.ContainerCapacityWithUnit)",
+          "placeholder": "Common.Unlimited",
           "type": "number",
           "attribute": "data.capacity",
           "visibleIf": "{{data.container}}",

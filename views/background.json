@@ -35,7 +35,7 @@
     },
     {
       "type": "text",
-      "title": "Notes",
+      "title": "Common.Notes",
       "value": "{{notes}}",
     },
     {

@@ -4,17 +4,17 @@
       "type": "group",
       "fields": [
         {
-          "placeholder": "Name",
+          "placeholder": "Common.Name",
           "attribute": "name"
         }
       ]
     },
     {
-      "title": "Description",
+      "title": "Common.Description",
       "type": "group",
       "fields": [
         {
-          "title": "Description",
+          "title": "Common.Description",
           "type": "textArea",
           "attribute": "text"
         }

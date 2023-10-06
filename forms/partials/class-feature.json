@@ -4,27 +4,27 @@
       "type": "group",
       "fields": [
         {
-          "placeholder": "Name",
+          "placeholder": "Common.Name",
           "attribute": "name"
         },
         {
-          "title": "Prerequisite",
+          "title": "ClassFeature.Prerequisite",
           "attribute": "prerequisite"
         },
         {
-          "title": "Level",
+          "title": "Common.Level",
           "type": "number",
           "attribute": "level"
         },
         {
-          "title": "Optional",
+          "title": "Common.Optional",
           "type": "toggle",
           "attribute": "optional"
         }
       ]
     },
     {
-      "title": "Description",
+      "title": "Common.Description",
       "type": "group",
       "fields": [
         {

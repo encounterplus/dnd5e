@@ -16,7 +16,7 @@
         },
         {
           "style": "subtitle",
-          "value": "{{data.class}} subclass",
+          "value": "{{data.class}} {{'Entity.Subclass'|l}}",
         },
       ]
     },
@@ -36,7 +36,7 @@
     },
     {
       "type": "text",
-      "title": "Notes",
+      "title": "Common.Notes",
       "value": "{{notes}}",
     },
     {

@@ -2,54 +2,54 @@
   "title": "Movement",
   "sections": [
     {
-      "title": "Movement (ft)",
+      "title": "Movement.MovementWithUnit",
       "type": "group",
       "fields": [
         {
-          "title": "Walk",
-          "type": "number",
+          "title": "Movement.Walk",
+          "type": "decimal",
           "attribute": "walk"
         }
       ]
     },
     {
-      "title": "Movement (ft)",
+      "title": "Movement.MovementWithUnit",
       "type": "group",
       "fields": [
         {
-          "title": "Burrow",
-          "type": "number",
+          "title": "Movement.Burrow",
+          "type": "decimal",
           "attribute": "burrow"
         },
         {
-          "title": "Climb",
-          "type": "number",
+          "title": "Movement.Climb",
+          "type": "decimal",
           "attribute": "climb"
         },
         {
-          "title": "Fly",
-          "type": "number",
+          "title": "Movement.Fly",
+          "type": "decimal",
           "attribute": "fly"
         },
         {
-          "title": "Hover",
+          "title": "Movement.Hover",
           "type": "toggle",
           "visibleIf": "{{fly}}",
           "attribute": "hover",
         },
         {
-          "title": "Swim",
-          "type": "number",
+          "title": "Movement.Swim",
+          "type": "decimal",
           "attribute": "swim"
         }
       ]
     },
     {
-      "title": "Other",
+      "title": "Common.Other",
       "type": "group",
       "fields": [
         {
-          "placeholder": "Other",
+          "placeholder": "Common.Other",
           "type": "textArea",
           "attribute": "other"
         }

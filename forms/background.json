@@ -5,37 +5,37 @@
       "type": "group",
       "fields": [
         {
-          "title": "Skill Proficiencies",
+          "title": "Background.SkillProficiencies",
           "type": "multiPicker",
           "attribute": "data.skills",
           "attributeType": "Skill"
         },
         {
-          "title": "Tool Proficiencies",
+          "title": "Background.ToolProficiencies",
           "type": "multiPicker",
           "attribute": "data.tools",
           "attributeType": "Tool"
         },
         {
-          "title": "Languages",
+          "title": "Background.Languages",
           "type": "multiPicker",
           "attribute": "data.languages",
           "attributeType": "Language"
         },
         {
-          "title": "Equipment",
+          "title": "Background.Equipment",
           "type": "textArea",
           "attribute": "data.value"
         }
       ]
     },
     {
-      "title": "Entries",
+      "title": "Common.Entries",
       "type": "list",
       "attribute": "data.entries",
       "form": {
-        "title": "Background Entry",
-        "partial": "monster-feature"
+        "title": "Common.Entry",
+        "partial": "generic-feature"
       }
     },
   ]

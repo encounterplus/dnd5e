@@ -4,13 +4,13 @@
       "type": "group",
       "fields": [
         {
-          "placeholder": "Name",
+          "placeholder": "Common.Name",
           "attribute": "name"
         }
       ]
     },
     {
-      "title": "Description",
+      "title": "Common.Description",
       "type": "group",
       "fields": [
         {
@@ -24,40 +24,40 @@
       "type": "group",
       "fields": [
         {
-          "title": "Count",
+          "title": "Common.Count",
           "type": "number",
           "attribute": "count",
         },
         {
-          "title": "Crew",
+          "title": "Vehicle.Crew",
           "type": "number",
           "attribute": "crew",
         },
         {
-          "title": "Armor Class",
+          "title": "Common.ArmorClass",
           "attribute": "ac",
         },
         {
-          "title": "Hit Points",
+          "title": "Common.HitPoints",
           "attribute": "hp",
         },
         {
-          "title": "Speed",
+          "title": "Common.Speed",
           "attribute": "speed",
         },
         {
-          "title": "Cost",
+          "title": "Vehicle.Cost",
           "attribute": "cost",
         },
       ]
     },
     {
-      "title": "Features",
+      "title": "VehicleComponent.Features",
       "type": "list",
       "attribute": "features",
       "form": {
-        "title": "Component Feature",
-        "partial": "monster-feature"
+        "title": "VehicleComponent.Feature",
+        "partial": "generic-feature"
       }
     }
   ]

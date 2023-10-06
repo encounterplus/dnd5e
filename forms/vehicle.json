@@ -5,23 +5,23 @@
       "type": "group",
       "fields": [
         {
-          "title": "Size",
+          "title": "Common.Size",
           "type": "picker",
           "attribute": "data.size",
           "attributeType": "Size"
         },
         {
-          "title": "Dimensions",
+          "title": "Common.Dimensions",
           "attribute": "data.dimensions",
         },
         {
-          "title": "Type",
+          "title": "Common.Type",
           "type": "picker",
           "attribute": "data.type",
           "attributeType": "VehicleType"
         },
         {
-          "title": "Upgrade",
+          "title": "Common.Upgrade",
           "type": "picker",
           "attribute": "data.upgrade",
           "attributeType": "VehicleComponent"
@@ -32,11 +32,11 @@
       "type": "group",
       "fields": [
         {
-          "title": "Armor Class",
+          "title": "Common.ArmorClass",
           "attribute": "data.ac"
         },
         {
-          "title": "Hit Points",
+          "title": "Common.HitPoints",
           "attribute": "data.hp"
         },
         {
@@ -44,35 +44,38 @@
           "attribute": "data.dt"
         },
         {
-          "title": "Mishap Threshold",
+          "title": "Vehicle.MishapThreshold",
           "attribute": "data.mt"
         },
         {
-          "title": "Speed",
+          "title": "Common.Speed",
           "attribute": "data.speed"
         },
         {
-          "title": "Pace",
+          "title": "Vehicle.Pace",
           "attribute": "data.pace"
         },
         {
-          "title": "Cargo",
+          "title": "Vehicle.Cargo",
+          "type": "decimal",
           "attribute": "data.cargo"
         },
         {
-          "title": "Crew",
+          "title": "Vehicle.Crew",
           "attribute": "data.crew"
         },
         {
-          "title": "Passengers",
+          "title": "Vehicle.Passengers",
           "attribute": "data.passengers"
         },
         {
-          "title": "Cost",
+          "title": "Vehicle.Cost",
+          "type": "decimal",
           "attribute": "data.cost"
         },
         {
-          "title": "Weight",
+          "title": "Common.Weight",
+          "type": "decimal",
           "attribute": "data.weight"
         },
       ]
@@ -83,34 +86,34 @@
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "fields": [
         {
-          "title": "STR",
+          "title": "Ability.STR",
           "type": "number",
-          "attribute": "data.str"
+          "attribute": "data.abilities.str"
         },
         {
-          "title": "DEX",
+          "title": "Ability.DEX",
           "type": "number",
-          "attribute": "data.dex"
+          "attribute": "data.abilities.dex"
         },
         {
-          "title": "CON",
+          "title": "Ability.CON",
           "type": "number",
-          "attribute": "data.con"
+          "attribute": "data.abilities.con"
         },
         {
-          "title": "INT",
+          "title": "Ability.INT",
           "type": "number",
-          "attribute": "data.int"
+          "attribute": "data.abilities.int"
         },
         {
-          "title": "WIS",
+          "title": "Ability.WIS",
           "type": "number",
-          "attribute": "data.wis"
+          "attribute": "data.abilities.wis"
         },
         {
-          "title": "CHA",
+          "title": "Ability.CHA",
           "type": "number",
-          "attribute": "data.cha"
+          "attribute": "data.abilities.cha"
         },
       ]
     },
@@ -119,25 +122,25 @@
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "fields": [
         {
-          "title": "Condition Immunities",
+          "title": "Monster.ConditionImmunities",
           "type": "multiPicker",
           "attribute": "data.conditionImmunities",
           "attributeType": "Condition"
         },
         {
-          "title":"Damage Immunities",
+          "title":"Monster.DamageImmunities",
           "type": "multiPicker",
           "attribute": "data.damageImmunities",
           "attributeType": "Damage"
         },
         {
-          "title":"Damage Vulnerabilities",
+          "title":"Monster.DamageVulnerabilities",
           "type": "multiPicker",
           "attribute": "data.damageVulnerabilities",
           "attributeType": "Damage"
         },
         {
-          "title":"Damage Resistances",
+          "title":"Monster.DamageResistances",
           "type": "multiPicker",
           "attribute": "data.damageResistances",
           "attributeType": "Damage"
@@ -145,61 +148,61 @@
       ]
     },
     {
-      "title": "Traits",
+      "title": "Monster.Traits",
       "type": "list",
       "attribute": "data.traits",
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "form": {
-        "title": "Vehicle Trait",
+        "title": "Monster.Trait",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Actions",
+      "title": "Monster.Actions",
       "type": "list",
       "attribute": "data.actions",
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "form": {
-        "title": "Vehicle Action",
+        "title": "Monster.Action",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Reactions",
+      "title": "Monster.Reactions",
       "type": "list",
       "attribute": "data.reactions",
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "form": {
-        "title": "Vehicle Reaction",
+        "title": "Monster.Reaction",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Controls",
+      "title": "Vehicle.Controls",
       "type": "list",
       "attribute": "data.controls",
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "form": {
-        "title": "Vehicle Control",
+        "title": "Vehicle.Control",
         "partial": "vehicle-component"
       }
     },
     {
-      "title": "Movements",
+      "title": "Vehicle.Movements",
       "type": "list",
       "attribute": "data.movements",
       "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
       "form": {
-        "title": "Vehicle Movement",
+        "title": "Vehicle.Movement",
         "partial": "vehicle-component"
       }
     },
     {
-      "title": "Weapons",
+      "title": "Vehicle.Weapons",
       "type": "list",
       "attribute": "data.weapons",
       "form": {
-        "title": "Vehicle Weapon",
+        "title": "Vehicle.Weapon",
         "partial": "vehicle-component"
       }
     },

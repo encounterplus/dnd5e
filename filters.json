@@ -47,7 +47,7 @@
     "sort": [
       {
         "attribute": "name",
-        "title": "Monster.Name"
+        "title": "Common.Name"
       },
       {
         "attribute": "data.cr",

@@ -25,7 +25,7 @@
     {
       "type": "list",
       "attribute": "data.traits",
-      "title": "{{name}} Traits",
+      "title": "{{name}} {{'Race.Traits'|l}}",
       "style": "heading2",
       "views": [
         {
@@ -36,7 +36,7 @@
     },
     {
       "type": "text",
-      "title": "Notes",
+      "title": "Common.Notes",
       "value": "{{notes}}",
     },
     {

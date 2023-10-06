@@ -5,7 +5,7 @@
       "type": "group",
       "fields": [
         {
-          "title": "Class",
+          "title": "Entity.Class",
           "type": "picker",
           "attribute": "data.class",
           "attributeType": "Class"
@@ -13,12 +13,12 @@
       ]
     },
     {
-      "title": "Features",
+      "title": "Class.Features",
       "type": "list",
       "attribute": "data.features",
-      "listItemDetail": "{{level|ordinal}} level{% if optional %} • Optional{% endif %}",
+      "listItemDetail": "{{level|ordinal}} level{% if optional %} • {{'Common.Optional'|l}}{% endif %}",
       "form": {
-        "title": "Feature",
+        "title": "Class.Feature",
         "partial": "class-feature"
       }
     }

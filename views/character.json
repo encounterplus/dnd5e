@@ -57,6 +57,23 @@
               "width": -1,
             }
           ]
+        },
+        // rest button with custom action
+        {
+          "type": "button",
+          "alignment": "center",
+          "width": 24,
+          "height": 24,
+          "padding":[8],
+          "custom": {
+            "icon": "moon.zzz.fill",
+          },
+          "action": {
+            "set": {
+              "data.hpCurrent": "@data.hpMaximum",
+              "data.hpTemporary": null
+            }
+          }
         }
       ]
     },
@@ -278,8 +295,8 @@
         "attribute": "data.classes",
         "map": {
           "definition": null,
-          "spellAttack": "#{{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus}}",
-          "spellDC": "#8 + {{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus}}"
+          "spellAttack": "#{{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus|default: 0}}",
+          "spellDC": "#8 + {{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus|default: 0}}"
         }
       }
     },

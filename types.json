@@ -78,15 +78,15 @@
     "9": "SpellLevel.9th-Level"
   },
   "SpellSlotLevel": {
-    "level1": "SpellSlotLevel.1st-Level",
-    "level2": "SpellSlotLevel.2nd-Level",
-    "level3": "SpellSlotLevel.3rd-Level",
-    "level4": "SpellSlotLevel.4th-Level",
-    "level5": "SpellSlotLevel.5th-Level",
-    "level6": "SpellSlotLevel.6th-Level",
-    "level7": "SpellSlotLevel.7th-Level",
-    "level8": "SpellSlotLevel.8th-Level",
-    "level9": "SpellSlotLevel.9th-Level"
+    "level1": "SpellLevel.1st-Level",
+    "level2": "SpellLevel.2nd-Level",
+    "level3": "SpellLevel.3rd-Level",
+    "level4": "SpellLevel.4th-Level",
+    "level5": "SpellLevel.5th-Level",
+    "level6": "SpellLevel.6th-Level",
+    "level7": "SpellLevel.7th-Level",
+    "level8": "SpellLevel.8th-Level",
+    "level9": "SpellLevel.9th-Level"
   },
   "ActivationUnit": {
     "action": "ActivationUnit.Action",
@@ -382,5 +382,9 @@
     "sleightOfHand": "dex",
     "stealth": "dex",
     "survival": "wis"
+  },
+  "MeasurementSystem": {
+    "default": "MeasurementSystem.Default",
+    "metric": "MeasurementSystem.Metric"
   }
 }

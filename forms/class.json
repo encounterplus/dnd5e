@@ -5,29 +5,29 @@
       "type": "group",
       "fields": [
         {
-          "title": "Hit Dice",
+          "title": "Class.HitDice",
           "type": "picker",
           "attribute": "data.hd",
           "attributeType": "HitDie"
         },
         {
-          "title": "Spellcasting Rules",
+          "title": "Class.SpellcastingRules",
           "type": "form",
           "attribute": "data.spellcasting",
           "form": {
-            "title":  "Spellcasting Rules",
+            "title":  "Class.SpellcastingRules",
             "sections": [
               {
                 "type": "group",
                 "fields": [
                   {
-                    "title": "Ability",
+                    "title": "Common.Ability",
                     "type": "picker",
                     "attribute": "ability",
                     "attributeType": "Ability",
                   },
                   {
-                    "title": "Ritual Spellcaster",
+                    "title": "Class.RitualSpellcaster",
                     "type": "toggle",
                     "attribute": "ritualCaster",
                   }
@@ -35,7 +35,7 @@
               },
               {
                 "type": "list",
-                "title": "Levels",
+                "title": "Common.Levels",
                 "attribute": "levels",
                 "listItemTitle": "{{array.position|ordinal}} level",
                 "form": {
@@ -46,12 +46,12 @@
                       "title": "{{array.position|ordinal}} level",
                       "fields": [
                         {
-                          "title": "Cantrips Known",
+                          "title": "Class.CantripsKnown",
                           "type": "number",
                           "attribute": "cantrips",
                         },
                         {
-                          "title": "Spells Known",
+                          "title": "Class.SpellsKnown",
                           "type": "number",
                           "attribute": "spells",
                         },
@@ -59,7 +59,7 @@
                     },
                     {
                       "type": "group",
-                      "title": "Spell Slots",
+                      "title": "Class.SpellSlots",
                       "fields": [
                         {
                           "type": "hStack",
@@ -141,40 +141,40 @@
     },
     {
       "type": "group",
-      "title": "Proficiencies",
+      "title": "Class.Proficiencies",
       "fields": [
         {
-          "title": "Armor",
+          "title": "Class.Armor",
           "type": "multiPicker",
           "attribute": "data.armor",
           "attributeType": "Armor"
         },
         {
-          "title": "Weapons",
+          "title": "Class.Weapons",
           "type": "multiPicker",
           "attribute": "data.weapons",
           "attributeType": "Weapon"
         },
         {
-          "title": "Tools",
+          "title": "Class.Tools",
           "type": "multiPicker",
           "attribute": "data.tools",
           "attributeType": "Tool"
         },
         {
-          "title": "Saving Throws",
+          "title": "Class.SavingThrows",
           "type": "multiPicker",
           "attribute": "data.savingThrows",
           "attributeType": "Ability"
         },
         {
-          "title": "Skills",
+          "title": "Class.Skills",
           "type": "multiPicker",
           "attribute": "data.skills",
           "attributeType": "Skill"
         },
         {
-          "title": "Number of skills",
+          "title": "Class.NumberOfSkills",
           "type": "number",
           "attribute": "data.skillsNumber",
         },
@@ -182,22 +182,22 @@
     },
     {
       "type": "group",
-      "title": "Starting Equipment",
+      "title": "Class.StartingEquipment",
       "fields": [
         {
-          "placeholder": "Starting Equipment",
+          "placeholder": "Class.StartingEquipment",
           "type": "textArea",
           "attribute": "data.equipment",
         }
       ]
     },
     {
-      "title": "Features",
+      "title": "Class.Features",
       "type": "list",
       "attribute": "data.features",
-      "listItemDetail": "{{level|ordinal}} level{% if optional %} • Optional{% endif %}",
+      "listItemDetail": "{{level|ordinal}} level{% if optional %} • {{'Common.Optional'|l}}{% endif %}",
       "form": {
-        "title": "Feature",
+        "title": "Class.Feature",
         "partial": "class-feature"
       }
     },

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" {{HTML_CLASS}}>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/css/character.css" rel="stylesheet" type="text/css">
+    </head>
+    <script>
+        window.data = {{data|json}};
+    </script>
+    <body>
+        <div id="character" class="container-fluid">
+            <h1>{{name}} {{data.race.name}}</h1>
+            <h4>{{data.hpCurrent}}/{{data.hpMaximum}}</h4>
+            <img src="{{relativePath}}{{image}}" width="100" />
+
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+              </div>
+
+              <div>Roll <a href="http://encounter.plus/roll/2d10">2d10+4</a></div>
+
+
+            {% for spell in data.spells %}
+            <div>{{spell.name}}</div>
+            {% endfor %}
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+    </body>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/character.js"></script>
+    <script>
+        
+    </script>
+</html>

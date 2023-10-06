@@ -2,27 +2,27 @@
   "title": "Senses",
   "sections": [
     {
-      "title": "Senses (ft)",
+      "title": "Sense.SensesWithUnit",
       "type": "group",
       "fields": [
         {
           "title": "Sense.Blindsight",
-          "type": "number",
+          "type": "decimal",
           "attribute": "data.senses.blindsight"
         },
         {
           "title": "Sense.Darkvision",
-          "type": "number",
+          "type": "decimal",
           "attribute": "data.senses.darkvision"
         },
         {
           "title": "Sense.Tremorsense",
-          "type": "number",
+          "type": "decimal",
           "attribute": "data.senses.tremorsense"
         },
         {
           "title": "Sense.Truesight",
-          "type": "number",
+          "type": "decimal",
           "attribute": "data.senses.truesight"
         }
       ]

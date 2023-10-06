@@ -207,9 +207,9 @@
       "size": 17
     },
     "heading6": {
-      "font": "AvenirNextCondensed-Bold",
-      "color": "#808080",
-      "size": 14
+      "font": "HoeflerText-Regular",
+      "color": "#888",
+      "size": 13
     },
     "footer": {
       "font": "Baramond-Italic",

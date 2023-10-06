@@ -240,7 +240,7 @@
           {
             "title": "ARMOR",
             "type": "text",
-            "customStyle": {
+            "custom": {
               "titleStyle": "sheet-label"
             },
             "value": "{{data.armorProficiencies|map: 'Armor'|default: 'None'}}",
@@ -252,7 +252,7 @@
           {
             "title": "WEAPONS",
             "type": "text",
-            "customStyle": {
+            "custom": {
               "titleStyle": "sheet-label"
             },
             "value": "{{data.weaponProficiencies|map: 'Weapon'|default: 'None'}}",
@@ -264,7 +264,7 @@
           {
             "title": "TOOLS",
             "type": "text",
-            "customStyle": {
+            "custom": {
               "titleStyle": "sheet-label"
             },
             "value": "{{data.toolProficiencies|map: 'Tool'|default: 'None'}}",
@@ -276,7 +276,7 @@
           {
             "title": "LANGUAGES",
             "type": "text",
-            "customStyle": {
+            "custom": {
               "titleStyle": "sheet-label"
             },
             "value": "{{data.languages|map: 'Language'|default: 'None'}}",

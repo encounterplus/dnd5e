@@ -1,0 +1,25 @@
+{
+  "title": "Settings",
+  "sections": [
+    {
+      "type": "group",
+      "title": "Locale",
+      "fields": [
+        {
+          "type": "picker",
+          "title": "Language",
+          "placeholder": "Default",
+          "attribute": "language",
+          "attributeType": "SystemLanguage"
+        },
+        {
+          "type": "picker",
+          "title": "Measurement",
+          "placeholder": "Default",
+          "attribute": "measurement",
+          "attributeType": "MeasurementSystem"
+        },
+      ]
+    },
+  ]
+}

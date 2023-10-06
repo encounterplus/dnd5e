@@ -50,32 +50,32 @@
           "spacing": 1,
           "views": [
             {
-              "value": "**STR**\n{{data.abilities.str}} ({{data.abilities.str|modifier|signed}})",
+              "value": "**{{'Ability.STR'|l}}**\n{{data.abilities.str}} ({{data.abilities.str|modifier|signed}})",
               "style": "stats-ability",
               "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/check",
             },
             {
-              "value": "**DEX**\n{{data.abilities.dex}} ({{data.abilities.dex|modifier|signed}})",
+              "value": "**{{'Ability.DEX'|l}}**\n{{data.abilities.dex}} ({{data.abilities.dex|modifier|signed}})",
               "style": "stats-ability",
               "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/check",
             },
             {
-              "value": "**CON**\n{{data.abilities.con}} ({{data.abilities.con|modifier|signed}})",
+              "value": "**{{'Ability.CON'|l}}**\n{{data.abilities.con}} ({{data.abilities.con|modifier|signed}})",
               "style": "stats-ability",
               "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/check",
             },
             {
-              "value": "**INT**\n{{data.abilities.int}} ({{data.abilities.int|modifier|signed}})",
+              "value": "**{{'Ability.INT'|l}}**\n{{data.abilities.int}} ({{data.abilities.int|modifier|signed}})",
               "style": "stats-ability",
               "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/check",
             },
             {
-              "value": "**WIS**\n{{data.abilities.wis}} ({{data.abilities.wis|modifier|signed}})",
+              "value": "**{{'Ability.WIS'|l}}**\n{{data.abilities.wis}} ({{data.abilities.wis|modifier|signed}})",
               "style": "stats-ability",
               "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/check",
             },
             {
-              "value": "**CHA**\n{{data.abilities.cha}} ({{data.abilities.cha|modifier|signed}})",
+              "value": "**{{'Ability.CHA'|l}}**\n{{data.abilities.cha}} ({{data.abilities.cha|modifier|signed}})",
               "style": "stats-ability",
               "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/check",
             }
@@ -110,7 +110,7 @@
         },
         {
           "type": "list",
-          "title": "Actions",
+          "title": "Monster.Actions",
           "style": "stats-section",
           "attribute": "data.actions",
           "views": [
@@ -122,7 +122,7 @@
         },
         {
           "type": "list",
-          "title": "Bonus Actions",
+          "title": "Monster.BonusActions",
           "style": "stats-section",
           "attribute": "data.bonusActions",
           "views": [
@@ -134,7 +134,7 @@
         },
         {
           "type": "list",
-          "title": "Reactions",
+          "title": "Monster.Reactions",
           "style": "stats-section",
           "attribute": "data.reactions",
           "views": [
@@ -146,7 +146,7 @@
         },
         {
           "type": "list",
-          "title": "Legendary Actions",
+          "title": "Monster.LegendaryActions",
           "style": "stats-section",
           "attribute": "data.legendaryActions",
           "views": [
@@ -158,7 +158,7 @@
         },
         {
           "type": "list",
-          "title": "Mythic Actions",
+          "title": "Monster.MythicActions",
           "style": "stats-section",
           "attribute": "data.mythicActions",
           "views": [
@@ -180,7 +180,7 @@
         }, 
         {
           "type": "text",
-          "title": "Notes",
+          "title": "Common.Notes",
           "value": "{{notes}}",
         },
         {
@@ -208,8 +208,8 @@
       "data.proficiencyBonus": "#{% if data.proficiencyBonus %}{{data.proficiencyBonus}}{% else %}{{data.cr|map:'ProficiencyBonus', '0'}}{% endif %}"
     },
     {
-      "inCombatDetail": "AC {{data.armor}} • PP {{data.passivePerception}} • CR {{data.cr}}",
-      "outCombatDetail": "CR {{data.cr}} ({{data.cr|valueMap:'ChallengeRatingToXP'|format|default: '0'}} XP)",
+      "inCombatDetail": "{{'Common.AC'|l}} {{data.armor}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.CR'|l}} {{data.cr}}",
+      "outCombatDetail": "{{'Common.CR'|l}} {{data.cr}} ({{data.cr|valueMap:'ChallengeRatingToXP'|format|default: '0'}} {{'Common.XP'|l}})",
     }
   ]
 }

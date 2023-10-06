@@ -5,29 +5,30 @@
       "type": "group",
       "fields": [
         {
-          "title": "Size",
+          "title": "Common.Size",
           "type": "picker",
           "attribute": "data.size",
           "attributeType": "Size"
         },
         {
-          "title": "Speed",
+          "title": "Common.Speed",
+          "attribute": "data.speed",
           "type": "form",
           "text": "{% include \"movement.md\" %}",
           "form": {
-            "title": "Speed",
+            "title": "Common.Speed",
             "partial": "movement"
           }
         },
       ]
     },
     {
-      "title": "Traits",
+      "title": "Race.Traits",
       "type": "list",
       "attribute": "data.traits",
       "form": {
-        "title": "Racial Trait",
-        "partial": "monster-feature"
+        "title": "Race.Trait",
+        "partial": "generic-feature"
       }
     },
   ]

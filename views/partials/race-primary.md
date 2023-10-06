@@ -1,2 +1,2 @@
-{{data.size|map: 'Size'|prefix: "**Size:** "}}
-**Speed:** {% include "movement.md" %}
+**{{'Common.Size'|l}}:** {{data.size|map: 'Size'}}
+**{{'Common.Speed'|l}}:** {% include "movement.md" %}

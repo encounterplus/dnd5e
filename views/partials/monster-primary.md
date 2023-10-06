@@ -1,3 +1,3 @@
-{{data.ac|prefix: "**Armor Class** "}}
-{{data.hp|prefix: "**Hit Points** "}}
-**Speed** {% include "movement.md" %}
+**{{'Common.ArmorClass'|l}}** {{data.ac}}
+**{{'Common.HitPoints'|l}}** {{data.hp}}
+**{{'Common.Speed'|l}}** {% include "movement.md" %}

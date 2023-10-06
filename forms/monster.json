@@ -5,30 +5,30 @@
       "type": "group",
       "fields": [
         {
-          "title": "Size",
+          "title": "Common.Size",
           "type": "picker",
           "attribute": "data.size",
           "attributeType": "Size"
         },
         {
-          "title": "Type",
+          "title": "Common.Type",
           "type": "form",
           "text": "{{data.type|map: 'MonsterType'}} {{data.typeDetail|brackets}}",
           "form": {
-            "title": "Monster Type",
+            "title": "Common.Type",
             "sections": [
               {
-                "title": "Type",
+                "title": "Common.Type",
                 "type": "picker",
                 "attribute": "data.type",
                 "attributeType": "MonsterType",
               },
               {
-                "title": "Detail",
+                "title": "Common.Detail",
                 "visibleIf": "{{data.type}}",
                 "fields": [
                   {
-                    "placeholder": "Detail",
+                    "placeholder": "Common.Detail",
                     "type": "textArea",
                     "attribute": "data.typeDetail"
                   }
@@ -38,7 +38,7 @@
           }
         },
         {
-          "title": "Alignment",
+          "title": "Common.Alignment",
           "type": "picker",
           "attribute": "data.alignment",
           "attributeType": "Alignment"
@@ -49,15 +49,15 @@
       "type": "group",
       "fields": [
         {
-          "title": "Armor Class",
+          "title": "Common.ArmorClass",
           "attribute": "data.ac"
         },
         {
-          "title": "Hit Points",
+          "title": "Common.HitPoints",
           "attribute": "data.hp"
         },
         {
-          "title": "Speed",
+          "title": "Common.Speed",
           "type": "form",
           "text": "{% include \"movement.md\" %}",
           "attribute": "data.speed",
@@ -74,37 +74,37 @@
           "type": "hStack",
           "fields": [
             {
-              "title": "STR",
+              "title": "Ability.STR",
               "type": "number",
               "alignment": "top",
               "attribute": "data.abilities.str"
             },
             {
-              "title": "DEX",
+              "title": "Ability.DEX",
               "type": "number",
               "alignment": "top",
               "attribute": "data.abilities.dex"
             },
             {
-              "title": "CON",
+              "title": "Ability.CON",
               "type": "number",
               "alignment": "top",
               "attribute": "data.abilities.con"
             },
             {
-              "title": "INT",
+              "title": "Ability.INT",
               "type": "number",
               "alignment": "top",
               "attribute": "data.abilities.int"
             },
             {
-              "title": "WIS",
+              "title": "Ability.WIS",
               "type": "number",
               "alignment": "top",
               "attribute": "data.abilities.wis"
             },
             {
-              "title": "CHA",
+              "title": "Ability.CHA",
               "type": "number",
               "alignment": "top",
               "attribute": "data.abilities.cha"
@@ -117,46 +117,46 @@
       "type": "group",
       "fields": [
         {
-          "title": "Saving Throws",
+          "title": "Monster.SavingThrows",
           "type": "attributes",
           "attribute": "data.savingThrows",
           "attributeType": "Ability",
           "text": "{{key|capitalize}} {{value|signed}}",
         },
         {
-          "title": "Skills",
+          "title": "Monster.Skills",
           "type": "attributes",
           "attribute": "data.skills",
           "attributeType": "Skill",
           "text": "{{key|map: 'Skill'}} {{value|signed}}",
         },
         {
-          "title": "Condition Immunities",
+          "title": "Monster.ConditionImmunities",
           "type": "multiPicker",
           "attribute": "data.conditionImmunities",
           "attributeType": "Condition",
           "filter": "type == 'condition'"
         },
         {
-          "title": "Damage Immunities",
+          "title": "Monster.DamageImmunities",
           "type": "multiPicker",
           "attribute": "data.damageImmunities",
           "attributeType": "Damage"
         },
         {
-          "title": "Damage Vulnerabilities",
+          "title": "Monster.DamageVulnerabilities",
           "type": "multiPicker",
           "attribute": "data.damageVulnerabilities",
           "attributeType": "Damage"
         },
         {
-          "title": "Damage Resistances",
+          "title": "Monster.DamageResistances",
           "type": "multiPicker",
           "attribute": "data.damageResistances",
           "attributeType": "Damage"
         },
         {
-          "title": "Senses",
+          "title": "Monster.Senses",
           "type": "form",
           "text": "{% include \"senses.md\" %}",
           "form": {
@@ -164,18 +164,18 @@
           }
         },
         {
-          "title": "Passive Perception",
+          "title": "Monster.PassivePerception",
           "type": "number",
           "attribute": "data.passivePerception",
         },
         {
-          "title": "Languages",
+          "title": "Monster.Languages",
           "type": "multiPicker",
           "attribute": "data.languages",
           "attributeType": "Language"
         },
         {
-          "title": "Challenge Rating",
+          "title": "Monster.ChallengeRating",
           "type": "picker",
           "attribute": "data.cr",
           "text": "{{value}} ({{value|map:'ChallengeRatingToXP', '0'}} XP)",
@@ -187,19 +187,19 @@
       "type": "group",
       "fields": [
         {
-          "title": "Initiative Bonus",
+          "title": "Monster.InitiativeBonus",
           "placeholder": "Default",
           "type": "number",
           "attribute": "data.initiativeBonus"
         },
         {
-          "title": "Proficiency Bonus",
+          "title": "Monster.ProficiencyBonus",
           "placeholder": "Default",
           "type": "number",
           "attribute": "data.proficiencyBonus"
         },
         {
-          "title": "Environments",
+          "title": "Monster.Environments",
           "type": "multiPicker",
           "attribute": "data.environments",
           "attributeType": "Environment"
@@ -207,56 +207,56 @@
       ]
     },
     {
-      "title": "Traits",
+      "title": "Monster.Traits",
       "type": "list",
       "attribute": "data.traits",
       "form": {
-        "title": "Trait",
+        "title": "Monster.Trait",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Actions",
+      "title": "Monster.Actions",
       "type": "list",
       "attribute": "data.actions",
       "form": {
-        "title": "Action",
+        "title": "Monster.Action",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Reactions",
+      "title": "Monster.Reactions",
       "type": "list",
       "attribute": "data.reactions",
       "form": {
-        "title": "Reaction",
+        "title": "Monster.Reaction",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Legendary Actions",
+      "title": "Monster.LegendaryActions",
       "type": "list",
       "attribute": "data.legendaryActions",
       "form": {
-        "title": "Legendary Action",
+        "title": "Monster.LegendaryAction",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Bonus Actions",
+      "title": "Monster.BonusActions",
       "type": "list",
       "attribute": "data.bonusActions",
       "form": {
-        "title": "Bonus Action",
+        "title": "Monster.BonusAction",
         "partial": "generic-feature"
       }
     },
     {
-      "title": "Mythic Actions",
+      "title": "Monster.MythicActions",
       "type": "list",
       "attribute": "data.mythicActions",
       "form": {
-        "title": "Mythic Action",
+        "title": "Monster.MythicAction",
         "partial": "generic-feature"
       }
     },
