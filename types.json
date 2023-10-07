@@ -191,6 +191,7 @@
     "fire": "Damage.Fire",
     "force": "Damage.Force",
     "lightning": "Damage.Lightning",
+    "magic": "Damage.Magic",
     "necrotic": "Damage.Necrotic",
     "piercing": "Damage.Piercing",
     "poison": "Damage.Poison",
