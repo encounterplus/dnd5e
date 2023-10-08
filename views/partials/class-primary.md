@@ -26,6 +26,6 @@
 **{{'Class.Skills'|l}}:** Choose {{data.skillsNumber|default: 'any'}} from {{data.skills|map: 'Skill'}}
 {% endif -%}
 
-### {{'Class.StartingEquipment '|l}}
+### {{'Class.StartingEquipment'|l}}
 
 {{data.equipment}}
