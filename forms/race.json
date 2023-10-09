@@ -19,7 +19,7 @@
             "title": "Common.Speed",
             "partial": "movement"
           }
-        },
+        }
       ]
     },
     {
@@ -30,6 +30,6 @@
         "title": "Race.Trait",
         "partial": "generic-feature"
       }
-    },
+    }
   ]
 }

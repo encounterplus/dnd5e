@@ -24,17 +24,18 @@
       "type": "group",
       "fields": [
         {
-          "title": "Size",
+          "title": "Common.Size",
           "type": "picker",
-          "attribute": "size",
+          "attribute": "data.size",
           "attributeType": "Size"
         },
         {
-          "title": "Speed",
+          "title": "Common.Speed",
+          "attribute": "data.speed",
           "type": "form",
-          "attribute": "speed",
           "text": "{% include \"movement.md\" %}",
           "form": {
+            "title": "Common.Speed",
             "partial": "movement"
           }
         }
