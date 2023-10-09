@@ -467,6 +467,6 @@
   "VehicleComponent.Other": "Other",
   "VehicleComponent.Weapon": "Weapon",
   "Weapon.Firearm": "Firearm",
-  "Weapon.MartialWeapon": "MartialWeapon",
-  "Weapon.SimpleWeapon": "SimpleWeapon"
+  "Weapon.MartialWeapon": "Martial Weapon",
+  "Weapon.SimpleWeapon": "Simple Weapon"
 }
