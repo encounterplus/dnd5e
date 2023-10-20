@@ -196,6 +196,9 @@
       {
         "type": "table",
         "attribute": "data.senses",
+        "custom": {
+          "filter": "key != 'other'"
+        },
         "alignment": "leading",
         "views": [
           {
@@ -217,7 +220,7 @@
             "type": "tableRow",
             "views": [
               {
-                "value": "**{{value|suffix: ' ft.'}}**",
+                "value": "**{{value|units: 'ft'}}**",
                 "style": "body-muted",
                 "width": -1,
               },
@@ -227,6 +230,10 @@
             ]
           },
         ]
+      },
+      {
+        "type": "text",
+        "value": "{{data.senses.other}}"
       },
       {
         "style": "heading3",

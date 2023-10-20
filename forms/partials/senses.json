@@ -8,22 +8,22 @@
         {
           "title": "Sense.Blindsight",
           "type": "decimal",
-          "attribute": "data.senses.blindsight"
+          "attribute": "blindsight"
         },
         {
           "title": "Sense.Darkvision",
           "type": "decimal",
-          "attribute": "data.senses.darkvision"
+          "attribute": "darkvision"
         },
         {
           "title": "Sense.Tremorsense",
           "type": "decimal",
-          "attribute": "data.senses.tremorsense"
+          "attribute": "tremorsense"
         },
         {
           "title": "Sense.Truesight",
           "type": "decimal",
-          "attribute": "data.senses.truesight"
+          "attribute": "truesight"
         }
       ]
     },
@@ -34,7 +34,7 @@
         {
           "placeholder": "Sense.Other",
           "type": "textArea",
-          "attribute": "data.senses.other"
+          "attribute": "other"
         }
       ]
     },

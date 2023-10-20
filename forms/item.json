@@ -11,6 +11,12 @@
           "attributeType": "ItemType"
         },
         {
+          "title": "Common.TypeDetail",
+          "type": "text",
+          "attribute": "data.typeDetail",
+          "visibleIf": "{% if data.type == 'armor' or data.type == 'lightArmor' or data.type == 'mediumArmor' or data.type == 'heavyArmor' or data.type == 'weapon' or data.type == 'meleeWeapon' or data.type == 'rangedWeapon' %}true{% endif %}",
+        },
+        {
           "title": "Item.Rarity",
           "type": "picker",
           "attribute": "data.rarity",
@@ -107,7 +113,7 @@
           "attribute": "data.container",
         },
         {
-          "title": "Item.ContainerCapacityWithUnit)",
+          "title": "Item.ContainerCapacityWithUnit",
           "placeholder": "Common.Unlimited",
           "type": "number",
           "attribute": "data.capacity",

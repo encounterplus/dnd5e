@@ -16,9 +16,16 @@
         },
         {
           "style": "subtitle",
-          "value": "{{detail}}",
+          "value": "{{detail}} {%if data.attunement and data.attunementDetail %}{{data.attunementDetail|lowercase|brackets}}{% elif data.attunement %}{{'Item.RequiresAttunement'|l|lowercase|brackets}}{% endif %}",
         },
       ]
+    },
+    {
+      "type": "text",
+      "value": "{% include 'item-primary.md' %}"
+    },
+    {
+      "type": "divider"
     },
     {
       "type": "text",

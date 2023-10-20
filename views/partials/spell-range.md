@@ -1,1 +1,1 @@
-{%if rangeType != nil %}{{rangeType|map: 'SpellRange'}} {% else %}{{range|format: 'feet'}}{% endif %}
+{%if rangeType != nil %}{{rangeType|map: 'SpellRange'}} {% else %}{{range|units: 'ft'}}{% endif %}

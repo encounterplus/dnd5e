@@ -146,7 +146,7 @@
           "views": [
             {
               "style": "sheet-field-value",
-              "value": "{{data.speed.walk|default: 0}} ft.",
+              "value": "{{data.race.speed.walk|default: 30|units: 'ft'}}",
               "alignment": "center",
             },
             {

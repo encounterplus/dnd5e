@@ -404,7 +404,7 @@
     "survival": "wis"
   },
   "MeasurementSystem": {
-    "default": "MeasurementSystem.Default",
+    "imperial": "MeasurementSystem.Imperial",
     "metric": "MeasurementSystem.Metric"
   }
 }

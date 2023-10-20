@@ -16,7 +16,7 @@
 {% if data.conditionImmunities -%}
 **{{'Monster.ConditionImmunities'|l}}** {% for condition in data.conditionImmunities %}[{{condition|lowercase}}](condition), {% endfor %}
 {% endif -%}
-**{{'Monster.Senses'|l}}** {% include "senses.md" %}{% if data.passivePerception %}{{"Sense.PassivePerception"|l}} {{data.passivePerception}}{% endif %} 
+**{{'Monster.Senses'|l}}** {% include "senses.md" data.senses %}{% if data.passivePerception %}{{"Sense.PassivePerception"|l}} {{data.passivePerception}}{% endif %} 
 {% if data.languages -%}
 **{{'Monster.Languages'|l}}** {{data.languages|map: 'Language'}}
 {% endif -%}

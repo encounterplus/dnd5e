@@ -21,7 +21,7 @@
                   "size": "data.size",
                   "speed": "data.speed",
                   "traits": "data.traits"
-                }
+                },
               },
               "form": {
                 "title": "Race",
@@ -200,29 +200,17 @@
         },
         {
           "type": "group",
+          "title": "Senses",
           "fields": [
-            {
-              "title": "Speed",
-              "type": "form",
-              "text": "{% include \"movement.md\" %}",
-              "attribute": "data.speed",
-              "form": {
-                "partial": "movement"
-              }
-            },
             {
               "title": "Senses",
               "type": "form",
-              "text": "{% include \"senses.md\" %}",
+              "attribute": "data.senses",
+              "text": "{% include \"senses.md\" data.senses %}",
               "form": {
                 "partial": "senses"
               }
             },
-          ]
-        },
-        {
-          "type": "group",
-          "fields": [
             {
               "title": "Passive Perception",
               "type": "number",
@@ -237,7 +225,7 @@
               "title": "Passive Insight",
               "type": "number",
               "attribute": "data.passiveInsight",
-            },
+            }
           ]
         },
         {

@@ -14,7 +14,7 @@
           "title": "Common.Speed",
           "attribute": "data.speed",
           "type": "form",
-          "text": "{% include \"movement.md\" %}",
+          "text": "{% include \"movement.md\" data.speed %}",
           "form": {
             "title": "Common.Speed",
             "partial": "movement"

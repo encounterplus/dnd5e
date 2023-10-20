@@ -59,7 +59,7 @@
         {
           "title": "Common.Speed",
           "type": "form",
-          "text": "{% include \"movement.md\" %}",
+          "text": "{% include \"movement.md\" data.speed %}",
           "attribute": "data.speed",
           "form": {
             "partial": "movement"
@@ -158,7 +158,8 @@
         {
           "title": "Monster.Senses",
           "type": "form",
-          "text": "{% include \"senses.md\" %}",
+          "attribute": "data.senses",
+          "text": "{% include \"senses.md\" data.senses %}",
           "form": {
             "partial": "senses"
           }
