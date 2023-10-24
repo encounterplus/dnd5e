@@ -50,6 +50,10 @@
           "padding": [4, 0],
           "views": [
             {
+	      "type": "text",
+	      "value": "{{descr}}",
+            },
+            {
               "type": "text",
               "value": "{% for feature in data.features %}### {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
             }
