@@ -30,7 +30,7 @@
       "views": [
         {
           "type": "text",
-          "value": "## {{name}}\n\n{{text}}"
+          "value": "## {{name}}\n\n{% if optional %}*{{'Common.Optional'|l}}*{% endif %}{% if prerequisite %} • *{{'ClassFeature.Prerequisite'|l}} : {{prerequisite}}*{% endif %}\n\n{{text}}"
         }
       ]
     },
