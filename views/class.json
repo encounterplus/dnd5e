@@ -30,7 +30,7 @@
       "views": [
         {
           "type": "text",
-          "value": "## {{name}}\n\n{{text}}"
+          "value": "## {{name}}\n\n{% if optional %}*{{'Common.Optional'|l}}*{% endif %}{% if prerequisite %} • *{{'ClassFeature.Prerequisite'|l}} : {{prerequisite}}*{% endif %}\n\n{{text}}"
         }
       ]
     },
@@ -49,6 +49,10 @@
           "value": "{{sourceFormatted}}",
           "padding": [4, 0],
           "views": [
+            {
+	      "type": "text",
+	      "value": "{{descr}}",
+            },
             {
               "type": "text",
               "value": "{% for feature in data.features %}### {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
