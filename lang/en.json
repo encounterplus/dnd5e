@@ -79,6 +79,7 @@
   "Common.Attributes": "Attributes",
   "Common.CR": "CR",
   "Common.Capacity": "Capacity",
+  "Common.Condition": "Condition",
   "Common.Count": "Count",
   "Common.Custom": "Custom",
   "Common.CustomType": "Custom Type",
