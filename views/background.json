@@ -8,7 +8,7 @@
     {
       "style": "title",
       "value": "{{name}}",
-      "link": "https://www.google.com/search?tbm=isch&q=d&d+5e+{{name}}"
+      "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
     },
     {
       "type": "text",
