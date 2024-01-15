@@ -17,5 +17,11 @@
 **{{'Common.Weight'|l}}:** {{data.weight|units: 'lb'}}
 {% endif -%}
 {% if data.value -%}
-**{{'Common.Value'|l}}:** {{data.value|suffix: ' gp'}}
+{% if data.value >= 1%}
+**{{'Common.Value'|l}}:** {% eval %}{{data.value|default: 0}} {% endeval %} {{'Common.Currency.gp'|l}}
+{% elif data.value >= 0.1 %}
+**{{'Common.Value'|l}}:** {% eval %}{{data.value|default: 0}} * 10{% endeval %} {{'Common.Currency.sp'|l}}
+{% elif data.value >= 0.01 %}
+**{{'Common.Value'|l}}:** {% eval %}{{data.value|default: 0}} * 100{% endeval %} {{'Common.Currency.cp'|l}}
+{% endif -%}
 {% endif -%}
