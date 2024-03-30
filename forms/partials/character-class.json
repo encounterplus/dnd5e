@@ -41,9 +41,9 @@
       "title": "Features",
       "type": "list",
       "attribute": "features",
-      "listItemDetail": "{{level|ordinal}} level{{subclass|prefix:' • '}}{% if optional %} • Optional{% endif %}",
       "custom": {
-        "extendedType": "dnd5eClassFeaturePicker"
+        "extendedType": "dnd5eClassFeaturePicker",
+        "itemDetail": "{{level|ordinal}} level{{subclass|prefix:' • '}}{% if optional %} • Optional{% endif %}",
       },
       "form": {
         "title": "Class Feature",

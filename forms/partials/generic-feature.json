@@ -16,7 +16,10 @@
         {
           "title": "Common.Description",
           "type": "textArea",
-          "attribute": "text"
+          "attribute": "text",
+          "custom": {
+            "lines": 10
+          }
         }
       ]
     }

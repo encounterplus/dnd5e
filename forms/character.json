@@ -35,7 +35,9 @@
           "type": "list",
           "attribute": "data.classes",
           "attributeType": "Class",
-          "listItemDetail": "{{level|ordinal|default: '1st'}} level",
+          "custom": {
+            "itemDetail": "{{level|ordinal|default: '1st'}} level",
+          },
           "form": {
             "title": "Class",
             "partial": "character-class"
@@ -186,16 +188,15 @@
         },
         {
           "title": "Skills",
-          "type": "list",
+          "type": "group",
           "attribute": "data.skills",
           "attributeType": "Skill",
-          "listItemTitle": "{{key|map: 'Skill'}}",
+          "custom": {
+            "itemTitle": "{{key|map: 'Skill'}}"
+          },
           "form": {
             "title": "{{key|map: 'Skill'}}",
             "partial": "character-skill"
-          },
-          "custom": {
-            "editable": false,
           }
         },
         {
@@ -317,7 +318,13 @@
           "type": "list",
           "attribute": "data.items",
           "attributeType": "Item",
-          "listItemDetail": "{{definition.detail}}",
+          "custom": {
+            "transform": "tree",
+            "itemDetail": "{{definition.detail}}",
+            "map": {
+              "container": "data.container"
+            }
+          },
           "form": {
             "title": "Item",
             "partial": "character-item"
@@ -428,9 +435,9 @@
           "custom": {
             "map": {
               "level": "data.level"
-            }
+            },
+            "itemDetail": "{{definition.detail}}"
           },
-          "listItemDetail": "{{definition.detail}}",
           "form": {
             "title": "Spell",
             "partial": "character-spell"

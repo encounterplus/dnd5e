@@ -1,5 +1,5 @@
 {% if data.savingThrows -%}
-**{{'Monster.SavingThrows'|l}}** {% for key, value in data.savingThrows %}{{key|capitalize}} [{{value|signed}}](/roll/d20{{value|signed}}/{{key|map: 'Ability'}}/save), {% endfor %}
+**{{'Monster.SavingThrows'|l}}** {% for key, value in data.savingThrows %}{{key|map: 'AbilityAbbr'|lowercase|capitalize}} [{{value|signed}}](/roll/d20{{value|signed}}/{{key|map: 'Ability'}}/save), {% endfor %}
 {% endif -%}
 {% if data.skills -%}
 **{{'Monster.Skills'|l}}** {% for key, value in data.skills %}{{key|map: 'Skill'}} [{{value|signed}}](/roll/d20{{value|signed}}/{{key|map: 'Skill'}}/check), {% endfor %}

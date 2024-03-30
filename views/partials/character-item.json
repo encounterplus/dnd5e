@@ -28,7 +28,7 @@
               "style": "sheet-item-title"
             },
             {
-              "value": "{{definition.data.type|map: 'ItemType'}}{{definition.data.rarity|map: 'ItemRarity'|prefix: ' • '}}{{definition.data.weight|prefix: ' • '|suffix: ' lbs'}}",
+              "value": "{{definition.data.type|map: 'ItemType'}}{{definition.data.rarity|map: 'ItemRarity'|prefix: ' • '}}{{definition.data.weight|units: 'lb'|prefix: ' • '|}}",
               "style": "sheet-item-detail"
             }
           ]

@@ -52,16 +52,6 @@
       ]
     },
     {
-      "title": "Items",
-      "type": "list",
-      "attribute": "items",
-      "attributeType": "Item",
-      "form": {
-        "title": "Item",
-        "partial": "character-item"
-      }
-    },
-    {
       "type": "group",
       "fields": [
         {
@@ -75,6 +65,23 @@
           "attribute": "attuned",
         },
       ]
+    },
+    {
+      "title": "Items",
+      "type": "list",
+      "attribute": "data.items",
+      "attributeType": "Item",
+      "custom": {
+        "transform": "tree",
+        "map": {
+          "container": "data.container"
+        }
+      },
+      "form": {
+        "title": "Character.Item",
+        "partial": "character-item"
+      },
+      "visibleIf": "{{container}}"
     },
     {
       "type": "group",

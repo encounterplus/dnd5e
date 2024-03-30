@@ -37,7 +37,9 @@
                 "type": "list",
                 "title": "Common.Levels",
                 "attribute": "levels",
-                "listItemTitle": "{{array.position|ordinal}} level",
+                "custom": {
+                  "itemTitle": "{{array.position|ordinal}} level",
+                },
                 "form": {
                   "title": "Spellcasting {{array.position|ordinal}} level",
                   "sections": [
@@ -195,7 +197,9 @@
       "title": "Class.Features",
       "type": "list",
       "attribute": "data.features",
-      "listItemDetail": "{{level|ordinal}} level{% if optional %} • {{'Common.Optional'|l}}{% endif %}",
+      "custom": {
+        "itemDetail": "{{level|ordinal}} level{% if optional %} • {{'Common.Optional'|l}}{% endif %}",
+      },
       "form": {
         "title": "Class.Feature",
         "partial": "class-feature"

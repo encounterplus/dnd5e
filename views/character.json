@@ -162,70 +162,87 @@
       "type": "divider",
     },
     {
-      "type": "scroll",
+      "id": "mainTabs",
+      "type": "tabs",
+      "custom": {
+        "buttonStyle": {
+          "selected": "prominent" 
+        }
+      },
       "views": [
         {
-          "type": "hStack",
-          "alignment": "center",
-          "padding": [1],
-          "spacing": 6,
-          "views": [
-            {
-              "type": "buttonGroup",
-              "attribute": "ui.currentTab",
-              "attributeType": "CharacterSection",
-              "custom": {
-                "buttonStyle": {
-                  "selected": "prominent" 
-                }
-              }
-            },
-          ]
+          "id": "abilities",
+          "title": "Abilities",
+          "custom": {
+            "icon": "flag.fill"
+          },
+          "type": "partial",
+          "value": "character-abilities",
+        },
+        {
+          "id": "skills",
+          "title": "Skills",
+          "custom": {
+            "icon": "person.fill"
+          },
+          "type": "partial",
+          "value": "character-skills",
+        },
+        {
+          "id": "actions",
+          "title": "Actions",
+          "custom": {
+            "icon": "figure.archery"
+          },
+          "type": "partial",
+          "value": "character-actions",
+        },
+        {
+          "id": "spells",
+          "title": "Spells",
+          "custom": {
+            "icon": "bolt.fill"
+          },
+          "type": "partial",
+          "value": "character-spells",
+        },
+        {
+          "id": "items",
+          "title": "items",
+          "custom": {
+            "icon": "archivebox.fill"
+          },
+          "type": "partial",
+          "value": "character-items",
+        },
+        {
+          "id": "features",
+          "title": "Features",
+          "custom": {
+            "icon": "list.bullet"
+          },
+          "type": "partial",
+          "value": "character-features",
+        },
+        {
+          "id": "other",
+          "title": "Other",
+          "custom": {
+            "icon": "note.text"
+          },
+          "type": "partial",
+          "value": "character-other",
         },
       ]
     },
-    {
-      "type": "partial",
-      "value": "character-abilities",
-      "visibleIf": "{% if ui.currentTab == 'abilities' or ui.currentTab == nil %}true{% endif %}"
-    },
-    {
-      "type": "partial",
-      "value": "character-skills",
-      "visibleIf": "{% if ui.currentTab == 'skills' %}true{% endif %}",
-    },
-    {
-      "type": "partial",
-      "value": "character-actions",
-      "visibleIf": "{% if ui.currentTab == 'actions' %}true{% endif %}"
-    },
-    {
-      "type": "partial",
-      "value": "character-spells",
-      "visibleIf": "{% if ui.currentTab == 'spells' %}true{% endif %}",
-    },
-    {
-      "type": "partial",
-      "value": "character-items",
-      "visibleIf": "{% if ui.currentTab == 'items' %}true{% endif %}",
-    },
-    {
-      "type": "partial",
-      "value": "character-features",
-      "visibleIf": "{% if ui.currentTab == 'features' %}true{% endif %}",
-    },
-    {
-      "type": "partial",
-      "value": "character-other",
-      "visibleIf": "{% if ui.currentTab == 'other'%}true{% endif %}",
-    },
+    
   ],
   //computed attributes
   "attributes": [
     // GENERAL
     {
       // for development purposes
-      "ui.currentTab": "abilities",
+      "ui.tabs.mainTab.selectedTab": "skills",
       // total level as sum from all classes
       "data.level": {
         "attribute": "data.classes.level",
@@ -332,6 +349,11 @@
       },
     },
     {
+      // items transform to sections
+      "data.items": {
+        "attribute": "data.items",
+        "transform": "items"
+      },
       // final AC
       "data.ac": "#{% if data.ac %}{{data.ac|integer}}{% else %}{% if activeArmor %}{{activeArmor.definition.data.ac|default: 0}}{% else %}{{baseArmor|default: 0}}{% endif %} + {{activeShield.definition.data.ac|default: 0}}{% endif %}"
     },

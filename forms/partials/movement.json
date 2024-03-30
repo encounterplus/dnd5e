@@ -2,7 +2,8 @@
   "title": "Movement",
   "sections": [
     {
-      "title": "Movement.MovementWithUnit",
+      "title": "Common.Movement",
+      "units": "ft",
       "type": "group",
       "fields": [
         {
@@ -13,13 +14,14 @@
       ]
     },
     {
-      "title": "Movement.MovementWithUnit",
+      "title": "Common.Movement",
+      "units": "ft",
       "type": "group",
       "fields": [
         {
           "title": "Movement.Burrow",
           "type": "decimal",
-          "attribute": "burrow"
+          "attribute": "burrow",
         },
         {
           "title": "Movement.Climb",

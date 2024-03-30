@@ -2,6 +2,7 @@
   "measurement": {
     "imperial": {
       "default": true,
+      "title": "MeasurementSystem.Imperial",
       "units": ["ft", "mi", "lb"],
       "format": "@value @unit.",
       "conversion": {
@@ -19,6 +20,7 @@
       }
     },
     "metric": {
+      "title": "MeasurementSystem.Metric",
       "units": ["m", "km", "kg"],
       "format": "@value @unit",
       "conversion": {
@@ -34,6 +36,12 @@
           }
         }
       }
+    }
+  },
+  "combat": {
+    "initiative": {
+      "die": "d20",
+      "formula": "@die + @initiativeBonus"
     }
   }
 }

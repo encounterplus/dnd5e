@@ -7,15 +7,15 @@
       "fields": [
         {
           "type": "picker",
-          "title": "Language",
-          "placeholder": "Default",
+          "title": "Common.Language",
+          "placeholder": "Common.Default",
           "attribute": "language",
           "attributeType": "SystemLanguage"
         },
         {
           "type": "picker",
-          "title": "Measurement",
-          "placeholder": "Default",
+          "title": "Common.Measurement",
+          "placeholder": "Common.Default",
           "attribute": "measurement",
           "attributeType": "MeasurementSystem"
         },

@@ -2,7 +2,8 @@
   "title": "Senses",
   "sections": [
     {
-      "title": "Sense.SensesWithUnit",
+      "title": "Common.Senses",
+      "units": "ft",
       "type": "group",
       "fields": [
         {

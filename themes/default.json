@@ -1,10 +1,16 @@
 {
+  "debug": false,
   "tintColor": "#58180D",
   "primaryColor": "#9C2B1B",
   "textColor": "#000000",
   "dividerColor": "#cccccc",
   "bgColor": "#ffffff",
   "bgImage": "/images/paper.png",
+  "tableStyles": {
+    "default": {
+      "rowColor": "#9C2B1B33",
+    }
+  },
   "statBlockStyles": {
     "default": {
       "bgImage": "/images/paper3.png",
@@ -208,7 +214,7 @@
     },
     "heading6": {
       "font": "HoeflerText-Regular",
-      "color": "#888",
+      "color": "#58180D",
       "size": 13
     },
     "footer": {

@@ -19,7 +19,7 @@
     },
     "loadable": true,
     "custom": {
-      "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|prefix: ', '}}",
+      "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|map: 'Alignment'|prefix: ', '}}",
     }
   },
   {
@@ -51,7 +51,7 @@
     "loadable": true,
     "role": "neutral",
     "custom": { 
-      "detail": "{{data.type|map: 'ItemType'}}{{data.rarity|map: 'ItemRarity'|lowercase|prefix: ', '}}",
+      "detail": "{{data.type|map: 'ItemType'|lowercase|capitalizeFirstLetter}}{{data.typeDetail|brackets|prefix: ' '}}{{data.rarity|map: 'ItemRarity'|lowercase|prefix: ', '}}",
     }
   },
   {

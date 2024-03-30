@@ -59,7 +59,7 @@
           "type": "form",
           "text": "{% include 'spell-range.md' data %}",
           "form": {
-            "title":  "Common.Range",
+            "title":  "Common.Spell",
             "sections": [
               {
                 "title": "Common.Type",
@@ -73,7 +73,8 @@
                 "title": "Common.Value",
                 "fields": [
                   {
-                    "title": "Common.RangeWithUnit",
+                    "title": "Common.Range",
+                    "units": "ft",
                     "type": "decimal",
                     "attribute": "data.range",
                   }
@@ -85,7 +86,7 @@
         {
           "title": "Spell.AreaEffect",
           "type": "form",
-          "text": "{{data.areaEffectSize|format|suffix: ' ft'}} {{data.areaEffectShape|map: 'AreaEffectShape'}}",
+          "text": "{{data.areaEffectSize|units: 'ft'}} {{data.areaEffectShape|map: 'AreaEffectShape'}}",
           "form": {
             "title":  "Spell.AreaEffect",
             "sections": [
@@ -99,7 +100,8 @@
                 "type": "group",
                 "fields": [
                   {
-                    "title": "AreaEffect.SizeWithUnit",
+                    "title": "AreaEffect.Size",
+                    "units": "ft",
                     "type": "decimal",
                     "attribute": "data.areaEffectSize",
                   }

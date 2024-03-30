@@ -220,5 +220,20 @@
         "title": "Source"
       }
     ]
+  },
+  "Table": {
+    "params": [
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "source",
+        "title": "Source"
+      }
+    ]
   }
 }

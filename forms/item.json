@@ -34,12 +34,14 @@
           "visibleIf": "{{data.attunement}}",
         },
         {
-          "title": "Item.ValueWithUnit",
+          "title": "Item.Value",
+          "units": "gp",
           "type": "decimal",
           "attribute": "data.value"
         },
         {
-          "title": "Item.WeightWithUnit",
+          "title": "Item.Weight",
+          "units": "lb",
           "type": "decimal",
           "attribute": "data.weight"
         }
@@ -96,7 +98,8 @@
           "attributeType": "Damage"
         },
         {
-          "title": "Item.RangeWithUnit",
+          "title": "Item.Range",
+          "units": "ft",
           "type": "text",
           "attribute": "data.range"
         },
@@ -113,7 +116,8 @@
           "attribute": "data.container",
         },
         {
-          "title": "Item.ContainerCapacityWithUnit",
+          "title": "Item.ContainerCapacity",
+          "units": "lb",
           "placeholder": "Common.Unlimited",
           "type": "number",
           "attribute": "data.capacity",

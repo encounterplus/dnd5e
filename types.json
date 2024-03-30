@@ -161,6 +161,14 @@
     "wis": "Ability.Wisdom",
     "cha": "Ability.Charisma"
   },
+  "AbilityAbbr": {
+    "str": "Ability.STR",
+    "dex": "Ability.DEX",
+    "con": "Ability.CON",
+    "int": "Ability.INT",
+    "wis": "Ability.WIS",
+    "cha": "Ability.CHA"
+  },
   "Language": {
     "common": "Language.Common",
     "dwarvish": "Language.Dwarvish",
@@ -402,9 +410,5 @@
     "sleightOfHand": "dex",
     "stealth": "dex",
     "survival": "wis"
-  },
-  "MeasurementSystem": {
-    "imperial": "MeasurementSystem.Imperial",
-    "metric": "MeasurementSystem.Metric"
   }
 }
