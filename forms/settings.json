@@ -17,7 +17,34 @@
           "title": "Common.Measurement",
           "placeholder": "Common.Default",
           "attribute": "measurement",
-          "attributeType": "MeasurementSystem"
+          "attributeType": "MeasurementSystem",
+          "defaultValue": "imperial"
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Combat Tracker",
+      "fields": [
+        {
+          "type": "picker",
+          "title": "Auto-Roll Initiative",
+          "placeholder": "None",
+          "defaultValue": "hostileAndNeutral",
+          "attribute": "combat.initiative.autoRoll",
+          "attributeType": "InitiativeRollType",
+        },
+        {
+          "type": "picker",
+          "title": "Group Initiative By",
+          "placeholder": "None",
+          "attribute": "combat.initiative.group",
+          "attributeType": "InitiativeGroupType",
+        },
+        {
+          "type": "toggle",
+          "title": "Re-Roll Initiative Every Round",
+          "attribute": "combat.initiative.everyRound",
         },
       ]
     },

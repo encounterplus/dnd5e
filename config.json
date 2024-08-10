@@ -39,9 +39,17 @@
     }
   },
   "combat": {
-    "initiative": {
-      "die": "d20",
-      "formula": "@die + @initiativeBonus"
+    "combatants": {
+      "default": {
+        "bars": [
+          {
+            "attribute": "data.hp",
+            "title": "Common.HitPoints",
+            "label": "Common.HP",
+            "temporary": true
+          }
+        ]
+      }
     }
   }
 }

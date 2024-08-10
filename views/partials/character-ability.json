@@ -38,9 +38,9 @@
               },
               {
                 "style": "sheet-field-value",
-                "value": "{{value|default: 0|modifier|signed}}",
+                "value": "{{modifier|signed}}",
                 "alignment": "center",
-                "link": "/roll/d20{{value|default: 0|modifier|signed}}/{{ability|map: 'Ability'|uppercase}}/check"
+                "link": "/roll/d20{{modifier|signed}}/{{ability|map: 'Ability'|uppercase}}/check"
               },
               {
                 "style": "sheet-label",

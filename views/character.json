@@ -41,19 +41,19 @@
           "spacing": 0,
           "alignment": "bottom",
           "width": -1,
-          "link": "/health/",
+          "link": "/health/data.hp",
           "views": [
             {
               "type": "label",
               "style": "hp-current",
               "alignment": "trailing",
-              "value": "{{data.hpCurrent|default: 0}}{{data.hpTemporary|prefix: '+'}}",
+              "value": "{{data.hp.current|default: 0}}{{data.hp.temporary|prefix: '+'}}",
               "width": -1,
             },
             {
               "type": "label",
               "style": "hp-max",
-              "value": "/{{data.hpMaximum|default: 0}}",
+              "value": "/{{data.hp.maximum|default: 0}}",
               "width": -1,
             }
           ]
@@ -70,8 +70,10 @@
           },
           "action": {
             "set": {
-              "data.hpCurrent": "@data.hpMaximum",
-              "data.hpTemporary": null
+              "data.hp.current": {
+                "attribute": "data.hp.maximum",
+              },
+              "data.hp.temporary": null
             }
           }
         }
@@ -266,6 +268,7 @@
       },
     },
     {
+      "modifiers": ["data.abilities"],
       // compute ability ability modifier, and savig throw bonus
       "data.abilities": {
         "attribute": "data.abilities",
@@ -326,6 +329,7 @@
     },
     // ITEMS
     {
+      "modifiers": ["data.items"],
       // total gold
       "data.currency.total": "#({{data.currency.cp|default: 0}} / 100) + ({{data.currency.sp|default: 0}} / 10) + ({{data.currency.ep|default: 0}} / 2) + {{data.currency.gp|default: 0}} + ({{data.currency.pp|default: 0}} * 10)",
       // base armor modifier
@@ -365,8 +369,8 @@
           "attackType": "{% if self.definition.type == 'rangedWeapon' %}ranged{% else %}melee{% endif %}",
           "name": "{{self.name}}",
           "ability": "{% if self.definition.type == 'rangedWeapon' %}dex{% else %}str{% endif %}",
-          "attack": "@mod + @proficiency + @weaponAttackBonus",
-          "damage": "{{self.definition.data.dmg1}} + @mod + @weaponDamageBonus",
+          "attack": "@abilityModifier + @proficiency + @weaponAttackBonus",
+          "damage": "{{self.definition.data.dmg1}} + @abilityModifier + @weaponDamageBonus",
           "damageType": "{{self.definition.data.dmgType}}",
           "activation.time": 1,
           "activation.unit": "action",
@@ -389,11 +393,23 @@
         "map": {
           "proficiency": "#{{data.proficiencyBonus}}",
           "proficiencyHalf": "#floor({{data.proficiencyBonus}} / 2)",
-          "str": "#{{data.abilities.str.modifier}}",
-          "dex": "#{{data.abilities.dex.modifier}}",
-          "mod": "#{{data.abilities[self.ability].modifier}}",
+          "abilityModifier": "#{{data.abilities[self.ability].modifier}}",
         }
       }
+    },
+    {
+      "data.actions": {
+        "attribute": "data.actions",
+        "map": {
+          "proficiency": "#{{data.proficiencyBonus}}",
+          "proficiencyHalf": "#floor({{data.proficiencyBonus}} / 2)",
+          "abilityModifier": "#{{data.abilities[self.ability].modifier}}",
+        }
+      }
+    },
+    {
+      "data.vision.dark.radius.minimum": 0,
+      "data.vision.dark.radius.maximum": "#{{data.senses.darkvision}}",
     },
     // CLEANUP
     {

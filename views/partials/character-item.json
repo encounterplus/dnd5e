@@ -48,7 +48,7 @@
           "title": "Increase",
           "action": {
             "set": {
-              "quantity": "@quantity++"
+              "quantity": "#{{self.quantity|default: 0}} + 1"
             }
           }
         },
@@ -57,7 +57,7 @@
           "title": "Decrease",
           "action": {
             "set": {
-              "quantity": "@quantity--"
+              "quantity": "#{{self.quantity|default: 0}} - 1"
             }
           }
         },

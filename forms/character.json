@@ -62,7 +62,7 @@
             {
               "title": "Current XP",
               "type": "number",
-              "attribute": "data.xp"
+              "attribute": "data.xp.current"
             }
           ]
         },
@@ -73,17 +73,17 @@
             {
               "title": "Current HP",
               "type": "number",
-              "attribute": "data.hpCurrent"
+              "attribute": "data.hp.current"
             },
             {
               "title": "Temporary HP",
               "type": "number",
-              "attribute": "data.hpTemporary"
+              "attribute": "data.hp.temporary"
             },
             {
               "title": "Maximum HP",
               "type": "number",
-              "attribute": "data.hpMaximum"
+              "attribute": "data.hp.maximum"
             }
           ]
         },
