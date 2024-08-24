@@ -178,6 +178,16 @@
       }
     },
     {
+      "title": "VehicleComponent.Hull",
+      "type": "list",
+      "attribute": "data.hull",
+      "visibleIf": "{%if data.type == 'ship' %}true{% endif %}",
+      "form": {
+        "title": "VehicleComponent.Hull",
+        "partial": "vehicle-component"
+      }
+    },
+    {
       "title": "Vehicle.Controls",
       "type": "list",
       "attribute": "data.controls",
