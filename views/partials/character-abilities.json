@@ -61,18 +61,17 @@
         "views": [
           {
             "type": "tableRow",
+            "padding": [4, 0],
             "views": [
               {
                 "value": "PROF",
                 "style": "sheet-label",
                 "alignment": "center",
-                "width": 34,
               },
               {
                 "value": "MOD",
                 "style": "sheet-label",
                 "alignment": "center", 
-                "width": 40,
               },
               {
                 "value": "ABILITY",
@@ -82,6 +81,7 @@
           },
           {
             "type": "tableRow",
+            "padding": [4, 0],
             "views": [
               {
                 "type": "checkbox",
@@ -108,12 +108,14 @@
                     },
                   }
                 },
-                "width": -1
+                "width": 34,
+                "alignment": "center"
               },
               {
                 "value": "**{{value.savingThrow.bonus|default: 0|signed}}**",
                 "style": "body-muted",
-                "width": -1,
+                "width": 32,
+                "alignment": "center",
                 "padding": [0, 0, 0, 8],
                 "link": "/roll/d20{{value.savingThrow.bonus|default: 0|signed}}/{{key|map: 'Ability'}}/save"
               },
@@ -140,7 +142,6 @@
                 "value": "VALUE",
                 "style": "sheet-label",
                 "alignment": "center",
-                "width": 44,
               },
               {
                 "value": "SENSE",
@@ -154,7 +155,7 @@
               {
                 "value": "**{{data.passivePerception|default: 0}}**",
                 "style": "body-muted",
-                "width": -1,
+                "alignment": "center",
               },
               {
                 "value": "**Passive Perception**",
@@ -167,7 +168,7 @@
               {
                 "value": "**{{data.passiveInvestigation|default: 0}}**",
                 "style": "body-muted",
-                "width": -1,
+                "alignment": "center",
               },
               {
                 "value": "**Passive Investigation**",
@@ -180,7 +181,7 @@
               {
                 "value": "**{{data.passiveInsight|default: 0}}**",
                 "style": "body-muted",
-                "width": -1,
+                "alignment": "center",
               },
               {
                 "value": "**Passive Insight**",

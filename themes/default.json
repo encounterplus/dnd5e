@@ -76,6 +76,7 @@
       "size": 14
     },
     "body-muted": {
+      "size": 14,
       "color": "#808080",
     },
     "label": {

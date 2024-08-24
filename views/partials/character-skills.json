@@ -12,18 +12,16 @@
       "views": [
         {
           "type": "tableRow",
+          "padding": [6, 0],
           "views": [
             {
               "value": "PROF",
-              "style": "sheet-label",
-              "alignment": "center",
-              "width": 34,
+              "style": "sheet-label", 
             },
             {
               "value": "MOD",
               "style": "sheet-label",
               "alignment": "center", 
-              "width": 40,
             },
             {
               "value": "SKILL",
@@ -33,6 +31,7 @@
         },
         {
           "type": "tableRow",
+          "padding": [6, 4],
           "views": [
             {
               "type": "checkbox",
@@ -64,7 +63,6 @@
             {
               "value": "**{{value.value|default: 0|signed}}**",
               "style": "body-muted",
-              "width": -1,
               "link": "/roll/d20{{value.value|default: 0|signed}}/{{key|map: 'Skill'}}/check"
             },
             {

@@ -1,0 +1,168 @@
+{
+  "views": [
+    {
+      "type": "statBlock",
+      "spacing": 8,
+      "padding": [
+        16
+      ],
+      "views": [
+        {
+          "type": "vStack",
+          "spacing": -1,
+          "views": [
+            {
+              "style": "title",
+              "value": "{{name}}",
+              "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+            },
+            {
+              "style": "subtitle",
+              "value": "{{detail}}",
+            },
+          ]
+        },
+        {
+          "type": "divider",
+          "style": "triangle",
+          "height": 5,
+          "padding": [0]
+        },
+        {
+          "type": "text",
+          "style": "stats-body",
+          "value": "{% include \"monster-primary.md\" %}",
+        },
+        {
+          "type": "divider",
+          "style": "triangle",
+          "height": 5,
+          "padding": [0]
+        },
+        {
+          "type": "hStack",
+          "spacing": 1,
+          "views": [
+            {
+              "value": "**{{'Ability.STR'|l}}**\n{{data.abilities.str}} ({{data.abilities.str|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/check",
+            },
+            {
+              "value": "**{{'Ability.DEX'|l}}**\n{{data.abilities.dex}} ({{data.abilities.dex|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/check",
+            },
+            {
+              "value": "**{{'Ability.CON'|l}}**\n{{data.abilities.con}} ({{data.abilities.con|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/check",
+            },
+            {
+              "value": "**{{'Ability.INT'|l}}**\n{{data.abilities.int}} ({{data.abilities.int|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/check",
+            },
+            {
+              "value": "**{{'Ability.WIS'|l}}**\n{{data.abilities.wis}} ({{data.abilities.wis|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/check",
+            },
+            {
+              "value": "**{{'Ability.CHA'|l}}**\n{{data.abilities.cha}} ({{data.abilities.cha|modifier|signed}})",
+              "style": "stats-ability",
+              "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/check",
+            }
+          ]
+        },
+        {
+          "type": "divider",
+          "style": "triangle",
+          "height": 5,
+          "padding": [0]
+        },
+        {
+          "type": "text",
+          "style": "stats-body",
+          "value": "{% include \"monster-secondary.md\" %}",
+        },
+        {
+          "type": "divider",
+          "style": "triangle",
+          "height": 5,
+          "padding": [0]
+        },
+        {
+          "type": "list",
+          "attribute": "data.traits",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.Actions",
+          "style": "stats-section",
+          "attribute": "data.actions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.BonusActions",
+          "style": "stats-section",
+          "attribute": "data.bonusActions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.Reactions",
+          "style": "stats-section",
+          "attribute": "data.reactions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.LegendaryActions",
+          "style": "stats-section",
+          "attribute": "data.legendaryActions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.MythicActions",
+          "style": "stats-section",
+          "attribute": "data.mythicActions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+      ]
+    },
+  ]
+}

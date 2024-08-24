@@ -91,7 +91,10 @@
     9
   ],
   "HitDie": [
-    6, 8, 10, 12 
+    6,
+    8,
+    10,
+    12
   ],
   "ItemRarity": [
     "common",
@@ -127,6 +130,7 @@
       "wand",
       "potion",
       "ring",
+		"rod",
       "scroll",
       "wondrousItem"
     ],

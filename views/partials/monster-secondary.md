@@ -2,7 +2,7 @@
 **{{'Monster.SavingThrows'|l}}** {% for key, value in data.savingThrows %}{{key|map: 'AbilityAbbr'|lowercase|capitalize}} [{{value|signed}}](/roll/d20{{value|signed}}/{{key|map: 'Ability'}}/save), {% endfor %}
 {% endif -%}
 {% if data.skills -%}
-**{{'Monster.Skills'|l}}** {% for key, value in data.skills %}{{key|map: 'Skill'}} [{{value|signed}}](/roll/d20{{value|signed}}/{{key|map: 'Skill'}}/check), {% endfor %}
+**{{'Monster.Skills'|l}}** {% for key, value in data.skills %}{{key|map: 'Skill'}} [{{value|signed}}](</roll/d20{{value|signed}}/{{key|map: 'Skill'}}/check>), {% endfor %}
 {% endif -%}
 {% if data.damageVulnerabilities -%}
 **{{'Monster.DamageVulnerabilities'|l}}** {{data.damageVulnerabilities|map: 'Damage'|lowercase}}
