@@ -410,5 +410,10 @@
     "sleightOfHand": "dex",
     "stealth": "dex",
     "survival": "wis"
+  },
+  "Cover": {
+    "half": "Cover.half",
+    "threeQuarters": "Cover.threeQuarters",
+    "full": "Cover.full"
   }
 }

@@ -49,6 +49,13 @@
           "title": "Vehicle.Cost",
           "attribute": "cost",
         },
+        {
+          "title": "Common.Cover",
+          "type": "picker",
+          "attribute": "cover",
+          "attributeType": "Cover",
+
+        },
       ]
     },
     {

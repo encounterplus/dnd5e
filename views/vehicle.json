@@ -43,11 +43,13 @@
           "type": "divider",
           "style": "rectangle",
           "height": 4,
+          "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
           "padding": [0]
         },
         {
           "type": "hStack",
           "spacing": 1,
+          "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
           "views": [
             {
               "value": "**{{'Ability.STR'|l}}**\n{{data.abilities.str}} ({{data.abilities.str|modifier|signed}})",
@@ -85,6 +87,7 @@
           "type": "divider",
           "style": "rectangle",
           "height": 4,
+          "visibleIf": "{%if data.type != 'spelljammerShip' %}true{% endif %}",
           "padding": [0]
         },
         {
@@ -134,7 +137,36 @@
         },
         {
           "type": "list",
+          "attribute": "data.hull",
+          "views": [
+            {
+              "style": "stats-section",
+              "value": "{{name}}"
+            },
+            {
+              "type": "text",
+              "value": "{% include \"vehicle-component.md\" %}",
+            },
+            {
+              "type": "list",
+              "attribute": "features",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}.***{% endif %} {{text}}"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "{{descr}}"
+            },
+          ]
+        }, 
+        {
+          "type": "list",
           "attribute": "data.controls",
+          "visibleIf": "{%if data.type != 'infernalWarMachine' %}true{% endif %}",
           "views": [
             {
               "style": "stats-section",
@@ -163,6 +195,7 @@
         {
           "type": "list",
           "attribute": "data.movements",
+          "visibleIf": "{%if data.type != 'infernalWarMachine' %}true{% endif %}",
           "views": [
             {
               "style": "stats-section",
@@ -191,6 +224,7 @@
         {
           "type": "list",
           "attribute": "data.weapons",
+          "visibleIf": "{%if data.type != 'infernalWarMachine' %}true{% endif %}",
           "views": [
             {
               "style": "stats-section",
@@ -213,6 +247,46 @@
             {
               "type": "text",
               "value": "{{descr}}"
+            },
+          ]
+        },
+        {
+          "type": "vStack",
+          "visibleIf": "{%if data.type == 'infernalWarMachine' %}true{% endif %}",
+          "views": [
+            {
+              "style": "stats-section",
+              "value": "Action Stations"
+            },
+            {
+              "type": "list",
+              "attribute": "data.controls",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}{% if crew and cover%} (Requires {{crew}} Crew and Grants {{cover|map:'Cover'}} Cover){% elif crew %} (Requires {{crew}} Crew){% endif %}.***{% endif %} {{descr}}{% for f in features %}{% if f.name %} _{{f.name}}_{% endif %} {{f.text}}{% endfor %}"
+                },
+              ]
+            },
+            {
+              "type": "list",
+              "attribute": "data.movements",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}{% if crew and cover%} (Requires {{crew}} Crew and Grants {{cover|map:'Cover'}} Cover){% elif crew %} (Requires {{crew}} Crew){% endif %}.***{% endif %} {{descr}}{% for f in features %}{% if f.name %} _{{f.name}}_{% endif %} {{f.text}}{% endfor %}"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "attribute": "data.weapons",
+              "views": [
+                {
+                  "type": "text",
+                  "value": "{% if name %}***{{name}}{% if crew and cover%} (Requires {{crew}} Crew and Grants {{cover|map:'Cover'}} Cover){% elif crew %} (Requires {{crew}} Crew){% endif %}.***{% endif %} {{descr}}{% for f in features %}{% if f.name %} _{{f.name}}_{% endif %} {{f.text}}{% endfor %}"
+                }
+              ]
             },
           ]
         },
