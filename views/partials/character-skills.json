@@ -9,6 +9,7 @@
       "attribute": "data.skills",
       "attributeType": "Skill",
       "alignment": "leading",
+      "style": "clean",
       "views": [
         {
           "type": "tableRow",
@@ -32,6 +33,7 @@
         {
           "type": "tableRow",
           "padding": [6, 4],
+          "alignment": "center",
           "views": [
             {
               "type": "checkbox",
@@ -63,6 +65,7 @@
             {
               "value": "**{{value.value|default: 0|signed}}**",
               "style": "body-muted",
+              "alignment": "center",
               "link": "/roll/d20{{value.value|default: 0|signed}}/{{key|map: 'Skill'}}/check"
             },
             {

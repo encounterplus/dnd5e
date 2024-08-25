@@ -9,6 +9,9 @@
   "tableStyles": {
     "default": {
       "rowColor": "#9C2B1B33",
+    },
+    "clean": {
+      "rowLineWidth": 0.5,
     }
   },
   "statBlockStyles": {

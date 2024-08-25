@@ -55,9 +55,9 @@
       },
       {
         "type": "table",
+        "style": "clean",
         "attribute": "data.abilities",
         "attributeType": "Ability",
-        "alignment": "leading",
         "views": [
           {
             "type": "tableRow",
@@ -109,6 +109,7 @@
                   }
                 },
                 "width": 34,
+                "height": 20,
                 "alignment": "center"
               },
               {
@@ -134,6 +135,7 @@
       {
         "type": "table",
         "alignment": "leading",
+        "style": "clean",
         "views": [
           {
             "type": "tableRow",
@@ -196,6 +198,7 @@
       },
       {
         "type": "table",
+        "style": "clean",
         "attribute": "data.senses",
         "custom": {
           "filter": "key != 'other'"
@@ -223,7 +226,7 @@
               {
                 "value": "**{{value|units: 'ft'}}**",
                 "style": "body-muted",
-                "width": -1,
+                "alignment": "center",
               },
               {
                 "value": "**{{key|map: 'Sense'}}**",

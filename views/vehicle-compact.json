@@ -1,8 +1,9 @@
 {
   "debug": false,
   "spacing": 8,
+  "layout": "compactTabs",
   "padding": [
-    16
+    0
   ],
   "views": [
     {
@@ -12,6 +13,7 @@
     {
       "type": "vStack",
       "spacing": 8,
+      "padding": [16],
       "views": [
         {
           "type": "text",
