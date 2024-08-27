@@ -310,11 +310,6 @@
     "concentration": "ActiveEffect.Concentration",
     "other": "ActiveEffect.Other"
   },
-  "ConditionType": {
-    "condition": "ConditionType.Condition",
-    "disease": "ConditionType.Disease",
-    "other": "ConditionType.Other"
-  },
   "CharacterSection": {
     "abilities": "Abilities",
     "skills": "Skills",
@@ -415,5 +410,15 @@
     "half": "Cover.half",
     "threeQuarters": "Cover.threeQuarters",
     "full": "Cover.full"
-  }
+  },
+  "RuleType": {
+    "abilityScore": "RuleType.AbilityScore",
+    "abilitySkill": "RuleType.AbilitySkill",
+    "action": "RuleType.Action",
+    "condition": "RuleType.Condition",
+    "combat": "RuleType.Combat",
+    "disease": "RuleType.Disease",
+    "sense": "RuleType.Sense",
+    "other": "RuleType.Other"
+  },
 }

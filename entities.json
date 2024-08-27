@@ -104,10 +104,10 @@
     }
   },
   {
-    "name": "Condition",
-    "label": "condition",
+    "name": "Rule",
+    "label": "rule",
     "collection": {
-      "label": "conditions"
+      "label": "rules"
     },
     "loadable": true
   },

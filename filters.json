@@ -196,11 +196,11 @@
       }
     ]
   },
-  "Condition": {
+  "Rule": {
     "params": [
       {
         "attribute": "type",
-        "attributeType": "ConditionType",
+        "attributeType": "RuleType",
         "title": "Type"
       },
       {
@@ -212,7 +212,7 @@
     "group": [
       {
         "attribute": "type",
-        "attributeType": "ConditionType",
+        "attributeType": "RuleType",
         "title": "Type"
       },
       {
@@ -220,7 +220,7 @@
         "title": "Source"
       }
     ]
-  },
+  }, 
   "Table": {
     "params": [
       {
