@@ -318,7 +318,11 @@
           "spellAttack": "#{{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus|default: 0}}",
           "spellDC": "#8 + {{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus|default: 0}}"
         }
-      }
+      },
+      "spellCasters": {
+	"attribute": "data.classes",
+        "filter": "castSpells == true",
+      },
     },
     {
       // custom spellbook organization
@@ -359,7 +363,7 @@
         "transform": "items"
       },
       // final AC
-      "data.ac": "#{% if data.ac %}{{data.ac|integer}}{% else %}{% if activeArmor %}{{activeArmor.definition.data.ac|default: 0}}{% else %}{{baseArmor|default: 0}}{% endif %} + {{activeShield.definition.data.ac|default: 0}}{% endif %}"
+      "data.ac": "#{% if data.ac %}{{data.ac|integer}}{% else %}{% if activeArmor %}{{activeArmor.definition.data.ac|default: 0}}{% if activeArmor.definition.data.type == 'mediumArmor' and data.abilities.dex.value|modifier > 2 %} +2 {% elif activeArmor.definition.data.type != 'heavyArmor' %}{{data.abilities.dex.value|modifier|signed}}{% endif %}{% else %}{{baseArmor|default: 0}}{% endif %} + {{activeShield.definition.data.ac|default: 0}}{% endif %}"
     },
     // ACTIONS
     {
