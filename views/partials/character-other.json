@@ -2,6 +2,20 @@
   "views": [
     {
       "type": "text",
+      "title": "Background",
+      "value": "{{data.background.descr|default: 'None'}}",
+    }, 
+      {
+        "type": "list",
+        "attribute": "data.background.entities",
+        "views": [
+          {
+            "value": "**{{name}}**. {{text}}",
+          },
+        ]
+      },
+    {
+      "type": "text",
       "title": "Description",
       "value": "{{descr|default: 'None'}}",
     }, 
