@@ -2,7 +2,7 @@
   "views": [
     {
       "type": "text",
-      "title": "Background",
+      "title": "Background: {{data.background.name|default: 'None'}}",
       "value": "{{data.background.descr|default: 'None'}}",
     }, 
       {
