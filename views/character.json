@@ -311,17 +311,14 @@
     // SPELLCASTING & SPELLS
     {
       // compute lass spell attack and DC
-      "data.classes": {
-        "attribute": "data.classes",
+      "spellCasters": {
+	    "attribute": "data.classes",
+        "filter": "castSpells == true",
         "map": {
           "definition": null,
           "spellAttack": "#{{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus|default: 0}}",
           "spellDC": "#8 + {{data.abilities[self.spellcastingAbility].modifier|default: 0}} + {{data.proficiencyBonus|default: 0}}"
         }
-      },
-      "spellCasters": {
-	"attribute": "data.classes",
-        "filter": "castSpells == true",
       },
     },
     {
@@ -370,9 +367,9 @@
       "weaponActions": {
         "attribute": "activeWeapons",
         "map": {
-          "attackType": "{% if self.definition.type == 'rangedWeapon' %}ranged{% else %}melee{% endif %}",
+          "attackType": "{% if self.definition.data.type == 'rangedWeapon' %}ranged{% else %}melee{% endif %}",
           "name": "{{self.name}}",
-          "ability": "{% if self.definition.type == 'rangedWeapon' %}dex{% else %}str{% endif %}",
+          "ability": "{% if self.definition.data.type == 'rangedWeapon' %}dex{% else %}str{% endif %}",
           "attack": "@abilityModifier + @proficiency + @weaponAttackBonus",
           "damage": "{{self.definition.data.dmg1}} + @abilityModifier + @weaponDamageBonus",
           "damageType": "{{self.definition.data.dmgType}}",
@@ -386,11 +383,11 @@
     {
       "data.actions": {
         "merge": [
+          "weaponActions",
           "data.actions",
-          "weaponActions"
         ]
       }
-    },
+    }, 
     {
       "data.actions": {
         "attribute": "data.actions",
@@ -410,6 +407,25 @@
           "abilityModifier": "#{{data.abilities[self.ability].modifier}}",
         }
       }
+    },
+    {
+      // ACTION FILTERS
+      "normalActions": {
+        "attribute": "data.actions",
+        "filter": "activation.unit == 'action'"
+      },
+      "bonusActions": {
+        "attribute": "data.actions",
+        "filter": "activation.unit == 'bonusAction'"
+      },
+      "reActions": {
+        "attribute": "data.actions",
+        "filter": "activation.unit == 'reaction'"
+      },
+      "otherActions": {
+        "attribute": "data.actions",
+        "filter": "activation.unit != 'action' and activation.unit != 'bonusAction' and activation.unit != 'reaction'"
+      },
     },
     {
       "data.vision.dark.radius.minimum": 0,
