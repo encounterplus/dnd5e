@@ -1,33 +1,27 @@
-  {
+{
   "sections": [
     {
       "type": "group",
       "fields": [
         {
-          "placeholder": "Name",
+          "placeholder": "Common.Name",
           "attribute": "name"
         }
       ]
     },
     {
-      "title": "Description",
+      "title": "Common.Description",
       "type": "group",
       "fields": [
         {
-          "title": "Description",
+          "title": "Common.Description",
           "type": "textArea",
-          "attribute": "descr"
+          "attribute": "descr",
+          "custom": {
+            "lines": 10
+          }
         }
       ]
-    },
-    {
-      "title": "Entries",
-      "type": "list",
-      "attribute": "entries",
-      "form": {
-        "title": "Entries",
-        "partial": "generic-feature"
-      }
     },
     {
       "type": "group",
@@ -37,7 +31,7 @@
           "title": "Reference",
           "type": "reference",
           "attribute": "reference",
-          "attributeType": "Background"
+          "attributeType": "Feat"
         }
       ]
     }

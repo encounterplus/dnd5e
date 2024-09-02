@@ -42,6 +42,11 @@
               "form": {
                 "title": "Background",
                 "partial": "character-background"
+              },
+              "custom": {
+                "map": {
+                  "entries": "data.entries"
+                },
               }
             }
           ]
@@ -61,15 +66,18 @@
         },
         {
           "title": "Feats",
-          "type": "group",
-          "fields": [
-            {
-              "title": "Feats",
-              "type": "multiPicker",
-              "attribute": "data.feats",
-              "attributeType": "Feat"
+          "type": "list",
+          "attribute": "data.feats",
+          "attributeType": "Feat",
+          "form": {
+            "title": "Feat",
+            "partial": "character-feat"
+          },
+          "custom": {
+            "map": {
+              "descr": "descr"
             },
-          ]
+          },
         },
         {
           "title": "Experience",

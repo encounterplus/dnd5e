@@ -421,4 +421,10 @@
     "sense": "RuleType.Sense",
     "other": "RuleType.Other"
   },
+  "limitedUseResetType": {
+    "longRest": "ResetType.LongRest",
+    "shortRest": "ResetType.ShortRest",
+    "dawn": "ResetType.Dawn",
+    "other": "ResetType.Other"
+  }
 }
