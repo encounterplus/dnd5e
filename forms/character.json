@@ -31,6 +31,22 @@
           ]
         },
         {
+          "title": "Background",
+          "type": "group",
+          "fields": [
+            {
+              "type": "form",
+              "title": "{{data.background.name}}",
+              "attribute": "data.background",
+              "attributeType": "Background",
+              "form": {
+                "title": "Background",
+                "partial": "character-background"
+              }
+            }
+          ]
+        },
+        {
           "title": "Class",
           "type": "list",
           "attribute": "data.classes",
