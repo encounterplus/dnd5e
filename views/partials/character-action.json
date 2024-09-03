@@ -62,7 +62,7 @@
                    },
                  },
                  {
-                    "value": "{{limitedUse.resetOn}}",
+                    "value": "/ {{limitedUse.resetOn|map: 'limitedUseResetType'|l}}",
                     "type": "text"
                  }
                ] 

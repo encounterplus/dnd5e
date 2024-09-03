@@ -1,13 +1,17 @@
 {
   "views": [
     {
-      "type": "text",
-      "title": "Background: {{data.background.name|default: 'None'}}",
-      "value": "{{data.background.descr|default: 'None'}}",
+      "style": "heading2",
+      "value": "Background: {{data.background.name|default: 'None'}}",
+      "link": "{{data.background.reference}}"
     }, 
+    {
+      "type": "text",
+      "value": "{{data.background.descr|default: 'None'}}",
+    },
       {
         "type": "list",
-        "attribute": "data.background.entities",
+        "attribute": "data.background.entries",
         "views": [
           {
             "value": "**{{name}}**. {{text}}",
