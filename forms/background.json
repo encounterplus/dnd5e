@@ -25,7 +25,7 @@
         {
           "title": "Background.Equipment",
           "type": "textArea",
-          "attribute": "data.value"
+          "attribute": "data.equipment"
         }
       ]
     },
