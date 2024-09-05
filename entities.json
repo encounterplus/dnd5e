@@ -109,7 +109,8 @@
     "collection": {
       "label": "rules"
     },
-    "loadable": true
+    "loadable": true,
+    "dynamic": true 
   },
   {
     "name": "Custom",
