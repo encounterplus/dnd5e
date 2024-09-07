@@ -113,13 +113,6 @@
     "dynamic": true 
   },
   {
-    "name": "Custom",
-    "label": "custom",
-    "collection": {
-      "label": "custom"
-    }
-  },
-  {
     "name": "Table",
     "label": "table",
     "collection": {
