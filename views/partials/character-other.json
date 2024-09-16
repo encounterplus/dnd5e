@@ -1,6 +1,25 @@
 {
   "views": [
     {
+      "style": "heading2",
+      "value": "Background: {{data.background.name|default: 'None'}}",
+      "link": "{{data.background.reference}}"
+    }, 
+    {
+      "type": "text",
+      "value": "{{data.background.descr|default: 'None'}}",
+    },
+      {
+        "type": "list",
+        "attribute": "data.background.entries",
+        "views": [
+          {
+            "type": "text",
+            "value": "**{{name}}**. {{text}}",
+          },
+        ]
+      },
+    {
       "type": "text",
       "title": "Description",
       "value": "{{descr|default: 'None'}}",

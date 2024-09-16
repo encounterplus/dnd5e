@@ -49,6 +49,17 @@
             "temporary": true
           }
         ]
+      },
+      "Character": {
+        "defeated": "#{{data.hp.current|default: 1}} <= -{{data.hp.maximum|default: 0}}",
+        "bars": [
+          {
+            "attribute": "data.hp",
+            "title": "Common.HitPoints",
+            "label": "Common.HP",
+            "temporary": true
+          }
+        ]
       }
     }
   }

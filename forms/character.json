@@ -31,6 +31,27 @@
           ]
         },
         {
+          "title": "Background",
+          "type": "group",
+          "fields": [
+            {
+              "type": "form",
+              "title": "{{data.background.name}}",
+              "attribute": "data.background",
+              "attributeType": "Background",
+              "form": {
+                "title": "Background",
+                "partial": "character-background"
+              },
+              "custom": {
+                "map": {
+                  "entries": "data.entries"
+                },
+              }
+            }
+          ]
+        },
+        {
           "title": "Class",
           "type": "list",
           "attribute": "data.classes",
@@ -45,15 +66,18 @@
         },
         {
           "title": "Feats",
-          "type": "group",
-          "fields": [
-            {
-              "title": "Feats",
-              "type": "multiPicker",
-              "attribute": "data.feats",
-              "attributeType": "Feat"
+          "type": "list",
+          "attribute": "data.feats",
+          "attributeType": "Feat",
+          "form": {
+            "title": "Feat",
+            "partial": "character-feat"
+          },
+          "custom": {
+            "map": {
+              "descr": "descr"
             },
-          ]
+          },
         },
         {
           "title": "Experience",

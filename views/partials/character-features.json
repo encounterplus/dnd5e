@@ -40,18 +40,26 @@
         "attribute": "data.race.traits",
         "views": [
           {
+            "type": "text",
             "value": "**{{name}}**. {{text}}",
           },
         ]
       },
       {
-        "style": "heading2",
-        "value": "Feats",
-        "padding": [4, 0]
-      },
-      {
-        "type": "text",
-        "value": "{% for name in data.feats%}[{{name}}](feat), {%endfor%}"
+        "type": "list",
+        "attribute": "data.feats",
+        "views": [
+          {
+            "style": "heading2",
+            "value": "Feat: {{name}}",
+            "padding": [4, 0],
+            "link": "{{reference}}",
+          },
+          {
+            "type": "text",
+            "value": "{{descr}}",
+          },
+        ]
       }
     ]
   }

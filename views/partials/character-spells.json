@@ -6,7 +6,7 @@
     },
     {
       "type": "list",
-      "attribute": "data.classes",
+      "attribute": "spellCasters",
       "alignment": "leading",
       "divider": true,
       "views": [
@@ -155,5 +155,5 @@
         }
       ]
     },
-  ]
+  ],
 }

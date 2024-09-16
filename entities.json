@@ -104,19 +104,13 @@
     }
   },
   {
-    "name": "Condition",
-    "label": "condition",
+    "name": "Rule",
+    "label": "rule",
     "collection": {
-      "label": "conditions"
+      "label": "rules"
     },
-    "loadable": true
-  },
-  {
-    "name": "Custom",
-    "label": "custom",
-    "collection": {
-      "label": "custom"
-    }
+    "loadable": true,
+    "dynamic": true 
   },
   {
     "name": "Table",
