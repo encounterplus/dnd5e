@@ -419,6 +419,7 @@
     "combat": "RuleType.Combat",
     "disease": "RuleType.Disease",
     "sense": "RuleType.Sense",
+    "source": "Common.Source",
     "other": "RuleType.Other"
   },
   "limitedUseResetType": {
