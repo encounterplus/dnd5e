@@ -234,7 +234,12 @@
     "holySymbol": "ItemType.HolySymbol",
     "mount": "ItemType.Mount",
     "equipmentPack": "ItemType.EquipmentPack",
-    "tradeGood": "ItemType.TradeGood"
+    "tradeGood": "ItemType.TradeGood",
+    "druidicFocus": "ItemType.DruidicFocus",
+    "vehicleLand": "ItemType.VehicleLand",
+    "vehicleWater": "ItemType.VehicleWater",
+    "vehicleSpace": "ItemType.VehicleSpace",
+    
   },
   "ItemTypeCategory": {
     "armor": "ItemCategory.Armor",
@@ -262,7 +267,15 @@
     "special": "ItemProperty.Special",
     "thrown": "ItemProperty.Thrown",
     "twoHanded": "ItemProperty.TwoHanded",
-    "versatile": "ItemProperty.Versatile"
+    "versatile": "ItemProperty.Versatile",
+    "cleave": "ItemProperty.Cleave",
+    "graze": "ItemProperty.Graze",
+    "nick": "ItemProperty.Nick",
+    "push": "ItemProperty.Push",
+    "sap": "ItemProperty.Sap",
+    "slow": "ItemProperty.Slow",
+    "topple": "ItemProperty.Topple",
+    "vex": "ItemProperty.Vex"
   },
   "Armor": {
     "light": "Armor.LightArmor",
