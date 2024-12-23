@@ -239,6 +239,8 @@
     },
     
   ],
+  // define global modifiers
+  "modifiers": ["data.items"],
   //computed attributes
   "attributes": [
     // GENERAL
@@ -268,8 +270,8 @@
       },
     },
     {
-      "modifiers": ["data.abilities"],
-      // compute ability ability modifier, and savig throw bonus
+     
+      // compute ability modifier, and savig throw bonus
       "data.abilities": {
         "attribute": "data.abilities",
         "map": {
@@ -280,6 +282,10 @@
     },
     {
       "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.abilities.dex.value|modifier|default: 0}}{% endif %}"
+    },
+    {
+      // apply ability modifiers
+      "modifiers": ["data.abilities"],
     },
     // SKILLS
     {
@@ -302,6 +308,10 @@
         }
       },
     },
+    {
+      // apply skill modifiers
+      "modifiers": ["data.skills"],
+    },
     // SENSES
     {
       "data.passivePerception": "#{% if data.passivePerception %}{{data.passivePerception}}{% else %} 10 + {{data.skills.perception.value}} {% endif %}",
@@ -312,7 +322,7 @@
     {
       // compute lass spell attack and DC
       "spellCasters": {
-	    "attribute": "data.classes",
+	      "attribute": "data.classes",
         "filter": "castSpells == true",
         "map": {
           "definition": null,
@@ -330,7 +340,6 @@
     },
     // ITEMS
     {
-      "modifiers": ["data.items"],
       // total gold
       "data.currency.total": "#({{data.currency.cp|default: 0}} / 100) + ({{data.currency.sp|default: 0}} / 10) + ({{data.currency.ep|default: 0}} / 2) + {{data.currency.gp|default: 0}} + ({{data.currency.pp|default: 0}} * 10)",
       // base armor modifier
