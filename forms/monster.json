@@ -134,7 +134,7 @@
           "title": "Monster.ConditionImmunities",
           "type": "multiPicker",
           "attribute": "data.conditionImmunities",
-          "attributeType": "Condition",
+          "attributeType": "Rule",
           "filter": "type == 'condition'"
         },
         {
