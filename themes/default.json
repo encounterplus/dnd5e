@@ -56,10 +56,20 @@
     "plain": {
       "color": "#555",
       "body": {
-        "font": "NotoSans",
+        "font": "AvenirNextCondensed-Bold",
         "size": 15,
         "alignment": "center"
       }
+    },
+    "secondary": {
+      "color": "#555",
+      "body": {
+        "font": "AvenirNextCondensed-Bold",
+        "size": 13,
+        "alignment": "center"
+      },
+      "borderColor": "#555",
+      "cornerRadius": 8,
     }
   },
   "checkboxStyles": {

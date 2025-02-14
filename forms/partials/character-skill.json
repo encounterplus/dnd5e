@@ -7,12 +7,12 @@
         {
           "title": "Other Bonus",
           "type": "number",
-          "attribute": "bonus"
+          "attribute": "otherBonus"
         },
         {
-          "title": "Override Value",
+          "title": "Override Bonus",
           "type": "number",
-          "attribute": "value"
+          "attribute": "bonus"
         },
         {
           "title": "Proficiency Level",

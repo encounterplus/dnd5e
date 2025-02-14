@@ -20,7 +20,8 @@
                 "map": {
                   "size": "data.size",
                   "speed": "data.speed",
-                  "traits": "data.traits"
+                  "traits": "data.traits",
+                  "modifiers": "modifiers" 
                 },
               },
               "form": {
@@ -75,7 +76,8 @@
           },
           "custom": {
             "map": {
-              "descr": "descr"
+              "descr": "descr",
+              "modifiers": "modifiers" 
             },
           },
         },
@@ -288,186 +290,14 @@
     // INVENTORY
     {
       "title": "Inventory",
-      "icon": "archivebox",
-      "sections": [
-        {
-          "type": "group",
-          "title": "Currency: {% eval %} ({{data.currency.cp|default: 0}} / 100) + ({{data.currency.sp|default: 0}} / 10) + ({{data.currency.ep|default: 0}} / 2) + {{data.currency.gp|default: 0}} + ({{data.currency.pp|default: 0}} * 10) {% endeval %} gp",
-          "fields": [
-            {
-              "type": "hStack",
-              "fields": [
-                {
-                  "title": "Copper",
-                  "placeholder": "—",
-                  "type": "number",
-                  "alignment": "top",
-                  "attribute": "data.currency.cp",
-                },
-                {
-                  "title": "Silver",
-                  "placeholder": "—",
-                  "type": "number",
-                  "alignment": "top",
-                  "attribute": "data.currency.sp",
-                },
-                {
-                  "title": "Electrum",
-                  "placeholder": "—",
-                  "type": "number",
-                  "alignment": "top",
-                  "attribute": "data.currency.ep",
-                },
-                {
-                  "title": "Gold",
-                  "placeholder": "—",
-                  "type": "number",
-                  "alignment": "top",
-                  "attribute": "data.currency.gp",
-                },
-                {
-                  "title": "Platinum",
-                  "placeholder": "—",
-                  "type": "number",
-                  "alignment": "top",
-                  "attribute": "data.currency.pp",
-                },
-              ]
-            },
-            
-          ]
-        },
-        {
-          "title": "Items",
-          "type": "list",
-          "attribute": "data.items",
-          "attributeType": "Item",
-          "custom": {
-            "transform": "tree",
-            "itemDetail": "{{definition.detail}}",
-            "map": {
-              "container": "data.container"
-            }
-          },
-          "form": {
-            "title": "Item",
-            "partial": "character-item"
-          }
-        },
-      ]
+      "partial": "character-items",
+      "icon": "archivebox"
     },
     // SPELLS
     {
       "title": "Spells",
       "icon": "bolt",
-      "sections": [
-        {
-          "type": "group",
-          "title": "Spell Slots",
-          "fields": [
-            {
-              "type": "hStack",
-              "fields": [
-                {
-                  "title": "1st",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.1.available"
-                },
-                {
-                  "title": "2nd",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.2.available"
-                },
-                {
-                  "title": "3rd",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.3.available"
-                },
-                {
-                  "title": "4th",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.4.available"
-                },
-                {
-                  "title": "5th",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.5.available"
-                },
-                {
-                  "title": "6th",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.6.available"
-                },
-                {
-                  "title": "7th",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.7.available"
-                },
-                {
-                  "title": "8th",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "data.spellSlots.8.available"
-                },
-                {
-                  "title": "9th",
-                  "placeholder": "—",
-                  "alignment": "top",
-                  "type": "number",
-                  "attribute": "sdata.spellSlots.9.available"
-                }
-              ]
-            },
-          ]
-        },
-        {
-          "title": "Pact Magic",
-          "type": "group",
-          "fields": [
-            {
-              "title": "Spell Slots",
-              "type": "number",
-              "attribute": "data.pactMagic.available"
-            },
-            {
-              "title": "Spell Level",
-              "type": "number",
-              "attribute": "data.pactMagic.level"
-            }
-          ]
-        },
-        {
-          "title": "Spells",
-          "type": "list",
-          "attribute": "data.spells",
-          "attributeType": "Spell",
-          "custom": {
-            "map": {
-              "level": "data.level"
-            },
-            "itemDetail": "{{definition.detail}}"
-          },
-          "form": {
-            "title": "Spell",
-            "partial": "character-spell"
-          }
-        },
-      ]
+      "partial": "character-spells"
     }
   ]
 }

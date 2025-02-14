@@ -76,7 +76,24 @@
               "data.hp.temporary": null
             }
           }
-        }
+        },
+        // {
+        //   "type": "button",
+        //   "alignment": "center",
+        //   "width": 24,
+        //   "height": 24,
+        //   "padding":[8],
+        //   "custom": {
+        //     "icon": "star",
+        //   },
+        //   "action": {
+        //     "open": {
+        //       "type": "form",
+        //       "partial": "character-item",
+        //       "attribute": "data.items.0"
+        //     }
+        //   }
+        // },
       ]
     },
     {
@@ -115,6 +132,12 @@
               "style": "sheet-field-value",
               "value": "{{data.ac|default: 0}}",
               "alignment": "center",
+              "action": {
+                "open": {
+                  "title": "Armor Class",
+                  "partial": "character-armor.md"
+                }
+              }
             },
             {
               "style": "sheet-field-title",
@@ -210,7 +233,7 @@
         },
         {
           "id": "items",
-          "title": "items",
+          "title": "Items",
           "custom": {
             "icon": "archivebox.fill"
           },
@@ -239,8 +262,10 @@
     },
     
   ],
+  // resolve data references
+  "references": ["data.items", "data.spells"],
   // define global modifiers
-  "modifiers": ["data.items"],
+  "modifiers": ["data.classes.features", "data.race", "data.items", "data.feats"],
   //computed attributes
   "attributes": [
     // GENERAL
@@ -265,12 +290,15 @@
         "attributeType": "Ability",
         "map": {
           "ability": "{{self.key}}",
-          "value": "#{% if self.value.value %}{{self.value.value}}{% else %}{{self.value.base|default: 10}} + {{self.value.otherBonus|default: 0}}{% endif %}",
+          "value": "#{% if self.value.value %}{{self.value.value}}{% else %}{{self.value.base|default: 8}} + {{self.value.otherBonus|default: 0}}{% endif %}",
         }
       },
     },
     {
-     
+      // apply ability modifiers
+      "modifiers": ["r/data.abilities.*.value"],
+    },
+    {
       // compute ability modifier, and savig throw bonus
       "data.abilities": {
         "attribute": "data.abilities",
@@ -281,11 +309,11 @@
       },
     },
     {
-      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.abilities.dex.value|modifier|default: 0}}{% endif %}"
+      // apply ability saving throws modifiers
+      "modifiers": ["r/data.abilities.*.savingThrow"]
     },
     {
-      // apply ability modifiers
-      "modifiers": ["data.abilities"],
+      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.abilities.dex.value|modifier|default: 0}}{% endif %}"
     },
     // SKILLS
     {
@@ -300,23 +328,27 @@
       },
     },
     {
+      // apply skill modifiers
+      "modifiers": ["r/data.skills.*.proficiency"]
+    },
+    {
       // compute final value for each skill
       "data.skills": {
         "attribute": "data.skills",
         "map": {
-          "value": "#{% if self.value.value %}{{self.value.value}}{% else %}{{self.value.bonus|default: 0}} + {{data.abilities[self.value.ability].value|modifier|default: 0}} {% if self.value.proficiency == 'proficient' %} + {{data.proficiencyBonus}} {% endif %} {% if self.value.proficiency == 'half' %} + floor({{data.proficiencyBonus}} / 2) {% endif %} {% if self.value.proficiency == 'expertise' %} + ({{data.proficiencyBonus}} * 2) {% endif %} {% endif %}",
+          "bonus": "#{% if self.value.bonus %}{{self.value.bonus}}{% else %}{{self.value.otherBonus|default: 0}} + {{data.abilities[self.value.ability].modifier|default: 0}} {% if self.value.proficiency == 'proficient' %} + {{data.proficiencyBonus}} {% endif %} {% if self.value.proficiency == 'half' %} + floor({{data.proficiencyBonus}} / 2) {% endif %} {% if self.value.proficiency == 'expertise' %} + ({{data.proficiencyBonus}} * 2) {% endif %} {% endif %}",
         }
       },
     },
     {
       // apply skill modifiers
-      "modifiers": ["data.skills"],
+      "modifiers": ["data.skills.*"],
     },
     // SENSES
     {
-      "data.passivePerception": "#{% if data.passivePerception %}{{data.passivePerception}}{% else %} 10 + {{data.skills.perception.value}} {% endif %}",
-      "data.passiveInvestigation": "#{% if data.passiveInvestigation %}{{data.passiveInvestigation}}{% else %} 10 + {{data.skills.investigation.value}} {% endif %}",
-      "data.passiveInsight": "#{% if data.passiveInsight %}{{data.passiveInsight}}{% else %} 10 + {{data.skills.insight.value}} {% endif %}"
+      "data.passivePerception": "#{% if data.passivePerception %}{{data.passivePerception}}{% else %} 10 + {{data.skills.perception.bonus}} {% endif %}",
+      "data.passiveInvestigation": "#{% if data.passiveInvestigation %}{{data.passiveInvestigation}}{% else %} 10 + {{data.skills.investigation.bonus}} {% endif %}",
+      "data.passiveInsight": "#{% if data.passiveInsight %}{{data.passiveInsight}}{% else %} 10 + {{data.skills.insight.bonus}} {% endif %}"
     },
     // SPELLCASTING & SPELLS
     {
@@ -368,7 +400,9 @@
         "attribute": "data.items",
         "transform": "items"
       },
-      // final AC
+    },
+    // ARMOR
+    {
       "data.ac": "#{% if data.ac %}{{data.ac|integer}}{% else %}{% if activeArmor %}{{activeArmor.definition.data.ac|default: 0}}{% if activeArmor.definition.data.type == 'mediumArmor' and data.abilities.dex.value|modifier > 2 %} +2 {% elif activeArmor.definition.data.type != 'heavyArmor' %}{{data.abilities.dex.value|modifier|signed}}{% endif %}{% else %}{{baseArmor|default: 0}}{% endif %} + {{activeShield.definition.data.ac|default: 0}}{% endif %}"
     },
     // ACTIONS
@@ -443,10 +477,10 @@
     // CLEANUP
     {
       "activeWeapons": {},
-      "activeArmor": {},
-      "activeShield": {},
+      // "activeArmor": {},
+      // "activeShield": {},
       "weaponActions": {},
-      // "data.spells": {},
+      "data.spells": {},
       // "data.items": {},
       // "data.actions": {},
       // "data.spellbook": {},

@@ -1,4 +1,5 @@
 {
+  "debug": false,
   "views": [
     {
       "type": "checkbox",
@@ -70,6 +71,20 @@
           "action": {
             "set": {
               "quantity": null
+            }
+          }
+        },
+        {
+          "type": "divider",
+        },
+        {
+          "type": "button",
+          "title": "Edit",
+          "action": {
+            "open": {
+              "type": "form",
+              "partial": "character-item",
+              "attribute": "{{keyPath}}"
             }
           }
         },

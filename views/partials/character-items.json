@@ -11,7 +11,7 @@
           "value": "CURRENCY: {{data.currency.total|default: 0'}} gp",
           "alignment": "trailing",
           "style": "sheet-item-detail"
-        }
+        },
       ]
     },
     {
@@ -19,8 +19,29 @@
       "padding": [0]
     },
     {
-      "style": "heading3",
-      "value": "Equipment",
+      "type": "hStack",
+      "views": [
+        {
+          "style": "heading3",
+          "value": "Equipment",
+        },
+        {
+          "type": "button",
+          "alignment": "center",
+          "style": "secondary",
+          "title": "EDIT",
+          "height": 16,
+          "custom": {
+            "icon": "pencil",
+          },
+          "action": {
+            "open": {
+              "type": "form",
+              "partial": "character-items",
+            }
+          }
+        },
+      ]
     },
     {
       "type": "hStack",

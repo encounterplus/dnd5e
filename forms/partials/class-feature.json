@@ -20,6 +20,11 @@
           "title": "Common.Optional",
           "type": "toggle",
           "attribute": "optional"
+        },
+        {
+          "title": "Common.Modifiers",
+          "type": "modifiers",
+          "attribute": "modifiers"
         }
       ]
     },

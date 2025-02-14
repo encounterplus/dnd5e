@@ -35,6 +35,13 @@
                 "style": "sheet-label",
                 "value": "{{ability|map: 'Ability'|default: 'Unknown'|uppercase}}",
                 "alignment": "center",
+                "action": {
+                  "open": {
+                    "title": "{{ability|map: 'Ability'}}",
+                    "partial": "character-ability.md",
+                    "attribute": "data.abilities.{{ability}}",
+                  }
+                }
               },
               {
                 "style": "sheet-field-value",

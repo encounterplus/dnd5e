@@ -1,0 +1,69 @@
+{
+  "title": "Inventory",
+  "sections": [
+    {
+      "type": "group",
+      "title": "Currency: {% eval %} ({{data.currency.cp|default: 0}} / 100) + ({{data.currency.sp|default: 0}} / 10) + ({{data.currency.ep|default: 0}} / 2) + {{data.currency.gp|default: 0}} + ({{data.currency.pp|default: 0}} * 10) {% endeval %} gp",
+      "fields": [
+        {
+          "type": "hStack",
+          "fields": [
+            {
+              "title": "Copper",
+              "placeholder": "—",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.currency.cp",
+            },
+            {
+              "title": "Silver",
+              "placeholder": "—",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.currency.sp",
+            },
+            {
+              "title": "Electrum",
+              "placeholder": "—",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.currency.ep",
+            },
+            {
+              "title": "Gold",
+              "placeholder": "—",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.currency.gp",
+            },
+            {
+              "title": "Platinum",
+              "placeholder": "—",
+              "type": "number",
+              "alignment": "top",
+              "attribute": "data.currency.pp",
+            },
+          ]
+        },
+        
+      ]
+    },
+    {
+      "title": "Items",
+      "type": "list",
+      "attribute": "data.items",
+      "attributeType": "Item",
+      "custom": {
+        "transform": "tree",
+        "itemDetail": "{{definition.detail}}",
+        "map": {
+          "container": "data.container"
+        }
+      },
+      "form": {
+        "title": "Item",
+        "partial": "character-item"
+      }
+    },
+  ]
+}

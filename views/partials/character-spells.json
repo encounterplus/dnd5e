@@ -1,8 +1,29 @@
 {
   "views": [
     {
-      "style": "heading3",
-      "value": "Spellcasting",
+      "type": "hStack",
+      "views": [
+        {
+          "style": "heading3",
+          "value": "Spellcasting",
+        },
+        {
+          "type": "button",
+          "alignment": "center",
+          "style": "secondary",
+          "title": "EDIT",
+          "height": 16,
+          "custom": {
+            "icon": "pencil",
+          },
+          "action": {
+            "open": {
+              "type": "form",
+              "partial": "character-spells",
+            }
+          }
+        },
+      ]
     },
     {
       "type": "list",
@@ -17,7 +38,7 @@
             {
               "type": "vStack",
               "spacing": 0,
-              "alignment": "bottom",
+              "alignment": "leading",
               "views": [
                 {
                   "value": "{{name|uppercase}}",

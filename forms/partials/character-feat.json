@@ -6,6 +6,11 @@
         {
           "placeholder": "Common.Name",
           "attribute": "name"
+        },
+        {
+          "title": "Common.Modifiers",
+          "type": "modifiers",
+          "attribute": "modifiers"
         }
       ]
     },

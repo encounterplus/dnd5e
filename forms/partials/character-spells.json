@@ -1,0 +1,112 @@
+{
+  "title": "Spells",
+  "icon": "bolt",
+  "sections": [
+    {
+      "type": "group",
+      "title": "Spell Slots",
+      "fields": [
+        {
+          "type": "hStack",
+          "fields": [
+            {
+              "title": "1st",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.1.available"
+            },
+            {
+              "title": "2nd",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.2.available"
+            },
+            {
+              "title": "3rd",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.3.available"
+            },
+            {
+              "title": "4th",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.4.available"
+            },
+            {
+              "title": "5th",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.5.available"
+            },
+            {
+              "title": "6th",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.6.available"
+            },
+            {
+              "title": "7th",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.7.available"
+            },
+            {
+              "title": "8th",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "data.spellSlots.8.available"
+            },
+            {
+              "title": "9th",
+              "placeholder": "—",
+              "alignment": "top",
+              "type": "number",
+              "attribute": "sdata.spellSlots.9.available"
+            }
+          ]
+        },
+      ]
+    },
+    {
+      "title": "Pact Magic",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Spell Slots",
+          "type": "number",
+          "attribute": "data.pactMagic.available"
+        },
+        {
+          "title": "Spell Level",
+          "type": "number",
+          "attribute": "data.pactMagic.level"
+        }
+      ]
+    },
+    {
+      "title": "Spells",
+      "type": "list",
+      "attribute": "data.spells",
+      "attributeType": "Spell",
+      "custom": {
+        "map": {
+          "level": "data.level"
+        },
+        "itemDetail": "{{definition.detail}}"
+      },
+      "form": {
+        "title": "Spell",
+        "partial": "character-spell"
+      }
+    },
+  ]
+}

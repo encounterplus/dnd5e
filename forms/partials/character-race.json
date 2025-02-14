@@ -38,6 +38,11 @@
             "title": "Common.Speed",
             "partial": "movement"
           }
+        },
+        {
+          "title": "Common.Modifiers",
+          "type": "modifiers",
+          "attribute": "modifiers"
         }
       ]
     },

@@ -63,13 +63,20 @@
               }
             },
             {
-              "value": "**{{value.value|default: 0|signed}}**",
+              "value": "**{{value.bonus|default: 0|signed}}**",
               "style": "body-muted",
               "alignment": "center",
-              "link": "/roll/d20{{value.value|default: 0|signed}}/{{key|map: 'Skill'}}/check"
+              "link": "/roll/d20{{value.bonus|default: 0|signed}}/{{key|map: 'Skill'}}/check"
             },
             {
               "value": "**{{key|map: 'Skill'}}** {{value.ability|map: 'SkillsToAbilities'|uppercase|brackets}}",
+              "action": {
+                "open": {
+                  "title": "{{key|map: 'Skill'}}",
+                  "partial": "character-skill.md",
+                  "attribute": "data.skills.{{key}}",
+                }
+              }
             }
           ]
         },
