@@ -413,8 +413,8 @@
           "attackType": "{% if self.definition.data.type == 'rangedWeapon' %}ranged{% else %}melee{% endif %}",
           "name": "{{self.name}}",
           "ability": "{% if self.definition.data.type == 'rangedWeapon' %}dex{% else %}str{% endif %}",
-          "attack": "@abilityModifier + @proficiency + @weaponAttackBonus",
-          "damage": "{{self.definition.data.dmg1}} + @abilityModifier + @weaponDamageBonus",
+          "attack": "{% if 'finesse' in self.definition.data.properties %}@finesseModifier{% else %}@abilityModifier{% endif %} + @proficiency + @weaponAttackBonus",
+          "damage": "{{self.definition.data.dmg1}} + {% if 'finesse' in self.definition.data.properties %}@finesseModifier{% else %}@abilityModifier{% endif %} + @weaponDamageBonus",
           "damageType": "{{self.definition.data.dmgType}}",
           "activation.time": 1,
           "activation.unit": "action",
@@ -438,6 +438,7 @@
           "proficiency": "#{{data.proficiencyBonus}}",
           "proficiencyHalf": "#floor({{data.proficiencyBonus}} / 2)",
           "abilityModifier": "#{{data.abilities[self.ability].modifier}}",
+          "finesseModifier": "#max({{data.abilities.dex.modifier}}, {{data.abilities.str.modifier}})",
         }
       }
     },
