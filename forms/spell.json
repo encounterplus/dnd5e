@@ -59,7 +59,7 @@
           "type": "form",
           "text": "{% include 'spell-range.md' data %}",
           "form": {
-            "title":  "Common.Spell",
+            "title":  "Common.Range",
             "sections": [
               {
                 "title": "Common.Type",
