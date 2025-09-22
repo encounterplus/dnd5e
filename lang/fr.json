@@ -500,6 +500,6 @@
   "VehicleComponent.Other": "Autre",
   "VehicleComponent.Weapon": "Arme",
   "Weapon.Firearm": "Arme à feu",
-  "Weapon.MartialWeapon": "Arme de guerre",
-  "Weapon.SimpleWeapon": "Arme courante",
+  "Weapon.MartialWeapon": "Armes de guerre",
+  "Weapon.SimpleWeapon": "Armes courantes",
 }
