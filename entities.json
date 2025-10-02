@@ -6,11 +6,7 @@
       "label": "characters"
     },
     "loadable": true,
-    "unique": true,
-    "role": "friendly",
-    "custom": {
-      "detail": "{{data.race.name|default: 'Unknown Race'}} {% for class in data.classes %}{{class.name}} {{class.level}}{% if forloop.last == false  %} | {% endif %}{% endfor %}",
-    }
+    "standalone": true,
   },
   {
     "name": "Monster",
@@ -19,9 +15,6 @@
       "label": "monsters"
     },
     "loadable": true,
-    "custom": {
-      "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|map: 'Alignment'|prefix: ', '}}",
-    }
   },
   {
     "name": "NPC",
@@ -31,7 +24,6 @@
       "label": "npcs"
     },
     "loadable": true,
-    "role": "neutral"
   },
   {
     "name": "Spell",
@@ -40,9 +32,6 @@
       "label": "spells"
     },
     "loadable": true,
-    "custom": {
-      "detail": "{% if data.level == 0 or data.level == nil %}{{data.school|map: 'SpellSchool'}} cantrip{% else %}{{data.level|ordinal}}-level {{data.school|map: 'SpellSchool'|lowercase}}{% endif %}",
-    }
   },
   {
     "name": "Item",
@@ -51,10 +40,6 @@
       "label": "items"
     },
     "loadable": true,
-    "role": "neutral",
-    "custom": { 
-      "detail": "{{data.type|map: 'ItemType'|lowercase|capitalizeFirstLetter}}{{data.typeDetail|brackets|prefix: ' '}}{{data.rarity|map: 'ItemRarity'|lowercase|prefix: ', '}}",
-    }
   },
   {
     "name": "Feat",
@@ -98,10 +83,6 @@
       "label": "vehicles"
     },
     "loadable": true,
-    "role": "neutral",
-    "custom": {
-      "detail": "{% if data.upgrade != nil %}{{data.type|map: 'VehicleType'}} Upgrade, {{data.upgrade|map: 'VehicleComponent'}}{% else %}{{data.size|map: 'Size'}} {{data.type|map: 'VehicleType'}} {{data.dimensions|brackets}}{% endif %}"
-    }
   },
   {
     "name": "Rule",
@@ -109,7 +90,6 @@
     "collection": {
       "label": "rules"
     },
-    "loadable": true,
     "dynamic": true 
   },
   {

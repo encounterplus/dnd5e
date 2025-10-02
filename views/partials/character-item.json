@@ -1,4 +1,7 @@
 {
+  "type": "hStack",
+  "alignment": "center",
+  "spacing": 0,
   "debug": false,
   "views": [
     {

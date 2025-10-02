@@ -3,7 +3,7 @@
   "tintColor": "#58180D",
   "primaryColor": "#9C2B1B",
   "textColor": "#000000",
-  "dividerColor": "#cccccc",
+  "dividerColor": "#9C2B1B",
   "bgColor": "#ffffff",
   "bgImage": "/images/paper.png",
   "tableStyles": {
@@ -82,6 +82,14 @@
       "tintColor": "#58180D",
       "icon": "square.inset.filled",
     },
+  },
+  "dividerStyles": {
+    "triangle": {
+      "shape": "triangle",
+    },
+    "rectangle": {
+      "shape": "rectangle",
+    }
   },
   "textStyles": {
     "body": {

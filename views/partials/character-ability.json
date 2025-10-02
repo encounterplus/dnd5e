@@ -1,72 +1,67 @@
 {
-    "views": [
-      {
-        "type": "zStack",
-        "frame": {
-          "minWidth": 90,
-          "maxWidth": 110,
-          "minHeight": 60,
-          "maxHeight": 110
+  "type": "zStack",
+  "frame": {
+    "minWidth": 90,
+    "maxWidth": 110,
+    "minHeight": 60,
+    "maxHeight": 110
+  },
+  "views": [
+    {
+      "type": "vStack",
+      "spacing": 0,
+      "views": [
+        {
+          "type": "spacer",
+          "borderWidth": 1,
+          "cornerRadius": 8,
+          "padding": [ 0, 8, 0, 0 ],
         },
-        "views": [
-          {
-            "type": "vStack",
-            "spacing": 0,
-            "views": [
-              {
-                "type": "spacer",
-                "borderWidth": 1,
-                "cornerRadius": 8,
-                "padding": [0, 8, 0, 0],
-              },
-              {
-                "type": "spacer",
-                "height": 8
-              },
-            ]
+        {
+          "type": "spacer",
+          "height": 8
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "spacing": 4,
+      "padding": [ 8, 0, 0, 0 ],
+      "alignment": "center",
+      "views": [
+        {
+          "style": "sheet-label",
+          "value": "{{ability|map: 'Ability'|default: 'Unknown'|uppercase}}",
+          "alignment": "center",
+          "action": {
+            "open": {
+              "title": "{{ability|map: 'Ability'}}",
+              "partial": "character-ability.md",
+              "attribute": "data.abilities.{{ability}}",
+            }
+          }
+        },
+        {
+          "style": "sheet-field-value",
+          "value": "{{modifier|signed}}",
+          "alignment": "center",
+          "link": "/roll/d20{{modifier|signed}}/{{ability|map: 'Ability'|uppercase}}/check"
+        },
+        {
+          "style": "sheet-label",
+          "value": "{{value|default: 0}}",
+          "alignment": "center",
+          "padding": [ 4 ],
+          "frame": {
+            "maxWidth": 70,
           },
-          {
-            "type": "vStack",
-            "spacing": 4,
-            "padding": [8, 0, 0, 0],
-            "alignment": "center",
-            "views": [
-              {
-                "style": "sheet-label",
-                "value": "{{ability|map: 'Ability'|default: 'Unknown'|uppercase}}",
-                "alignment": "center",
-                "action": {
-                  "open": {
-                    "title": "{{ability|map: 'Ability'}}",
-                    "partial": "character-ability.md",
-                    "attribute": "data.abilities.{{ability}}",
-                  }
-                }
-              },
-              {
-                "style": "sheet-field-value",
-                "value": "{{modifier|signed}}",
-                "alignment": "center",
-                "link": "/roll/d20{{modifier|signed}}/{{ability|map: 'Ability'|uppercase}}/check"
-              },
-              {
-                "style": "sheet-label",
-                "value": "{{value|default: 0}}",
-                "alignment": "center",
-                "padding": [4],
-                "frame": {
-                  "maxWidth": 70,
-                },
-                "borderWidth": 1,
-                "cornerRadius": 8,
-                "bgColor": "#fff"
-              },
-            ]
+          "borderWidth": 1,
+          "cornerRadius": 8,
+          "bgColor": "#fff"
+        },
+      ]
 
-          },
-          
-        ],
+    },
 
-      }
-    ]
-  }
+  ],
+}
