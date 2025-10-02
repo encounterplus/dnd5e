@@ -1,132 +1,128 @@
 {
+  "type": "hStack",
+  "alignment": "center",
+  "spacing": 6,
   "views": [
     {
-      "type": "hStack",
-      "alignment": "center",
-      "spacing": 6,
+      "type": "image",
+      "value": "{{definition.imagePath}}",
+      "imageResizeMode": "aspectFill",
+      "cornerRadius": 6,
+      "width": 34,
+      "height": 34,
+    },
+    {
+      "type": "image",
+      "value": "{% if definition.imagePath == nil %}/icons/attack/{{attackType}}.png{% endif %}",
+      "imageResizeMode": "aspectFill",
+      "cornerRadius": 6,
+      "width": 34,
+      "height": 34,
+      "color": "#999",
+      "custom": {
+        "renderingMode": "template"
+      }
+    },
+    {
+      "type": "vStack",
+      "spacing": 1,
+      "link": "{{reference}}",
       "views": [
         {
-          "type": "image",
-          "value": "{{definition.imagePath}}",
-          "imageResizeMode": "aspectFill",
-          "cornerRadius": 6,
-          "width": 34,
-          "height": 34,
+          "value": "**{{name}}**",
+          "style": "sheet-item-title"
         },
         {
-          "type": "image",
-          "value": "{% if definition.imagePath == nil %}/icons/attack/{{attackType}}.png{% endif %}",
-          "imageResizeMode": "aspectFill",
-          "cornerRadius": 6,
-          "width": 34,
-          "height": 34,
-          "color": "#999",
-          "custom": {
-            "renderingMode": "template"
-          }
+          "value": "{{attackType|map: 'Attack'}} {% if activation.time %}• {{activation.time}}{{activation.unit|first|uppercase}}{% endif %} {{range|format|prefix: '• '|suffix: ' ft'}}",
+          "style": "sheet-item-detail"
         },
         {
-          "type": "vStack",
-          "spacing": 1,
-          "link": "{{reference}}",
+          "type": "text",
+          "value": "{{descr}}"
+        },
+        {
+          "type": "hStack",
+          "spacing": 3,
+          "visibleIf": "{{limitedUse}}",
           "views": [
             {
-              "value": "**{{name}}**",
-              "style": "sheet-item-title"
+              "style": "sheet-item-detail",
+              "value": "USES",
+              "width": -1,
             },
             {
-              "value": "{{attackType|map: 'Attack'}} {% if activation.time %}• {{activation.time}}{{activation.unit|first|uppercase}}{% endif %} {{range|format|prefix: '• '|suffix: ' ft'}}",
-              "style": "sheet-item-detail"
+              "type": "checkboxGroup",
+              "attribute": "limitedUse.numberUsed",
+              "custom": {
+                "range": {
+                  "max": "limitedUse.maxUses"
+                },
+              },
             },
             {
-              "type": "text",
-              "value": "{{descr}}"
-            },
-            {
-              "type": "hStack",
-              "spacing": 3,
-              "visibleIf": "{{limitedUse}}",          
-              "views": [
-		{
-              	  "style": "sheet-item-detail",
-		  "value": "USES",
-		  "width": -1,
-		},
-                {
-                  "type": "checkboxGroup",
-                   "attribute": "limitedUse.numberUsed",
-                   "custom": {
-                     "range": {
-                       "max": "limitedUse.maxUses"
-                      },
-                   },
-                 },
-                 {
-                    "value": "/ {{limitedUse.resetOn|map: 'limitedUseResetType'|l}}",
-                    "type": "text"
-                 }
-               ] 
-            },
+              "value": "/ {{limitedUse.resetOn|map: 'limitedUseResetType'|l}}",
+              "type": "text"
+            }
           ]
         },
+      ]
+    },
+    {
+      "style": "sheet-value",
+      "value": "{{attack|formula|eval|signed}}",
+      "alignment": "center",
+      "width": 44,
+      "link": "/roll/d20 + {{attack|formula}}/{{name}}/attack",
+      "borderWidth": 1,
+      "borderColor": "#bbb",
+      "bgColor": "#ffffff99",
+      "cornerRadius": 6,
+      "padding": [ 4, 0 ]
+    },
+    {
+      "type": "vStack",
+      "spacing": 0,
+      "width": 44,
+      "alignment": "leading",
+      "hiddenIf": "{{attack or not savingThrow}}",
+      "views": [
         {
           "style": "sheet-value",
-          "value": "{{attack|formula|eval|signed}}",
+          "value": "{{savingThrow|trim|default: '0'}}",
           "alignment": "center",
-          "width": 44,
-          "link": "/roll/d20 + {{attack|formula}}/{{name}}/attack",
+          "width": 0,
+          "height": 16,
+        },
+        {
+          "style": "sheet-label-small",
+          "value": "{{ability|uppercase}}",
+          "alignment": "center",
+          "width": 0,
+          "height": 12,
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "spacing": 0,
+      "width": 80,
+      "alignment": "leading",
+      "hiddenIf": "{{not damage}}",
+      "views": [
+        {
+          "style": "sheet-value",
+          "value": "{{damage|diceFormula}}",
+          "alignment": "center",
+          "width": -1,
+          "link": "/roll/{{damage|formula}}/{{name}}/damage",
           "borderWidth": 1,
           "borderColor": "#bbb",
           "bgColor": "#ffffff99",
           "cornerRadius": 6,
-          "padding": [4, 0]
+          "padding": [ 4, 12 ]
         },
-        {
-          "type": "vStack",
-          "spacing": 0,
-          "width": 44,
-          "alignment": "leading",
-          "hiddenIf": "{{attack or not savingThrow}}",
-          "views": [
-            {
-              "style": "sheet-value",
-              "value": "{{savingThrow|trim|default: '0'}}",
-              "alignment": "center",
-              "width": 0,
-              "height": 16,
-            },
-            {
-              "style": "sheet-label-small",
-              "value": "{{ability|uppercase}}",
-              "alignment": "center",
-              "width": 0,
-              "height": 12,
-            },
-          ]
-        },
-        {
-          "type": "vStack",
-          "spacing": 0,
-          "width": 80,
-          "alignment": "leading",
-          "hiddenIf": "{{not damage}}",
-          "views": [
-            {
-              "style": "sheet-value",
-              "value": "{{damage|diceFormula}}",
-              "alignment": "center",
-              "width": -1,
-              "link": "/roll/{{damage|formula}}/{{name}}/damage",
-              "borderWidth": 1,
-              "borderColor": "#bbb",
-              "bgColor": "#ffffff99",
-              "cornerRadius": 6,
-              "padding": [4, 12]
-            },
-          ]
-        },
-        
       ]
     },
+
   ]
 }

@@ -38,17 +38,4 @@
       ]
     }
   ],
-  "attributes": [
-    {
-      "data.xp": "#{{data.cr|valueMap:'ChallengeRatingToXP'}}",
-      "data.armor": "#{{data.ac|integer}}",
-      "data.passivePerception": "#{% if data.passivePerception %}{{data.passivePerception}}{% else %}{% eval %}10 + {{data.abilities.wis|modifier|default: 0}}{% endeval %}{% endif %}",
-      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.abilities.dex|modifier|default: 0}}{% endif %}",
-      "data.proficiencyBonus": "#{% if data.proficiencyBonus %}{{data.proficiencyBonus}}{% else %}{{data.cr|map:'ProficiencyBonus', '0'}}{% endif %}"
-    },
-    {
-      "inCombatDetail": "{{'Common.AC'|l}} {{data.armor}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.CR'|l}} {{data.cr}}",
-      "outCombatDetail": "{{'Common.CR'|l}} {{data.cr}} ({{data.cr|valueMap:'ChallengeRatingToXP'|format|default: '0'}} {{'Common.XP'|l}})",
-    }
-  ]
 }

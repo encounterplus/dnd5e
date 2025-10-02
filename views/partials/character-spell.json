@@ -1,61 +1,57 @@
 {
+  "type": "hStack",
+  "alignment": "center",
+  "spacing": 6,
   "views": [
     {
-      "type": "hStack",
-      "alignment": "center",
-      "spacing": 6,
+      "type": "image",
+      "value": "{% if definition.imagePath != nil %}{{definition.imagePath|default: 'xmark'}}{% else %}/icons/spell/{{definition.data.school}}.png{% endif %}",
+      "imageResizeMode": "aspectFill",
+      "cornerRadius": 6,
+      "width": 34,
+      "height": 34,
+      "color": "#999",
+    },
+    {
+      "type": "vStack",
+      "link": "{{reference}}",
       "views": [
         {
-          "type": "image",
-          "value": "{% if definition.imagePath != nil %}{{definition.imagePath|default: 'xmark'}}{% else %}/icons/spell/{{definition.data.school}}.png{% endif %}",
-          "imageResizeMode": "aspectFill",
-          "cornerRadius": 6,
-          "width": 34,
-          "height": 34,
-          "color": "#999",
+          "value": "**{{name}}**",
+          "style": "sheet-item-title"
         },
         {
-          "type": "vStack",
-          "link": "{{reference}}",
-          "views": [
-            {
-              "value": "**{{name}}**",
-              "style": "sheet-item-title"
-            },
-            {
-              "value": "{{definition.data.school|map: 'SpellSchool'}}{% if definition.data.activation.time %} • {{definition.data.activation.time}}{{definition.data.activation.unit|first|uppercase}}{% endif %}{%if definition.data.rangeType != nil and definition.data.rangeType != 'range' %}{{definition.data.rangeType|map: 'SpellRange'|prefix: ' • '}}{% else %}{{definition.data.range|format|suffix: ' ft.'|prefix: ' • '}}{% endif %}",
-              "style": "sheet-item-detail"
-            }
-          ]
-        },
-        {
-          "type": "checkbox",
-          "attribute": "prepared",
-          "width": 44,
-          "alignment": "center",
-          "custom": {
-            "checkboxStyle": {
-              "default": {
-                "icon": "text.book.closed"
-              },
-              "checked": {
-                "icon": "text.book.closed.fill"
-              }
-            }
-          }
-        },
-        {
-          "type": "button",
-          "title": "CAST",
-          "width": -1,
-          "action": {
-            "event": {
-              "type": "castSpell",
-              "spell": "{{name}}"
-            }
-          }
+          "value": "{{definition.data.school|map: 'SpellSchool'}}{% if definition.data.activation.time %} • {{definition.data.activation.time}}{{definition.data.activation.unit|first|uppercase}}{% endif %}{%if definition.data.rangeType != nil and definition.data.rangeType != 'range' %}{{definition.data.rangeType|map: 'SpellRange'|prefix: ' • '}}{% else %}{{definition.data.range|format|suffix: ' ft.'|prefix: ' • '}}{% endif %}",
+          "style": "sheet-item-detail"
         }
       ]
     },
+    {
+      "type": "checkbox",
+      "attribute": "prepared",
+      "width": 44,
+      "alignment": "center",
+      "custom": {
+        "checkboxStyle": {
+          "default": {
+            "icon": "text.book.closed"
+          },
+          "checked": {
+            "icon": "text.book.closed.fill"
+          }
+        }
+      }
+    },
+    {
+      "type": "button",
+      "title": "CAST",
+      "width": -1,
+      "action": {
+        "event": {
+          "type": "castSpell",
+          "spell": "{{name}}"
+        }
+      }
+    }
   ]
 }

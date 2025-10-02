@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="../assets/css/character.css" rel="stylesheet" type="text/css">
+        <base href="{{BASE_URL|default: '../'}}" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/character.css" rel="stylesheet" type="text/css">
     </head>
     <script>
         window.data = {{data|json}};
@@ -12,8 +13,8 @@
     <body>
         <div id="character" class="container-fluid">
             <h1>{{name}} {{data.race.name}}</h1>
-            <h4>{{data.hpCurrent}}/{{data.hpMaximum}}</h4>
-            <img src="{{relativePath}}{{image}}" width="100" />
+            <h4>{{data.hp.current}}/{{data.hp.maximum}}</h4>
+            <img src="characters/{{image}}" width="100" />
 
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
@@ -58,8 +59,8 @@
   </div>
         </div>
     </body>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/character.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/character.js"></script>
     <script>
         
     </script>

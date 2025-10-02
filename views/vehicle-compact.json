@@ -1,7 +1,7 @@
 {
   "debug": false,
   "spacing": 8,
-  "layout": "compactTabs",
+  "type": "compactTabs",
   "padding": [
     0
   ],

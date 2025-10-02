@@ -1,9 +1,65 @@
 {
+  "entities": {
+    "Default": {
+      "combatant": {
+        "bars": [
+          {
+            "attribute": "data.hp",
+            "title": "Common.HitPoints",
+            "label": "Common.HP",
+            "temporary": true
+          }
+        ]
+      }
+    },
+    "Character": {
+      "role": "friendly",
+      "collection": {
+        "image": "token",
+        "detail": "{{data.race.name|default: 'Unknown Race'}} {% for class in data.classes %}{{class.name}} {{class.level}}{% if forloop.last == false  %} | {% endif %}{% endfor %}",
+      },
+      "combatant": {
+        "states": {
+          "defeated": "#{{data.hp.current|default: 1}} <= -{{data.hp.maximum|default: 0}}",
+        },
+        "bars": [
+          {
+            "attribute": "data.hp",
+            "title": "Common.HitPoints",
+            "label": "Common.HP",
+            "temporary": true
+          }
+        ]
+      }
+    },
+    "Monster": {
+      "collection": {
+        "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|map: 'Alignment'|prefix: ', '}}",
+      },
+      "combatant": {
+        "image": "token"
+      }
+    },
+    "Spell": {
+      "collection": {
+        "detail": "{% if data.level == 0 or data.level == nil %}{{data.school|map: 'SpellSchool'}} cantrip{% else %}{{data.level|ordinal}}-level {{data.school|map: 'SpellSchool'|lowercase}}{% endif %}",
+      }
+    },
+    "Vehicle": {
+      "collection": {
+        "detail": "{% if data.upgrade != nil %}{{data.type|map: 'VehicleType'}} Upgrade, {{data.upgrade|map: 'VehicleComponent'}}{% else %}{{data.size|map: 'Size'}} {{data.type|map: 'VehicleType'}} {{data.dimensions|brackets}}{% endif %}"
+      }
+    },
+  },
   "measurement": {
     "imperial": {
       "default": true,
       "title": "MeasurementSystem.Imperial",
-      "units": ["ft", "mi", "lb"],
+      "units": [
+        "ft",
+        "mi",
+        "lb"
+      ],
       "format": "@value @unit.",
       "conversion": {
         "metric": {
@@ -21,7 +77,11 @@
     },
     "metric": {
       "title": "MeasurementSystem.Metric",
-      "units": ["m", "km", "kg"],
+      "units": [
+        "m",
+        "km",
+        "kg"
+      ],
       "format": "@value @unit",
       "conversion": {
         "imperial": {
@@ -38,29 +98,4 @@
       }
     }
   },
-  "combat": {
-    "combatants": {
-      "default": {
-        "bars": [
-          {
-            "attribute": "data.hp",
-            "title": "Common.HitPoints",
-            "label": "Common.HP",
-            "temporary": true
-          }
-        ]
-      },
-      "Character": {
-        "defeated": "#{{data.hp.current|default: 1}} <= -{{data.hp.maximum|default: 0}}",
-        "bars": [
-          {
-            "attribute": "data.hp",
-            "title": "Common.HitPoints",
-            "label": "Common.HP",
-            "temporary": true
-          }
-        ]
-      }
-    }
-  }
 }
