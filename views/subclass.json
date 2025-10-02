@@ -30,7 +30,7 @@
       "views": [
         {
           "type": "text",
-          "value": "## {{name}}\n\n{{text}}"
+          "value": "### {{'Common.Level'|l}} {{level}} : {{name}}\n\n{{text}}"
         }
       ]
     },

@@ -30,7 +30,7 @@
       "views": [
         {
           "type": "text",
-          "value": "## {{name}}\n\n{% if optional %}*{{'Common.Optional'|l}}*{% endif %}{% if prerequisite %} • *{{'ClassFeature.Prerequisite'|l}} : {{prerequisite}}*{% endif %}\n\n{{text}}"
+          "value": "### {{'Common.Level'|l}} {{level}} : {{name}}\n\n{% if optional %}*{{'Common.Optional'|l}}*{% endif %}{% if prerequisite %} • *{{'ClassFeature.Prerequisite'|l}} : {{prerequisite}}*{% endif %}\n\n{{text}}"
         }
       ]
     },
@@ -55,7 +55,7 @@
             },
             {
               "type": "text",
-              "value": "{% for feature in data.features %}### {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
+              "value": "{% for feature in data.features %}### {{'Common.Level'|l}} {{feature.level}} : {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
             }
           ]
         },
