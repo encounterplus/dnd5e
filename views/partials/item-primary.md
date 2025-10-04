@@ -1,6 +1,9 @@
 {% if data.ac -%}
 **{{'Common.ArmorClass'|l}}:** {% if data.type == 'lightArmor' %}{{data.ac}} + DEX Modifier{% elif data.type == 'mediumArmor' %}{{data.ac}} + DEX Modifier (max 2){% elif data.type == 'shield' %}+ {{data.ac}}{% else %}{{data.ac}}{% endif %}
 {% endif -%}
+{% if data.rarity -%}
+**{{'Item.Rarity'|l}}:** {{data.rarity|map: 'ItemRarity'}}
+{% endif -%}
 {% if data.stealth -%}
 **{{'Item.StealthCheckDisadvantage'|l}}** 
 {% endif -%}
