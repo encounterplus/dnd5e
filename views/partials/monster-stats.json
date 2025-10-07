@@ -3,23 +3,36 @@
     {
       "type": "statBlock",
       "spacing": 8,
-      "padding": [
-        16
-      ],
+      "padding": [16],
       "views": [
         {
-          "type": "vStack",
-          "spacing": -1,
+          "type": "hStack",
+          "alignment": "center",
+      	  "spacing": 8,
           "views": [
             {
-              "style": "title",
-              "value": "{{name}}",
-              "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+              "type": "vStack",
+              "alignment": "leading",
+              "spacing": -1,
+              "width": 0,
+              "views": [
+                {
+                  "style": "title",
+                  "value": "{{name}}",
+                  "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+                },
+                {
+                  "style": "subtitle",
+                  "value": "{{detail}}"
+                }
+              ]
             },
             {
-              "style": "subtitle",
-              "value": "{{detail}}",
-            },
+              "type": "image",
+              "value": "{{token}}",
+              "link": "{{token}}",
+              "height": 70,
+            }
           ]
         },
         {
