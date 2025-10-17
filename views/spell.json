@@ -20,6 +20,10 @@
             },
             {
               "style": "subtitle",
+              "value": "*{{data.level|map: 'SpellLevel'}}, {{data.school|map: 'SpellSchool'}}*",
+            },
+            {
+              "style": "subtitle",
               "value": "{{detail}}",
             },
           ]
