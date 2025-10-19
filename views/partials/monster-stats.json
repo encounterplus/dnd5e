@@ -23,6 +23,10 @@
                 },
                 {
                   "style": "subtitle",
+                  "value": "*{{data.size|map: 'Size'}} {{data.type|map: 'MonsterType'}}, {{data.alignment|map: 'Alignment'}}*",
+                },
+                {
+                  "style": "subtitle",
                   "value": "{{detail}}"
                 }
               ]
