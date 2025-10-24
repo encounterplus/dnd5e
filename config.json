@@ -51,6 +51,9 @@
       }
     },
   },
+  "statusEffects": {
+    "menuProvider": ["Rule:condition"]
+  },
   "measurement": {
     "imperial": {
       "default": true,
