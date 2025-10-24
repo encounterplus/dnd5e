@@ -16,11 +16,7 @@
         },
         {
           "style": "subtitle",
-          "value": "*{{data.type|map: 'ItemType'}}{% if data.typeDetail %} ({{data.typeDetail}}){% endif %}, {{data.rarity|map: 'ItemRarity'}}*",
-        },
-        {
-          "style": "subtitle",
-          "value": "{{detail}} {%if data.attunement and data.attunementDetail %}{{data.attunementDetail|lowercase|brackets}}{% elif data.attunement %}{{'Item.RequiresAttunement'|l|lowercase|brackets}}{% endif %}",
+          "value": "*{{data.type|map: 'ItemType'}}{% if data.typeDetail %} ({{data.typeDetail}}){% endif %}, {{data.rarity|map: 'ItemRarity'}} {%if data.attunement and data.attunementDetail %}{{data.attunementDetail|lowercase|brackets}}{% elif data.attunement %}{{'Item.RequiresAttunement'|l|lowercase|brackets}}{% endif %}*",
         },
       ]
     },
