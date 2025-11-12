@@ -23,7 +23,7 @@
                 },
                 {
                   "style": "subtitle",
-                  "value": "*{{data.size|map: 'Size'}} {{data.type|map: 'MonsterType'}}, {{data.alignment|map: 'Alignment'}}*",
+                  "value": "*{{data.size|map: 'Size'}} {{data.type|map: 'MonsterType'}}{% if data.typeDetail %} ({{data.typeDetail}}){% endif %}, {{data.alignment|map: 'Alignment'}}*",
                 },
                 {
                   "style": "subtitle",

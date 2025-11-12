@@ -226,6 +226,15 @@
       }
     },
     {
+      "title": "Monster.BonusActions",
+      "type": "list",
+      "attribute": "data.bonusActions",
+      "form": {
+        "title": "Monster.BonusAction",
+        "partial": "generic-feature"
+      }
+    },
+    {
       "title": "Monster.Reactions",
       "type": "list",
       "attribute": "data.reactions",
@@ -240,15 +249,6 @@
       "attribute": "data.legendaryActions",
       "form": {
         "title": "Monster.LegendaryAction",
-        "partial": "generic-feature"
-      }
-    },
-    {
-      "title": "Monster.BonusActions",
-      "type": "list",
-      "attribute": "data.bonusActions",
-      "form": {
-        "title": "Monster.BonusAction",
         "partial": "generic-feature"
       }
     },
