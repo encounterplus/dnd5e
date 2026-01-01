@@ -8,6 +8,7 @@
       "data.proficiencyBonus": "#{% if data.proficiencyBonus %}{{data.proficiencyBonus}}{% else %}{{data.cr|map:'ProficiencyBonus', '0'}}{% endif %}"
     },
     {
+      "data.initiativeValue": "# 10 + {{data.initiativeBonus}}",
       "inCombatDetail": "{{'Common.AC'|l}} {{data.armor}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.CR'|l}} {{data.cr}}",
       "outCombatDetail": "{{'Common.CR'|l}} {{data.cr}} ({{data.cr|valueMap:'ChallengeRatingToXP'|format|default: '0'}} {{'Common.XP'|l}})",
     }
