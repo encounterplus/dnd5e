@@ -1,9 +1,8 @@
 {
   "debug": false,
   "spacing": 8,
-  "type": "compactTabs",
   "padding": [
-    0
+    8
   ],
   "views": [
     {
