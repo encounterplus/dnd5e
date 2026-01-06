@@ -4,22 +4,22 @@
       {
         "attribute": "data.size",
         "attributeType": "Size",
-        "title": "Size"
+        "title": "Common.Size"
       },
       {
         "attribute": "data.type",
         "attributeType": "MonsterType",
-        "title": "Type"
+        "title": "Common.Type"
       },
       {
         "attribute": "data.alignment",
-        "title": "Alignment",
+        "title": "Common.Alignment",
         "dynamic": true
       },
       {
         "attribute": "data.environments",
         "attributeType": "Environment",
-        "title": "Environment"
+        "title": "Common.Environment"
       },
       {
         "attribute": "sources.name",
@@ -32,16 +32,16 @@
         "attribute": "data.cr",
         "attributeType": "ChallengeRating",
         "text": "CR {{value}} ({{value|map:'ChallengeRatingToXP', '0'}} XP)",
-        "title": "CR"
+        "title": "Common.CR"
       },
       {
         "attribute": "data.type",
         "attributeType": "MonsterType",
-        "title": "Type"
+        "title": "Common.Type"
       },
       {
         "attribute": "name",
-        "title": "Name"
+        "title": "Common.Name"
       }
     ],
     "sort": [
@@ -51,7 +51,7 @@
       },
       {
         "attribute": "data.cr",
-        "title": "CR",
+        "title": "Common.CR",
         "text": "{{value|valueMap:'ChallengeRatingToXP'}}",
       }
     ]
@@ -61,40 +61,40 @@
       {
         "attribute": "data.school",
         "attributeType": "SpellSchool",
-        "title": "School"
+        "title": "Spell.School"
       },
       {
         "attribute": "data.level",
         "attributeType": "SpellLevel",
-        "title": "Level"
+        "title": "Spell.Level"
       },
       {
         "attribute": "data.classes",
-        "title": "Class",
+        "title": "Entity.Class",
         "dynamic": true
       },
       {
         "attribute": "data.ritual",
-        "title": "Ritual"
+        "title": "Spell.Ritual"
       },
       {
         "attribute": "data.durationType",
         "attributeType": "SpellDuration",
-        "title": "Duration"
+        "title": "Spell.Duration"
       },
       {
         "attribute": "data.rangeType",
         "attributeType": "SpellRange",
-        "title": "Range"
+        "title": "Spell.Range"
       },
       {
         "attribute": "data.areaEffectShape",
         "attributeType": "AreaEffectShape",
-        "title": "AreaEffect"
+        "title": "Spell.AreaEffect"
       },
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ],
@@ -102,26 +102,26 @@
       {
         "attribute": "data.school",
         "attributeType": "SpellSchool",
-        "title": "School"
+        "title": "Spell.School"
       },
       {
         "attribute": "data.level",
         "text": "{% if value == '0' %}Cantrip{% else %}{{value|ordinal}} Level{% endif %}",
-        "title": "Level"
+        "title": "Spell.Level"
       },
       {
         "attribute": "name",
-        "title": "Name"
+        "title": "Common.Name"
       }
     ],
     "sort": [
       {
         "attribute": "name",
-        "title": "Name"
+        "title": "Common.Name"
       },
       {
         "attribute": "data.level",
-        "title": "Level"
+        "title": "Spell.Level"
       }
     ]
   },
@@ -130,12 +130,12 @@
       {
         "attribute": "data.type",
         "attributeType": "ItemType",
-        "title": "Type"
+        "title": "Common.Type"
       },
       {
         "attribute": "data.rarity",
         "attributeType": "ItemRarity",
-        "title": "Rarity"
+        "title": "Item.Rarity"
       },
       {
         "attribute": "data.attunement",
@@ -143,7 +143,7 @@
       },
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ],
@@ -151,11 +151,11 @@
       {
         "attribute": "data.type",
         "attributeType": "ItemType",
-        "title": "Type"
+        "title": "Common.Type"
       },
       {
         "attribute": "name",
-        "title": "Name"
+        "title": "Common.Name"
       }
     ]
   },
@@ -163,7 +163,7 @@
     "params": [
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ]
@@ -172,23 +172,23 @@
     "params": [
       {
         "attribute": "data.class",
-        "title": "Class",
+        "title": "Entity.Class",
         "dynamic": true
       },
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ],
     "group": [
       {
         "attribute": "data.class",
-        "title": "Class",
+        "title": "Entity.Class",
       },
       {
         "attribute": "name",
-        "title": "Name"
+        "title": "Common.Name"
       }
     ]
   },
@@ -197,11 +197,11 @@
       {
         "attribute": "type",
         "attributeType": "RuleType",
-        "title": "Type"
+        "title": "Common.Type"
       },
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ],
@@ -209,7 +209,7 @@
       {
         "attribute": "type",
         "attributeType": "RuleType",
-        "title": "Type"
+        "title": "Common.Type"
       }
     ]
   }, 
@@ -217,7 +217,7 @@
     "params": [
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ]
