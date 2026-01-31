@@ -3,7 +3,7 @@
   "sections": [
     {
       "type": "group",
-      "title": "Locale",
+      "title": "Common.Locale",
       "fields": [
         {
           "type": "picker",
@@ -24,11 +24,11 @@
     },
     {
       "type": "group",
-      "title": "Combat Tracker",
+      "title": "Settings.CombatTracker",
       "fields": [
         {
           "type": "picker",
-          "title": "Auto-Roll Initiative",
+          "title": "Settings.AutoRollInitiative",
           "placeholder": "None",
           "defaultValue": "hostileAndNeutral",
           "attribute": "combat.initiative.autoRoll",
@@ -36,14 +36,14 @@
         },
         {
           "type": "picker",
-          "title": "Group Initiative By",
+          "title": "Settings.GroupInitiativeBy",
           "placeholder": "None",
           "attribute": "combat.initiative.group",
           "attributeType": "InitiativeGroupType",
         },
         {
           "type": "toggle",
-          "title": "Re-Roll Initiative Every Round",
+          "title": "Settings.ReRollInitiativeEveryRound",
           "attribute": "combat.initiative.everyRound",
         },
       ]
