@@ -121,7 +121,7 @@
           "type": "attributes",
           "attribute": "data.savingThrows",
           "attributeType": "Ability",
-          "text": "{{key|capitalize}} {{value|signed}}",
+          "text": "{{key|map: 'AbilityAbbr'|capitalize}} {{value|signed}}",
         },
         {
           "title": "Monster.Skills",
