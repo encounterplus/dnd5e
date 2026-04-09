@@ -1,0 +1,4410 @@
+[
+  {
+    "id": "3d7f9f02-f084-5c02-aacd-47f07cadd5bb",
+    "name": "The Six Abilities; Ability Descriptions",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ability",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Score Measures...",
+        "size": 0.6666666666666666,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Strength",
+        "Physical might"
+      ],
+      [
+        "Dexterity",
+        "Agility, reflexes, and balance"
+      ],
+      [
+        "Constitution",
+        "Health and stamina"
+      ],
+      [
+        "Intelligence",
+        "Reasoning and memory"
+      ],
+      [
+        "Wisdom",
+        "Perceptiveness and mental fortitude"
+      ],
+      [
+        "Charisma",
+        "Confidence, poise, and charm"
+      ]
+    ]
+  },
+  {
+    "id": "97ce68ce-05be-58d3-bde9-efb649abb96e",
+    "name": "Ability Scores",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Score",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Meaning",
+        "size": 0.8333333333333334,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "1",
+        "This is the lowest a score can normally go. If an effect reduces a score to 0, that effect explains what happens."
+      ],
+      [
+        "2–9",
+        "This represents a weak capability."
+      ],
+      [
+        "10–11",
+        "This represents the human average."
+      ],
+      [
+        "12–19",
+        "This represents a strong capability."
+      ],
+      [
+        "20",
+        "This is the highest an adventurer's score can go unless a feature says otherwise."
+      ],
+      [
+        "21–29",
+        "This represents an extraordinary capability."
+      ],
+      [
+        "30",
+        "This is the highest a score can go."
+      ]
+    ]
+  },
+  {
+    "id": "325737d4-b6e1-5504-8ba8-c983d307324e",
+    "name": "Ability Modifiers",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Score",
+        "size": 0.5,
+        "align": "center"
+      },
+      {
+        "name": "Modifier",
+        "size": 0.5,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "1",
+        "−5"
+      ],
+      [
+        "2–3",
+        "−4"
+      ],
+      [
+        "4–5",
+        "−3"
+      ],
+      [
+        "6–7",
+        "−2"
+      ],
+      [
+        "8–9",
+        "−1"
+      ],
+      [
+        "10–11",
+        "+0"
+      ],
+      [
+        "12–13",
+        "+1"
+      ],
+      [
+        "14–15",
+        "+2"
+      ],
+      [
+        "16–17",
+        "+3"
+      ],
+      [
+        "18–19",
+        "+4"
+      ],
+      [
+        "20–21",
+        "+5"
+      ],
+      [
+        "22–23",
+        "+6"
+      ],
+      [
+        "24–25",
+        "+7"
+      ],
+      [
+        "26–27",
+        "+8"
+      ],
+      [
+        "28–29",
+        "+9"
+      ],
+      [
+        "30",
+        "+10"
+      ]
+    ]
+  },
+  {
+    "id": "ae8827be-3650-56f7-b42d-9f0bdf69ad06",
+    "name": "Ability Modifier; Ability Check Examples",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ability",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Make a Check To...",
+        "size": 0.6666666666666666,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Strength",
+        "Lift, push, pull, or break something"
+      ],
+      [
+        "Dexterity",
+        "Move nimbly, quickly, or quietly"
+      ],
+      [
+        "Constitution",
+        "Push your body beyond normal limits"
+      ],
+      [
+        "Intelligence",
+        "Reason or remember"
+      ],
+      [
+        "Wisdom",
+        "Notice things in the environment or in creatures' behavior"
+      ],
+      [
+        "Charisma",
+        "Influence, entertain, or deceive"
+      ]
+    ]
+  },
+  {
+    "id": "0d5d88c2-83d3-5f08-82c9-42e62def4bad",
+    "name": "Typical Difficulty Classes",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Task Difficulty",
+        "size": 0.8333333333333334,
+        "align": null
+      },
+      {
+        "name": "DC",
+        "size": 0.16666666666666666,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "Very easy",
+        "5"
+      ],
+      [
+        "Easy",
+        "10"
+      ],
+      [
+        "Medium",
+        "15"
+      ],
+      [
+        "Hard",
+        "20"
+      ],
+      [
+        "Very hard",
+        "25"
+      ],
+      [
+        "Nearly impossible",
+        "30"
+      ]
+    ]
+  },
+  {
+    "id": "d5d9c4b4-c708-5d60-b406-92e72f92dc10",
+    "name": "Ability Modifier; Saving Throw Examples",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ability",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Make a Save To...",
+        "size": 0.6666666666666666,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Strength",
+        "Physically resist direct force"
+      ],
+      [
+        "Dexterity",
+        "Dodge out of harm's way"
+      ],
+      [
+        "Constitution",
+        "Endure a toxic hazard"
+      ],
+      [
+        "Intelligence",
+        "Recognize an illusion as fake"
+      ],
+      [
+        "Wisdom",
+        "Resist a mental assault"
+      ],
+      [
+        "Charisma",
+        "Assert your identity"
+      ]
+    ]
+  },
+  {
+    "id": "117b995a-3a7a-5ed6-b405-9eee7d99fa18",
+    "name": "Ability Modifier; Attack Roll Abilities",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ability",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Attack Type",
+        "size": 0.8333333333333334,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Strength",
+        "Melee attack with a weapon or an Unarmed Strike"
+      ],
+      [
+        "Dexterity",
+        "Ranged attack with a weapon"
+      ],
+      [
+        "Varies",
+        "Spell attack (the ability used is determined by the spellcaster's spellcasting feature, as explained in chapter 7)"
+      ]
+    ]
+  },
+  {
+    "id": "deb336a2-d447-5bfb-acc7-83d28172ace5",
+    "name": "Proficiency Bonus",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Level or CR",
+        "size": 0.4166666666666667,
+        "align": "center"
+      },
+      {
+        "name": "Bonus",
+        "size": 0.4166666666666667,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "Up to 4",
+        "+2"
+      ],
+      [
+        "5–8",
+        "+3"
+      ],
+      [
+        "9–12",
+        "+4"
+      ],
+      [
+        "13–16",
+        "+5"
+      ],
+      [
+        "17–20",
+        "+6"
+      ],
+      [
+        "21–24",
+        "+7"
+      ],
+      [
+        "25–28",
+        "+8"
+      ],
+      [
+        "29–30",
+        "+9"
+      ]
+    ]
+  },
+  {
+    "id": "d06014ee-afdf-5562-8ce6-68692072ab40",
+    "name": "Skill List; Skills",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Skill",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Ability",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Example Uses",
+        "size": 0.6666666666666666,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "[Acrobatics](skill)",
+        "Dexterity",
+        "Stay on your feet in a tricky situation, or perform an acrobatic stunt."
+      ],
+      [
+        "[Animal Handling](skill)",
+        "Wisdom",
+        "Calm or train an animal, or get an animal to behave in a certain way."
+      ],
+      [
+        "[Arcana](skill)",
+        "Intelligence",
+        "Recall lore about spells, magic items, and the planes of existence."
+      ],
+      [
+        "[Athletics](skill)",
+        "Strength",
+        "Jump farther than normal, stay afloat in rough water, or break something."
+      ],
+      [
+        "[Deception](skill)",
+        "Charisma",
+        "Tell a convincing lie, or wear a disguise convincingly."
+      ],
+      [
+        "[History](skill)",
+        "Intelligence",
+        "Recall lore about historical events, people, nations, and cultures."
+      ],
+      [
+        "[Insight](skill)",
+        "Wisdom",
+        "Discern a person's mood and intentions."
+      ],
+      [
+        "[Intimidation](skill)",
+        "Charisma",
+        "Awe or threaten someone into doing what you want."
+      ],
+      [
+        "[Investigation](skill)",
+        "Intelligence",
+        "Find obscure information in books, or deduce how something works."
+      ],
+      [
+        "[Medicine](skill)",
+        "Wisdom",
+        "Diagnose an illness, or determine what killed the recently slain."
+      ],
+      [
+        "[Nature](skill)",
+        "Intelligence",
+        "Recall lore about terrain, plants, animals, and weather."
+      ],
+      [
+        "[Perception](skill)",
+        "Wisdom",
+        "Using a combination of senses, notice something that's easy to miss."
+      ],
+      [
+        "[Performance](skill)",
+        "Charisma",
+        "Act, tell a story, perform music, or dance."
+      ],
+      [
+        "[Persuasion](skill)",
+        "Charisma",
+        "Honestly and graciously convince someone of something."
+      ],
+      [
+        "[Religion](skill)",
+        "Intelligence",
+        "Recall lore about gods, religious rituals, and holy symbols."
+      ],
+      [
+        "[Sleight of Hand](skill)",
+        "Dexterity",
+        "Pick a pocket, conceal a handheld object, or perform legerdemain."
+      ],
+      [
+        "[Stealth](skill)",
+        "Dexterity",
+        "Escape notice by moving quietly and hiding behind things."
+      ],
+      [
+        "[Survival](skill)",
+        "Wisdom",
+        "Follow tracks, forage, find a trail, or avoid natural hazards."
+      ]
+    ]
+  },
+  {
+    "id": "fe04bedc-a62d-5f48-bdcc-4736fd6443db",
+    "name": "Actions",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Action",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Summary",
+        "size": 0.8333333333333334,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "[Attack](action)",
+        "Attack with a weapon or an Unarmed Strike."
+      ],
+      [
+        "[Dash](action)",
+        "For the rest of the turn, give yourself extra movement equal to your Speed."
+      ],
+      [
+        "[Disengage](action)",
+        "Your movement doesn't provoke [Opportunity Attack](action) for the rest of the turn."
+      ],
+      [
+        "[Dodge](action)",
+        "Until the start of your next turn, attack rolls against you have Disadvantage, and you make Dexterity saving throws with Advantage. You lose this benefit if you have the [Incapacitated](condition) condition or if your Speed is 0."
+      ],
+      [
+        "[Help](action)",
+        "Help another creature's ability check or attack roll, or administer first aid."
+      ],
+      [
+        "[Hide](action)",
+        "Make a Dexterity ([Stealth](skill)) check."
+      ],
+      [
+        "[Influence](action)",
+        "Make a Charisma ([Deception](skill), [Intimidation](skill), [Performance](skill), or [Persuasion](skill)) or Wisdom ([Animal Handling](skill)) check to alter a creature's attitude."
+      ],
+      [
+        "[Magic](action)",
+        "Cast a spell, use a magic item, or use a magical feature."
+      ],
+      [
+        "[Ready](action)",
+        "Prepare to take an action in response to a trigger you define."
+      ],
+      [
+        "[Search](action)",
+        "Make a Wisdom ([Insight](skill), [Medicine](skill), [Perception](skill), or [Survival](skill)) check."
+      ],
+      [
+        "[Study](action)",
+        "Make an Intelligence ([Arcana](skill), [History](skill), [Investigation](skill), [Nature](skill), or [Religion](skill)) check."
+      ],
+      [
+        "[Utilize](action)",
+        "Use a nonmagical object."
+      ]
+    ]
+  },
+  {
+    "id": "fd136c37-21c9-5629-97ea-7b5c9aa197cf",
+    "name": "Creature Size and Space",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Size",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Space (Feet)",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Space (Squares)",
+        "size": 0.3333333333333333,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Tiny",
+        "2½ by 2½ feet",
+        "4 per square"
+      ],
+      [
+        "Small",
+        "5 by 5 feet",
+        "1 square"
+      ],
+      [
+        "Medium",
+        "5 by 5 feet",
+        "1 square"
+      ],
+      [
+        "Large",
+        "10 by 10 feet",
+        "4 squares (2 by 2)"
+      ],
+      [
+        "Huge",
+        "15 by 15 feet",
+        "9 squares (3 by 3)"
+      ],
+      [
+        "Gargantuan",
+        "20 by 20 feet",
+        "16 squares (4 by 4)"
+      ]
+    ]
+  },
+  {
+    "id": "6c14ba64-beeb-531d-9bc9-e3facd512a43",
+    "name": "Cover",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Degree",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Benefit to Target",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Offered By...",
+        "size": 0.5,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Half",
+        "+2 bonus to AC and Dexterity saving throws",
+        "Another creature or an object that covers at least half of the target"
+      ],
+      [
+        "Three-Quarters",
+        "+5 bonus to AC and Dexterity saving throws",
+        "An object that covers at least three-quarters of the target"
+      ],
+      [
+        "Total",
+        "Can't be targeted directly",
+        "An object that covers the whole target"
+      ]
+    ]
+  },
+  {
+    "id": "9f6a9fdc-5af1-5bd1-8d72-2f5a0bfd93f8",
+    "name": "Choose a Class; Class Overview",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Class",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Likes...",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Primary Ability",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Complexity",
+        "size": 0.25,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "[Barbarian](class)",
+        "Battle",
+        "Strength",
+        "Average"
+      ],
+      [
+        "[Bard](class)",
+        "Performing",
+        "Charisma",
+        "High"
+      ],
+      [
+        "[Cleric](class)",
+        "Gods",
+        "Wisdom",
+        "Average"
+      ],
+      [
+        "[Druid](class)",
+        "Nature",
+        "Wisdom",
+        "High"
+      ],
+      [
+        "[Fighter](class)",
+        "Weapons",
+        "Strength or Dexterity",
+        "Low"
+      ],
+      [
+        "[Monk](class)",
+        "Unarmed combat",
+        "Dexterity and Wisdom",
+        "High"
+      ],
+      [
+        "[Paladin](class)",
+        "Defense",
+        "Strength and Charisma",
+        "Average"
+      ],
+      [
+        "[Ranger](class)",
+        "Survival",
+        "Dexterity and Wisdom",
+        "Average"
+      ],
+      [
+        "[Rogue](class)",
+        "Stealth",
+        "Dexterity",
+        "Low"
+      ],
+      [
+        "[Sorcerer](class)",
+        "Power",
+        "Charisma",
+        "High"
+      ],
+      [
+        "[Warlock](class)",
+        "Occult lore",
+        "Charisma",
+        "High"
+      ],
+      [
+        "[Wizard](class)",
+        "Spellbooks",
+        "Intelligence",
+        "Average"
+      ]
+    ]
+  },
+  {
+    "id": "90c09eac-3068-5e5c-8d14-ebbaac41b167",
+    "name": "Choose a Background; Ability Scores and Backgrounds",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ability",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Backgrounds",
+        "size": 0.8333333333333334,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Strength",
+        "[Artisan](background), [Entertainer](background), [Farmer](background), [Guard](background), [Noble](background), [Sailor](background), [Soldier](background)"
+      ],
+      [
+        "Dexterity",
+        "[Artisan](background), [Charlatan](background), [Criminal](background), [Entertainer](background), [Guide](background), [Sailor](background), [Scribe](background), [Soldier](background), [Wayfarer](background)"
+      ],
+      [
+        "Constitution",
+        "[Charlatan](background), [Criminal](background), [Farmer](background), [Guide](background), [Hermit](background), [Merchant](background), [Sage](background), [Soldier](background)"
+      ],
+      [
+        "Intelligence",
+        "[Acolyte](background), [Artisan](background), [Criminal](background), [Guard](background), [Merchant](background), [Noble](background), [Sage](background), [Scribe](background)"
+      ],
+      [
+        "Wisdom",
+        "[Acolyte](background), [Farmer](background), [Guard](background), [Guide](background), [Hermit](background), [Sage](background), [Sailor](background), [Scribe](background), [Wayfarer](background)"
+      ],
+      [
+        "Charisma",
+        "[Acolyte](background), [Charlatan](background), [Entertainer](background), [Hermit](background), [Merchant](background), [Noble](background), [Wayfarer](background)"
+      ]
+    ]
+  },
+  {
+    "id": "6ba26979-8a54-5eb5-86eb-b459f5441969",
+    "name": "Choose Languages; Standard Languages",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "1d12",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Language",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Origin",
+        "size": 0.16666666666666666,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "—",
+        "[Common](language)",
+        "Sigil"
+      ],
+      [
+        "[Common Sign Language](language)",
+        "Sigil"
+      ],
+      [
+        "[Draconic](language)",
+        "Dragons"
+      ],
+      [
+        "[Dwarvish](language)",
+        "Dwarves"
+      ],
+      [
+        "[Elvish](language)",
+        "Elves"
+      ],
+      [
+        "[Giant](language)",
+        "Giants"
+      ],
+      [
+        "[Gnomish](language)",
+        "Gnomes"
+      ],
+      [
+        "[Goblin](language)",
+        "Goblinoids"
+      ],
+      [
+        "[Halfling](language)",
+        "Halflings"
+      ],
+      [
+        "[Orc](language)",
+        "Orcs"
+      ]
+    ]
+  },
+  {
+    "id": "c50649b0-ae85-5baa-a72e-a150884190b0",
+    "name": "Choose Languages; Rare Languages",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Language",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Origin",
+        "size": 0.5,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Abyssal",
+        "Demons of the Abyss"
+      ],
+      [
+        "Celestial",
+        "Celestials"
+      ],
+      [
+        "Deep Speech",
+        "Aberrations"
+      ],
+      [
+        "Druidic",
+        "Druidic circles"
+      ],
+      [
+        "Infernal",
+        "Devils of the Nine Hells"
+      ],
+      [
+        "Primordial*",
+        "Elementals"
+      ],
+      [
+        "Sylvan",
+        "The Feywild"
+      ],
+      [
+        "Thieves' Cant",
+        "Various criminal guilds"
+      ],
+      [
+        "Undercommon",
+        "The Underdark"
+      ]
+    ]
+  },
+  {
+    "id": "7070dc8e-f055-5d10-87b8-b9054aee009b",
+    "name": "Ability Score Point Costs",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Score",
+        "size": 0.5,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.5,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "8",
+        "0"
+      ],
+      [
+        "9",
+        "1"
+      ],
+      [
+        "10",
+        "2"
+      ],
+      [
+        "11",
+        "3"
+      ],
+      [
+        "12",
+        "4"
+      ],
+      [
+        "13",
+        "5"
+      ],
+      [
+        "14",
+        "7"
+      ],
+      [
+        "15",
+        "9"
+      ]
+    ]
+  },
+  {
+    "id": "8cfca6e9-52c2-5bac-8713-3295ea91275f",
+    "name": "Assign Ability Scores; Standard Array by Class",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Class",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Str.",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Dex.",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Con.",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Int.",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Wis.",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Cha.",
+        "size": 0.08333333333333333,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "[Barbarian](class)",
+        "15",
+        "13",
+        "14",
+        "10",
+        "12",
+        "8"
+      ],
+      [
+        "[Bard](class)",
+        "8",
+        "14",
+        "12",
+        "13",
+        "10",
+        "15"
+      ],
+      [
+        "[Cleric](class)",
+        "14",
+        "8",
+        "13",
+        "10",
+        "15",
+        "12"
+      ],
+      [
+        "[Druid](class)",
+        "8",
+        "12",
+        "14",
+        "13",
+        "15",
+        "10"
+      ],
+      [
+        "[Fighter](class)",
+        "15",
+        "14",
+        "13",
+        "8",
+        "10",
+        "12"
+      ],
+      [
+        "[Monk](class)",
+        "12",
+        "15",
+        "13",
+        "10",
+        "14",
+        "8"
+      ],
+      [
+        "[Paladin](class)",
+        "15",
+        "10",
+        "13",
+        "8",
+        "12",
+        "14"
+      ],
+      [
+        "[Ranger](class)",
+        "12",
+        "15",
+        "13",
+        "8",
+        "14",
+        "10"
+      ],
+      [
+        "[Rogue](class)",
+        "12",
+        "15",
+        "13",
+        "14",
+        "10",
+        "8"
+      ],
+      [
+        "[Sorcerer](class)",
+        "10",
+        "13",
+        "14",
+        "8",
+        "12",
+        "15"
+      ],
+      [
+        "[Warlock](class)",
+        "8",
+        "14",
+        "13",
+        "12",
+        "10",
+        "15"
+      ],
+      [
+        "[Wizard](class)",
+        "8",
+        "12",
+        "13",
+        "15",
+        "14",
+        "10"
+      ]
+    ]
+  },
+  {
+    "id": "b499e9d8-f24a-57c3-a4a3-f0d172e5f542",
+    "name": "Determine Ability Modifiers; Ability Scores and Modifiers",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Score",
+        "size": 0.5,
+        "align": "center"
+      },
+      {
+        "name": "Modifier",
+        "size": 0.5,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "3",
+        "−4"
+      ],
+      [
+        "4–5",
+        "−3"
+      ],
+      [
+        "6–7",
+        "−2"
+      ],
+      [
+        "8–9",
+        "−1"
+      ],
+      [
+        "10–11",
+        "+0"
+      ],
+      [
+        "12–13",
+        "+1"
+      ],
+      [
+        "14–15",
+        "+2"
+      ],
+      [
+        "16–17",
+        "+3"
+      ],
+      [
+        "18–19",
+        "+4"
+      ],
+      [
+        "20",
+        "+5"
+      ]
+    ]
+  },
+  {
+    "id": "388f3b99-cb13-54e7-b271-7a3109fd26fd",
+    "name": "Level 1 Hit Points by Class",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Class",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Hit Point Maximum",
+        "size": 0.5,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "[Barbarian](class)",
+        "12 + Con. modifier"
+      ],
+      [
+        "[Fighter](class), [Paladin](class), or [Ranger](class)",
+        "10 + Con. modifier"
+      ],
+      [
+        "[Bard](class), [Cleric](class), [Druid](class), [Monk](class), [Rogue](class), or [Warlock](class)",
+        "8 + Con. modifier"
+      ],
+      [
+        "[Sorcerer](class) or [Wizard](class)",
+        "6 + Con. modifier"
+      ]
+    ]
+  },
+  {
+    "id": "12f1f87d-8449-55b0-bd0b-3c7d4f36bc5d",
+    "name": "Level Advancement; Character Advancement",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Level",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Experience Points",
+        "size": 0.4166666666666667,
+        "align": null
+      },
+      {
+        "name": "Proficiency Bonus",
+        "size": 0.4166666666666667,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "1",
+        "0",
+        "+2"
+      ],
+      [
+        "2",
+        "300",
+        "+2"
+      ],
+      [
+        "3",
+        "900",
+        "+2"
+      ],
+      [
+        "4",
+        "2,700",
+        "+2"
+      ],
+      [
+        "5",
+        "6,500",
+        "+3"
+      ],
+      [
+        "6",
+        "14,000",
+        "+3"
+      ],
+      [
+        "7",
+        "23,000",
+        "+3"
+      ],
+      [
+        "8",
+        "34,000",
+        "+3"
+      ],
+      [
+        "9",
+        "48,000",
+        "+4"
+      ],
+      [
+        "10",
+        "64,000",
+        "+4"
+      ],
+      [
+        "11",
+        "85,000",
+        "+4"
+      ],
+      [
+        "12",
+        "100,000",
+        "+4"
+      ],
+      [
+        "13",
+        "120,000",
+        "+5"
+      ],
+      [
+        "14",
+        "140,000",
+        "+5"
+      ],
+      [
+        "15",
+        "165,000",
+        "+5"
+      ],
+      [
+        "16",
+        "195,000",
+        "+5"
+      ],
+      [
+        "17",
+        "225,000",
+        "+6"
+      ],
+      [
+        "18",
+        "265,000",
+        "+6"
+      ],
+      [
+        "19",
+        "305,000",
+        "+6"
+      ],
+      [
+        "20",
+        "355,000",
+        "+6"
+      ]
+    ]
+  },
+  {
+    "id": "42fb54c0-7d56-5fd1-b679-ab63114bb004",
+    "name": "Adjust Hit Points and Hit Point Dice; Fixed Hit Points by Class",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Class",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Hit Points per Level",
+        "size": 0.5,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "[Barbarian](class)",
+        "7 + Con. modifier"
+      ],
+      [
+        "[Fighter](class), [Paladin](class), or [Ranger](class)",
+        "6 + Con. modifier"
+      ],
+      [
+        "[Bard](class), [Cleric](class), [Druid](class), [Monk](class), [Rogue](class), or [Warlock](class)",
+        "5 + Con. modifier"
+      ],
+      [
+        "[Sorcerer](class) or [Wizard](class)",
+        "4 + Con. modifier"
+      ]
+    ]
+  },
+  {
+    "id": "3c5eebe5-a826-52a8-a337-76b732446141",
+    "name": "Starting Equipment at Higher Levels",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Starting Level",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Equipment and Money",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Magic Items",
+        "size": 0.3333333333333333,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "2–4",
+        "Normal starting equipment",
+        "1 Common"
+      ],
+      [
+        "5–10",
+        "500 GP plus 1d10 × 25 GP plus normal starting equipment",
+        "1 Common, 1 Uncommon"
+      ],
+      [
+        "11–16",
+        "5,000 gp plus 1d10 × 250 GP plus normal starting equipment",
+        "2 Common, 3 Uncommon, 1 Rare"
+      ],
+      [
+        "17–20",
+        "20,000 GP plus 1d10 × 250 GP plus normal starting equipment",
+        "2 Common, 4 Uncommon, 3 Rare, 1 Very Rare"
+      ]
+    ]
+  },
+  {
+    "id": "d767df89-f13c-5747-a299-6d0c5dfb747e",
+    "name": "Spellcasting; Multiclass Spellcaster: Spell Slots per Spell Level",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Level",
+        "size": 0.25,
+        "align": "center"
+      },
+      {
+        "name": "1",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "2",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "3",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "4",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "5",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "6",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "7",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "8",
+        "size": 0.08333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "9",
+        "size": 0.08333333333333333,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "1",
+        "2",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "2",
+        "3",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "3",
+        "4",
+        "2",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "4",
+        "4",
+        "3",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "5",
+        "4",
+        "3",
+        "2",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "6",
+        "4",
+        "3",
+        "3",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "7",
+        "4",
+        "3",
+        "3",
+        "1",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "8",
+        "4",
+        "3",
+        "3",
+        "2",
+        "—",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "9",
+        "4",
+        "3",
+        "3",
+        "3",
+        "1",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "10",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "—",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "11",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "12",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "—",
+        "—",
+        "—"
+      ],
+      [
+        "13",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "1",
+        "—",
+        "—"
+      ],
+      [
+        "14",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "1",
+        "—",
+        "—"
+      ],
+      [
+        "15",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "1",
+        "1",
+        "—"
+      ],
+      [
+        "16",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "1",
+        "1",
+        "—"
+      ],
+      [
+        "17",
+        "4",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "18",
+        "4",
+        "3",
+        "3",
+        "3",
+        "3",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "19",
+        "4",
+        "3",
+        "3",
+        "3",
+        "3",
+        "2",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "20",
+        "4",
+        "3",
+        "3",
+        "3",
+        "3",
+        "2",
+        "2",
+        "1",
+        "1"
+      ]
+    ]
+  },
+  {
+    "id": "13c4f596-fdfd-519c-9fc3-77e3ac6a5fdd",
+    "name": "Coins; Coin Values",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Coin",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Value in GP",
+        "size": 0.5,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Copper Piece (CP)",
+        "1/100"
+      ],
+      [
+        "Silver Piece (SP)",
+        "1/10"
+      ],
+      [
+        "Electrum Piece (EP)",
+        "1/2"
+      ],
+      [
+        "Gold Piece (GP)",
+        "1"
+      ],
+      [
+        "Platinum Piece (PP)",
+        "10"
+      ]
+    ]
+  },
+  {
+    "id": "57359b72-d59d-50d3-b5db-ee888b5099e9",
+    "name": "Weapons",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Name",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Damage",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Properties",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Mastery",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Weight",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": null,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [],
+      [
+        "[Club](item)",
+        "1d4 Bludgeoning",
+        "Light",
+        "Slow",
+        "2 lb.",
+        "1 SP"
+      ],
+      [
+        "[Dagger](item)",
+        "1d4 Piercing",
+        "Finesse, Light, Thrown (Range 20/60)",
+        "Nick",
+        "1 lb.",
+        "2 GP"
+      ],
+      [
+        "[Greatclub](item)",
+        "1d8 Bludgeoning",
+        "Two-Handed",
+        "Push",
+        "10 lb.",
+        "2 SP"
+      ],
+      [
+        "[Handaxe](item)",
+        "1d6 Slashing",
+        "Light, Thrown (Range 20/60)",
+        "Vex",
+        "2 lb.",
+        "5 GP"
+      ],
+      [
+        "[Javelin](item)",
+        "1d6 Piercing",
+        "Thrown (Range 30/120)",
+        "Slow",
+        "2 lb.",
+        "5 SP"
+      ],
+      [
+        "[Light Hammer](item)",
+        "1d4 Bludgeoning",
+        "Light, Thrown (Range 20/60)",
+        "Nick",
+        "2 lb.",
+        "2 GP"
+      ],
+      [
+        "[Mace](item)",
+        "1d6 Bludgeoning",
+        "—",
+        "Sap",
+        "4 lb.",
+        "5 GP"
+      ],
+      [
+        "[Quarterstaff](item)",
+        "1d6 Bludgeoning",
+        "Versatile (1d8)",
+        "Topple",
+        "4 lb.",
+        "2 SP"
+      ],
+      [
+        "[Sickle](item)",
+        "1d4 Slashing",
+        "Light",
+        "Nick",
+        "2 lb.",
+        "1 GP"
+      ],
+      [
+        "[Spear](item)",
+        "1d6 Piercing",
+        "Thrown (Range 20/60), Versatile (1d8)",
+        "Sap",
+        "3 lb.",
+        "1 GP"
+      ],
+      [],
+      [
+        "[Dart](item)",
+        "1d4 Piercing",
+        "Finesse, Thrown (Range 20/60)",
+        "Vex",
+        "1/4 lb.",
+        "5 CP"
+      ],
+      [
+        "[Light Crossbow](item)",
+        "1d8 Piercing",
+        "Ammunition (Range 80/320; Bolt), Loading, Two-Handed",
+        "Slow",
+        "5 lb.",
+        "25 GP"
+      ],
+      [
+        "[Shortbow](item)",
+        "1d6 Piercing",
+        "Ammunition (Range 80/320; Arrow), Two-Handed",
+        "Vex",
+        "2 lb.",
+        "25 GP"
+      ],
+      [
+        "[Sling](item)",
+        "1d4 Bludgeoning",
+        "Ammunition (Range 30/120; Bullet)",
+        "Slow",
+        "—",
+        "1 SP"
+      ],
+      [],
+      [
+        "[Battleaxe](item)",
+        "1d8 Slashing",
+        "Versatile (1d10)",
+        "Topple",
+        "4 lb.",
+        "10 GP"
+      ],
+      [
+        "[Flail](item)",
+        "1d8 Bludgeoning",
+        "—",
+        "Sap",
+        "2 lb.",
+        "10 GP"
+      ],
+      [
+        "[Glaive](item)",
+        "1d10 Slashing",
+        "Heavy, Reach, Two-Handed",
+        "Graze",
+        "6 lb.",
+        "20 GP"
+      ],
+      [
+        "[Greataxe](item)",
+        "1d12 Slashing",
+        "Heavy, Two-Handed",
+        "Cleave",
+        "7 lb.",
+        "30 GP"
+      ],
+      [
+        "[Greatsword](item)",
+        "2d6 Slashing",
+        "Heavy, Two-Handed",
+        "Graze",
+        "6 lb.",
+        "50 GP"
+      ],
+      [
+        "[Halberd](item)",
+        "1d10 Slashing",
+        "Heavy, Reach, Two-Handed",
+        "Cleave",
+        "6 lb.",
+        "20 GP"
+      ],
+      [
+        "[Lance](item)",
+        "1d10 Piercing",
+        "Heavy, Reach, Two-Handed (unless mounted)",
+        "Topple",
+        "6 lb.",
+        "10 GP"
+      ],
+      [
+        "[Longsword](item)",
+        "1d8 Slashing",
+        "Versatile (1d10)",
+        "Sap",
+        "3 lb.",
+        "15 GP"
+      ],
+      [
+        "[Maul](item)",
+        "2d6 Bludgeoning",
+        "Heavy, Two-Handed",
+        "Topple",
+        "10 lb.",
+        "10 GP"
+      ],
+      [
+        "[Morningstar](item)",
+        "1d8 Piercing",
+        "—",
+        "Sap",
+        "4 lb.",
+        "15 GP"
+      ],
+      [
+        "[Pike](item)",
+        "1d10 Piercing",
+        "Heavy, Reach, Two-Handed",
+        "Push",
+        "18 lb.",
+        "5 GP"
+      ],
+      [
+        "[Rapier](item)",
+        "1d8 Piercing",
+        "Finesse",
+        "Vex",
+        "2 lb.",
+        "25 GP"
+      ],
+      [
+        "[Scimitar](item)",
+        "1d6 Slashing",
+        "Finesse, Light",
+        "Nick",
+        "3 lb.",
+        "25 GP"
+      ],
+      [
+        "[Shortsword](item)",
+        "1d6 Piercing",
+        "Finesse, Light",
+        "Vex",
+        "2 lb.",
+        "10 GP"
+      ],
+      [
+        "[Trident](item)",
+        "1d8 Piercing",
+        "Thrown (Range 20/60), Versatile (1d10)",
+        "Topple",
+        "4 lb.",
+        "5 GP"
+      ],
+      [
+        "[Warhammer](item)",
+        "1d8 Bludgeoning",
+        "Versatile (1d10)",
+        "Push",
+        "5 lb.",
+        "15 GP"
+      ],
+      [
+        "[War Pick](item)",
+        "1d8 Piercing",
+        "Versatile (1d10)",
+        "Sap",
+        "2 lb.",
+        "5 GP"
+      ],
+      [
+        "[Whip](item)",
+        "1d4 Slashing",
+        "Finesse, Reach",
+        "Slow",
+        "3 lb.",
+        "2 GP"
+      ],
+      [],
+      [
+        "[Blowgun](item)",
+        "1 Piercing",
+        "Ammunition (Range 25/100; Needle), Loading",
+        "Vex",
+        "1 lb.",
+        "10 GP"
+      ],
+      [
+        "[Hand Crossbow](item)",
+        "1d6 Piercing",
+        "Ammunition (Range 30/120; Bolt), Light, Loading",
+        "Vex",
+        "3 lb.",
+        "75 GP"
+      ],
+      [
+        "[Heavy Crossbow](item)",
+        "1d10 Piercing",
+        "Ammunition (Range 100/400; Bolt), Heavy, Loading, Two-Handed",
+        "Push",
+        "18 lb.",
+        "50 GP"
+      ],
+      [
+        "[Longbow](item)",
+        "1d8 Piercing",
+        "Ammunition (Range 150/600; Arrow), Heavy, Two-Handed",
+        "Slow",
+        "2 lb.",
+        "50 GP"
+      ],
+      [
+        "[Musket](item)",
+        "1d12 Piercing",
+        "Ammunition (Range 40/120; Bullet), Loading, Two-Handed",
+        "Slow",
+        "10 lb.",
+        "500 GP"
+      ],
+      [
+        "[Pistol](item)",
+        "1d10 Piercing",
+        "Ammunition (Range 30/90; Bullet), Loading",
+        "Vex",
+        "3 lb.",
+        "250 GP"
+      ]
+    ]
+  },
+  {
+    "id": "d30f0dc5-23d7-5bb6-acc5-ea0a03ec883c",
+    "name": "Armor",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Armor",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Armor Class (AC)",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Strength",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Stealth",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": null,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [],
+      [
+        "[Padded Armor](item)",
+        "11 + Dex modifier",
+        "—",
+        "Disadvantage",
+        "8 lb.",
+        "5 GP"
+      ],
+      [
+        "[Leather Armor](item)",
+        "11 + Dex modifier",
+        "—",
+        "—",
+        "10 lb.",
+        "10 GP"
+      ],
+      [
+        "[Studded Leather Armor](item)",
+        "12 + Dex modifier",
+        "—",
+        "—",
+        "13 lb.",
+        "45 GP"
+      ],
+      [],
+      [
+        "[Hide Armor](item)",
+        "12 + Dex modifier (max 2)",
+        "—",
+        "—",
+        "12 lb.",
+        "10 GP"
+      ],
+      [
+        "[Chain Shirt](item)",
+        "13 + Dex modifier (max 2)",
+        "—",
+        "—",
+        "20 lb.",
+        "50 GP"
+      ],
+      [
+        "[Scale Mail](item)",
+        "14 + Dex modifier (max 2)",
+        "—",
+        "Disadvantage",
+        "45 lb.",
+        "50 GP"
+      ],
+      [
+        "[Breastplate](item)",
+        "14 + Dex modifier (max 2)",
+        "—",
+        "—",
+        "20 lb.",
+        "400 GP"
+      ],
+      [
+        "[Half Plate Armor](item)",
+        "15 + Dex modifier (max 2)",
+        "—",
+        "Disadvantage",
+        "40 lb.",
+        "750 GP"
+      ],
+      [],
+      [
+        "[Ring Mail](item)",
+        "14",
+        "—",
+        "Disadvantage",
+        "40 lb.",
+        "30 GP"
+      ],
+      [
+        "[Chain Mail](item)",
+        "16",
+        "Str 13",
+        "Disadvantage",
+        "55 lb.",
+        "75 GP"
+      ],
+      [
+        "[Splint Armor](item)",
+        "17",
+        "Str 15",
+        "Disadvantage",
+        "60 lb.",
+        "200 GP"
+      ],
+      [
+        "[Plate Armor](item)",
+        "18",
+        "Str 15",
+        "Disadvantage",
+        "65 lb.",
+        "1,500 GP"
+      ],
+      [],
+      [
+        "[Shield](item)",
+        "+2",
+        "—",
+        "—",
+        "6 lb.",
+        "10 GP"
+      ]
+    ]
+  },
+  {
+    "id": "8fc62470-c3a4-58dc-8a36-1235173c6ae0",
+    "name": "Adventuring Gear",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Item",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Acid](item)",
+        "1 lb.",
+        "25 GP"
+      ],
+      [
+        "[Alchemist's Fire](item)",
+        "1 lb.",
+        "50 GP"
+      ],
+      [
+        "Ammunition",
+        "Varies",
+        "Varies"
+      ],
+      [
+        "[Antitoxin](item)",
+        "—",
+        "50 GP"
+      ],
+      [
+        "[Arcane Focus](item)",
+        "Varies",
+        "Varies"
+      ],
+      [
+        "[Backpack](item)",
+        "5 lb.",
+        "2 GP"
+      ],
+      [
+        "[Ball Bearings](item)",
+        "2 lb.",
+        "1 GP"
+      ],
+      [
+        "[Barrel](item)",
+        "70 lb.",
+        "2 GP"
+      ],
+      [
+        "[Basket](item)",
+        "2 lb.",
+        "4 SP"
+      ],
+      [
+        "[Bedroll](item)",
+        "7 lb.",
+        "1 GP"
+      ],
+      [
+        "[Bell](item)",
+        "—",
+        "1 GP"
+      ],
+      [
+        "[Blanket](item)",
+        "3 lb.",
+        "5 SP"
+      ],
+      [
+        "[Block and Tackle](item)",
+        "5 lb.",
+        "1 GP"
+      ],
+      [
+        "[Book](item)",
+        "5 lb.",
+        "25 GP"
+      ],
+      [
+        "[Glass Bottle](item)",
+        "2 lb.",
+        "2 GP"
+      ],
+      [
+        "[Bucket](item)",
+        "2 lb.",
+        "5 CP"
+      ],
+      [
+        "[Burglar's Pack](item)",
+        "42 lb.",
+        "16 GP"
+      ],
+      [
+        "[Caltrops](item)",
+        "2 lb.",
+        "1 GP"
+      ],
+      [
+        "[Candle](item)",
+        "—",
+        "1 CP"
+      ],
+      [
+        "[Crossbow Bolt Case](item)",
+        "1 lb.",
+        "1 GP"
+      ],
+      [
+        "[Map or Scroll Case](item)",
+        "1 lb.",
+        "1 GP"
+      ],
+      [
+        "[Chain](item)",
+        "10 lb.",
+        "5 GP"
+      ],
+      [
+        "[Chest](item)",
+        "25 lb.",
+        "5 GP"
+      ],
+      [
+        "[Climber's Kit](item)",
+        "12 lb.",
+        "25 GP"
+      ],
+      [
+        "[Fine Clothes](item)",
+        "6 lb.",
+        "15 GP"
+      ],
+      [
+        "[Traveler's Clothes](item)",
+        "4 lb.",
+        "2 GP"
+      ],
+      [
+        "[Component Pouch](item)",
+        "2 lb.",
+        "25 GP"
+      ],
+      [
+        "[Costume](item)",
+        "4 lb.",
+        "5 GP"
+      ],
+      [
+        "[Crowbar](item)",
+        "5 lb.",
+        "2 GP"
+      ],
+      [
+        "[Diplomat's Pack](item)",
+        "39 lb.",
+        "39 GP"
+      ],
+      [
+        "[Druidic Focus](item)",
+        "Varies",
+        "Varies"
+      ],
+      [
+        "[Dungeoneer's Pack](item)",
+        "55 lb.",
+        "12 GP"
+      ],
+      [
+        "[Entertainer's Pack](item)",
+        "58½ lb.",
+        "40 GP"
+      ],
+      [
+        "[Explorer's Pack](item)",
+        "55 lb.",
+        "10 GP"
+      ],
+      [
+        "[Flask](item)",
+        "1 lb.",
+        "2 CP"
+      ],
+      [
+        "[Grappling Hook](item)",
+        "4 lb.",
+        "2 GP"
+      ],
+      [
+        "[Healer's Kit](item)",
+        "3 lb.",
+        "5 GP"
+      ],
+      [
+        "[Holy Symbol](item)",
+        "Varies",
+        "Varies"
+      ],
+      [
+        "[Holy Water](item)",
+        "1 lb.",
+        "25 GP"
+      ],
+      [
+        "[Hunting Trap](item)",
+        "25 lb.",
+        "5 GP"
+      ],
+      [
+        "[Ink](item)",
+        "—",
+        "10 GP"
+      ],
+      [
+        "[Ink Pen](item)",
+        "—",
+        "2 CP"
+      ],
+      [
+        "[Jug](item)",
+        "4 lb.",
+        "2 CP"
+      ],
+      [
+        "[Ladder](item)",
+        "25 lb.",
+        "1 SP"
+      ],
+      [
+        "[Lamp](item)",
+        "1 lb.",
+        "5 SP"
+      ],
+      [
+        "[Bullseye Lantern](item)",
+        "2 lb.",
+        "10 GP"
+      ],
+      [
+        "[Hooded Lantern](item)",
+        "2 lb.",
+        "5 GP"
+      ],
+      [
+        "[Lock](item)",
+        "1 lb.",
+        "10 GP"
+      ],
+      [
+        "[Magnifying Glass](item)",
+        "—",
+        "100 GP"
+      ],
+      [
+        "[Manacles](item)",
+        "6 lb.",
+        "2 GP"
+      ],
+      [
+        "[Map](item)",
+        "—",
+        "1 GP"
+      ],
+      [
+        "[Mirror](item)",
+        "1/2 lb.",
+        "5 GP"
+      ],
+      [
+        "[Net](item)",
+        "3 lb.",
+        "1 GP"
+      ],
+      [
+        "[Oil](item)",
+        "1 lb.",
+        "1 SP"
+      ],
+      [
+        "[Paper](item)",
+        "—",
+        "2 SP"
+      ],
+      [
+        "[Parchment](item)",
+        "—",
+        "1 SP"
+      ],
+      [
+        "[Perfume](item)",
+        "—",
+        "5 GP"
+      ],
+      [
+        "[Basic Poison](item)",
+        "—",
+        "100 GP"
+      ],
+      [
+        "[Pole](item)",
+        "7 lb.",
+        "5 CP"
+      ],
+      [
+        "[Iron Pot](item)",
+        "10 lb.",
+        "2 GP"
+      ],
+      [
+        "[Potion of Healing](item)",
+        "1/2 lb.",
+        "50 GP"
+      ],
+      [
+        "[Pouch](item)",
+        "1 lb.",
+        "5 SP"
+      ],
+      [
+        "[Priest's Pack](item)",
+        "29 lb.",
+        "33 GP"
+      ],
+      [
+        "[Quiver](item)",
+        "1 lb.",
+        "1 GP"
+      ],
+      [
+        "[Portable Ram](item)",
+        "35 lb.",
+        "4 GP"
+      ],
+      [
+        "[Rations](item)",
+        "2 lb.",
+        "5 SP"
+      ],
+      [
+        "[Robe](item)",
+        "4 lb.",
+        "1 GP"
+      ],
+      [
+        "[Rope](item)",
+        "5 lb.",
+        "1 GP"
+      ],
+      [
+        "[Sack](item)",
+        "1/2 lb.",
+        "1 CP"
+      ],
+      [
+        "[Scholar's Pack](item)",
+        "22 lb.",
+        "40 GP"
+      ],
+      [
+        "[Shovel](item)",
+        "5 lb.",
+        "2 GP"
+      ],
+      [
+        "[Signal Whistle](item)",
+        "—",
+        "5 CP"
+      ],
+      [
+        "Spell Scroll (Cantrip)",
+        "—",
+        "30 GP"
+      ],
+      [
+        "Spell Scroll (Level 1)",
+        "—",
+        "50 GP"
+      ],
+      [
+        "[Iron Spikes](item)",
+        "5 lb.",
+        "1 GP"
+      ],
+      [
+        "[Spyglass](item)",
+        "1 lb.",
+        "1,000 GP"
+      ],
+      [
+        "[String](item)",
+        "—",
+        "1 SP"
+      ],
+      [
+        "[Tent](item)",
+        "20 lb.",
+        "2 GP"
+      ],
+      [
+        "[Tinderbox](item)",
+        "1 lb.",
+        "5 SP"
+      ],
+      [
+        "[Torch](item)",
+        "1 lb.",
+        "1 CP"
+      ],
+      [
+        "[Vial](item)",
+        "—",
+        "1 GP"
+      ],
+      [
+        "[Waterskin](item)",
+        "5 lb. (full)",
+        "2 SP"
+      ]
+    ]
+  },
+  {
+    "id": "8c9e2bff-f64d-55d2-af52-a68023c4c605",
+    "name": "Ammunition (Varies); Ammunition",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Type",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Amount",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Storage",
+        "size": 0.25,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Arrows (20)](item)",
+        "20",
+        "[Quiver](item)",
+        "1 lb.",
+        "1 GP"
+      ],
+      [
+        "[Bolts (20)](item)",
+        "20",
+        "[Crossbow Bolt Case](item)",
+        "1½ lb.",
+        "1 GP"
+      ],
+      [
+        "[Firearm Bullets (10)](item)",
+        "10",
+        "[Pouch](item)",
+        "2 lb.",
+        "3 GP"
+      ],
+      [
+        "[Sling Bullet](item)",
+        "20",
+        "[Pouch](item)",
+        "1½ lb.",
+        "4 CP"
+      ],
+      [
+        "[Needles (50)](item)",
+        "50",
+        "[Pouch](item)",
+        "1 lb.",
+        "1 GP"
+      ]
+    ]
+  },
+  {
+    "id": "2a747733-05ae-54a3-b7ff-c071d8c7f6d4",
+    "name": "Arcane Focus (Varies); Arcane Focuses",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Focus",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Crystal](item)",
+        "1 lb.",
+        "10 GP"
+      ],
+      [
+        "[Orb](item)",
+        "3 lb.",
+        "20 GP"
+      ],
+      [
+        "[Rod](item)",
+        "2 lb.",
+        "10 GP"
+      ],
+      [
+        "[Staff](item) (also a [Quarterstaff](item))",
+        "4 lb.",
+        "5 GP"
+      ],
+      [
+        "[Wand](item)",
+        "1 lb.",
+        "10 GP"
+      ]
+    ]
+  },
+  {
+    "id": "9a747297-c7af-507c-8b95-7d76b6037e7f",
+    "name": "Druidic Focus (Varies); Druidic Focuses",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Focus",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Sprig of mistletoe](item)",
+        "—",
+        "1 GP"
+      ],
+      [
+        "[Wooden staff](item) (also a [Quarterstaff](item))",
+        "4 lb.",
+        "5 GP"
+      ],
+      [
+        "[Yew wand](item)",
+        "1 lb.",
+        "10 GP"
+      ]
+    ]
+  },
+  {
+    "id": "0b3e096f-bee2-59eb-ae7f-11af876c09d4",
+    "name": "Holy Symbol (Varies); Holy Symbols",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Symbol",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Amulet](item) (worn or held)",
+        "1 lb.",
+        "5 GP"
+      ],
+      [
+        "[Emblem](item) (borne on fabric or a Shield)",
+        "—",
+        "5 GP"
+      ],
+      [
+        "[Reliquary](item) (held)",
+        "2 lb.",
+        "5 GP"
+      ]
+    ]
+  },
+  {
+    "id": "0e1330d6-7881-5f3b-886c-366c17d9ded0",
+    "name": "Mounts and Vehicles; Mounts and Other Animals",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Item",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Carrying Capacity",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Camel](item)",
+        "450 lb.",
+        "50 GP"
+      ],
+      [
+        "[Elephant](item)",
+        "1,320 lb.",
+        "200 GP"
+      ],
+      [
+        "[Draft Horse](item)",
+        "540 lb.",
+        "50 GP"
+      ],
+      [
+        "[Riding Horse](item)",
+        "480 lb.",
+        "75 GP"
+      ],
+      [
+        "[Mastiff](item)",
+        "195 lb.",
+        "25 GP"
+      ],
+      [
+        "[Mule](item)",
+        "420 lb.",
+        "8 GP"
+      ],
+      [
+        "[Pony](item)",
+        "225 lb.",
+        "30 GP"
+      ],
+      [
+        "[Warhorse](item)",
+        "540 lb.",
+        "400 GP"
+      ]
+    ]
+  },
+  {
+    "id": "9e47466b-9663-576c-8f11-9b3aa168d7c7",
+    "name": "Mounts and Vehicles; Tack, Harness, and Drawn Vehicles",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Item",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Weight",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Carriage](item)",
+        "600 lb.",
+        "100 GP"
+      ],
+      [
+        "[Cart](item)",
+        "200 lb.",
+        "15 GP"
+      ],
+      [
+        "[Chariot](item)",
+        "100 lb.",
+        "250 GP"
+      ],
+      [
+        "[Feed (per day)](item)",
+        "10 lb.",
+        "5 CP"
+      ],
+      [],
+      [
+        "[Exotic Saddle](item)",
+        "40 lb.",
+        "60 GP"
+      ],
+      [
+        "[Military Saddle](item)",
+        "30 lb.",
+        "20 GP"
+      ],
+      [
+        "[Riding Saddle](item)",
+        "25 lb.",
+        "10 GP"
+      ],
+      [
+        "[Sled](item)",
+        "300 lb.",
+        "20 GP"
+      ],
+      [
+        "Stabling per day",
+        "—",
+        "5 SP"
+      ],
+      [
+        "[Wagon](item)",
+        "400 lb.",
+        "35 GP"
+      ]
+    ]
+  },
+  {
+    "id": "3cacc73f-6bff-5744-8dfa-20edd77683ab",
+    "name": "Large Vehicles; Airborne and Waterborne Vehicles",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ship",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Speed",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Crew",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Passengers",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Cargo (Tons)",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "AC",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "HP",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Damage Threshold",
+        "size": null,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": null,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Airship](item)",
+        "8 mph",
+        "10",
+        "20",
+        "1",
+        "13",
+        "300",
+        "—",
+        "40,000 GP"
+      ],
+      [
+        "[Galley](item)",
+        "4 mph",
+        "80",
+        "—",
+        "150",
+        "15",
+        "500",
+        "20",
+        "30,000 GP"
+      ],
+      [
+        "[Keelboat](item)",
+        "1 mph",
+        "1",
+        "6",
+        "1/2",
+        "15",
+        "100",
+        "10",
+        "3,000 GP"
+      ],
+      [
+        "[Longship](item)",
+        "3 mph",
+        "40",
+        "150",
+        "10",
+        "15",
+        "300",
+        "15",
+        "10,000 GP"
+      ],
+      [
+        "[Rowboat](item)",
+        "1½ mph",
+        "1",
+        "3",
+        "—",
+        "11",
+        "50",
+        "—",
+        "50 GP"
+      ],
+      [
+        "[Sailing Ship](item)",
+        "2 mph",
+        "20",
+        "20",
+        "100",
+        "15",
+        "300",
+        "15",
+        "10,000 GP"
+      ],
+      [
+        "[Warship](item)",
+        "2½ mph",
+        "60",
+        "60",
+        "200",
+        "15",
+        "500",
+        "20",
+        "25,000 GP"
+      ]
+    ]
+  },
+  {
+    "id": "6ef7dd9a-b5dc-5199-932b-2a2fb60c9a0f",
+    "name": "Food, Drink, and Lodging",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Item",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "[Ale (mug)](item)",
+        "4 CP"
+      ],
+      [
+        "[Bread (loaf)](item)",
+        "2 CP"
+      ],
+      [
+        "[Cheese (wedge)](item)",
+        "1 SP"
+      ],
+      [],
+      [
+        "Squalid",
+        "7 CP"
+      ],
+      [
+        "Poor",
+        "1 SP"
+      ],
+      [
+        "Modest",
+        "5 SP"
+      ],
+      [
+        "Comfortable",
+        "8 SP"
+      ],
+      [
+        "Wealthy",
+        "2 GP"
+      ],
+      [
+        "Aristocratic",
+        "4 GP"
+      ],
+      [],
+      [
+        "Squalid",
+        "1 CP"
+      ],
+      [
+        "Poor",
+        "2 CP"
+      ],
+      [
+        "Modest",
+        "1 SP"
+      ],
+      [
+        "Comfortable",
+        "2 SP"
+      ],
+      [
+        "Wealthy",
+        "3 SP"
+      ],
+      [
+        "Aristocratic",
+        "6 SP"
+      ],
+      [],
+      [
+        "[Common Wine (bottle)](item)",
+        "2 SP"
+      ],
+      [
+        "[Fine Wine (bottle)](item)",
+        "10 GP"
+      ]
+    ]
+  },
+  {
+    "id": "7a99472b-35f1-534a-8d3e-e8f3d86a2866",
+    "name": "Hirelings",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Service",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Cost",
+        "size": 0.3333333333333333,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Skilled hireling",
+        "2 GP per day"
+      ],
+      [
+        "Untrained hireling",
+        "2 SP per day"
+      ],
+      [
+        "Messenger",
+        "2 CP per mile"
+      ]
+    ]
+  },
+  {
+    "id": "ed680a07-2579-531e-b289-83f1e5dedadd",
+    "name": "Spellcasting Services",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Spell Level",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Availability",
+        "size": 0.5,
+        "align": null
+      },
+      {
+        "name": "Cost",
+        "size": 0.16666666666666666,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "Cantrip",
+        "Village, town, or city",
+        "30 GP"
+      ],
+      [
+        "1",
+        "Village, town, or city",
+        "50 GP"
+      ],
+      [
+        "2",
+        "Village, town, or city",
+        "200 GP"
+      ],
+      [
+        "3",
+        "Town or city only",
+        "300 GP"
+      ],
+      [
+        "4–5",
+        "Town or city only",
+        "2,000 GP"
+      ],
+      [
+        "6–8",
+        "City only",
+        "20,000 GP"
+      ],
+      [
+        "9",
+        "City only",
+        "100,000 GP"
+      ]
+    ]
+  },
+  {
+    "id": "240b610a-ac25-593f-97c3-e147fdc578d6",
+    "name": "Scribing Spell Scrolls; Spell Scroll Costs",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Spell Level",
+        "size": 0.3333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Time",
+        "size": 0.3333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Cost",
+        "size": 0.3333333333333333,
+        "align": "right"
+      }
+    ],
+    "rows": [
+      [
+        "Cantrip",
+        "1 day",
+        "15 GP"
+      ],
+      [
+        "1",
+        "1 day",
+        "25 GP"
+      ],
+      [
+        "2",
+        "3 days",
+        "100 GP"
+      ],
+      [
+        "3",
+        "5 days",
+        "150 GP"
+      ],
+      [
+        "4",
+        "10 days",
+        "1,000 GP"
+      ],
+      [
+        "5",
+        "25 days",
+        "1,500 GP"
+      ],
+      [
+        "6",
+        "40 days",
+        "10,000 GP"
+      ],
+      [
+        "7",
+        "50 days",
+        "12,500 GP"
+      ],
+      [
+        "8",
+        "60 days",
+        "15,000 GP"
+      ],
+      [
+        "9",
+        "120 days",
+        "50,000 GP"
+      ]
+    ]
+  },
+  {
+    "id": "ea02e8dd-358d-55b9-94ea-74124d65f57b",
+    "name": "Preparing Spells; Spell Preparation by Class",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Class",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Change When You...",
+        "size": 0.6666666666666666,
+        "align": null
+      },
+      {
+        "name": "Number of Spells",
+        "size": 0.16666666666666666,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "[Bard](class)",
+        "Gain a level",
+        "One"
+      ],
+      [
+        "[Cleric](class)",
+        "Finish a Long Rest",
+        "Any"
+      ],
+      [
+        "[Druid](class)",
+        "Finish a Long Rest",
+        "Any"
+      ],
+      [
+        "[Paladin](class)",
+        "Finish a Long Rest",
+        "One"
+      ],
+      [
+        "[Ranger](class)",
+        "Finish a Long Rest",
+        "One"
+      ],
+      [
+        "[Sorcerer](class)",
+        "Gain a level",
+        "One"
+      ],
+      [
+        "[Warlock](class)",
+        "Gain a level",
+        "One"
+      ],
+      [
+        "[Wizard](class)",
+        "Finish a Long Rest",
+        "Any"
+      ]
+    ]
+  },
+  {
+    "id": "81efd907-cff6-5072-bd8a-9920f5019bbe",
+    "name": "School of Magic; Schools of Magic",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "School",
+        "size": 0.3333333333333333,
+        "align": null
+      },
+      {
+        "name": "Typical Effects",
+        "size": 0.6666666666666666,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Abjuration",
+        "Prevents or reverses harmful effects"
+      ],
+      [
+        "Conjuration",
+        "Transports creatures or objects"
+      ],
+      [
+        "Divination",
+        "Reveals information"
+      ],
+      [
+        "Enchantment",
+        "Influences minds"
+      ],
+      [
+        "Evocation",
+        "Channels energy to create effects that are often destructive"
+      ],
+      [
+        "Illusion",
+        "Deceives the mind or senses"
+      ],
+      [
+        "Necromancy",
+        "Manipulates life and death"
+      ],
+      [
+        "Transmutation",
+        "Transforms creatures or objects"
+      ]
+    ]
+  },
+  {
+    "id": "54186333-55dd-5f20-9b13-d20e93d13292",
+    "name": "Resolving Outcomes; Abilities, Ability Checks, and Saving Throws",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Ability",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Score Measures...",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Make an Ability Check To...",
+        "size": null,
+        "align": null
+      },
+      {
+        "name": "Make a Saving Throw To...",
+        "size": null,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Strength",
+        "Physical might",
+        "Lift, push, pull, or break something",
+        "Physically resist direct force"
+      ],
+      [
+        "Dexterity",
+        "Agility, reflexes, balance",
+        "Move nimbly, quickly, or quietly",
+        "Dodge out of harm's way"
+      ],
+      [
+        "Constitution",
+        "Health and stamina",
+        "Push your body beyond normal limits",
+        "Endure a toxic hazard"
+      ],
+      [
+        "Intelligence",
+        "Reasoning and memory",
+        "Reason or remember",
+        "Recognize an illusion as fake"
+      ],
+      [
+        "Wisdom",
+        "Perceptiveness and mental fortitude",
+        "Notice things in the environment or in creatures' behavior",
+        "Resist a mental assault"
+      ],
+      [
+        "Charisma",
+        "Confidence, poise, and charm",
+        "Influence, entertain, or deceive",
+        "Assert your identity"
+      ]
+    ]
+  },
+  {
+    "id": "9dd4373b-4a82-5924-afbb-887768e3995d",
+    "name": "Difficulty Class; Typical DCs",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Task",
+        "size": 0.8333333333333334,
+        "align": null
+      },
+      {
+        "name": "DC",
+        "size": 0.16666666666666666,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "Very easy",
+        "5"
+      ],
+      [
+        "Easy",
+        "10"
+      ],
+      [
+        "Moderate",
+        "15"
+      ],
+      [
+        "Hard",
+        "20"
+      ],
+      [
+        "Very hard",
+        "25"
+      ],
+      [
+        "Nearly impossible",
+        "30"
+      ]
+    ]
+  },
+  {
+    "id": "5b1a7f50-c40d-5197-841c-4d930d35498e",
+    "name": "Travel Terrain",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Terrain",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Maximum Pace",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Encounter Distance",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Foraging DC",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Navigation DC",
+        "size": 0.16666666666666666,
+        "align": "center"
+      },
+      {
+        "name": "Search DC",
+        "size": 0.16666666666666666,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "Arctic",
+        "Fast*",
+        "6d6 × 10 feet",
+        "20",
+        "10",
+        "10"
+      ],
+      [
+        "Coastal",
+        "Normal",
+        "2d10 × 10 feet",
+        "10",
+        "5",
+        "15"
+      ],
+      [
+        "Desert",
+        "Normal",
+        "6d6 × 10 feet",
+        "20",
+        "10",
+        "10"
+      ],
+      [
+        "Forest",
+        "Normal",
+        "2d8 × 10 feet",
+        "10",
+        "15",
+        "15"
+      ],
+      [
+        "Grassland",
+        "Fast",
+        "6d6 × 10 feet",
+        "15",
+        "5",
+        "15"
+      ],
+      [
+        "Hill",
+        "Normal",
+        "2d10 × 10 feet",
+        "15",
+        "10",
+        "15"
+      ],
+      [
+        "Mountain",
+        "Slow",
+        "4d10 × 10 feet",
+        "20",
+        "15",
+        "20"
+      ],
+      [
+        "Swamp",
+        "Slow",
+        "2d8 × 10 feet",
+        "10",
+        "15",
+        "20"
+      ],
+      [
+        "Underdark",
+        "Normal",
+        "2d6 × 10 feet",
+        "20",
+        "10",
+        "20"
+      ],
+      [
+        "Urban",
+        "Normal",
+        "2d6 × 10 feet",
+        "20",
+        "15",
+        "15"
+      ],
+      [
+        "Waterborne",
+        "Special†",
+        "6d6 × 10 feet",
+        "15",
+        "10",
+        "15"
+      ]
+    ]
+  },
+  {
+    "id": "8a9e179e-3aed-5bfc-8e9b-7797bb881e97",
+    "name": "Creature Size and Space",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Size",
+        "size": 0.16666666666666666,
+        "align": null
+      },
+      {
+        "name": "Space in Squares",
+        "size": 0.4166666666666667,
+        "align": null
+      },
+      {
+        "name": "Space in Hexes",
+        "size": 0.4166666666666667,
+        "align": null
+      }
+    ],
+    "rows": [
+      [
+        "Tiny",
+        "4 per square",
+        "4 per hex"
+      ],
+      [
+        "Small",
+        "1 square",
+        "1 hex"
+      ],
+      [
+        "Medium",
+        "1 square",
+        "1 hex"
+      ],
+      [
+        "Large",
+        "4 squares (2 by 2)",
+        "3 hexes"
+      ],
+      [
+        "Huge",
+        "9 squares (3 by 3)",
+        "7 hexes"
+      ],
+      [
+        "Gargantuan",
+        "16 squares (4 by 4) or more",
+        "12 hexes or more"
+      ]
+    ]
+  },
+  {
+    "id": "d5a717fe-6af4-5cab-917d-299e50331dfb",
+    "name": "Parts of a Stat Block; Hit Dice by Size",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "Monster Size",
+        "size": 0.3333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Hit Die",
+        "size": 0.3333333333333333,
+        "align": "center"
+      },
+      {
+        "name": "Average HP per Die",
+        "size": 0.3333333333333333,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "Tiny",
+        "d4",
+        "2½"
+      ],
+      [
+        "Small",
+        "d6",
+        "3½"
+      ],
+      [
+        "Medium",
+        "d8",
+        "4½"
+      ],
+      [
+        "Large",
+        "d10",
+        "5½"
+      ],
+      [
+        "Huge",
+        "d12",
+        "6½"
+      ],
+      [
+        "Gargantuan",
+        "d20",
+        "10½"
+      ]
+    ]
+  },
+  {
+    "id": "bfe3c1d8-bd53-5055-a7d9-047d0a3d9fe7",
+    "name": "Experience Points by Challenge Rating",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "CR",
+        "size": 0.5,
+        "align": "center"
+      },
+      {
+        "name": "XP",
+        "size": 0.5,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "0",
+        "0 or 10"
+      ],
+      [
+        "1/8",
+        "25"
+      ],
+      [
+        "1/4",
+        "50"
+      ],
+      [
+        "1/2",
+        "100"
+      ],
+      [
+        "1",
+        "200"
+      ],
+      [
+        "2",
+        "450"
+      ],
+      [
+        "3",
+        "700"
+      ],
+      [
+        "4",
+        "1,100"
+      ],
+      [
+        "5",
+        "1,800"
+      ],
+      [
+        "6",
+        "2,300"
+      ],
+      [
+        "7",
+        "2,900"
+      ],
+      [
+        "8",
+        "3,900"
+      ],
+      [
+        "9",
+        "5,000"
+      ],
+      [
+        "10",
+        "5,900"
+      ],
+      [
+        "11",
+        "7,200"
+      ],
+      [
+        "12",
+        "8,400"
+      ],
+      [
+        "13",
+        "10,000"
+      ],
+      [
+        "14",
+        "11,500"
+      ],
+      [
+        "15",
+        "13,000"
+      ],
+      [
+        "16",
+        "15,000"
+      ],
+      [
+        "17",
+        "18,000"
+      ],
+      [
+        "18",
+        "20,000"
+      ],
+      [
+        "19",
+        "22,000"
+      ],
+      [
+        "20",
+        "25,000"
+      ],
+      [
+        "21",
+        "33,000"
+      ],
+      [
+        "22",
+        "41,000"
+      ],
+      [
+        "23",
+        "50,000"
+      ],
+      [
+        "24",
+        "62,000"
+      ],
+      [
+        "25",
+        "75,000"
+      ],
+      [
+        "26",
+        "90,000"
+      ],
+      [
+        "27",
+        "105,000"
+      ],
+      [
+        "28",
+        "120,000"
+      ],
+      [
+        "29",
+        "135,000"
+      ],
+      [
+        "30",
+        "155,000"
+      ]
+    ]
+  },
+  {
+    "id": "b578be39-3a59-5888-a981-3364c7b51ac8",
+    "name": "Proficiency Bonus by Challenge Rating",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "columns": [
+      {
+        "name": "CR",
+        "size": 0.5,
+        "align": "center"
+      },
+      {
+        "name": "PB",
+        "size": 0.5,
+        "align": "center"
+      }
+    ],
+    "rows": [
+      [
+        "0–4",
+        "+2"
+      ],
+      [
+        "5–8",
+        "+3"
+      ],
+      [
+        "9–12",
+        "+4"
+      ],
+      [
+        "13–16",
+        "+5"
+      ],
+      [
+        "17–20",
+        "+6"
+      ],
+      [
+        "21–24",
+        "+7"
+      ],
+      [
+        "25–28",
+        "+8"
+      ],
+      [
+        "29–30",
+        "+9"
+      ]
+    ]
+  }
+]

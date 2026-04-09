@@ -1,0 +1,1185 @@
+[
+  {
+    "id": "2aea0552-b19f-5db7-8521-31112f470705",
+    "name": "Blinded",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Blinded condition, you experience the following effects.\n\n***Can't See.*** You can't see and automatically fail any ability check that requires sight.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Advantage, and your attack rolls have Disadvantage."
+  },
+  {
+    "id": "28ba8bc6-00cd-5062-8a4c-aaf3335dc5c7",
+    "name": "Charmed",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Charmed condition, you experience the following effects.\n\n***Can't Harm the Charmer.*** You can't attack the charmer or target the charmer with damaging abilities or magical effects.\n\n***Social Advantage.*** The charmer has Advantage on any ability check to interact with you socially."
+  },
+  {
+    "id": "f6576687-6e23-5044-affa-a00ce2e431be",
+    "name": "Deafened",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Deafened condition, you experience the following effect.\n\n***Can't Hear.*** You can't hear and automatically fail any ability check that requires hearing."
+  },
+  {
+    "id": "3a6159b1-f5a4-5d92-b94b-b8a090bad212",
+    "name": "Exhaustion",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Exhaustion condition, you experience the following effects.\n\n***Exhaustion Levels.*** This condition is cumulative. Each time you receive it, you gain 1 Exhaustion level. You die if your Exhaustion level is 6.\n\n***D20 Tests Affected.*** When you make a D20 Test the roll is reduced by 2 times your Exhaustion level.\n\n***Speed Reduced.*** Your Speed is reduced by a number of feet equal to 5 times your Exhaustion level.\n\n***Removing Exhaustion Levels.*** Finishing a Long Rest removes 1 of your Exhaustion levels. When your Exhaustion level reaches 0, the condition ends."
+  },
+  {
+    "id": "6d949471-49ce-583e-92ad-7d52d9f9c388",
+    "name": "Frightened",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Frightened condition, you experience the following effects.\n\n***Ability Checks and Attacks Affected.*** You have Disadvantage on ability checks and attack rolls while the source of fear is within line of sight.\n\n***Can't Approach.*** You can't willingly move closer to the source of fear."
+  },
+  {
+    "id": "faf560f5-a1ea-5597-973f-a5e2acd941fa",
+    "name": "Grappled",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Grappled condition, you experience the following effects.\n\n***Speed 0.*** Your Speed is 0 and can't increase.\n\n***Attacks Affected.*** You have Disadvantage on attack rolls against any target other than the grappler.\n\n***Movable.*** The grappler can drag or carry you when it moves, but every foot of movement costs it 1 extra foot unless you are Tiny or two or more sizes smaller than it."
+  },
+  {
+    "id": "2eb4c05d-e50d-5043-808b-da85e1c94fad",
+    "name": "Incapacitated",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Incapacitated condition, you experience the following effects.\n\n***Inactive.*** You can't take any action, Bonus Action, or Reaction.\n\n***No Concentration.*** Your Concentration is broken.\n\n***Speechless.*** You can't speak.\n\n***Surprised.*** If you're Incapacitated when you roll Initiative, you have Disadvantage on the roll."
+  },
+  {
+    "id": "fc75eca7-04a6-5cfe-8c7c-880ea64decff",
+    "name": "Invisible",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Invisible condition, you experience the following effects.\n\n***Surprise.*** If you're Invisible when you roll Initiative, you have Advantage on the roll.\n\n***Concealed.*** You aren't affected by any effect that requires its target to be seen unless the effect's creator can somehow see you. Any equipment you are wearing or carrying is also concealed.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Disadvantage, and your attack rolls have Advantage. If a creature can somehow see you, you don't gain this benefit against that creature."
+  },
+  {
+    "id": "bd2cfca9-b929-5b3a-9871-06ec29f14bf5",
+    "name": "Paralyzed",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Paralyzed condition, you experience the following effects.\n\n***Incapacitated.*** You have the [Incapacitated](condition) condition.\n\n***Speed 0.*** Your Speed is 0 and can't increase.\n\n***Saving Throws Affected.*** You automatically fail Strength and Dexterity saving throws.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Advantage.\n\n***Automatic Critical Hits.*** Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you."
+  },
+  {
+    "id": "e9f36a7a-f944-5c81-90e7-cf6a28c78b63",
+    "name": "Petrified",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Petrified condition, you experience the following effects.\n\n***Turned to Inanimate Substance.*** You are transformed, along with any nonmagical objects you are wearing and carrying, into a solid inanimate substance (usually stone). Your weight increases by a factor of ten, and you cease aging.\n\n***Incapacitated.*** You have the [Incapacitated](condition) condition.\n\n***Speed 0.*** Your Speed is 0 and can't increase.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Advantage.\n\n***Saving Throws Affected.*** You automatically fail Strength and Dexterity saving throws.\n\n***Resist Damage.*** You have Resistance to all damage.\n\n***Poison Immunity.*** You have Immunity to the [Poisoned](condition) condition."
+  },
+  {
+    "id": "dd7e1574-be70-5bfd-8393-e4ffe8fb792f",
+    "name": "Poisoned",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Poisoned condition, you experience the following effect.\n\n***Ability Checks and Attacks Affected.*** You have Disadvantage on attack rolls and ability checks."
+  },
+  {
+    "id": "4d72998e-08d3-582f-b805-13b18129a7eb",
+    "name": "Prone",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Prone condition, you experience the following effects.\n\n***Restricted Movement.*** Your only movement options are to crawl or to spend an amount of movement equal to half your Speed (round down) to right yourself and thereby end the condition. If your Speed is 0, you can't right yourself.\n\n***Attacks Affected.*** You have Disadvantage on attack rolls. An attack roll against you has Advantage if the attacker is within 5 feet of you. Otherwise, that attack roll has Disadvantage."
+  },
+  {
+    "id": "d9b3b2f8-e406-550c-b5d6-9149ab2207f2",
+    "name": "Restrained",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Restrained condition, you experience the following effects.\n\n***Speed 0.*** Your Speed is 0 and can't increase.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Advantage, and your attack rolls have Disadvantage.\n\n***Saving Throws Affected.*** You have Disadvantage on Dexterity saving throws."
+  },
+  {
+    "id": "a59182cf-77bb-5c1e-8fc7-1c45e3175c01",
+    "name": "Stunned",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Stunned condition, you experience the following effects.\n\n***Incapacitated.*** You have the [Incapacitated](condition) condition.\n\n***Saving Throws Affected.*** You automatically fail Strength and Dexterity saving throws.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Advantage."
+  },
+  {
+    "id": "0ff6f4d8-c213-5575-bf87-42a0a62542c1",
+    "name": "Unconscious",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "condition",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you have the Unconscious condition, you experience the following effects.\n\n***Inert.*** You have the [Incapacitated](condition) and [Prone](condition) conditions, and you drop whatever you're holding. When this condition ends, you remain [Prone](condition).\n\n***Speed 0.*** Your Speed is 0 and can't increase.\n\n***Attacks Affected.*** [Attack](action) rolls against you have Advantage.\n\n***Saving Throws Affected.*** You automatically fail Strength and Dexterity saving throws.\n\n***Automatic Critical Hits.*** Any attack roll that hits you is a Critical Hit if the attacker is within 5 feet of you.\n\n***Unaware.*** You're unaware of your surroundings."
+  },
+  {
+    "id": "2bf0a46b-ec79-56da-b903-1bf57407fee9",
+    "name": "Cackle Fever",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "disease",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Cheaply made potions and elixirs are sometimes tainted by Cackle Fever, which affects Humanoids only (gnomes are strangely immune). A creature suffers the following effects 1d4 days after infection:\n\n* **Fever.** The creature gains 1 [Exhaustion](condition) level, which lasts until the contagion ends on the creature. \n* **Uncontrollable Laughter.** While the creature has the [Exhaustion](condition) condition, the creature makes a DC 13 Constitution saving throw each time it takes damage other than Psychic damage. On a failed save, the creature takes 5 (1d10) Psychic damage and has the [Incapacitated](condition) condition as it laughs uncontrollably. At the end of each of its turns, the creature repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\n\n***Fighting the Contagion.*** At the end of each Long Rest, an infected creature makes a DC 13 Constitution saving throw. After the creature succeeds on three of these saves, the contagion ends on it, and the creature is immune to Cackle Fever for 1 year.\n\n***Spreading the Contagion.*** Any Humanoid (other than a gnome) that starts its turn within a 10-foot Emanation originating from a creature infected with Cackle Fever must succeed on a DC 10 Constitution saving throw or also become infected with the contagion. On a successful save, the Humanoid can't catch the contagion from that particular infected creature for the next 24 hours."
+  },
+  {
+    "id": "ad3aa01b-ac5a-513f-8f0d-14e4d307eb26",
+    "name": "Sewer Plague",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "disease",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Fouled potions and alchemical waste can give rise to Sewer Plague, which incubates in sewers and refuse heaps and is sometimes transmitted by creatures that dwell in such areas, including otyughs and rats. Any Humanoid that is wounded by a creature that carries the contagion or that comes into contact with contaminated filth or offal must succeed on a DC 11 Constitution saving throw or become infected with Sewer Plague. A creature suffers the following effects 1d4 days after infection:\n\n* **Fatigue.** The creature gains 1 [Exhaustion](condition) level. \n* **Weakness.** While the creature has any Exhaustion levels, it regains only half the normal number of Hit Points from spending Hit Point Dice. \n* **Restlessness.** While the creature has any Exhaustion levels, finishing a Long Rest neither restores lost Hit Points nor reduces the creature's Exhaustion level.\n\n***Fighting the Contagion.*** Daily at dawn, an infected creature makes a DC 11 Constitution saving throw. On a failed save, the creature gains 1 [Exhaustion](condition) level as its fatigue worsens. On a successful save, the creature's Exhaustion level decreases by 1. If the creature's Exhaustion level is reduced to 0, the contagion ends on the creature."
+  },
+  {
+    "id": "1aaece5c-105e-585c-a312-2cc373210f48",
+    "name": "Sight Rot",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "disease",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Any Beast or Humanoid that drinks water tainted by Sight Rot must succeed on a DC 15 Constitution saving throw or have the [Blinded](condition) condition until the contagion ends.\n\n***Fighting the Contagion.*** Magic such as a [Heal](spell) or [Lesser Restoration](spell) spell ends the contagion immediately. A character who is proficient with an [Herbalism Kit](item) can use it to create one dose of nonmagical ointment, which takes 1 hour. When applied to the eyes of a creature suffering from Sight Rot, the ointment suppresses the contagion on that creature for 24 hours. If the contagion is suppressed in this way for a total of 72 hours (requiring three doses and applications of the ointment), the contagion ends on the creature.\n\n***Spreading the Contagion.*** Any Humanoid that makes skin contact with a creature infected with Sight Rot must succeed on a DC 15 Constitution saving throw or also become infected with the contagion. On a successful save, the Humanoid can't catch the contagion from that particular infected creature for the next 24 hours."
+  },
+  {
+    "id": "feaf8e9b-72bf-51ed-8d34-dbb50d20249e",
+    "name": "Attack",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you take the Attack action, you can make one attack roll with a weapon or an Unarmed Strike.\n\n***Equipping and Unequipping Weapons.*** You can either equip or unequip one weapon when you make an attack as part of this action. You do so either before or after the attack. If you equip a weapon before an attack, you don't need to use it for that attack. Equipping a weapon includes drawing it from a sheath or picking it up. Unequipping a weapon includes sheathing, stowing, or dropping it.\n\n***Moving Between Attacks.*** If you move on your turn and have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action, you can use some or all of that movement to move between those attacks."
+  },
+  {
+    "id": "f3a1f705-6407-5ab8-b8b9-e00f63a6e27e",
+    "name": "Dash",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you take the Dash action, you gain extra movement for the current turn. The increase equals your Speed after applying any modifiers. With a Speed of 30 feet, for example, you can move up to 60 feet on your turn if you Dash. If your Speed of 30 feet is reduced to 15 feet, you can move up to 30 feet this turn if you Dash.\n\nIf you have a special speed, such as a Fly Speed or Swim Speed, you can use that speed instead of your Speed when you take this action. You choose which speed to use each time you take it."
+  },
+  {
+    "id": "3df5f599-887f-52e2-b164-ddc846b64d47",
+    "name": "Disengage",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "If you take the Disengage action, your movement doesn't provoke [Opportunity Attack](action) for the rest of the current turn."
+  },
+  {
+    "id": "d47f4283-b164-5c4f-a3b0-212baf88ea05",
+    "name": "Dodge",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "lf you take the Dodge action, you gain the following benefits: until the start of your next turn, any attack roll made against you has Disadvantage if you can see the attacker, and you make Dexterity saving throws with Advantage.\n\nYou lose these benefits if you have the [Incapacitated](condition) condition or if your Speed is 0."
+  },
+  {
+    "id": "38e0ae8b-21c0-5130-b604-08ebde78566a",
+    "name": "Don or Doff a Shield",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "A [Shield](item) can be donned or doffed as an action."
+  },
+  {
+    "id": "575d06f8-dad4-5680-aa6d-d69b5614c5bf",
+    "name": "End Concentration",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Some spells and other effects require Concentration to remain active, as specified in their descriptions. You can end Concentration at any time (no action required)."
+  },
+  {
+    "id": "735f8cf2-2aab-565f-a595-b2a76774bf79",
+    "name": "Escape a Grapple",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "A Grappled creature can use its action to make a Strength ([Athletics](skill)) or Dexterity ([Acrobatics](skill)) check against the grapple's escape DC, ending the condition on itself on a success. The condition also ends if the grappler has the [Incapacitated](condition) condition or if the distance between the Grappled target and the grappler exceeds the grapple's range."
+  },
+  {
+    "id": "8dc0796d-ccff-5734-8cfa-edbe4590fc3d",
+    "name": "Help",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you take the Help action, you do one of the following.\n\n***Assist an Ability Check.*** Choose one of your skill or tool proficiencies and one ally who is near enough for you to assist verbally or physically when they make an ability check. That ally has Advantage on the next ability check they make with the chosen skill or tool. This benefit expires if the ally doesn't use it before the start of your next turn. The DM has final say on whether your assistance is possible.\n\n***Assist an Attack Roll.*** You momentarily distract an enemy within 5 feet of you, giving Advantage to the next attack roll by one of your allies against that enemy. This benefit expires at the start of your next turn.\n\n_Note:_ Additionally, the Help action may be used to Stabilizing a Character."
+  },
+  {
+    "id": "787cdb72-7fc3-5a75-802f-3dc6e6bdf19a",
+    "name": "Hide",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "With the Hide action, you try to conceal yourself. To do so, you must succeed on a DC 15 Dexterity ([Stealth](skill)) check while you're Heavily Obscured or behind Three-Quarters Cover or Total Cover, and you must be out of any enemy's line of sight; if you can see a creature, you can discern whether it can see you.\n\nOn a successful check, you have the [Invisible](condition) condition while hidden. Make note of your check's total, which is the DC for a creature to find you with a Wisdom ([Perception](skill)) check.\n\nYou stop being hidden immediately after any of the following occurs: you make a sound louder than a whisper, an enemy finds you, you make an attack roll, or you cast a spell with a Verbal component."
+  },
+  {
+    "id": "7b612483-7066-5e96-8485-c96f63d68223",
+    "name": "Magic",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you take the Magic action, you cast a spell that has a casting time of an action or use a feature or magic item that requires a Magic action to be activated.\n\nIf you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain Concentration while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot."
+  },
+  {
+    "id": "a01166a6-d66a-58d9-b377-489f9dc34037",
+    "name": "Opportunity Attack",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can make an Opportunity Attack when a creature that you can see leaves your reach using its action, its Bonus Action, its Reaction, or one of its speeds. To make the Opportunity Attack, take a Reaction to make one melee attack with a weapon or an Unarmed Strike against the provoking creature. The attack occurs right before the creature leaves your reach."
+  },
+  {
+    "id": "7432f63e-c619-5503-8e90-bf1da4b19641",
+    "name": "Ready",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You take the Ready action to wait for a particular circumstance before you act. To do so, you take this action on your turn, which lets you act by taking a Reaction before the start of your next turn.\n\nFirst, you decide what perceivable circumstance will trigger your Reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your Speed in response to it. Examples include \"If the cultist steps on the trapdoor, I'll pull the lever that opens it,\" and \"If the zombie steps next to me, I move away.\"\n\nWhen the trigger occurs, you can either take your Reaction right after the trigger finishes or ignore the trigger.\n\nWhen you Ready a spell, you cast it as normal (expending any resources used to cast it) but hold its energy, which you release with your Reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding on to the spell's magic requires Concentration, which you can maintain up to the start of your next turn. If your Concentration is broken, the spell dissipates without taking effect."
+  },
+  {
+    "id": "7ad55aa8-af00-5cc6-9ebf-f43d0d279b66",
+    "name": "Search",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.\n\n| Skill | Thing to Detect |\n| --- | --- |\n| [Insight](skill) | Creature's state of mind |\n| [Medicine](skill) | Creature's ailment or cause of death |\n| [Perception](skill) | Concealed creature or object |\n| [Survival](skill) | Tracks or food |\n\n_Table: Search_"
+  },
+  {
+    "id": "4278f554-fffe-57bb-8887-95a95927ec93",
+    "name": "Two-Weapon Fighting",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you take the [Attack](action) action on your turn and attack with a Light weapon, you can make one extra attack as a Bonus Action later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a [Shortsword](item) in one hand and a [Dagger](item) in the other using the [Attack](action) action and a Bonus Action, but you don't add your Strength or Dexterity modifier to the damage roll of the Bonus Action unless that modifier is negative."
+  },
+  {
+    "id": "bd23bde9-8928-5d38-af27-126af57ceb7d",
+    "name": "Utilize",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "action",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You normally interact with an object while doing something else, such as when you draw a sword as part of the [Attack](action) action. When an object requires an action for its use, you take the Utilize action."
+  },
+  {
+    "id": "015ee81f-52ac-58d9-be9e-2237b87a02d6",
+    "name": "Acrobatics",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Dexterity\n\nStay on your feet in a tricky situation, or perform an acrobatic stunt."
+  },
+  {
+    "id": "8c75c735-a7f0-52f1-aec8-75c8156d84f3",
+    "name": "Animal Handling",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Wisdom\n\nCalm or train an animal, or get an animal to behave in a certain way."
+  },
+  {
+    "id": "bbd7be0b-f1d0-50ce-ae3e-096f2851e8b9",
+    "name": "Arcana",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Intelligence\n\nRecall lore about spells, magic items, and the planes of existence."
+  },
+  {
+    "id": "4b233eba-580a-54a8-8246-9c5e897e383e",
+    "name": "Athletics",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Strength\n\nJump farther than normal, stay afloat in rough water, or break something."
+  },
+  {
+    "id": "9ad1ae5e-4e75-5768-8a7b-e62c6f41516f",
+    "name": "Deception",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Charisma\n\nTell a convincing lie, or wear a disguise convincingly."
+  },
+  {
+    "id": "26ca52be-366c-51a8-9683-f0a1826f27fc",
+    "name": "History",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Intelligence\n\nRecall lore about historical events, people, nations, and cultures."
+  },
+  {
+    "id": "d9ed8603-9a03-5faa-a10b-787fdaaa258e",
+    "name": "Insight",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Wisdom\n\nDiscern a person's mood and intentions."
+  },
+  {
+    "id": "79c4ff6d-5c62-567e-9540-180f28b89c4a",
+    "name": "Intimidation",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Charisma\n\nAwe or threaten someone into doing what you want."
+  },
+  {
+    "id": "630c555d-740c-5514-bca3-c70d829b449a",
+    "name": "Investigation",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Intelligence\n\nFind obscure information in books, or deduce how something works."
+  },
+  {
+    "id": "b580f60b-3c88-5378-a041-21a4a7c46fde",
+    "name": "Medicine",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Wisdom\n\nDiagnose an illness, or determine what killed the recently slain."
+  },
+  {
+    "id": "fe31e839-b2c2-5d15-bed8-96dde2fd444f",
+    "name": "Nature",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Intelligence\n\nRecall lore about terrain, plants, animals, and weather."
+  },
+  {
+    "id": "7387f8dc-3068-5263-a4d9-ca63585f4d91",
+    "name": "Perception",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Wisdom\n\nUsing a combination of senses, notice something that's easy to miss."
+  },
+  {
+    "id": "fb851f46-5a7d-5709-8e72-d1a65937ca21",
+    "name": "Performance",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Charisma\n\nAct, tell a story, perform music, or dance."
+  },
+  {
+    "id": "11a60fab-43b9-5dd6-ae86-e10e5f6585e8",
+    "name": "Persuasion",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Charisma\n\nHonestly and graciously convince someone of something."
+  },
+  {
+    "id": "d0deae21-00d3-54e6-b901-7376694439a9",
+    "name": "Religion",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Intelligence\n\nRecall lore about gods, religious rituals, and holy symbols."
+  },
+  {
+    "id": "13a5caec-c54d-5e46-89ff-33dbcef994c4",
+    "name": "Sleight of Hand",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Dexterity\n\nPick a pocket, conceal a handheld object, or perform legerdemain."
+  },
+  {
+    "id": "266e16e5-c25e-5230-a3f6-e766075cb859",
+    "name": "Stealth",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Dexterity\n\nEscape notice by moving quietly and hiding behind things."
+  },
+  {
+    "id": "36fbd1f1-ca31-5e1f-bd4b-4ce2ac9e1500",
+    "name": "Survival",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "skill",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "**Ability:** Wisdom\n\nFollow tracks, forage, find a trail, or avoid natural hazards."
+  },
+  {
+    "id": "bb32c35e-fbb8-5500-af18-25fcd32631f6",
+    "name": "Blindsight",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "sense",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "If you have Blindsight, you can see within a specific range without relying on physical sight. Within that range, you can see anything that isn't behind Total Cover even if you have the [Blinded](condition) condition or are in Darkness. Moreover, in that range, you can see something that has the [Invisible](condition) condition."
+  },
+  {
+    "id": "13fa8178-97fc-53a0-97ed-65573073eb08",
+    "name": "Darkvision",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "sense",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "If you have Darkvision, you can see in Dim Light within a specified range as if it were Bright Light and in Darkness within that range as if it were Dim Light. You discern colors in that Darkness only as shades of gray."
+  },
+  {
+    "id": "3410d22f-6d4d-585f-9505-6b29472bc835",
+    "name": "Tremorsense",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "sense",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "A creature with Tremorsense can pinpoint the location of creatures and moving objects within a specific range, provided that the creature with Tremorsense and anything it is detecting are both in contact with the same surface (such as the ground, a wall, or a ceiling) or the same liquid.\n\nTremorsense can't detect creatures or objects in the air, and it doesn't count as a form of sight."
+  },
+  {
+    "id": "abd68368-cd74-56c2-b05d-ad733abce529",
+    "name": "Truesight",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "sense",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "If you have Truesight, your vision is enhanced within a specified range. Within that range, your vision pierces through the following:\n\n* **Darkness.** You can see in normal and magical Darkness. \n* **Invisibility.** You see creatures and objects that have the [Invisible](condition) condition. \n* **Visual Illusions.** Visual illusions appear transparent to you, and you automatically succeed on saving throws against them. \n* **Transformations.** You discern the true form of any creature or object you see that has been transformed by magic. \n* **Ethereal Plane.** You see into the Ethereal Plane."
+  },
+  {
+    "id": "6f761639-0a23-5662-9805-be98b7824d46",
+    "name": "Agonizing Blast",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Choose one of your known class=Warlock that deals damage. You can add your Charisma modifier to that spell's damage rolls.\n\n***Repeatable.*** You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+  },
+  {
+    "id": "d54444db-a2a9-5c6a-9547-23ee19f481a9",
+    "name": "Armor of Shadows",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Mage Armor](spell) on yourself without expending a spell slot."
+  },
+  {
+    "id": "792f53ea-98dd-5d13-b887-0e8b48a74f49",
+    "name": "Ascendant Step",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Levitate](spell) on yourself without expending a spell slot."
+  },
+  {
+    "id": "c7dbc3c9-bbd9-5d73-b113-bb602578eedf",
+    "name": "Careful Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, spend 1 Sorcery Point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell, and it takes no damage if it would normally take half damage on a successful save."
+  },
+  {
+    "id": "30c230b3-8010-5706-bc2b-4530799359b0",
+    "name": "Devil's Sight",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself."
+  },
+  {
+    "id": "b37e70d1-d6c5-51b9-9c05-a560eaab76b6",
+    "name": "Distant Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell that has a range of at least 5 feet, you can spend 1 Sorcery Point to double the spell's range. Or when you cast a spell that has a range of Touch, you can spend 1 Sorcery Point to make the spell's range 30 feet."
+  },
+  {
+    "id": "afa51e83-ab6c-54ef-a061-8419cf59950a",
+    "name": "Eldritch Spear",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Choose one of your known class=Warlock that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.\n\n***Repeatable.*** You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+  },
+  {
+    "id": "a7941db1-6bd1-56f2-9560-01088e8d5d56",
+    "name": "Empowered Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you roll damage for a spell, you can spend 1 Sorcery Point to reroll a number of the damage dice up to your Charisma modifier (minimum of one), and you must use the new rolls.\n\nYou can use Empowered Spell even if you've already used a different Metamagic option during the casting of the spell."
+  },
+  {
+    "id": "f6392fc8-40e0-532c-85c7-45f0bbfc86c6",
+    "name": "Extended Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell that has a duration of 1 minute or longer, you can spend 1 Sorcery Point to double its duration to a maximum duration of 24 hours.\n\nIf the affected spell requires Concentration, you have Advantage on any saving throw you make to maintain that Concentration."
+  },
+  {
+    "id": "4693e4df-b984-512b-abd5-611fdc0728ee",
+    "name": "Fiendish Vigor",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [False Life](spell) on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die."
+  },
+  {
+    "id": "63753533-c194-5492-b211-d5310336377b",
+    "name": "Gaze of Two Minds",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don't maintain it in this way.\n\nWhile perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature's space if the two of you are within 60 feet of each other."
+  },
+  {
+    "id": "ee04dc08-1831-5fe8-bbf4-ffa4ea3c7f2a",
+    "name": "Heightened Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell that forces a creature to make a saving throw, you can spend 2 Sorcery Points to give one target of the spell Disadvantage on saves against the spell."
+  },
+  {
+    "id": "800440c0-f133-546e-a4a2-d7056ae0a565",
+    "name": "Lifedrinker",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point)."
+  },
+  {
+    "id": "c414bf80-d142-53f2-be2d-6a6e9bd8e5a1",
+    "name": "Mask of Many Faces",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Disguise Self](spell) without expending a spell slot."
+  },
+  {
+    "id": "b7533ff9-d61c-5fc5-a7f7-40947f33eefb",
+    "name": "Master of Myriad Forms",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Alter Self](spell) without expending a spell slot."
+  },
+  {
+    "id": "1b5c6d6a-6184-5413-8b57-0816bc48163e",
+    "name": "Misty Visions",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Silent Image](spell) without expending a spell slot."
+  },
+  {
+    "id": "2798927f-1a90-5ddf-8a22-27cd7ced2792",
+    "name": "One with Shadows",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "While you're in an area of Dim Light or Darkness, you can cast [Invisibility](spell) on yourself without expending a spell slot."
+  },
+  {
+    "id": "098fe916-4424-54fa-986f-9dbecb5efa2f",
+    "name": "Otherworldly Leap",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Jump](spell) on yourself without expending a spell slot."
+  },
+  {
+    "id": "6d9c62f4-e670-5dcc-b333-ae8f09801f17",
+    "name": "Pact of the Blade",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "As a Bonus Action, you can conjure a pact weapon in your hand—a Simple or Martial Melee weapon of your choice with which you bond—or create a bond with a magic weapon you touch; you can't bond with a magic weapon if someone else is attuned to it or another Warlock is bonded with it. Until the bond ends, you have proficiency with the weapon, and you can use it as a Spellcasting Focus.\n\nWhenever you attack with the bonded weapon, you can use your Charisma modifier for the attack and damage rolls instead of using Strength or Dexterity; and you can cause the weapon to deal Necrotic, Psychic, or Radiant damage or its normal damage type.\n\nYour bond with the weapon ends if you use this feature's Bonus Action again, if the weapon is more than 5 feet away from you for 1 minute or more, or if you die. A conjured weapon disappears when the bond ends."
+  },
+  {
+    "id": "494fb20e-441e-5713-9577-f19ce28f33ce",
+    "name": "Pact of the Chain",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You learn the [Find Familiar](spell) spell and can cast it as a [Magic](action) action without expending a spell slot.\n\nWhen you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: [Imp](monster), [Pseudodragon](monster), [Quasit](monster), [Skeleton](monster), [Slaad Tadpole](monster), [Sphinx of Wonder](monster), [Sprite](monster), or [Venomous Snake](monster) (see appendix B for the familiar's stat block).\n\nAdditionally, when you take the [Attack](action) action, you can forgo one of your own attacks to allow your familiar to make one attack of its own with its Reaction."
+  },
+  {
+    "id": "0b96e5ff-eabd-5755-accc-b14e64d9a0d2",
+    "name": "Pact of the Tome",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Stitching together strands of shadow, you conjure forth a book in your hand at the end of a Short or Long Rest. This Book of Shadows (you determine its appearance) contains eldritch magic that only you can access, granting you the benefits below. The book disappears if you conjure another book with this feature or if you die.\n\n***Cantrips and Rituals.*** When the book appears, choose three cantrips, and choose two components & miscellaneous=ritual that have the Ritual tag. The spells can be from any class's spell list, and they must be spells you don't already have prepared. While the book is on your person, you have the chosen spells prepared, and they function as Warlock spells for you.\n\n***Spellcasting Focus.*** You can use the book as a Spellcasting Focus."
+  },
+  {
+    "id": "fa63095c-33fa-5653-822b-7a79c01701af",
+    "name": "Quickened Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell that has a casting time of an action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way."
+  },
+  {
+    "id": "684a225e-44d9-5853-b541-b9f7b02a777c",
+    "name": "Repelling Blast",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "Choose one of your known class=Warlock that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.\n\n***Repeatable.*** You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip."
+  },
+  {
+    "id": "9b52efe7-ca5a-5cf4-8b59-f5e7d466f7ea",
+    "name": "Subtle Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell, you can spend 1 Sorcery Point to cast it without any Verbal, Somatic, or Material components, except Material components that are consumed by the spell or that have a cost specified in the spell."
+  },
+  {
+    "id": "a0f05290-4b9f-52fc-b338-f2df18a5c705",
+    "name": "Thirsting Blade",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the [Attack](action) action on your turn."
+  },
+  {
+    "id": "65d8a203-2e5f-5d1d-bcb5-c8016eaf7c9d",
+    "name": "Twinned Spell",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "When you cast a spell, such as [Charm Person](spell), that can be cast with a higher-level spell slot to target an additional creature, you can spend 1 Sorcery Point to increase the spell's effective level by 1."
+  },
+  {
+    "id": "713775ac-db87-5db6-8e64-ced4f145aa83",
+    "name": "Visions of Distant Realms",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Arcane Eye](spell) without expending a spell slot."
+  },
+  {
+    "id": "d7d65eb3-4f04-520a-8180-ff24aab4fc18",
+    "name": "Whispers of the Grave",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You can cast [Speak with Dead](spell) without expending a spell slot."
+  },
+  {
+    "id": "431a4d1a-c6ca-5338-9868-36218debc5c5",
+    "name": "Witch Sight",
+    "sources": [
+      {
+        "name": "SRD-521"
+      }
+    ],
+    "type": "optionalFeature",
+    "attributes": {
+      "ruleset": "5.5e"
+    },
+    "descr": "You have Truesight with a range of 30 feet."
+  },
+  {
+    "id": "371aac19-900f-5d06-80d4-dc27520dd38d",
+    "name": "SRD v5.2.1",
+    "slug": "srd-521",
+    "type": "source",
+    "descr": "The System Reference Document (SRD) is a compilation of rules and content from the Dungeons & Dragons 5th Edition game. It is intended to provide a reference for players and Dungeon Masters, and to allow third-party publishers to create compatible content. The SRD includes the core rules of the game, as well as a selection of monsters, spells, and other content. It is available under the Open Gaming License (OGL), which allows anyone to use and modify the content for their own purposes.\n\n[SRD_CC_v5.2.1.pdf](https://media.dndbeyond.com/compendium-images/srd/5.2/SRD_CC_v5.2.1.pdf)"
+  }
+]
