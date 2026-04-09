@@ -3,11 +3,21 @@
   "sections": [
     {
       "type": "group",
+      "fields": [
+        {
+          "title": "Common.Category",
+          "type": "picker",
+          "attribute": "data.category",
+          "attributeType": "FeatCategory"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "title": "Feat.Prerequisite",
       "fields": [
         {
-          "placeholder": "Feat.Prerequisite",
-          "type": "text",
+          "type": "textArea",
           "attribute": "data.prerequisite"
         },
       ]

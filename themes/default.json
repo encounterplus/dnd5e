@@ -5,10 +5,14 @@
   "textColor": "#000000",
   "dividerColor": "#9C2B1B",
   "bgColor": "#ffffff",
-  "bgImage": "/images/paper.png",
+  "bgImage": "/images/paper.jpg",
   "tableStyles": {
     "default": {
       "rowColor": "#9C2B1B33",
+    },
+    "class": {
+      "rowStyle": "odd",
+      "rowColor": "#84A5D633",
     },
     "clean": {
       "rowLineWidth": 0.5,
@@ -19,7 +23,19 @@
       "bgImage": "/images/paper3.png",
       "topImage": "/images/top.png",
       "bottomImage": "/images/bottom.png",
-      "barImage": "/images/bar.jpg"
+      "barImage": "/images/bar.jpg",
+    },
+    "clean": {
+      // "bgImage": "/images/paper5.jpg",
+      "bgColor": "#fffefd",
+      "borderColor": "#888",
+      "borderWidth": 1,
+      "cornerRadius": 10,
+      "borderStyle": "double",
+      "shadowColor": "#00000033",
+      "shadowOffsetX": 3,
+      "shadowOffsetY": 3,
+      "shadowRadius": 3
     }
   },
   "blockQuoteStyles": {
@@ -115,6 +131,17 @@
       "font": "NotoSans-Italic",
       "size": 14
     },
+    "title2": {
+      "font": "NotoSans-Bold",
+      "color": "#58180D",
+      "caps": true,
+      "size": 22
+    },
+     "subtitle2": {
+      "font": "NotoSans-Italic",
+      "size": 15,
+      "color": "#555",
+    },
     "section": {
       "font": "NotoSans",
       "color": "#58180D",
@@ -138,6 +165,11 @@
       "caps": true,
       "divider": true,
       "size": 18
+    },
+    "stats-label-small": {
+      "font": "NotoSans",
+      "color": "#808080",
+      "size": 10,
     },
     "hp-current": {
       "font": "NotoSans",
@@ -198,6 +230,13 @@
       "font": "AvenirNextCondensed-Bold",
       "color": "#555",
       "size": 17
+    },
+    "table-heading": {
+      "font": "NotoSans-Bold",
+      "color": "#000000",
+      "size": 16,
+      "caps": true,
+      
     },
     "heading": {
       "font": "HoeflerText-Regular",

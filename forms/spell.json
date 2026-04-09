@@ -181,6 +181,9 @@
           "type": "tags",
           "attribute": "data.classes",
           "attributeType": "Class",
+          "custom": {
+            "includeSource": true
+          }
         },
       ]
     },

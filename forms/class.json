@@ -2,14 +2,77 @@
   "title": "Class",
   "sections": [
     {
+      "title": "Common.ShortDescription",
       "type": "group",
       "fields": [
         {
-          "title": "Class.HitDice",
+          "type": "textArea",
+          "attribute": "data.shortDesc"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Class.CoreTraits",
+      "fields": [
+        {
+          "title": "Class.PrimaryAbility",
+          "type": "picker",
+          "attribute": "data.ability",
+          "attributeType": "Ability"
+        },
+        {
+          "title": "Class.HitDie",
           "type": "picker",
           "attribute": "data.hd",
           "attributeType": "HitDie"
         },
+        {
+          "title": "Class.SavingThrowProficiencies",
+          "type": "multiPicker",
+          "attribute": "data.savingThrows",
+          "attributeType": "Ability"
+        },
+        {
+          "title": "Class.SkillProficiencies",
+          "type": "multiPicker",
+          "attribute": "data.skills",
+          "attributeType": "Skill"
+        },
+        {
+          "title": "Class.NumberOfSkills",
+          "type": "number",
+          "attribute": "data.skillsNumber"
+        },
+        {
+          "title": "Class.WeaponProficiencies",
+          "type": "multiPicker",
+          "attribute": "data.weapons",
+          "attributeType": "Weapon"
+        },
+        {
+          "title": "Class.ToolProficiencies",
+          "type": "multiPicker",
+          "attribute": "data.tools",
+          "attributeType": "Tool"
+        },
+        {
+          "title": "Class.ArmorTraining",
+          "type": "multiPicker",
+          "attribute": "data.armor",
+          "attributeType": "Armor"
+        },
+        {
+          "title": "Class.StartingEquipment",
+          "type": "textArea",
+          "attribute": "data.equipment"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Class.Proficiencies",
+      "fields": [
         {
           "title": "Class.SpellcastingRules",
           "type": "form",
@@ -38,14 +101,13 @@
                 "title": "Common.Levels",
                 "attribute": "levels",
                 "custom": {
-                  "itemTitle": "{{array.position|ordinal}} level",
+                  "itemTitle": "{{array.counter|ordinal}} level",
                 },
                 "form": {
-                  "title": "Spellcasting {{array.position|ordinal}} level",
+                  "title": "Spellcasting {{array.counter|ordinal}} level",
                   "sections": [
                     {
                       "type": "group",
-                      "title": "{{array.position|ordinal}} level",
                       "fields": [
                         {
                           "title": "Class.CantripsKnown",
@@ -138,61 +200,10 @@
               }, 
             ]
           }
-        },
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Class.Proficiencies",
-      "fields": [
-        {
-          "title": "Class.Armor",
-          "type": "multiPicker",
-          "attribute": "data.armor",
-          "attributeType": "Armor"
-        },
-        {
-          "title": "Class.Weapons",
-          "type": "multiPicker",
-          "attribute": "data.weapons",
-          "attributeType": "Weapon"
-        },
-        {
-          "title": "Class.Tools",
-          "type": "multiPicker",
-          "attribute": "data.tools",
-          "attributeType": "Tool"
-        },
-        {
-          "title": "Class.SavingThrows",
-          "type": "multiPicker",
-          "attribute": "data.savingThrows",
-          "attributeType": "Ability"
-        },
-        {
-          "title": "Class.Skills",
-          "type": "multiPicker",
-          "attribute": "data.skills",
-          "attributeType": "Skill"
-        },
-        {
-          "title": "Class.NumberOfSkills",
-          "type": "number",
-          "attribute": "data.skillsNumber",
-        },
-      ]
-    },
-    {
-      "type": "group",
-      "title": "Class.StartingEquipment",
-      "fields": [
-        {
-          "placeholder": "Class.StartingEquipment",
-          "type": "textArea",
-          "attribute": "data.equipment",
         }
       ]
     },
+   
     {
       "title": "Class.Features",
       "type": "list",

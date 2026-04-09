@@ -14,7 +14,7 @@
       {
         "attribute": "data.alignment",
         "title": "Common.Alignment",
-        "dynamic": true
+        "attributeType": "Alignment"
       },
       {
         "attribute": "data.environments",
@@ -165,6 +165,22 @@
         "attribute": "sources.name",
         "title": "Common.Source",
         "dynamic": true
+      },
+      {
+        "attribute": "data.category",
+        "attributeType": "FeatCategory",
+        "title": "Common.Category"
+      },
+    ],
+    "group": [
+      {
+        "attribute": "data.category",
+        "attributeType": "FeatCategory",
+        "title": "Common.Category"
+      },
+      {
+        "attribute": "name",
+        "title": "Common.Name"
       }
     ]
   },

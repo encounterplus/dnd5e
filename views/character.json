@@ -171,7 +171,7 @@
           "views": [
             {
               "style": "sheet-field-value",
-              "value": "{{data.race.speed.walk|default: 30|units: 'ft'}}",
+              "value": "{{data.species.speed.walk|default: 30|units: 'ft'}}",
               "alignment": "center",
             },
             {

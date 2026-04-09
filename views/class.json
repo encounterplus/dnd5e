@@ -6,23 +6,165 @@
   ],
   "views": [
     {
-      "type": "vStack",
-      "spacing": -1,
+      "type": "hStack",
+      "spacing": 12,
+      "alignment": "center",
       "views": [
+        
         {
-          "style": "title",
-          "value": "{{name}}",
-          "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+          "type": "vStack",
+          "spacing": -1,
+          "views": [
+            {
+              "style": "title",
+              "value": "{{name}}",
+              "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+            },
+            {
+              "style": "subtitle",
+              "value": "{{data.shortDesc}}"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "value": "{{token}}",
+          "width": 50,
+          "height": 50,
+          "alignment": "top",
+          "imageResizeMode": "aspectFill",
+          "cornerRadius": 8,
+          "link": "{{token}}"
         },
       ]
     },
+    {
+      "type": "vStack",
+      "padding": [ 8 ],
+      "borderWidth": 2,
+      "borderColor": "#ffbf00",
+      "cornerRadius": 8,
+      "views": [
+        {
+          "type": "table",
+          "style": "class",
+          "views": [
+            {
+              "type": "tableRow",
+              "visibleIf": "data.ability",
+              "views": [
+                {
+                  "value": "**{{'Class.PrimaryAbility'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "{{data.ability|map: 'Ability'}}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "views": [
+                {
+                  "value": "**{{'Class.HitPointDie'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "d{{data.hd|default: 10}} {{'Class.PerClassLevel'|localize}}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "visibleIf": "data.savingThrows",
+              "views": [
+                {
+                  "value": "**{{'Class.SavingThrowProficiencies'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "{{data.savingThrows|map: 'Ability'}}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "visibleIf": "data.skills or data.skillsNumber",
+              "views": [
+                {
+                  "value": "**{{'Class.SkillProficiencies'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "_Choose_ {% if data.skills %}_{{data.skillsNumber|default: 'any'}}:_ {{data.skills|map: 'Skill'}}{% else %}_any {{data.skillsNumber}} {{'Class.Skills'|l|lowercase}}_{% endif %}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "visibleIf": "data.weapons",
+              "views": [
+                {
+                  "value": "**{{'Class.WeaponProficiencies'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "{{data.weapons|map: 'Weapon'}}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "visibleIf": "data.tools",
+              "views": [
+                {
+                  "value": "**{{'Class.ToolProficiencies'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "{{data.tools|map: 'Tool'}}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "visibleIf": "data.armor",
+              "views": [
+                {
+                  "value": "**{{'Class.ArmorTraining'|l}}**"
+                },
+                {
+                  "type": "text",
+                  "value": "{{data.armor|map: 'Armor'}}"
+                }
+              ]
+            },
+            {
+              "type": "tableRow",
+              "visibleIf": "data.equipment",
+              "views": [
+                {
+                  "value": "**{{'Class.StartingEquipment'|l}}** "
+                },
+                {
+                  "type": "text",
+                  "value": "{{data.equipment}}"
+                }
+              ]
+            }
+          ]
+        },
+      ]
+    },
+
     {
       "type": "text",
       "value": "{{descr}}",
     },
     {
       "type": "text",
-      "value": "{% include 'class-primary.md' %}",
+      "title": "Class.ClassFeatures",
+      "value": "{{'Class.YouGainFollowingClassFeatures'|localize}}",
     },
     {
       "type": "list",
@@ -40,22 +182,22 @@
         "query": {
           "entity": "Subclass"
         },
-        "filter": "data.class == '{{name}}'"
+        "filter": "data.class == '{{nameWithSource}}' or data.class == '{{name}}'"
       },
       "views": [
         {
           "type": "disclosureGroup",
           "title": "{{name}}",
-          "value": "{{sourceFormatted}}",
-          "padding": [4, 0],
+          "value": "{{source}}",
+          "padding": [ 4, 0 ],
           "views": [
             {
-	      "type": "text",
-	      "value": "{{descr}}",
+              "type": "text",
+              "value": "{{descr}}",
             },
             {
               "type": "text",
-              "value": "{% for feature in data.features %}### {{'Common.Level'|l}} {{feature.level}} : {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
+              "value": "{% for feature in data.features %}### {{'Common.Level'|l}} {{feature.level}}: {{feature.name}}\n\n{{feature.text}}\n\n{% endfor %}"
             }
           ]
         },
@@ -74,7 +216,7 @@
     {
       "type": "text",
       "value": "{{footer}}"
-    }, 
+    },
     {
       "type": "tags",
       "attribute": "tags"

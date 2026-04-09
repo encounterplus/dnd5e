@@ -1,3 +1,9 @@
+{% if data.abilities -%}
+**{{'Background.AbilityScores'|l}}:** {{data.abilities|map: 'Ability'}}
+{% endif -%}
+{% if data.feat -%}
+**{{'Entity.Feat'|l}}:** {{data.feat}}
+{% endif -%}
 {% if data.skills -%}
 **{{'Background.SkillProficiencies'|l}}:** {{data.skills|map: 'Skill'}}
 {% endif -%}

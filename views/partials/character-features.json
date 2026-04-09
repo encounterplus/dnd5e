@@ -32,12 +32,12 @@
       },
       {
         "style": "heading2",
-        "value": "{{data.race.name}} Traits",
+        "value": "{{data.species.name}} Traits",
         "padding": [4, 0]
       },
       {
         "type": "list",
-        "attribute": "data.race.traits",
+        "attribute": "data.species.traits",
         "views": [
           {
             "type": "text",

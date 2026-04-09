@@ -12,15 +12,14 @@
     },
     {
       "type": "text",
-      "value": "{{descr}}",
-    },
-    {
-      "type": "text",
       "value": "{% include 'background-primary.md' %}"
     },
     {
-      "type": "spacer",
-      "height": 2
+      "type": "divider"
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
     },
     {
       "type": "list",

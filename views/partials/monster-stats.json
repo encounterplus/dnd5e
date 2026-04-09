@@ -23,11 +23,7 @@
                 },
                 {
                   "style": "subtitle",
-                  "value": "*{{data.size|map: 'Size'}} {{data.type|map: 'MonsterType'}}{% if data.typeDetail %} ({{data.typeDetail}}){% endif %}{% if data.alignment %}, {{data.alignment|map: 'Alignment'}}{% endif %}*",
-                },
-                {
-                  "style": "subtitle",
-                  "value": "{{detail}}"
+                  "value": "{{data.size|map: 'Size'}} {{data.type|map: 'MonsterType'}}{% if data.typeDetail %} ({{data.typeDetail}}){% endif %}{% if data.alignment %}, {{data.alignment|map: 'Alignment'}}{% endif %}",
                 }
               ]
             },

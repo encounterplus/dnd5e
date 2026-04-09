@@ -213,7 +213,7 @@
       "attribute": "data.traits",
       "form": {
         "title": "Monster.Trait",
-        "partial": "generic-feature"
+        "partial": "monster-feature"
       }
     },
     {
@@ -222,7 +222,7 @@
       "attribute": "data.actions",
       "form": {
         "title": "Monster.Action",
-        "partial": "generic-feature"
+        "partial": "monster-feature"
       }
     },
     {
@@ -231,7 +231,7 @@
       "attribute": "data.bonusActions",
       "form": {
         "title": "Monster.BonusAction",
-        "partial": "generic-feature"
+        "partial": "monster-feature"
       }
     },
     {
@@ -240,7 +240,7 @@
       "attribute": "data.reactions",
       "form": {
         "title": "Monster.Reaction",
-        "partial": "generic-feature"
+        "partial": "monster-feature"
       }
     },
     {
@@ -249,7 +249,7 @@
       "attribute": "data.legendaryActions",
       "form": {
         "title": "Monster.LegendaryAction",
-        "partial": "generic-feature"
+        "partial": "monster-feature"
       }
     },
     {
@@ -258,7 +258,7 @@
       "attribute": "data.mythicActions",
       "form": {
         "title": "Monster.MythicAction",
-        "partial": "generic-feature"
+        "partial": "monster-feature"
       }
     },
   ]

@@ -1,0 +1,366 @@
+{
+  "type": "hStack",
+  "padding": [0, 0, 8, 0],
+  "views": [
+    {
+      "type": "vStack",
+      "spacing": 2,
+      "views": [
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "⠀",
+              "style": "stats-label-small",
+              "frame": {
+                "minWidth": 44,
+                "maxWidth": 0
+              }
+            },
+            {
+              "value": "⠀",
+              "style": "stats-label-small",
+            },
+            {
+              "value": "{{'Common.Mod'|l|uppercase}}",
+              "style": "stats-label-small",
+              "alignment": "center"
+            },
+            {
+              "value": "{{'Common.Save'|l|uppercase}}",
+              "style": "stats-label-small",
+              "alignment": "center"
+            },
+          ]
+        },
+        // str
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{'Ability.STR'|l}}**",
+              "alignment": "center",
+              "bgColor": "#ede6d9",
+              "style": "stats-body",
+              "padding": [ 2, 4, 2, 0 ],
+               "frame": {
+                "minWidth": 36,
+                "maxWidth": 0
+              },
+              "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/check"
+            },
+            {
+              "value": "{{data.abilities.str|default: 8}}",
+              "alignment": "center",
+              "bgColor": "#ede6d9",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/check"
+            },
+            {
+              "value": "{{data.abilities.str|default: 8|modifier|signed}}",
+              "alignment": "center",
+              "bgColor": "#ded4cc",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/check"
+            },
+            {
+              "value": "{% if data.savingThrows.str %}{{data.savingThrows.str|signed}}{% else %}{{data.abilities.str|default: 8|modifier|signed}}{% endif %}",
+              "alignment": "center",
+              "bgColor": "#ded4cc",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.str|modifier|signed}}/strength/save"
+            },
+          ]
+        },
+        // int
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{'Ability.INT'|l}}**",
+              "alignment": "center",
+              "bgColor": "#d8dad1",
+              "style": "stats-body",
+              "padding": [ 2, 4, 2, 0 ],
+               "frame": {
+                "minWidth": 36,
+                "maxWidth": 0
+              },
+              "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/check"
+            },
+            {
+              "value": "{{data.abilities.int|default: 8}}",
+              "alignment": "center",
+              "bgColor": "#d8dad1",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/check"
+            },
+            {
+              "value": "{{data.abilities.int|default: 8|modifier|signed}}",
+              "alignment": "center",
+              "bgColor": "#d0caca",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/check"
+            },
+            {
+              "value": "{% if data.savingThrows.int %}{{data.savingThrows.int|signed}}{% else %}{{data.abilities.int|default: 8|modifier|signed}}{% endif %}",
+              "alignment": "center",
+              "bgColor": "#d0caca",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.int|modifier|signed}}/intelligence/save"
+            },
+          ]
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "spacing": 2,
+      "views": [
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "⠀",
+              "style": "stats-label-small",
+              "frame": {
+                "minWidth": 44,
+                "maxWidth": 0
+              }
+            },
+            {
+              "value": "⠀",
+              "style": "stats-label-small",
+            },
+            {
+              "value": "{{'Common.Mod'|l|uppercase}}",
+              "style": "stats-label-small",
+              "alignment": "center"
+            },
+            {
+              "value": "{{'Common.Save'|l|uppercase}}",
+              "style": "stats-label-small",
+              "alignment": "center"
+            },
+          ]
+        },
+        // dex
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{'Ability.DEX'|l}}**",
+              "alignment": "center",
+              "bgColor": "#ede6d9",
+              "style": "stats-body",
+              "padding": [ 2, 4, 2, 0 ],
+               "frame": {
+                "minWidth": 36,
+                "maxWidth": 0
+              },
+              "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/check"
+            },
+            {
+              "value": "{{data.abilities.dex|default: 8}}",
+              "alignment": "center",
+              "bgColor": "#ede6d9",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/check"
+            },
+            {
+              "value": "{{data.abilities.dex|default: 8|modifier|signed}}",
+              "alignment": "center",
+              "bgColor": "#ded4cc",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/check"
+            },
+            {
+              "value": "{% if data.savingThrows.dex %}{{data.savingThrows.dex|signed}}{% else %}{{data.abilities.dex|default: 8|modifier|signed}}{% endif %}",
+              "alignment": "center",
+              "bgColor": "#ded4cc",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.dex|modifier|signed}}/dexterity/save"
+            },
+          ]
+        },
+        // wis
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{'Ability.WIS'|l}}**",
+              "alignment": "center",
+              "bgColor": "#d8dad1",
+              "style": "stats-body",
+              "padding": [ 2, 4, 2, 0 ],
+               "frame": {
+                "minWidth": 36,
+                "maxWidth": 0
+              },
+              "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/check"
+            },
+            {
+              "value": "{{data.abilities.wis|default: 8}}",
+              "alignment": "center",
+              "bgColor": "#d8dad1",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/check"
+            },
+            {
+              "value": "{{data.abilities.wis|default: 8|modifier|signed}}",
+              "alignment": "center",
+              "bgColor": "#d0caca",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/check"
+            },
+            {
+              "value": "{% if data.savingThrows.wis %}{{data.savingThrows.wis|signed}}{% else %}{{data.abilities.wis|default: 8|modifier|signed}}{% endif %}",
+              "alignment": "center",
+              "bgColor": "#d0caca",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.wis|modifier|signed}}/wisdom/save"
+            },
+          ]
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "spacing": 2,
+      "views": [
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "⠀",
+              "style": "stats-label-small",
+              "frame": {
+                "minWidth": 44,
+                "maxWidth": 0
+              }
+            },
+            {
+              "value": "⠀",
+              "style": "stats-label-small",
+            },
+            {
+              "value": "{{'Common.Mod'|l|uppercase}}",
+              "style": "stats-label-small",
+              "alignment": "center"
+            },
+            {
+              "value": "{{'Common.Save'|l|uppercase}}",
+              "style": "stats-label-small",
+              "alignment": "center"
+            },
+          ]
+        },
+        // con
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{'Ability.CON'|l}}**",
+              "bgColor": "#ede6d9",
+              "style": "stats-body",
+              "alignment": "center",
+              "padding": [ 2, 4, 2, 0 ],
+               "frame": {
+                "minWidth": 36,
+                "maxWidth": 0
+              },
+              "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/check"
+            },
+            {
+              "value": "{{data.abilities.con|default: 8}}",
+              "alignment": "center",
+              "bgColor": "#ede6d9",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/check"
+            },
+            {
+              "value": "{{data.abilities.con|default: 8|modifier|signed}}",
+              "alignment": "center",
+              "bgColor": "#ded4cc",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/check"
+            },
+            {
+              "value": "{% if data.savingThrows.con %}{{data.savingThrows.con|signed}}{% else %}{{data.abilities.con|default: 8|modifier|signed}}{% endif %}",
+              "alignment": "center",
+              "bgColor": "#ded4cc",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.con|modifier|signed}}/constitution/save"
+            },
+          ]
+        },
+        // cha
+        {
+          "type": "hStack",
+          "spacing": 0,
+          "views": [
+            {
+              "value": "**{{'Ability.CHA'|l}}**",
+              "alignment": "center",
+              "bgColor": "#d8dad1",
+              "style": "stats-body",
+              "padding": [ 2, 4, 2, 0 ],
+              "frame": {
+                "minWidth": 36,
+                "maxWidth": 0
+              },
+              "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/check"
+            },
+            {
+              "value": "{{data.abilities.cha|default: 8}}",
+              "alignment": "center",
+              "bgColor": "#d8dad1",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/check"
+            },
+            {
+              "value": "{{data.abilities.cha|default: 8|modifier|signed}}",
+              "alignment": "center",
+              "bgColor": "#d0caca",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/check"
+            },
+            {
+              "value": "{% if data.savingThrows.cha %}{{data.savingThrows.cha|signed}}{% else %}{{data.abilities.cha|default: 8|modifier|signed}}{% endif %}",
+              "alignment": "center",
+              "bgColor": "#d0caca",
+              "style": "stats-body",
+              "padding": [ 2, 0 ],
+              "link": "/roll/d20{{data.abilities.cha|modifier|signed}}/charisma/save"
+            },
+          ]
+        },
+      ]
+    },
+  ]
+}

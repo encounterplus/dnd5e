@@ -3,6 +3,19 @@
   "sections": [
     {
       "type": "group",
+      "title": "Common.General",
+      "fields": [
+        {
+          "type": "picker",
+          "title": "Settings.DefaultRuleset",
+          "placeholder": "Ruleset.DnD5e",
+          "attribute": "ruleset",
+          "attributeType": "Ruleset"
+        }
+      ]
+    },
+    {
+      "type": "group",
       "title": "Common.Locale",
       "fields": [
         {
@@ -29,7 +42,7 @@
         {
           "type": "picker",
           "title": "Settings.AutoRollInitiative",
-          "placeholder": "None",
+          "placeholder": "Common.None",
           "defaultValue": "hostileAndNeutral",
           "attribute": "combat.initiative.autoRoll",
           "attributeType": "InitiativeRollType",
@@ -37,7 +50,7 @@
         {
           "type": "picker",
           "title": "Settings.GroupInitiativeBy",
-          "placeholder": "None",
+          "placeholder": "Common.None",
           "attribute": "combat.initiative.group",
           "attributeType": "InitiativeGroupType",
         },
@@ -45,6 +58,40 @@
           "type": "toggle",
           "title": "Settings.ReRollInitiativeEveryRound",
           "attribute": "combat.initiative.everyRound",
+        },
+        {
+          "type": "picker",
+          "title": "Settings.CombatantImageType",
+          "placeholder": "Common.Default",
+          "attribute": "entities.Default.combatant.image",
+          "attributeType": "CombatImageDisplayType",
+        },
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Settings.UI",
+      "fields": [
+        {
+          "type": "picker",
+          "title": "Settings.CollectionImageType",
+          "placeholder": "Common.Default",
+          "attribute": "entities.Default.collection.image",
+          "attributeType": "ListImageDisplayType",
+        },
+        {
+          "type": "picker",
+          "title": "Settings.MonsterCollectionImageType",
+          "placeholder": "Common.Default",
+          "attribute": "entities.Monster.collection.image",
+          "attributeType": "ListImageDisplayType",
+        },
+         {
+          "type": "picker",
+          "title": "Settings.CharacterCollectionImageType",
+          "placeholder": "Common.Default",
+          "attribute": "entities.Character.collection.image",
+          "attributeType": "ListImageDisplayType",
         },
       ]
     },

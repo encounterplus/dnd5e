@@ -25,7 +25,8 @@
     "CN",
     "LE",
     "NE",
-    "CE"
+    "CE",
+    "UU"
   ],
   "ChallengeRating": [
     "0",
@@ -108,30 +109,30 @@
   "ItemTypeCategory": [
     "armor",
     "weapon",
-    "item",
+    "magicItem",
     "equipment"
   ],
   "ItemTypeCategoryMapping": {
     "armor": [
-      "armor",
       "lightArmor",
       "mediumArmor",
       "heavyArmor",
       "shield"
     ],
     "weapon": [
-      "weapon",
       "meleeWeapon",
       "rangedWeapon",
       "ammunition"
     ],
-    "item": [
-      "staff",
-      "wand",
+    "magicItem": [
+      "armor",
       "potion",
       "ring",
-		"rod",
+      "rod",
       "scroll",
+      "staff",
+      "wand",
+      "weapon",
       "wondrousItem"
     ],
     "equipment": [
@@ -157,5 +158,11 @@
     "items",
     "features",
     "other"
+  ],
+  "FeatCategory": [
+    "general",
+    "origin",
+    "fightingStyle",
+    "epicBoon"
   ]
 }

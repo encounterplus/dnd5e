@@ -6,8 +6,9 @@
   ],
   "views": [
     {
-      "type": "vStack",
-      "spacing": -1,
+      "type": "hStack",
+      "spacing": 12,
+      "alignment": "center",
       "views": [
         {
           "style": "title",
@@ -15,24 +16,27 @@
           "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
         },
         {
-          "style": "subtitle",
-          "value": "{{data.class|nameWithSource: 'long'}} {{'Entity.Subclass'|l}}",
+          "type": "image",
+          "value": "{{token}}",
+          "width": 30,
+          "height": 30,
+          "alignment": "top",
+          "imageResizeMode": "aspectFill",
+          "cornerRadius": 8,
+          "link": "{{token}}"
         },
       ]
     },
     {
       "type": "text",
-      "value": "{{descr}}",
+      "value": "{{descr}}"
     },
     {
-      "type": "list",
-      "attribute": "data.features",
-      "views": [
-        {
-          "type": "text",
-          "value": "### {{'Common.Level'|l}} {{level}}: {{name}}\n\n{{text}}"
-        }
-      ]
+      "type": "divider"
+    },
+    {
+      "type": "text",
+      "value": "{% include 'species-primary.md' %}"
     },
     {
       "type": "text",
@@ -47,7 +51,7 @@
     {
       "type": "text",
       "value": "{{footer}}"
-    }, 
+    },
     {
       "type": "tags",
       "attribute": "tags"

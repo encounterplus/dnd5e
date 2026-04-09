@@ -1,0 +1,70 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Name",
+          "attribute": "name"
+        }
+      ]
+    },
+    {
+      "title": "Description",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "descr"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Common.Size",
+          "type": "picker",
+          "attribute": "size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Common.Speed",
+          "attribute": "speed",
+          "type": "form",
+          "text": "{% include \"movement.md\" speed %}",
+          "form": {
+            "title": "Common.Speed",
+            "partial": "movement"
+          }
+        },
+        {
+          "title": "Common.Modifiers",
+          "type": "modifiers",
+          "attribute": "modifiers"
+        }
+      ]
+    },
+    {
+      "title": "Traits",
+      "type": "list",
+      "attribute": "traits",
+      "form": {
+        "title": "Trait",
+        "partial": "generic-feature"
+      }
+    },
+    {
+      "type": "group",
+      "title": "Reference",
+      "fields": [
+        {
+          "title": "Reference",
+          "type": "reference",
+          "attribute": "reference",
+          "attributeType": "Species"
+        }
+      ]
+    }
+  ]
+}

@@ -12,11 +12,13 @@
         ]
       }
     },
+    "NPC": {
+      "role": "neutral",
+    },
     "Character": {
       "role": "friendly",
       "collection": {
-        "image": "token",
-        "detail": "{{data.race.name|default: 'Unknown Race'}} {% for class in data.classes %}{{class.name}} {{class.level}}{% if forloop.last == false  %} | {% endif %}{% endfor %}",
+        "detail": "{% if data.species.name %}{{data.species.name}} {% elif data.race.name %}{{data.race.name}} {% endif %}{% for class in data.classes %}{{class.name}} {{class.level}}{% if forloop.last == false  %} | {% endif %}{% endfor %}",
       },
       "combatant": {
         "states": {
@@ -35,14 +37,11 @@
     "Monster": {
       "collection": {
         "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|map: 'Alignment'|prefix: ', '}}",
-      },
-      "combatant": {
-        "image": "token"
       }
     },
     "Spell": {
       "collection": {
-        "detail": "{% if data.level == 0 or data.level == nil %}{{data.school|map: 'SpellSchool'}} cantrip{% else %}{{data.level|ordinal}}-level {{data.school|map: 'SpellSchool'|lowercase}}{% endif %}",
+        "detail": "{% if data.level > 0 %}{{'Common.Level'|l}} {{data.level}} {{data.school|map: 'SpellSchool'}}{% else %}{{data.school|map: 'SpellSchool'}} {{'SpellLevel.Cantrip'|l}}{% endif %}",
       }
     },
     "Vehicle": {

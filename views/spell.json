@@ -20,12 +20,8 @@
             },
             {
               "style": "subtitle",
-              "value": "*{{data.level|map: 'SpellLevel'}}, {{data.school|map: 'SpellSchool'}}*",
-            },
-            {
-              "style": "subtitle",
-              "value": "{{detail}}",
-            },
+              "value": "{% if data.level > 0 %}{{'Common.Level'|l}} {{data.level}} {{data.school|map: 'SpellSchool'}}{% else %}{{data.school|map: 'SpellSchool'}} {{'SpellLevel.Cantrip'|l}}{% endif %}{{data.classes|nameWithSource: 'none'|join: ', '|brackets|prefix: ' '}}",
+            }
           ]
         },
         {

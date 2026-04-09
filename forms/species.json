@@ -1,0 +1,42 @@
+{
+  "title": "Race",
+  "sections": [
+    {
+      "type": "group",
+      "title": "Species.Traits",
+      "fields": [
+        {
+          "title": "Species.CreatureType",
+          "type": "picker",
+          "attribute": "data.creatureType",
+          "attributeType": "CreatureType"
+        },
+        {
+          "title": "Common.Size",
+          "type": "picker",
+          "attribute": "data.size",
+          "attributeType": "Size"
+        },
+        {
+          "title": "Common.Speed",
+          "attribute": "data.speed",
+          "type": "form",
+          "text": "{% include \"movement.md\" data.speed %}",
+          "form": {
+            "title": "Common.Speed",
+            "partial": "movement"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Species.SpecialTraits",
+      "type": "list",
+      "attribute": "data.traits",
+      "form": {
+        "title": "Species.Trait",
+        "partial": "generic-feature"
+      }
+    }
+  ]
+}

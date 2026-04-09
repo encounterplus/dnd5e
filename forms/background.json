@@ -5,6 +5,18 @@
       "type": "group",
       "fields": [
         {
+          "title": "Background.AbilityScores",
+          "type": "multiPicker",
+          "attribute": "data.abilities",
+          "attributeType": "Ability"
+        },
+        {
+          "title": "Entity.Feat",
+          "type": "picker",
+          "attribute": "data.feat",
+          "attributeType": "Feat"
+        },
+        {
           "title": "Background.SkillProficiencies",
           "type": "multiPicker",
           "attribute": "data.skills",

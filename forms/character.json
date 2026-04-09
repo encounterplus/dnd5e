@@ -8,14 +8,14 @@
       "icon": "person",
       "sections": [
         {
-          "title": "Race",
+          "title": "Species",
           "type": "group",
           "fields": [
             {
               "type": "form",
-              "title": "{{data.race.name}}",
-              "attribute": "data.race",
-              "attributeType": "Race",
+              "title": "{{data.species.name}}",
+              "attribute": "data.species",
+              "attributeType": "Species",
               "custom": {
                 "map": {
                   "size": "data.size",
@@ -25,8 +25,8 @@
                 },
               },
               "form": {
-                "title": "Race",
-                "partial": "character-race"
+                "title": "Species",
+                "partial": "character-species"
               }
             }
           ]

@@ -33,7 +33,8 @@
     "CN": "Alignment.ChaoticNeutral",
     "LE": "Alignment.LawfulEvil",
     "NE": "Alignment.NeutralEvil",
-    "CE": "Alignment.ChaoticEvil"
+    "CE": "Alignment.ChaoticEvil",
+    "UU": "Alignment.Unaligned"
   },
   "Movement": {
     "burrow": "Movement.Burrow",
@@ -125,7 +126,8 @@
     "cylinder": "AreaEffectShape.Cylinder",
     "line": "AreaEffectShape.Line",
     "square": "AreaEffectShape.Square",
-    "sphere": "AreaEffectShape.Sphere"
+    "sphere": "AreaEffectShape.Sphere",
+    "emanation": "AreaEffectShape.Emanation"
   },
   "Skill": {
     "acrobatics": "Skill.Acrobatics",
@@ -244,7 +246,7 @@
   "ItemTypeCategory": {
     "armor": "ItemCategory.Armor",
     "weapon": "ItemCategory.Weapon",
-    "item": "ItemCategory.Item",
+    "magicItem": "ItemCategory.MagicItem",
     "equipment": "ItemCategory.Equipment"
   },
   "ItemRarity": {
@@ -277,6 +279,16 @@
     "topple": "ItemProperty.Topple",
     "vex": "ItemProperty.Vex"
   },
+  "ItemMastery": {
+    "cleave": "ItemProperty.Cleave",
+    "graze": "ItemProperty.Graze",
+    "nick": "ItemProperty.Nick",
+    "push": "ItemProperty.Push",
+    "sap": "ItemProperty.Sap",
+    "slow": "ItemProperty.Slow",
+    "topple": "ItemProperty.Topple",
+    "vex": "ItemProperty.Vex"
+  },
   "Armor": {
     "light": "Armor.LightArmor",
     "medium": "Armor.MediumArmor",
@@ -287,6 +299,12 @@
     "simple": "Weapon.SimpleWeapon",
     "martial": "Weapon.MartialWeapon",
     "firearm": "Weapon.Firearm"
+  },
+  "FeatCategory": {
+    "general": "FeatCategory.General",
+    "origin": "FeatCategory.Origin",
+    "fightingStyle": "FeatCategory.FightingStyle",
+    "epicBoon": "FeatCategory.EpicBoon"
   },
   "ProficiencyCategory": {
     "armor": "ProficiencyCategory.Armor",
@@ -453,12 +471,30 @@
     "disease": "RuleType.Disease",
     "sense": "RuleType.Sense",
     "source": "Common.Source",
-    "other": "RuleType.Other"
+    "other": "RuleType.Other",
+    "skill": "RuleType.Skill",
+    "optionalFeature": "RuleType.OptionalFeature"
   },
   "limitedUseResetType": {
     "longRest": "ResetType.LongRest",
     "shortRest": "ResetType.ShortRest",
     "dawn": "ResetType.Dawn",
     "other": "ResetType.Other"
+  },
+  "Ruleset": {
+    "5.5e": "Ruleset.DnD5.5e",
+    "5e": "Ruleset.DnD5e",
+  },
+  "ListImageDisplayType": {
+    "icon": "ImageType.Icon",
+    "image": "ImageType.Image",
+    "token": "ImageType.Token",
+  },
+  "CombatImageDisplayType": {
+    "image": "ImageType.Image",
+    "token": "ImageType.Token",
+  },
+  "CreatureType": {
+    "humanoid": "CreatureType.Humanoid",
   }
 }

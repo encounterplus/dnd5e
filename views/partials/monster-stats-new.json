@@ -1,0 +1,147 @@
+{
+  "views": [
+    {
+      "type": "statBlock",
+      "style": "clean",
+      "spacing": 8,
+      "padding": [ 0, 12, 6, 12 ],
+      "views": [
+        {
+          "type": "hStack",
+          "alignment": "center",
+          "spacing": 8,
+          "views": [
+            {
+              "type": "vStack",
+              "alignment": "leading",
+              "spacing": -1,
+              "width": 0,
+              "views": [
+                {
+                  "style": "title2",
+                  "value": "{{name}}",
+                  "link": "https://www.google.com/search?tbm=isch&q=dnd+5e+{{name}}"
+                },
+                {
+                  "type": "divider",
+                  "style": "rectangle",
+                  "height": 1.5,
+                  "color": "#58180D",
+                  "padding": [ 2, 0 ]
+                },
+                {
+                  "style": "subtitle2",
+                  "value": "{{data.size|map: 'Size'}} {{data.type|map: 'MonsterType'}}{% if data.typeDetail %} ({{data.typeDetail}}){% endif %}{% if data.alignment %}, {{data.alignment|map: 'Alignment'}}{% endif %}",
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "value": "{{token}}",
+              "link": "{{token}}",
+              "height": 64,
+              "width": 64,
+            }
+          ]
+        },
+        {
+          "type": "hStack",
+          "views":[
+            {
+              "type": "text",
+              "style": "stats-body",
+              "value": "{% include \"monster-primary-new.md\" %}",
+            },
+            {
+              "type": "text",
+              "value": "**{{'Common.Initiative'|l}}** {{data.initiativeBonus|signed}} {{data.initiativeValue|brackets}}",
+              "style": "stats-body",
+            }
+          ] 
+        },
+        
+        {
+          "type": "partial",
+          "value": "monster-ability-scores-compact",
+        },
+        {
+          "type": "text",
+          "style": "stats-body",
+          "value": "{% include \"monster-secondary-new.md\" %}",
+        },
+        {
+          "type": "list",
+          "title": "Monster.Traits",
+          "style": "stats-section",
+          "attribute": "data.traits",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}{{usage|brackets|prefix: ' '}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.Actions",
+          "style": "stats-section",
+          "attribute": "data.actions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}{{usage|brackets|prefix: ' '}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.BonusActions",
+          "style": "stats-section",
+          "attribute": "data.bonusActions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}{{usage|brackets|prefix: ' '}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.Reactions",
+          "style": "stats-section",
+          "attribute": "data.reactions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}{{usage|brackets|prefix: ' '}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.LegendaryActions",
+          "style": "stats-section",
+          "attribute": "data.legendaryActions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}{{usage|brackets|prefix: ' '}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Monster.MythicActions",
+          "style": "stats-section",
+          "attribute": "data.mythicActions",
+          "views": [
+            {
+              "type": "text",
+              "value": "{% if name %}***{{name}}{{usage|brackets|prefix: ' '}}.***{% endif %} {{text}}"
+            }
+          ]
+        },
+      ]
+    },
+  ]
+}

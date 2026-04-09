@@ -16,7 +16,7 @@
         },
         {
           "style": "subtitle",
-          "value": "{% if data.prerequisite %}{{'Feat.Prerequisite'|l}}: {{data.prerequisite}}{% endif %}",
+          "value": "{{data.category|map: 'FeatCategory'}} {{'Entity.Feat'|l}} {% if data.prerequisite %}({{'Feat.Prerequisite'|l}}: {{data.prerequisite}}){% endif %}",
         },
       ]
     },

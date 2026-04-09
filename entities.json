@@ -38,8 +38,7 @@
     "label": "item",
     "collection": {
       "label": "items"
-    },
-    "loadable": true,
+    }
   },
   {
     "name": "Feat",
@@ -56,11 +55,19 @@
     }
   },
   {
+    "name": "Species",
+    "label": "species",
+    "collection": {
+      "label": "species"
+    }
+  },
+  {
     "name": "Race",
     "label": "race",
+    "extends": "Species",
     "collection": {
       "label": "races"
-    },
+    }
   },
   {
     "name": "Class",
@@ -90,7 +97,7 @@
     "collection": {
       "label": "rules"
     },
-    "dynamic": true 
+    "dynamic": true
   },
   {
     "name": "Table",

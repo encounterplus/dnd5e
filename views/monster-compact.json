@@ -7,12 +7,18 @@
   "views": [
     {
       "type": "partial",
-      "value": "monster-stats"
+      "value": "monster-stats-new",
+      "visibleIf": "attributes.ruleset == '5.5e'"
+    },
+    {
+      "type": "partial",
+      "value": "monster-stats",
+      "visibleIf": "attributes.ruleset == '5e' or attributes.ruleset == null"
     },
     {
       "type": "vStack",
       "spacing": 8,
-      "padding": [16],
+      "padding": [8],
       "views": [
         {
           "type": "text",
@@ -26,7 +32,10 @@
         {
           "type": "image",
           "value": "{{image}}",
-          "link": "{{image}}"
+          "link": "{{image}}",
+          "custom": {
+            "async": true
+          }
         },
         {
           "type": "text",

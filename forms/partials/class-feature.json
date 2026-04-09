@@ -33,7 +33,6 @@
       "type": "group",
       "fields": [
         {
-          "title": "Description",
           "type": "textArea",
           "attribute": "text"
         }
