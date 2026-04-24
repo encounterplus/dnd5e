@@ -14,6 +14,12 @@
     },
     "NPC": {
       "role": "neutral",
+      "collection": {
+        "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|map: 'Alignment'|prefix: ', '}}",
+      },
+      "combatant": {
+        "detail": "{{'Common.AC'|l}} {{data.armor}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.CR'|l}} {{data.cr}}"
+      }
     },
     "Character": {
       "role": "friendly",
@@ -31,12 +37,16 @@
             "label": "Common.HP",
             "temporary": true
           }
-        ]
+        ],
+        "detail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.PIV'|l}} {{data.passiveInvestigation}} • {{'Common.PI'|l}} {{data.passiveInsight}}"
       }
     },
     "Monster": {
       "collection": {
         "detail": "{{data.size|map: 'Size'}}{{data.type|map: 'MonsterType'|prefix: ' '}}{{data.typeDetail|brackets|prefix: ' '}}{{data.alignment|map: 'Alignment'|prefix: ', '}}",
+      },
+      "combatant": {
+        "detail": "{{'Common.AC'|l}} {{data.armor}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.CR'|l}} {{data.cr}}"
       }
     },
     "Spell": {
