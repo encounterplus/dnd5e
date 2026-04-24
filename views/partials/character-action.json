@@ -13,7 +13,7 @@
     },
     {
       "type": "image",
-      "value": "{% if definition.imagePath == nil %}/icons/attack/{{attackType}}.png{% endif %}",
+      "value": "{% if attackType != nil %}/icons/attack/{{attackType}}.png{% endif %}",
       "imageResizeMode": "aspectFill",
       "cornerRadius": 6,
       "width": 34,
