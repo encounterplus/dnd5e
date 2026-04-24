@@ -23,7 +23,7 @@
       },
       {
         "attribute": "sources.name",
-        "title": "Source",
+        "title": "Common.Source",
         "dynamic": true
       }
     ],
@@ -237,5 +237,29 @@
         "dynamic": true
       }
     ]
-  }
+  },
+  "Character": {
+    "params": [
+      {
+        "attribute": "data.classes.name",
+        "title": "Entity.Class",
+        "dynamic": true
+      },
+      {
+        "attribute": "data.species.name",
+        "title": "Entity.Species",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "location",
+        "title": "Common.Location",
+      },
+      {
+        "attribute": "name",
+        "title": "Common.Name"
+      }
+    ]
+  },
 }

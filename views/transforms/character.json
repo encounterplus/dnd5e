@@ -233,10 +233,6 @@
       "data.vision.dark.radius.minimum": 0,
       "data.vision.dark.radius.maximum": "#{{data.senses.darkvision}}",
     },
-    {
-      "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.PIV'|l}} {{data.passiveInvestigation}} • {{'Common.PI'|l}} {{data.passiveInsight}}",
-      "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.PP'|l}} {{data.passivePerception}} • {{'Common.PIV'|l}} {{data.passiveInvestigation}} • {{'Common.PI'|l}} {{data.passiveInsight}}"
-    },
     // CLEANUP
     {
       "activeWeapons": {},
