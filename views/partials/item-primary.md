@@ -17,7 +17,7 @@
 **{{'Item.Properties'|l}}:** {% for property in data.properties %}{{property|map: 'ItemProperty'|link: 'combat'|join: ', '}}{%if property == 'versatile' %}{{data.dmg2|brackets|prefix: ' '}}{% endif %}{% if forloop.last != true %}, {% endif %}{% endfor %}
 {% endif -%}
 {% if data.mastery -%}
-**{{'Item.Mastery'|l}}:** {{data.mastery|map: 'ItemMastery'|link: 'combat'|join: ', '}}}
+**{{'Item.Mastery'|l}}:** {{data.mastery|map: 'ItemMastery'|link: 'combat'|join: ', '}}
 {% endif -%}
 {% if data.capacity -%}
 **{{'Common.Capacity'|l}}:** {{data.capacity|units: 'lb'}}
