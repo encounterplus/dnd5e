@@ -1,0 +1,6 @@
+# Files excluded from the released `dnd5e.system` archive (git archive)
+.gitattributes  export-ignore
+.gitignore      export-ignore
+.github/        export-ignore
+scripts/        export-ignore
+README.md       export-ignore

@@ -1,0 +1,90 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Existing tag to (re)build and release, e.g. 0.9.15'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+env:
+  SYSTEM_ID: dnd5e
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve tag
+        id: tag
+        run: echo "tag=${{ inputs.tag || github.ref_name }}" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.tag.outputs.tag }}
+
+      - name: Verify versions and download URL
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          set -euo pipefail
+
+          manifest_version=$(jq -r '.version' manifest.json)
+          system_version=$(jq -r '.version' system.json)
+          manifest_id=$(jq -r '.id' manifest.json)
+          download=$(jq -r '.download' manifest.json)
+          expected_download="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/${SYSTEM_ID}.system"
+
+          fail=0
+
+          if [ "$manifest_id" != "$SYSTEM_ID" ]; then
+            echo "::error file=manifest.json::id is '$manifest_id', expected '$SYSTEM_ID'"
+            fail=1
+          fi
+
+          if [ "$manifest_version" != "$TAG" ]; then
+            echo "::error file=manifest.json::version is '$manifest_version', expected '$TAG' (the tag)"
+            fail=1
+          fi
+
+          if [ "$system_version" != "$TAG" ]; then
+            echo "::error file=system.json::version is '$system_version', expected '$TAG' (the tag)"
+            fail=1
+          fi
+
+          if [ "$download" != "$expected_download" ]; then
+            echo "::error file=manifest.json::download is '$download', expected '$expected_download'"
+            fail=1
+          fi
+
+          if [ "$fail" -ne 0 ]; then
+            echo "Run ./scripts/bump-version.sh ${TAG} to fix these files, then re-tag."
+            exit 1
+          fi
+
+          echo "Versions OK: ${TAG}"
+
+      - name: Build ${{ env.SYSTEM_ID }}.system
+        run: |
+          set -euo pipefail
+          git archive --format=zip --output "${SYSTEM_ID}.system" HEAD
+          unzip -l "${SYSTEM_ID}.system" | head -40
+          ls -lh "${SYSTEM_ID}.system"
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: ${{ steps.tag.outputs.tag }}
+          generate_release_notes: true
+          make_latest: true
+          files: |
+            ${{ env.SYSTEM_ID }}.system
+            manifest.json
