@@ -32,7 +32,7 @@
           "type": "picker",
           "attribute": "subclass",
           "attributeType": "Subclass",
-          "filter": "data.class == '{{name}}'"
+          "filter": "data.class == '{{name}}' or data.class BEGINSWITH '{{name}}|'"
         }
       ]
     },
