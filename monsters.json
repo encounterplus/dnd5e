@@ -933,7 +933,8 @@
           "text": "The dragon moves up to half its Speed, and it makes one Rend attack."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/adult-red-dragon.webp"
   },
   {
     "id": "c52eb9d8-b516-587f-8ef2-55ed65c77901",
@@ -2365,7 +2366,8 @@
           "text": "_Melee Attack Roll:_ +4, reach 5 ft. _Hit:_ 5 (1d6 + 2) Bludgeoning damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/animated-armor.webp"
   },
   {
     "id": "f2a9c019-d796-5a82-8a52-b26686c52168",
@@ -2882,7 +2884,8 @@
           "text": "The assassin takes the [Dash](action), [Disengage](action), or [Hide](action) action."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/assassin.webp"
   },
   {
     "id": "01488e3d-b225-56a8-bcbb-82c4b05edc15",
@@ -3299,7 +3302,8 @@
           "text": "The balor teleports itself or a willing demon within 10 feet of itself up to 60 feet to an unoccupied space the balor can see."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/balor.webp"
   },
   {
     "id": "cce9e757-d211-553d-aaa8-ec1cc1dba561",
@@ -3349,7 +3353,8 @@
           "text": "_Ranged Attack Roll:_ +3, range 80/320 ft. _Hit:_ 5 (1d8 + 1) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/bandit.webp"
   },
   {
     "id": "7da0b583-c51c-5a76-9a7a-12726dd64afa",
@@ -3564,7 +3569,8 @@
           "text": "_Constitution Saving Throw:_ DC 12, each creature in a 30-foot Cone. If the basilisk sees its reflection within the Cone, the basilisk must make this save. _Failure:_ The target has the [Restrained](condition) condition and repeats the save at the end of its next turn if it is still [Restrained](condition), ending the effect on itself on a success. _Failure:_ The target has the [Petrified](condition) condition instead of the [Restrained](condition) condition."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/basilisk.webp"
   },
   {
     "id": "4135a8c7-5d67-5ae5-90cd-92f9376d1e8d",
@@ -3813,7 +3819,8 @@
           "text": "_Melee Attack Roll:_ +5, reach 5 ft. _Hit:_ 9 (1d12 + 3) Slashing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/berserker.webp"
   },
   {
     "id": "0c50d1f1-5680-5604-99f7-0c499a45d811",
@@ -4263,7 +4270,8 @@
           "text": "_Melee Attack Roll:_ +3, reach 5 ft. _Hit:_ 4 (1d6 + 1) Piercing damage. If the target is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, the target takes an extra 3 (1d6) Piercing damage and has the [Prone](condition) condition."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/boar.webp"
   },
   {
     "id": "fb2c60ef-a4b4-55b9-943e-d0e18c42cf1d",
@@ -4561,7 +4569,8 @@
           "text": "_Melee Attack Roll:_ +5, reach 5 ft. _Hit:_ 5 (1d4 + 3) Slashing damage. If the target is a Large or smaller creature, it has the [Prone](condition) condition."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/brown-bear.webp"
   },
   {
     "id": "cf5bf782-5b86-5eae-8753-ef5ef5b5e136",
@@ -4707,7 +4716,8 @@
           "text": "_Melee or Ranged Attack Roll:_ +4 (with Advantage if the target is [Grappled](condition) by the bugbear), reach 10 ft. or range 20/60 ft. _Hit:_ 9 (3d4 + 2) Bludgeoning damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/bugbear-warrior.webp"
   },
   {
     "id": "a74f656b-02af-523e-8abf-c0a82ecb368d",
@@ -5105,7 +5115,8 @@
           "text": "_Dexterity Saving Throw:_ DC 15, each creature in a 15-foot Cone. _Failure:_ 31 (7d8) Fire damage. _Success:_ Half damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/chimera.webp"
   },
   {
     "id": "b8268698-ae36-5a91-85c2-1701079e8163",
@@ -5532,7 +5543,8 @@
           "text": "_Melee Attack Roll:_ +2, reach 5 ft. _Hit:_ 2 (1d4) Bludgeoning damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/commoner.webp"
   },
   {
     "id": "2fe71111-f022-5144-8dee-7c4dc8065086",
@@ -5909,7 +5921,8 @@
           "text": "_Melee Attack Roll:_ +3, reach 5 ft. _Hit:_ 3 (1d4 + 1) Slashing damage plus 1 Necrotic damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/cultist.webp"
   },
   {
     "id": "a277bc9b-7d38-5f9f-ab57-5265b5336da1",
@@ -6232,7 +6245,8 @@
           "text": "The deva casts [Cure Wounds](spell), [Lesser Restoration](spell), or [Remove Curse](spell), using the same spellcasting ability as Spellcasting."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/deva.webp"
   },
   {
     "id": "3a030167-1b1d-58ef-aac0-2d5f71edddfd",
@@ -6450,7 +6464,8 @@
           "text": "The doppelganger shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/doppelganger.webp"
   },
   {
     "id": "99bf2484-37cd-5415-a89a-e8cb341202d2",
@@ -6780,7 +6795,8 @@
           "text": "The druid casts one of the following spells, using Wisdom as the spellcasting ability (spell save DC 13):\n\n_At will:_ [Druidcraft](spell), [Speak with Animals](spell)\n_2/day each:_ [Entangle](spell), [Thunderwave](spell)\n_1/day each:_ [Animal Messenger](spell), [Longstrider](spell), [Moonbeam](spell)"
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/druid.webp"
   },
   {
     "id": "9093cdde-6f4b-53a3-84d3-5b6f6552d0ee",
@@ -7588,7 +7604,8 @@
           "text": "_Melee Attack Roll:_ +6, reach 5 ft. _Hit:_ 10 (2d6 + 3) Fire damage. If the target is a creature or a flammable object, it starts [burning](hazard)."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/fire-elemental.webp"
   },
   {
     "id": "d9e9d35a-9559-5c1b-9dcd-6723dc693cc5",
@@ -7999,7 +8016,8 @@
           "text": "_Melee Attack Roll:_ +4, reach 5 ft. _Hit:_ 7 (2d4 + 2) Slashing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/gargoyle.webp"
   },
   {
     "id": "b3dcd58e-89b9-504b-9ad4-3f50f571d01b",
@@ -8068,7 +8086,8 @@
           "text": "The cube moves up to its Speed without provoking [Opportunity Attack](action). The cube can move through the spaces of Large or smaller creatures if it has room inside itself to contain them (see the Ooze Cube trait). _Dexterity Saving Throw:_ DC 12, each creature whose space the cube enters for the first time during this move. _Failure:_ 10 (3d6) Acid damage, and the target is engulfed. An engulfed target is suffocating, can't cast spells with a Verbal component, has the [Restrained](condition) condition, and takes 10 (3d6) Acid damage at the start of each of the cube's turns. When the cube moves, the engulfed target moves with it. An engulfed target can try to escape by taking an action to make a DC 12 Strength ([Athletics](skill)) check. On a successful check, the target escapes and enters the nearest unoccupied space. _Success:_ Half damage, and the target moves to an unoccupied space within 5 feet of the cube. If there is no unoccupied space, the target fails the save instead."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/gelatinous-cube.webp"
   },
   {
     "id": "d101e282-05c1-59c0-a52c-f906aedd550a",
@@ -8243,7 +8262,8 @@
           "text": "The ghost casts the [Etherealness](spell) spell, requiring no spell components and using Charisma as the spellcasting ability. The ghost is visible on the Material Plane while on the Border Ethereal and vice versa, but it can't affect or be affected by anything on the other plane.\n\n_At will:_ [Etherealness](spell)"
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/ghost.webp"
   },
   {
     "id": "27aaf78f-69cb-5336-9769-bc5fba77e7a9",
@@ -8308,7 +8328,8 @@
           "text": "_Melee Attack Roll:_ +4, reach 5 ft. _Hit:_ 4 (1d4 + 2) Slashing damage. If the target is a creature that isn't an Undead or elf, it is subjected to the following effect. _Constitution Saving Throw:_ DC 10. _Failure:_ The target has the [Paralyzed](condition) condition until the end of its next turn."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/ghoul.webp"
   },
   {
     "id": "1657222b-c655-5e68-97c5-2f41a5d78fff",
@@ -8804,7 +8825,8 @@
           "text": "_Melee Attack Roll:_ +5, reach 5 ft. _Hit:_ 5 (1d4 + 3) Slashing damage plus 3 (1d6) Radiant damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/giant-eagle.webp"
   },
   {
     "id": "a52f0d1c-4e66-54e9-aaa0-4633c742de5e",
@@ -9348,7 +9370,8 @@
           "text": "_Melee Attack Roll:_ +5, reach 5 feet. _Hit:_ 5 (1d4 + 3) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/giant-rat.webp"
   },
   {
     "id": "87ce4608-e2aa-50bb-9ffa-7b7612df3b57",
@@ -9582,7 +9605,8 @@
           "text": "_Dexterity Saving Throw:_ DC 13, one creature the spider can see within 60 feet. _Failure:_ The target has the [Restrained](condition) condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fire damage; Immunity to Poison and Psychic damage)."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/giant-spider.webp"
   },
   {
     "id": "3c33ef7e-6b54-5c7d-a9eb-a703c99bcce8",
@@ -10147,7 +10171,8 @@
           "text": "_Trigger:_ The gladiator is hit by a melee attack roll while holding a weapon. _Trigger:_ The gladiator adds 3 to its AC against that attack, possibly causing it to miss."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/gladiator.webp"
   },
   {
     "id": "da0dfdc5-81c5-5b2f-9430-f214b392b8cf",
@@ -10208,7 +10233,8 @@
           "text": "Immediately after dealing damage to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/gnoll-warrior.webp"
   },
   {
     "id": "a3405332-066c-5f16-8e0b-1b9abef68ec4",
@@ -10469,7 +10495,8 @@
           "text": "The goblin takes the [Disengage](action) or [Hide](action) action."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/goblin-warrior.webp"
   },
   {
     "id": "cf14069f-156a-5f95-a606-3365f86369dc",
@@ -10846,7 +10873,8 @@
           "text": "The hag casts one of the following spells, requiring no Material components and using Wisdom as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks):\n\n_At will:_ [Dancing Lights](spell), [Disguise Self](spell) (24-hour duration), [Invisibility](spell) (self only, and the hag leaves no tracks while Invisible), [Minor Illusion](spell), [Ray of Sickness](spell) (level 3 version)"
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/green-hag.webp"
   },
   {
     "id": "21c8e552-32d0-5778-9f65-375246a9f052",
@@ -10959,7 +10987,8 @@
           "text": "_Melee Attack Roll:_ +6, reach 5 ft. _Hit:_ 8 (1d8 + 4) Piercing damage. If the target is a Medium or smaller creature, it has the [Grappled](condition) condition (escape DC 14) from both of the griffon's front claws."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/griffon.webp"
   },
   {
     "id": "083bf5db-0a83-5f23-8c6c-8cca6bae8eaf",
@@ -11057,7 +11086,8 @@
           "text": "_Melee or Ranged Attack Roll:_ +3, reach 5 ft. or range 20/60 ft. _Hit:_ 4 (1d6 + 1) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/guard.webp"
   },
   {
     "id": "b7eceec9-441b-5909-8c73-fb4961e6ab81",
@@ -11344,7 +11374,8 @@
           "text": "The harpy sings a magical melody, which lasts until the harpy's Concentration ends on it. _Wisdom Saving Throw:_ DC 11, each Humanoid and Giant in a 300-foot Emanation originating from the harpy when the song starts. _Failure:_ The target has the [Charmed](condition) condition until the song ends and repeats the save at the end of each of its turns. While [Charmed](condition), the target has the [Incapacitated](condition) condition and ignores the Luring Song of other harpies. If the target is more than 5 feet from the harpy, the target moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn't avoid [Opportunity Attack](action); however, before moving into damaging terrain (such as lava or a pit) and whenever it takes damage from a source other than the harpy, the target repeats the save. _Success:_ The target is immune to this harpy's Luring Song for 24 hours."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/harpy.webp"
   },
   {
     "id": "26617e4a-b523-569a-99aa-fc61621d7746",
@@ -11465,7 +11496,8 @@
           "text": "_Dexterity Saving Throw:_ DC 12, each creature in a 15-foot Cone. _Failure:_ 17 (5d6) Fire damage. _Success:_ Half damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/hell-hound.webp"
   },
   {
     "id": "e063b7d5-ae13-52c2-91f2-4f3df2465edb",
@@ -11611,7 +11643,8 @@
           "text": "_Ranged Attack Roll:_ +8, range 60/240 ft. _Hit:_ 16 (2d10 + 5) Bludgeoning damage, and the target has the [Poisoned](condition) condition until the end of its next turn."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/hill-giant.webp"
   },
   {
     "id": "f9583084-c65f-55f2-ad52-f6a34148d468",
@@ -11866,7 +11899,8 @@
           "text": "_Ranged Attack Roll:_ +3, range 150/600 ft. _Hit:_ 5 (1d8 + 1) Piercing damage plus 7 (3d4) Poison damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/hobgoblin-warrior.webp"
   },
   {
     "id": "baa054b3-188e-5ace-ab10-77daa09d7626",
@@ -12144,7 +12178,8 @@
           "text": "_Melee Attack Roll:_ +8, reach 10 ft. _Hit:_ 10 (1d10 + 5) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/hydra.webp"
   },
   {
     "id": "44dfacbd-633d-510b-ada4-79721deda99c",
@@ -12447,7 +12482,8 @@
           "text": "The imp casts [Invisibility](spell) on itself, requiring no spell components and using Charisma as the spellcasting ability.\n\n_At will:_ [Invisibility](spell)"
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/imp.webp"
   },
   {
     "id": "dfbe5536-8dbb-5c42-ad0d-235588ec3495",
@@ -12711,7 +12747,8 @@
           "text": "_Constitution Saving Throw:_ DC 18, each creature in a 60-foot Cone. _Failure:_ 55 (10d10) Poison damage. _Success:_ Half damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/iron-golem.webp"
   },
   {
     "id": "7e08e541-e568-5a2a-a09a-d6fa4d68b311",
@@ -12881,7 +12918,8 @@
           "text": "_Trigger:_ The knight is hit by a melee attack roll while holding a weapon. _Trigger:_ The knight adds 2 to its AC against that attack, possibly causing it to miss."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/knight.webp"
   },
   {
     "id": "c3722698-8020-5192-8858-864791d87be5",
@@ -12947,7 +12985,8 @@
           "text": "_Melee or Ranged Attack Roll:_ +4, reach 5 ft. or range 20/60 ft. _Hit:_ 4 (1d4 + 2) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/kobold-warrior.webp"
   },
   {
     "id": "3e6944b3-4be7-57b1-a661-6c9016adc0c9",
@@ -13315,7 +13354,8 @@
           "text": "The lich casts [Counterspell](spell) or [Shield](spell) in response to the spell's trigger, using the same spellcasting ability as Spellcasting.\n\n_At will:_ [Counterspell](spell), [Shield](spell)"
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/lich.webp"
   },
   {
     "id": "0574c58c-b510-5796-859e-5a0eb6c985ea",
@@ -13516,7 +13556,8 @@
           "text": "The mage casts [Counterspell](spell) or [Shield](spell) in response to the spell's trigger, using the same spellcasting ability as Spellcasting."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/mage.webp"
   },
   {
     "id": "686a3f9b-e52c-587b-a41f-28f0a618050d",
@@ -13768,7 +13809,8 @@
           "text": "_Ranged Attack Roll:_ +5, range 100/200 ft. _Hit:_ 7 (1d8 + 3) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/manticore.webp"
   },
   {
     "id": "6336d1f9-ac45-5162-aad8-121af1754df4",
@@ -13997,7 +14039,8 @@
           "text": "_Constitution Saving Throw:_ DC 13, each creature in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. _Failure:_ The target has the [Restrained](condition) condition and repeats the save at the end of its next turn if it is still [Restrained](condition), ending the effect on itself on a success. _Failure:_ The target has the [Petrified](condition) condition instead of the [Restrained](condition) condition."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/medusa.webp"
   },
   {
     "id": "562e9b6b-ae68-5e78-ae1b-414e5ac15fb6",
@@ -14191,7 +14234,8 @@
           "text": "The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/mimic.webp"
   },
   {
     "id": "53795027-e722-5fc5-b2ed-bd331b155683",
@@ -14247,7 +14291,8 @@
           "text": "_Melee Attack Roll:_ +6, reach 5 ft. _Hit:_ 18 (4d6 + 4) Piercing damage. If the target is a Large or smaller creature and the minotaur moved 10+ feet straight toward it immediately before the hit, the target takes an extra 10 (3d6) Piercing damage and has the [Prone](condition) condition."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/minotaur-of-baphomet.webp"
   },
   {
     "id": "5590be8b-e0d9-5117-b441-db7082c686a0",
@@ -14436,7 +14481,8 @@
           "text": "_Wisdom Saving Throw:_ DC 11, one creature the mummy can see within 60 feet. _Failure:_ The target has the [Frightened](condition) condition until the end of the mummy's next turn. _Success:_ The target is immune to this mummy's Dreadful Glare for 24 hours."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/mummy.webp"
   },
   {
     "id": "3b66f81d-0f49-585f-bd4f-c92d4f12027e",
@@ -14874,7 +14920,8 @@
           "text": "_Trigger:_ The noble is hit by a melee attack roll while holding a weapon. _Trigger:_ The noble adds 2 to its AC against that attack, possibly causing it to miss."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/noble.webp"
   },
   {
     "id": "180c3e15-eb1a-5bf9-a970-98c03f765cac",
@@ -15076,7 +15123,8 @@
           "text": "_Melee or Ranged Attack Roll:_ +6, reach 5 ft. or range 30/120 ft. _Hit:_ 11 (2d6 + 4) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/ogre.webp"
   },
   {
     "id": "005bf767-dc1b-52bd-9a42-9237e1f8362e",
@@ -15405,7 +15453,8 @@
           "text": "_Melee Attack Roll:_ +7, reach 5 ft. _Hit:_ 14 (2d8 + 5) Slashing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/owlbear.webp"
   },
   {
     "id": "2f10c05c-a85b-5d93-b9b2-7f8db7edd881",
@@ -15890,7 +15939,8 @@
           "text": "The pit fiend casts [Fireball](spell) (level 5 version) twice, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 21). It can replace one [Fireball](spell) with [Hold Monster](spell) (level 7 version) or [Wall of Fire](spell)."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/pit-fiend.webp"
   },
   {
     "id": "8f897e10-0d14-55a1-80dc-108fc02b14c2",
@@ -16218,7 +16268,8 @@
           "text": "The priest casts [Bless](spell), [Dispel Magic](spell), [Healing Word](spell), or [Lesser Restoration](spell), using the same spellcasting ability as Spellcasting."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/priest.webp"
   },
   {
     "id": "9da9f173-0c4a-5eae-82ec-1ce61845c079",
@@ -16562,7 +16613,8 @@
           "text": "_Strength Saving Throw:_ DC 19, one Large or smaller creature [Grappled](condition) by the worm (it can have up to three creatures swallowed at a time). _Failure:_ The target is swallowed by the worm, and the [Grappled](condition) condition ends. A swallowed creature has the [Blinded](condition) and [Restrained](condition) conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) Acid damage at the start of each of the worm's turns.\n\nIf the worm takes 30 damage or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the worm and has the [Prone](condition) condition. If the worm dies, any swallowed creature no longer has the [Restrained](condition) condition and can escape from the corpse using 20 feet of movement, exiting [Prone](condition)."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/purple-worm.webp"
   },
   {
     "id": "49d9a639-2643-5dfe-8fe7-af2620478da3",
@@ -16735,7 +16787,8 @@
           "text": "The rakshasa casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 18):\n\n_At will:_ [Detect Magic](spell), [Detect Thoughts](spell), [Disguise Self](spell), [Mage Hand](spell), [Minor Illusion](spell)\n_1/day each:_ [Fly](spell), [Invisibility](spell), [Major Image](spell), [Plane Shift](spell)"
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/rakshasa.webp"
   },
   {
     "id": "13f15eb1-219f-554f-b480-b35f298ec970",
@@ -16846,7 +16899,8 @@
           "text": "_Melee Attack Roll:_ +4, reach 5 ft. _Hit:_ 1 Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/raven.webp"
   },
   {
     "id": "c961ee66-3429-530f-8a86-0d789b3128e8",
@@ -17125,7 +17179,8 @@
           "text": "_Melee Attack Roll:_ +5, reach 5 ft. _Hit:_ 7 (1d8 + 3) Bludgeoning damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/riding-horse.webp"
   },
   {
     "id": "e40b1123-135e-53a8-8c7e-c71adf418fde",
@@ -17263,7 +17318,8 @@
           "text": "The roper pulls each creature [Grappled](condition) by it up to 30 feet straight toward it."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/roper.webp"
   },
   {
     "id": "3434eb43-a143-5dd8-8045-918048299135",
@@ -17331,7 +17387,8 @@
           "text": "_Trigger:_ An attack roll hits the rust monster. _Trigger:_ The rust monster uses Antennae."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/rust-monster.webp"
   },
   {
     "id": "dae53e9f-cc3e-5d70-b79c-c98bdbebeca7",
@@ -17716,7 +17773,8 @@
           "text": "_Ranged Attack Roll:_ +4, range 150/600 ft. _Hit:_ 6 (1d8 + 2) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/scout.webp"
   },
   {
     "id": "ff245800-101d-5e58-b441-f681fa50d936",
@@ -18275,7 +18333,8 @@
           "text": "_Ranged Attack Roll:_ +5, range 80/320 ft. _Hit:_ 6 (1d6 + 3) Piercing damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/skeleton.webp"
   },
   {
     "id": "572e6d21-a9c0-5568-b817-0a7098955634",
@@ -18387,7 +18446,8 @@
           "text": "The solar casts [Cure Wounds](spell) (level 2 version), [Lesser Restoration](spell), or [Remove Curse](spell), using the same spellcasting ability as Spellcasting."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/solar.webp"
   },
   {
     "id": "7fded26a-1c0f-5673-9170-14dca769527a",
@@ -19026,7 +19086,8 @@
           "text": "The spy takes the [Dash](action), [Disengage](action), or [Hide](action) action."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/spy.webp"
   },
   {
     "id": "bd7d6b4e-8666-5621-9cca-7f325f12f911",
@@ -19152,7 +19213,8 @@
           "text": "_Melee Attack Roll:_ +5, reach 5 ft. _Hit:_ 6 (1d6 + 3) Piercing damage, and the stirge attaches to the target. While attached, the stirge can't make Proboscis attacks, and the target takes 5 (2d4) Necrotic damage at the start of each of the stirge's turns.\n\nThe stirge can detach itself by spending 5 feet of its movement. The target or a creature within 5 feet of it can detach the stirge as an action."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/stirge.webp"
   },
   {
     "id": "d14bd3a1-16f4-54de-809a-06df54d73ee8",
@@ -19495,7 +19557,8 @@
           "text": "The succubus shape-shifts to resemble a Medium or Small Humanoid or back into its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it's wearing or carrying isn't transformed."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/succubus.webp"
   },
   {
     "id": "079f5121-5782-5107-8e79-4256b02d0fe9",
@@ -19854,7 +19917,8 @@
           "text": "_Melee Attack Roll:_ +2, reach 5 ft. _Hit:_ 5 (2d4) Piercing damage, or 2 (1d4) Piercing damage if the swarm is Bloodied."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/swarm-of-rats.webp"
   },
   {
     "id": "b34f5c85-788d-5d52-8a9f-1caff57c4833",
@@ -20124,7 +20188,8 @@
           "text": "The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Emanation originating from itself. Creatures in that area lose Concentration and, if Medium or smaller, have the [Prone](condition) condition. The tarrasque can't take this action again until the start of its next turn."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/tarrasque.webp"
   },
   {
     "id": "5444ea31-9c6d-5473-894c-d05de32ddce6",
@@ -20373,7 +20438,8 @@
           "text": "The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Intelligence and Charisma scores of 1, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Initiative count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 120 feet from the treant. The tree then takes root if possible."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/treant.webp"
   },
   {
     "id": "745802fa-30e5-52f2-bfdc-cd9487b34094",
@@ -20496,7 +20562,8 @@
           "text": "The troll moves up to half its Speed straight toward an enemy it can see."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/troll.webp"
   },
   {
     "id": "60aa52b5-e0ba-581c-845a-f8dd6b9c81c5",
@@ -20827,7 +20894,8 @@
           "text": "The vampire casts [Command](spell), requiring no spell components and using Charisma as the spellcasting ability (spell save DC 17). The vampire can't take this action again until the start of its next turn."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/vampire.webp"
   },
   {
     "id": "366c7584-0952-54eb-babd-100b437a0547",
@@ -21984,7 +22052,8 @@
           "text": "The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/werewolf.webp"
   },
   {
     "id": "8363a587-b548-5b48-8d76-3cd6b7c0eb45",
@@ -22147,7 +22216,8 @@
           "text": "_Constitution Saving Throw:_ DC 13, one creature within 5 feet. _Failure:_ 6 (1d8 + 2) Necrotic damage, and the target's Hit Point maximum decreases by an amount equal to the damage taken.\n\nA Humanoid slain by this attack rises 24 hours later as a [Zombie](monster) under the wight's control, unless the Humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at a time."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/wight.webp"
   },
   {
     "id": "f5ded43f-e3b3-58f3-a9eb-0d0a981cc758",
@@ -22365,7 +22435,8 @@
           "text": "_Melee Attack Roll:_ +4, reach 5 ft. _Hit:_ 5 (1d6 + 2) Piercing damage. If the target is a Medium or smaller creature, it has the [Prone](condition) condition."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/wolf.webp"
   },
   {
     "id": "e8be53db-b413-5010-827f-1ed534164616",
@@ -22563,7 +22634,8 @@
           "text": "_Melee Attack Roll:_ +7, reach 10 ft. _Hit:_ 11 (2d6 + 4) Piercing damage plus 24 (7d6) Poison damage, and the target has the [Poisoned](condition) condition until the start of the wyvern's next turn."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/wyvern.webp"
   },
   {
     "id": "bcc6139b-f450-5309-acf4-dbcffa77fb93",
@@ -23508,7 +23580,8 @@
           "text": "_Melee Attack Roll:_ +3, reach 5 ft. _Hit:_ 5 (1d8 + 1) Bludgeoning damage."
         }
       ]
-    }
+    },
+    "token": "monsters/tokens/zombie.webp"
   },
   {
     "id": "3e443b4b-75af-562e-b24a-02f2da12627d",
